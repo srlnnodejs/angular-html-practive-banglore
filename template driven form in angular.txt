@@ -287,6 +287,131 @@ of poroperties
 >we send to server while requried userForm.value
 >although is bind properly to bind use userModel and bind and sent to server
 
+video no 6
+=================
+>in this vide to bind form data to model
+>as user enters form data will capture changes and update instance of model that can be later
+change to the server
+>first step generate model class
+>open the integrated terminal ctrl+`
+>run the command ng generate class nameoftheclass lets call it user
+>let to navigate inside project folder
+>and then run the command
+>let open fiel user.ts
+>let me opy paste different property of user class
+>so user have properties name ,email,phone, topic,timepreference,subscribe
+user.ts
+-------------
+export class User{
+constructor(
+public name:string,
+public email:string,
+public phone:number,
+public topic:string
+public timePreference":string,
+public subscribe:boolean
+
+){}
+}
+>if you wandring about syntax is type script short string sysntax for a contrucor
+>type script compiler will generate a public field for each public parameter automatic
+assign a new value create a new user;
+>you should remember syntax if you using http and services injecting them using constructor.
+>now we have a model next we create instaance on that model
+>open app.component.ts and add a new property
+app.component.ts
+====================
+import{Component} from "@angualr/core";
+import {User} form "./user";
+@Component({
+selector:"app-root",
+templateUrl:"./app.component.html",
+styleUrls:["./app.component.thml]})
+export class AppComponent{
+topics=['angular','node','vue'];
+userModel=new User('rob','rob@test.com',1122334455,'','mroning',true);
+}
+>this is make sure new user automatiically insure all file 
+>to find userModel now possible to bind userModel data to enrollemnt form
+>simple use cases for this updating and editing data
+>that is already saved
+>for example you are have e commerece side you have  shipping address
+>if you click edit button the form appears with prefilled shipping address data.
+>so shipping address is bound to the form
+>now youcan sea eventhough anguar create its own objects of form values there are defenatly 
+use ccases there is necessary to create own model and bind that models data to the form
+>lets to exactly sam in our application
+>lets bind user model and enrollement form here lets sea how bind form data and erollment form
+>iam using interpolation to bind user data to html form to display sthe view.
+>this is helps to sea how the data binding is works
+>in html iam going to add horizontal line for seperation
+>then user model form json format
+>now binding user model to form is really simple
+>we bind the porperty of models with ngModel directive
+>for property binding we make use square bracesses
+>so lets bind all the properties
+>so ngModel will replace with [ngModel]="userModel.name" 
+>ng model replace with binding of userModel.name 
+>remember square brasses for property binding
+>user mele property called name we bind that ngModel of name input element
+>similarly for email [ngModel]="userModel.email";
+>for phone [ngModel]="userModel.phone"
+>for topic [ngModel]="userModel.topic"
+>iam going to change selected value is empty means
+><option value="">iam intrestedd in </option>
+>for radio button we required [ngModel]="userModel.timePreference"
+>for finally for check box [ngModel]="userModel.subscribe"
+>you can sea the browser you can sea angualr form value as same as uservalue
+>all the form control are also pre filled with the data of user module
+>let me change the name form rob to tim
+>if you change that you can sea angular object change from rob to tim but model value not changed
+>the reason whcich is we suing property data binding is one way data binding
+>data flows from class to view but data doesnt flow from view to class
+>what we really want with working with forms is two way binding two way binding can achieve with
+banana in box syntax of ngModel directive so each form control we need to change square brasses 
+property binding  to bananainside box two way binding
+>so parantahasis inside square brasses all right i will replace all occurance of property binding
+to two way binding now if we save this and go back to browser change the name form rob to tim.
+>you can sea both angular object and model reflect the values
+>and is same other type of control as well
+>in two way binding we have model and view in sink
+>so we have captured all form data into a model
+>which can now be sent to server
+>how ever before sending it to server it is crucial to perform the client side validation and provide
+usefull visual feedback to the user in next video we will sea how angular validate form with ease.
+after two way binding the output will be
+{"userName":"time","email":"srlnnodejs@gmail.com","phone":9988776655,
+"topic":"","timePreference":"morning","subscribe":true};-from data form userFORM
+
+{"userName":"time","email":"srlnnodejs@gmail.com","phone":9988776655,
+"topic":"","timePreference":"morning","subscribe":true};-USER mODEL DATA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
 
 
 
