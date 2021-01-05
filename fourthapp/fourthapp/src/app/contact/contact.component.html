@@ -1,0 +1,67 @@
+<div class="Contact-bg ">
+    <div class="container ">
+      <div class="row ">
+         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+          <div class="abouttitle ">
+           <h2>Contact Us</h2>
+         </div>
+         </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button class="btn btn-primary">welcome</button>
+  </div>
+  <div class="Contact ">
+    <div class="container ">
+      
+      <div class="row ">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+         <div>
+          <form #userForm="ngForm">
+           {{userForm.value|json}}
+            <hr/>
+            {{userModel|json}}--->
+            <div class="form-group">
+            <div class="row ">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+          <input class="form-control" required #yourname placeholder="enter your name"
+          [class.is-invalid]='name.invalid&&name.touched' type="Yourname" class="form-control" 
+            name="yourname" #name='ngModel' [(ngModel)]='userModel.yourname'>
+          </div>
+          {{name.untouched}}
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+  
+            <input class="form-control " placeholder="Phone " type="Phone" class="form-control" 
+            name="phone"
+            [(ngModel)]='userModel.phone'>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+  
+            <input class="form-control " placeholder="Email " type="Email" class="form-control" 
+            name="email"
+            [(ngModel)]='userModel.email'>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+  
+            <input class="form-control " placeholder="Select Coach " type="Select Coach" class="form-control" 
+            name="selectcoach"
+            [(ngModel)]='userModel.selectcoach'>
+          </div>
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+  
+            <textarea class="textarea " placeholder="Message"  class="form-control" 
+            
+            name="message"
+            [(ngModel)]='userModel.message'>Message</textarea>
+          </div>
+          </div>
+          </div>
+          </form>
+          </div>
+        </div>
+        
+        <button class="send-btn ">Send</button>
+      </div>
+    </div>
+  </div>

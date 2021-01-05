@@ -1,0 +1,344 @@
+template driven forms in angualr
+=================================
+vido no 2
+==========
+--------------------------------------------------------------\
+key points
+--------------------------------------------------------------
+generate a new cli project
+add the from html
+binding data
+tracking state and vbalidity
+providing visual feedback
+dispoalying error messages
+posting data to server
+-----------------------------------------------------------------
+>name indicate much of codes and logic resides in html template
+some of the key points refers related to template driven form 
+--------------------------------------------------------------
+>tdf approch easy to use and similar to angular 1 form 
+>in this approch we heavily relay in two way data binding
+>we have to keep track input field value and react to change tract input field
+value
+>angular takes care of that with ngModel directive
+>as result though we have bulky html code and minimal component code 
+>in tdf approch angular provide ngform directive along with ng model directive
+automatically track form and formelement state and velidity
+>draw backs of tdf approch when come in unit testing
+>form velidation logic cannot be unit tested
+>only way of testing is end to end test in browser
+>secode draw back is handlling the complex forms
+>as we add more and more validation on field and if we add complex cross field validation
+>readibility of form is decreases upto great extent
+>quetion is when we should go to tdf approch
+>if we have to create simple form with unit testing handlled by browser
+>go with tdf approch
+>more complex forms with unit testing is ablulutly necessary go with reactive forms.
+>now breif about tdf approch lets start how we procedding on tdf approch
+>we going to startup by going to generate new cliproject
+>we add html represnt html we will work on it
+>after that we will have to loook on data binding
+>that is followed by tracking from state and validity
+>providing visual feedback and displaying error messages
+>finally we will bindup tdf structure creating express server
+>posting data from our angular application to express server
+>next video we need to create angular project using angular cli
+
+
+video no 3
+===========
+>creating new project generating new project we have to use angualr cli
+>to more specific angular cli version 10 or highter
+>in the command prompt iam going to run command ng -v
+>this gives version of cli installed in my machine
+>you can sea that is verison 10.0.1
+>you gyes might not be cli installed all in command prompt put command
+>npm install -g @angular/cli@latest
+>this will install latest verion of angular cli on your machine
+>some of you might have installed angular cli but not latest verion you need tu update
+>how to update latest verion
+>go to github repo for angular cli 
+>if you  scroll down you can find particular paragraph
+>yoiu can find pragraph
+angular devking
+develepment tools and libraries specaialized for angular
+this is the home of hte devikigt and the angular cli coded you can find the angular cli
+specific reamdme here
+klick on here and scroll down you should come table of contents where you get
+>updating angular cli
+>over there mentioned the updating global package exactly what you need
+>to update cli in your machine run this three comand insequence
+npm uninstall -g @angular/cli
+npm cache verify
+#fi npm version is less thene ues "npm cache clean"
+npm install -g @angular /clie@latest
+>ones you finish all then you write on command on clien ng--version
+>it should display version latest
+>now we have the latest cli lets generte the angualr project
+>open visual studio code to open the integreted terminal (ctrl+`) contorl plus backtick
+>or view intergrated terminal
+>and run command ng new projectname
+example
+ng new tdf
+>hit enter it should create project for your ones the command completd
+>ones compled navigate inside project forlder and cd tdf
+>and run command ng server -o
+>we should have our application have up and running
+>final step to add bootstrap styling in out project
+>bootstrap is css framework  thats gives us a variety of classes that can apply to 
+>make html look better
+>to add bootstrap css go to getbootstrap.com and navigate to getting started tab
+>scroll down to bootstrap cdn and jsut copy the bootstrap cdn path
+>copy the cdn path and put the reference the end of the tag
+>now test bootstap classes are work or not
+>now open app.component.html and wipe out html pre filled
+>iam going to add button tag we add class button.btn.primary
+<button class="btn btn-primary">submit</button>
+>bootstrap works it should display blue color button
+>go back to tdf and you can sea blue color submit button
+>we created angualr porject and applyed bootstrap styling
+>thank you for saving not forget to suscribe 
+
+video no 4
+=======================
+> lets create a form in app.component.html
+<div class="container-fluid">
+<h1>Bootcamp enrollment formm</h1>
+<form action=">
+//first form contorl is user to enter the name
+//here "form-group" and "form-control"are bootstrap classes
+//we have label name and corresponding input 
+<div class="form-group">
+<label>name</label>
+<input type="text" class="form-control">
+</div>
+//next form control entering the email id
+//again we have form-group and form-control bootstrap classes and label email
+//and input type boxe
+//similarly we have form control to entring phone number
+<div class="form-group">
+<label>phone</label>
+<input type="tel" class="form-control">
+</div>
+//next control is select tag to user choose topic to there is interested on it
+//first we have to create array of  topics in app.component.ts
+//iam going to create new topics in aap.component.ts is going to be an array
+inside app.component.ts
+=============================
+import{Component} from "@angular/core"
+@Component({
+selector:"app-root",
+templateUrl:"./app.component.html",
+styleUrls:['./app.component.css']
+});
+export class AppComponent{
+topics=['Angular','React','Vue'];
+}
+next bind this to select drop down to html
+this is slight different ins
+===============================================
+>select select tag
+>we usd to *ngFor structural directive to itrate list of topics 
+>so select dropdown will populate value of array is angular react and view
+><div class="form-group">
+<select class="custom-select">
+<option selected>iam intrested in</option>
+<option *ngFor="let topic of topics">{{topic}}</option>
+</select>
+</div>
+>ones user select topics for select then user select the time slot
+>for time preference we used to redio button group
+we have labele and two possible values
+>class form-check is class provide by bootstrap and label uwe use label 
+>and we have radio and both are have the same name
+>here value how ever is morning and evening
+>the value label morning 9 am to 12 pm
+>the value label evening 5pm to 8pm
+>that is our time preference radio button
+<div class="mb-3">
+<label>time preference</label>
+<div class="form-check">
+<input class="form-check-input" type="radio" name="timePreference" value="morning">
+<label class="form-check-label>mroning(9am-12pm)</label>
+</div>
+<div classs="form-check">
+<input class="form-check-input" type="radio" name="timePreference" value="evening">
+<input class="form-check-label">evening(5pm-8pm)<label>
+</div>
+>last control is a check box user to check promotional offers
+>again we have to div class for class form-check
+>then input is form-check-input
+>this time the type going to be check box and name tobe send me promotional offers
+>that is the check box to subscribing the promotional offers
+<div class="form-check mb-3">
+<input class="form-check-input" type="checkbox">
+<label class="form-check-label">
+send me promotional offers
+</label>
+</div>
+>finally we have to put and submit button to submit the form
+<button classs="btn btn-primary" type="submit">sumit form</button>
+</form>
+</div>
+>save it and sea the form in the browser 
+
+video no 5
+===============================
+>in this video let sea how the data binding happning with the form field
+>so far we are creating basic html form nothing related to angular
+>open app.module.ts
+>imports import {FormsModule} from '@angular/forms';
+>and add FormsModule in imports array
+so app.module.ts
+=================
+import {BroweserModule} from "@angualr/platform-browser";
+import {NgModule} from "@angular/core";
+import {AppComponent} from "./app.component";
+import {FormsModule} from '@angular/forms';
+@NgModule({
+declaration:[AppComponent],
+imports:[BrowserMo dule],
+providers:[],
+bootstrap:[AppComponent]});
+export class AppModule{};
+
+>if we goto app.component.html we still have basic html form
+>but behind the scenes angualr magic already happning
+>any time we use form tag angular attaches ngForm derictive to form tag which gives us 
+valuable information of particular form.
+>it tells what is the value of different form control are or weather the value are 
+valid or invalid and how we hold reference of ngForm derictive
+>using a template reference variable inside form tag 
+<form #userForm="ngForm">
+>inside form tag we have to write #userForm to assign ngForm, ngForm directive exports
+it self string ngForm and by assigning to reference variable we have reference a 
+derictive it self.
+>now just maintain derictive give access value of form control
+>it does so usig value property
+>in the html i have to use interpolation to get value of form control
+>{{userForm.value|json}}
+>double curly brasses inside passes userForm.value|json  
+>if i save this i look in browser we have to sea an empty object
+>if i will start name some thing still it shows empty object { timePreference}
+>you might be wandring why it happning
+>if you ask angular why its happning like this
+>it going to tell you hai iam not going to track every single form control in your html
+>let me know which form control have to be track that only i will track and how to be know
+angular control to be track
+>by using ngModel directive so each of form-control we have to place ngModel directive.
+><input type="text" class="form-control" ngModel>
+><input type="email" class="form-control" ngModel>
+><input type="tel" clas="form-control" ngModel>
+><select ngModel>
+>inside radio buttons select tag and check box we have to write ngModel
+>finally for check box also we have to place ngModel
+>let save this if we start typing in any input box we cannot sea expected result
+>open developer tool and going to console we will sea there is an error
+>the error will be if ngModel used withing ia form tag aither the name attribute must me set or the form
+control must be define standalone
+>we can sea here timePreference works because we used name="timePreference" 
+>but rest of form field we dont have a name attribut
+>so along with ngModel attribute a name attribute must be necessary
+>that is the name attribute for each of form-control  
+>we have to write
+<input type="text" class="form-control" name="userName" ngModel>
+<input type="email" class="form-control" name="email" ngModel>
+<input type="tel" class="form-control" name="phone" ngModel>
+<select class="custom-select" name="topic" ngModel>
+<input class="form-check-input" ngModel type="radio" name="timePreference">
+<input class="form-check-input" ngModel name="subscribe" type="checkbox">
+>right away go to browser and check how to be difference an object to be displayed
+>{"username":"","email":"","phone":"","topics":"","timePreference":"","suscribe":""}
+>all the form control are present as property of this particular object
+>let start filling in the form and sea what happend
+>lets fill the form control names and sea what happend
+>{"name":"srlnp","email":"srlnnodejs@gmail.com","phone":9861152315,"timePreferecnce":22.00pm,
+"subscribe":
+>we can sea every thing has to be updated  as requried as we felling
+select a time preference it works as well
+>finlayy select check box value true in object
+>and uncheck it changes to false so we able to retrive different form control values
+>by making use ngForm and ngModel directive
+>input values corresponding test to the field
+>in addition of ngModel angular also provides ngModelGroup directive we have to use 
+ngModelGroup directive we have to create group and sub group inside form
+>lets consider address addrss have street  state city postalcode we group all of those field
+with address oblect using ngModelGroup directive lets sea how looks like
+>iam going to copy paste html and sea how looks like
+>so right of very top iam going to paste html
+>so we can sea we have four input element
+>one for city one for state one for state finally for postal code
+>all four element enclosed within div tag
+>so far we have to create basic html form
+>that has ngModelGroup directive
+>to the directive we assign name called address
+>now we goback to browser and take look the form value
+>we can sea individual field name name,emails,phone no,topics so on but at start we have group
+of poroperties
+>and group is address object
+>address contain four different property state city country and postal code
+>so ifyou ever want to group form field you make use this form tag
+>to understand template driven form though we really dont have to focus ngModelGroup directive
+>i also keep form as shoot as possible
+>thaty iam going to remove code just addeed
+>but keep into mind in template driven form for data binding we have to 3 directives
+>ngForm,ngModel,ngModelGroup
+>all right we able to bind data ngModel directive
+>we send to server while requried userForm.value
+>although is bind properly to bind use userModel and bind and sent to server
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
