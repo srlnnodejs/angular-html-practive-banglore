@@ -385,7 +385,109 @@ after two way binding the output will be
 
 {"userName":"time","email":"srlnnodejs@gmail.com","phone":9988776655,
 "topic":"","timePreference":"morning","subscribe":true};-USER mODEL DATA
+video no 7
+============
 
+>form validation providing appropriate visula feedback for validation
+>lets sea the video we have to sea the validation for template driven forms
+>lets begin understanding how angular helps us how form validation by tracking state of 
+form control and applying appropriate class
+>i got snapshot form anguar docs which points clearly  what class apply to form control
+>based on its state and its validiyt
+>at any point of time angular applies three form of control based on its state
+>first state for form classes are user is visited the form control or not
+>when you load form first time you yet not visited the form field
+>at that time angular applied form class is ng-untouched
+>if you do visit form control aither clicking or tabing and navigating away from control
+angular apply class fo ng-touched
+>key point here cclass will change only blur
+>you have to navigate away from form control
+>so if you visited form control class ng-touched class applied if not visited ng-untouched class
+apply
+>on similar type angular also track value of form control has been change or not
+>againg when we load form very first time  the value yet not change
+>so angular applies class ng-prestine  if do change angualr apply class is ng-dirty
+>and final pare of classes is consern the validity of form control
+>if form control value is valid then ng-valid class applied if not ng-invalid applied
+>for example if input field contain required atttibute it implies the value has to be
+entered
+>if value is missing ng-invalid class is applied
+>if value to be enterd ng-valid class going to be applied
+>lets going to look visual studio code over here the name input element iam going to add a 
+template reference variable #name instd of binding form data lets remove that iam going to bind
+inputs class name property
+>{{name.className}} here name is reference varibale and className save this and look in browser
+>you can sea right away classes being applied on input element are displayed
+form-control ng-untouched ng-pristine ng-valid
+>we have form-control is bootstrap class that we have applied
+>igonring that we have applied three other class applied on input element
+>ng-untouched, ng-pristine, and ng-valid
+>all three form angular
+>ng-untouched is based on weather form field is visited or not
+>no page load on field value not visited
+>and hence angular applied class ng-untouched
+>now we click on input element you can sea class vlaue doesnt change even class value even
+though we visited
+>how ever on blur calss does changed from ng-untouched to ng-touched
+>when we tab out t changes form ng-untouched to ng-touched
+>similary we have ng-pristine and ng-dirty
+>based on value of form field is changed or not
+>on page load value hasnt changed angular applied ng-prestine
+>if we change value to another value you can sea value will cange ng-prestine to ng-drty
+>and finally angualr applied ng-valid and ng-invalid classes based on form field validity
+>now to test this we have some short of rule in input element
+>so iam going to add required attribute
+>if you go back browser yoiu can sea class ng-valid applid now whch makes perfect chage there
+is value applid in name field
+>if however clear out the value you can sea that ng-valid change to ng-invalid
+>so we can sea angualr trys to helps out form validation by applying appropriate class to the
+form control
+>now all the class appropriate to provide visula feedback angualr will provide alternative
+which i fill is better as well
+>for each of classes angular provide associative property on ngModel directive the property
+same of the class ng-remove 
+ngModel Properties
+===================
+class                property
+======               ==========
+ng-untouched         untouched
+ng-touched           touched
+ng-prestine          prestine
+ng-drty              dirty
+ng-valid             valid
+ng-invalid           invalid
+>ng-untouched is associative property of ngModel which is untouched
+>ng-touched is touched and ng-prestine and pristine similarly other classes
+>lets quick look this property in enrolment form
+>question how we get access of ngModel property
+>is answer by simply creating reference to the ngModel directive
+>right now #name is points input element of dom
+>by assigning value of ngModel the reference variable will point ngModel of particular 
+form control
+now we have reference to ngModel we can easily bind to different properties
+>lets start with unTouched 
+>{{name.unTouched}} save this and had to browser we can sea peroperties is true
+>below of name field
+>if we click and blur it will change into false
+>similrly lets take look on prestine
+>{{name.prestine}} go back to browser on page load is ture and altering the value it set false
+>finally we have valid property  {{name.valid}} input field have value
+>in at load value is ther in name field is propoerty torue , while change it changes to false
+>so you can sea property returns boolean value is much more easier
+>work with then class name
+>but i wanted to make sure you understand
+>diffferent way angular helps to track state and validity of form control;
+>next video we have to sea how ngModel property will utilize to provide visula feed back
+>to the user as there felling out form
+
+
+
+
+
+
+
+
+>
 
 
 
