@@ -480,6 +480,122 @@ now we have reference to ngModel we can easily bind to different properties
 >next video we have to sea how ngModel property will utilize to provide visula feed back
 >to the user as there felling out form
 
+video no 8
+===================
+>a good user experience to filling out form a visulally indicate to the user if form field 
+is invalid as soon as enter the details
+>in this video lets validating the some of the form fields  
+>and applying the appropriate class to visually indicate to the user when form is invalid
+>there is two approches aither you create own class with necessary styles that has to be
+apply to form control or you can apply validation classes the css framework provide
+>iam using [class-invalid] bootstrap four provided but we have to make sure we have to apply
+class conditionally
+>that is only when form control is invalid,lets begin with name of form-control
+>the class bootstrap-four provide invalid state is [is-invalid] when i apply this we can sea
+red border on form field
+>this is sufficent visual feedback for demo
+>but must sure class is apply only form control is invalid
+>for that we make use ngModel property coupled with class binding,class binding begin with 
+square brasses class followed by dot  class name is conditionally applied
+>[class.is-invalid] this will be applied only the form control is invalid
+>we use reference value of ngModel that is name check by invalid property
+>[class.is-invalid]="name.invalid" this name is reach out apply class invalid while name
+of the form control is invalid
+>remove where written class="form-control is-invalid" to change into class="form-control"
+>we take look of browser we can sea no red red border on name
+>if i clear out the name the border gets applied
+>so visual feedback is working as expected
+>how ever there is room for improvement
+>lets say we have a form not pre filled with data
+>name is not filled while bigin is empty we goto visula studio code we remove name.valid
+>go to app.component.ts and leave name is empty in user model
+>now go back to browser you can sea red border
+>there is no mistake form field is impact invalid but imagine ten such form field  load on 
+page load without any user interaction
+>kinds of loops back somethihng we going to avoid
+>so in addition to checking form control is invalid so we have to check aither user is 
+visited that form control
+>back in the html inthe class binding we also check form control has been touched
+>we have to write [class.is-invalid]="name.invalid && name.touched" 
+>let me break it down to couple of line
+>appy [class.is-invalid] if form control is touched and form control is invalid
+finallly the complete field will looks like
+<div class="form-group">
+<label>name</label>
+<input type="text" requried #name="ngModel" [class.is-invalid]="name.invalid && name.touched"
+class="form-control" name="userName" [(ngModel)]="userModel.name">
+</div>
+>while you look in browser while page load the form field doesnt have red border
+>we click inside and navigate away though a red border is applied
+>this is preety good for ux point of view
+>on similar line lets have pattern matching validation
+>you can baiscally add any regular expression you want to  create a pattern that your form
+field must be satisfied
+>for example a password must be 8 to 15 charecter atlist one special charecter
+>a pincode in a specific format
+>a phone number is in ca spiecific format
+>the possibility are inless
+>for our example letes keep simple a phone number must be in 10 digits
+>go back to visual studio code get a referece for ngModel directive
+>#phone="ngModel" secod step add pattern attribute for regular expression
+>pattern="^\d{10}$" this is not phone number validation we just sure validate the 
+and makesure is 10 digits
+>finally lets bind the invalid class
+>[class.is-invalid]="phone.invalid && phone.touched"  class followed by dot and is invalid
+is conditionally applid what si condition phone form control is invalid and it has to be 
+touched
+>save the file and lets look at browser
+>we going to remove a couple of number form form field and tab out you can sea the red border
+is applied
+>if we enter 10 digits the red border dis appear
+>so pattern validatio wroking as exprected
+>this is preety much idea about filed validation and template driven form
+>using ngModel propoety and class binding conditionally apply class is visually indicate
+the invalid state so right now we have provided visual feed back to the user if something
+wrong in form field
+>how ever that is not enough
+>it should dilplay appropriate error message
+>lets look of that in next video
+
+video no 9
+===============================
+>this video we are going to display appropriate error messages
+>when form field is invalid
+>trust me with understand of previous video this is going to be pretty starte forwrod
+>name field in our example is required field
+>so form filld is invalid we need to show error message filed is required
+>lets add the messaage in html in vs code app.component.html
+>right after the input element i will add a <small>name is required</small>
+>name is required
+>if i save this we can sea error in the browser
+>name is required we can sea in browser
+>ofcourse we want to be shown this field only the filld is invalid
+>lets add condition with ngModel property
+> we can use either ng-if or class binding better to show display propoerty
+>ofcourse i will  show how to use both of them
+>for class binding i have to use class d-none is bootstrp four class to setting up
+display propoerty to be none condition is inverse in use last video
+>within small tag class binding within square brasses class forllowed by dot class which
+we want to apply that is d-none that condition should be name.valid and name.touched
+>dont show the error message if fom control is valid and untouched
+>if you take look in browser initially is hidden if we clear out text and we navigate 
+away message will appears
+>so we are displaying error message appropiratly
+>last thing we add a class thats makes message appears like an error message
+>for that purpose we need to use text dander
+>again we use bootstrap 4 class="text danger"
+>if you take look in browser clear out form fild and take away
+>the message really look like error message
+>name is required
+>really we get this lets sure same for phone field
+>go back to vs code for the phone number field 
+
+
+ 
+
+
+
+
 
 
 
