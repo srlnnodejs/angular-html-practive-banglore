@@ -577,6 +577,13 @@ video no 9
 display propoerty to be none condition is inverse in use last video
 >within small tag class binding within square brasses class forllowed by dot class which
 we want to apply that is d-none that condition should be name.valid and name.touched
+<div class="form-group">
+<lable>name</label>
+<input type="text" required #name="ngModel" [class.is-invalid]="name.invalid &&name.touched"
+class="form-control" name="userName" [(ngModel)]="userModel.name">
+<small class="text-danger" [class.d-none]="name.valid||name.untouched">name is required</small>
+</div>
+
 >dont show the error message if fom control is valid and untouched
 >if you take look in browser initially is hidden if we clear out text and we navigate 
 away message will appears
@@ -588,7 +595,80 @@ away message will appears
 >the message really look like error message
 >name is required
 >really we get this lets sure same for phone field
->go back to vs code for the phone number field 
+>go back to vs code for the phone number field   
+>finally the name field will be show like that 
+<div class="form-group">
+<lable>name</label>
+<input type="text" required #name="ngModel" [class.is-invalid]="name.invalid &&name.touched"
+class="form-control" name="userName" [(ngModel)]="userModel.name">
+<small class="text-danger" [class.d-none]="name.valid||name.untouched">name is required</small>
+</div>
+>for phone number field lets add small tag inside the small tag <small></small> message 
+must be ten digits
+<small>phone number must be tendigits</small>
+>then class binding for ngModel property [class.d-none]="phone.valid||phone.untouched
+>finally for styling class=text-danger
+> lets save this and take look in browser
+>so you can sea error message hidden right now
+>remove few digit and tab out and you can get error message
+>phone number must be ten digits
+>and message dis appears displaying error messages as simple as that
+>field will be now
+<div class="form-group">
+<label> phone</label>
+<input type="tel" #phone="ngModel" pattern="^\d{10}$" required [{ngModel}]="userModel.phone
+[class.is-invalid]="phone.invalid&&phone.touched" class="for-control" name="phone">
+<small class="text-danger" [class.d-none]="phone.valid||phone.untouched">phone numebr required</small>
+</div>
+</div>
+>now we might run into senarios
+>where we have more then one validation happning one form field
+>example phone number control will have requried validation addition to the pattern validation
+>to keep it simple phone number will be required and must be ten digits
+>this message can be saits fy both the messages
+>lets quickly test it out go back to vs code 
+>app  ly message phone number is requried and must be 10 digits
+>go back to browser and sea intitally there is no error message
+>remove the couple of digits  and tab out and you can sea error messages
+>phone number must be requried and ten digits
+>remove it completlyy you can get error message, when i start to feeling it error message
+will stay till ten digits
+>preety easy to deal multiple validation
+>how ever you goto extra mile with user expreience spot on error mesages
+>before that go on error property the ngModel
+>first i will comment out the existing error messages
+>next add div tag conditionallay renderd where phone number is error or not
+>befor  that we have to use ngIf directive along with ngModel propeerty
+>in div tag you write ngIf=phone.errors and phone.invaid or phone.touched
+>so phone field has error and phone state has invalid and phone state has visited
+>only then render this div tag
+>first message phone number is required and secod message  phone number must be ten digits
+>way we can decide what will be shown using error porperty of ngModel
+>for first case ngIf=phone.errors.requried so if rquired validation happning only display
+this validation messages
+>next message for phone.error.pattern the pattern validaion is applied dilplay this error
+messages
+> now you take look in browser i remove two to three digits it will show only pattern
+validation
+>when i clear out text required validation will be apperar
+>usign error object you can display specific error messages
+>that preety much about displaying error messages in template driven forms
+>for single validation rule create containts that display error messages
+>div class="form-group">
+<label>phone</label>
+<input type="tel" #phone="ngModel" pattern="^\d{10}$" requrid [class.is-invalid]="phone.invalid
+$$phone.touched fclass="form-control" name="rquired">
+<div *ngIf="phone.errors&&(phone.invalid||phone.touched)">
+<small class="text-danger" *ngIf="phone.errors.rquired">phone numebr is required</small>
+<small class="text-danger" *ngIF="phone.errors.pattern">phone number 
+</div>
+>ffor multiple validation rule create a block only if the error object is defined
+>field is invalid or visitd
+>within block create seperate error messages and validation being applied tat can be access/
+?>the errors property
+>for pracctive you appliy in edmail field you should be in good postion
+>
+
 
 
  
