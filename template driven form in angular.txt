@@ -739,8 +739,38 @@ to the error messages finally lets remove the required attribute
 >please choose the topics if we select one of the valid opiton the error message not displayed
 if i select default option again error message will dispalyed
 >so that how you validate select control
+video no 11
+=================
+>lets sea how angualr helps us form level validation
+>when ever we add form  element in html
+>angualr automatically attaches ngForm  directive to the form tag we can reference
+>a  reference vairlable with ngForm directive  so we have userForm=ngForm we have 
+very much like i can bind userForm.form.valid we can sea in browser we can sea is true
+>if i clear out name it cange out false ngForm provide the overall validation and this
+can be use to disable the submit button and form tell form is valid lets go back to 
+submit butto and disable the submit button and bind it to invalid state of the form.
+>iam going to add property binding and i will goint to add 
+><button [disabled]="userForm.form.invalid"] class="btn btn-primary" type="submit">
+		submit</button>
+>when form is invalid button is disabled
+>initially lets sea form is valid the button is enablleed if i clear out the name
+then form is valid and button is disaballed
+>add the name again form is valid and submit form button enabled
+>this works fine when any custom validaiton not working if ng form validaiton not 
+tracking
+>in our example though we do have select control validation
+>couple of ways we can handle this first one is 
+>submit button clicked and event is fired
+>we can check value of the field and proceed on submitting the form
+>for current form example we can siple add disable property
+>we add disabled property we have to add topiHasError the submit button disable if 
+user form invalid and topic has error
+>now we go to submit button is disabled and topic has error select the topic and 
+button is enabled and submit the form and that is about form level validatio of
+template driven forms
+>next we take to look submitting form data to the server on the submit button
 >
->
+
 
 
  
@@ -756,6 +786,7 @@ if i select default option again error message will dispalyed
 
 
 >
+
 
 
 
