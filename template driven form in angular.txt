@@ -668,7 +668,79 @@ $$phone.touched fclass="form-control" name="rquired">
 ?>the errors property
 >for pracctive you appliy in edmail field you should be in good postion
 >
-
+video no 10
+============================
+>lets sea how to validate select control for our select control we need to choose topifc 
+aither angular or react or vue
+>it should not be iam intrested in if user intract with select control leaves in iam
+intrestd in we need to display please choose the topics
+>lets sea how to do that
+>first and simple way to achieve validation we need to put requred attribute in field
+>to the select tag add rrequred attribute and create reference for ngModel
+>#topic="ngModel" pound sign and topic is equal to ngModel now we use ngModel property
+apply class to select element also display the error message
+>just like before we used class binding bind the is invalid class
+>so start with pair of square brasses [class.is-invalid]="topic.invalid &&topic.touched"
+>next diplay the error message within the
+>right after select tag iam going to add <small> tag.
+><small>please choose topic</small>message will be please choose the topics
+>inside the small tag we going to add class="text-danger" class binding display none class
+[class.d-none]="topic.valid||topic.untouched"
+>if you select that choose topic iam intrested in and tabout error messageis displayed
+>pelase choose the topics
+>very starate forword but here is kavyard
+>it works the value only the words are empty for corresponing text
+>in other words option of value is empty string and that is passed while freateing 
+model
+>that might be happen select dropdown populated with api of hardcoded array
+>in the api for default option we set value is default and not for empty string
+>lets pass in user model is default and same in html
+><option value="default">iam intrested in</option>
+>if i take look browser and iam select angular if iam select iam intrested in and tabout
+you can sea the validaton failed so valiation works only the value for empty string
+>waht we need custom validation for select control
+>and here what we will do here we will go blur and change event form-control in event
+handller we going to check value is default value or any other value
+>we set in error flag to true
+>that error flag conditionally apply classes and display error messages
+>lets begin with first step to show blur and change events
+>on select tag we have to event binding (blur) and (change)
+>if both method occurd we wont method to be executed
+>lets called validate topics
+>through this method we passing vlaue of select control
+>to validate topic that is topic.value
+><select (blur)="validateTopic(topic.value)" (change)="validateTopic(topic.value)" requried
+#topic=ngModel" [class.is-invalid]="topic.invalid && topic.touched">
+>topic is templete reference variable and we access value property
+>next lets define validateTopic method to set an error flag value of select control is 
+default
+>go to app.component.ts first iam going to create  error flag topic 
+>topicHasError=true; we setted topicHasError initiallly it going to set true
+>now the method dvalidateTopic this accepts the parameter value of select control
+>if vlaue is set going to default we set the vlaue topicHasValue=true
+>else we going to set topicHaseError=false now the error flag has toggeled based on the value
+we can use this in html condition dilplay the apprioriate error message
+that should looks like
+validateTopic(value){
+fi(value==='default')
+this.topicHasError=true;}
+else{
+this.topiHasError=false;}}
+>we have to use this condition to dispay the error message
+>for invalid calss binding topic.invalid is going to change topic.HasError
+>similarly d-none is change to topic.valid to topic.HasError
+>if topic value is HasError and topic value hasbeen touched we apply is invalid class
+on select control
+>similary if tehre is no error  topic field not havebeen touched we apply dispaly none class
+to the error messages finally lets remove the required attribute
+>lets save it out and teste it out
+>in browser on load there in no error message bieng displayed
+>if i intract with control and blur out the error message will displayed
+>please choose the topics if we select one of the valid opiton the error message not displayed
+if i select default option again error message will dispalyed
+>so that how you validate select control
+>
+>
 
 
  
