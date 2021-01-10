@@ -1,0 +1,45 @@
+java script
+=============================
+>iss class me ham regular expression ke bare me discussion karengejava script me 
+regular expression kiya hota hai
+>ye mene text file me sabu kuch likha hua hai
+regular expression
+=====================
+>is me first ham dekenge sequence of symbol and charecters expressing a string
+or pattern to be searched for within a longer  peace of text
+>regular expression me ham pura paragraph hota hai or line hota hai text ko serach
+kar sakte hai or text ko find karsakte hai
+>yeh sab ham isme dekhenge kis tara ham text ko search karsakte hai or kis tara
+ham text ko replace karsakte hai
+>regular expression ko samajh neke lea hamare paas char cheez hai 
+>modifiers, brackets, metacharecters,quantifiers,regExp object methods
+>is cheeszon ko ache se samajh le regular expression pura clear ho jaiga
+>sabse pehele ham dekhte hai modifiers kiya cheez hai 
+modifiers
+----------
+>modifiers me teen cheez hota eek hai i ,dusra g ,teesra m
+>i -->preform case-insernsative mattching
+>g--->perform a global match
+>m--->preform multiline matching
+
+brackets
+============
+[abc]---->find the charecter the brackets
+>yahan ham likha hai abc inside brackets, isme kiya hoga in teen
+letter se koi bhi letter ham search karenge to hamko mil jaiga
+agar ham likhe hai abc ke bad d  agar d  atta hai paragrap ke andar 
+yeh search karega agar ham brackets ke andar d nihin likha hai agar aaiga to 
+wo search nain karega
+>[^abc]-find any cherecter not between brackets
+isme yeh asse charecter find karega joo inme se naihin hoga
+>[a-bA-Z] ---->find any charecter not between the brackets
+>isme a to leke b tak jitne bhi charecter aaiga  Agar ham A-Z likh te hai to isme
+wo A to Z ke andr jo charecter sab find karega
+[0-9]----->agar ham 0 to 9 likh te hai too 0 to 9 find karega to ism e ham samaj
+gaye
+
+meatchCharecter
+================
+.>
+
+> 

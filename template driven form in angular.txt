@@ -1,4 +1,4 @@
-template driven forms in angualr
+ template driven forms in angualr
 =================================
 vido no 2
 ==========
@@ -32,6 +32,12 @@ automatically track form and formelement state and velidity
 >readibility of form is decreases upto great extent
 >quetion is when we should go to tdf approch
 >if we have to create simple form with unit testing handlled by browser
+>we apply novalidate attribute on form tag
+?<form #userForm="ngForm" novalidate>
+>this will prevent browser validation clicking in by hitting submit button
+>ngxt step we have to bind ngSubmit event which get emitted when submit button
+will clicked
+
 >go with tdf approch
 >more complex forms with unit testing is ablulutly necessary go with reactive forms.
 >now breif about tdf approch lets start how we procedding on tdf approch
@@ -769,11 +775,60 @@ user form invalid and topic has error
 button is enabled and submit the form and that is about form level validatio of
 template driven forms
 >next we take to look submitting form data to the server on the submit button
->
+
+video no 12
+=================
+>we inderstood how to validate form data now we going to sea how to post form data
+>how to post form data to server
+>we are going to discuss how to store it in data base
+>that is out side the scope of the cours
+>you can sea meanstack tutorial of my course core about crud oepration
+>in this video we going to focus on submitting form data 
+>on first tab we have to add no validate attribute on form tag
+><form #userForm="ngForm" novalidate>
+>this will provide browser validation clicking in on hit of submit button
+>ng step is bind submit button which emitted by clicking ngSubmit event
+>on the form bind (ngSubmit)="onSubmit()"
+>lets define onSubmit event handllier
+>in app.component.ts onSubmit() lets now 
+>onSubmit(){
+console.log(this.userModel)}
+>lets save this had to browser and open dev tools
+>choose topic and click submit
+>you can sea userobject is logged in the browser
+>to able to user to send data to server we make to use service
+>lets create new enrollment service using cli
+>in the terminal we have to write ng g s enrollemnt the command will generate 
+>enrollment.service.ts
+>over here the frist step to import http client and injected
+>import HttpClient and injected 
+>we need to define module in app.module.ts
+>import HttpClient module and store in imports array
+>we are in postion to make http request
+>in service lets add new property urls
+>will be the urls which will be post the data
+>_url="" for now and fillit in next vide
+>we will goint to create a method enroll which makes the post requst
+>method which accept argument user which is type user also make sure to automatically 
+imported within body we make post request
+>enroll(user:User){
+this._http.post<any>(this._url,user)}
+>quickly correct this and lets go post request returns response to on observable
+>we need to subscribe to the observable in app component
+>in app.component.ts first imported the enrollment serveive and injectit
+>import in app.component.ts and inject inside the constructor
+>onSubmit method we call enroll submit method subscribe to the observable
+>onSubmit(){
+this._enrollmentService.
+enroll(this.userModel).
+subscribe(data=>console.log("success",data),
+error=>console.error("error",error);
+)};
+
+>gets response quickly we go to enrollment form and make sure return that
 
 
 
- 
 
 
 
