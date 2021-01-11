@@ -40,6 +40,122 @@ gaye
 
 meatchCharecter
 ================
-.>
+.>it find single charecter  except new line or line terminator 
+\w->find a word chrectror
+\W->find a non word cherector
+\d->find a digit
+\D->find a non-digit charecter
+\S->find whitespace charecter
+\s->find non whitespace charecter
+\b->find a match at the beginning/end of a word
+\B->find a match not a t the beginning /end of a word
+\0->find a nul charecter
+ 
+Quantifiers
+=============
+n+->matches any string that contains at least one n
+isme n kiya hai a hoskata hai b hoskta hai kuch bhi hoskta hai idhar pe is me check
+karega isme ke one time 2 aaiga ro jitne marzi utne time 2 asakta hai
+n*->matches any string that contains zeor or more occurance of n, yeh zero se leke
+agge tak jaiga
+n?->matches any string that contains zero or one occurance of n
+n{x}->matches any string that contains a sequence fo X n's
+n{x,y}->matches any string that conatins a sequence of x to y n's
+n{x,}->matches any string that contaings a sequence of atleast X n's
 
-> 
+video no 37 
+============
+>isme ham dekhenge ham jo padhthe object last me  object metod 
+>isme ham first dekhege compile()
+>compile() kiya karta hai it compile a regular expresssion
+>abhi me compile.html name ka eek file open karta hoon and me check karta hoon
+>mee eek document banata hoon  
+compile.html
+===========
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>compile</title>
+</head>
+<body>
+<script type="text/javascript">
+var str="for more videos subscribe our you tube channel"
+var patt=/videos/g;
+patt.compile(patt);
+str2=str.replace(patt,"courses");
+document.write(str2)
+</script>
+</body>
+</html>
+o/p
+====
+For more course subscribe our YouTube
+  
+isme video ke jaga course aagaya hai isme samajata hoon kese
+useme mene eek pattern likha tha /video/g mins isme video search karega globaly
+>usem wo search kea videos and wo compile kea
+>uske bad jo bhi videos tha wo usko replace karwa dea courses ke sath
+>uske bad ham output lelea yeh regular expression ke object hai hame use kea hai
+>yeh bohot simple hai
+>next ham text() me bat karte hai or uske bad exec() me ham bat karte hai 
+
+video no 38
+===========
+>previous class me ham regular expression ka compile ham check kea tha 
+>iss me ham regular expression ka text() and exec() ko check karenge
+>isme me text.html name me me save kar ta hoon
+>isme me likh ta hoon 
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>test</title>
+</head>
+<body>
+<script>
+var str="subscribe our channel to for more video courses and 
+visit www.w3webschool.net";
+var patt=new RegExp("w3webschool.net");//regular expression here Rcapital me aaiga or Ebhi cpaital me aaiga
+var result=patt.text();
+patt me me rakhunga jo boject banaya hai str me rakhlunga isme wo search karega isme 
+wo pura string me search karke value return karega true 
+</script>
+</body>
+</html>
+o/p
+=====
+true
+
+agar mee varpattt=new RegExp("w3webschool.net")
+agar me uske adnar aisa likh luu
+var patt=new RegExp("w3webschool.netg")
+
+o/p
+====
+false 
+>likhega woo
+
+exe()=>agar data match karleta hai too wo jo value match karta hai wohi string return
+karega
+>upar text() me woo aither true or false return karega
+>isme agar match karega to wohi value return kardega
+>agar me output dekhu to dekhea 
+agar me likh lu
+var result=patt.exec();
+isme agar match hota to jo value anne wala tha true or false isme yee direct wo
+string vlaue return karega
+>isme jo value ham pass karege wohii aiiiga 
+
+isme output me aaiga
+
+output 
+=============
+w3webschool.net
+
+video no 38
+==================
+
+
+
+
+  
+
