@@ -151,11 +151,101 @@ output
 =============
 w3webschool.net
 
-video no 38
+video no 39
 ==================
+>java script ke iss class me ham regular expression ka or eek object ke bareme
+>ham baten karenge jo ki hai toString() ka 
+>it returns the string value of hte regular expression
+>isme mai save kardunga new file banake save karta hoon iske lea mai eek html banata hoon
+>string.html
+============
+<!DoctypE hTML>
+<HEAD>
+<meta charset="utf-8">
+<title>toString</title>
+</head>
+<body>
+<script>
+var patt=new RegExp("w3webschool.net")
+var result=patt.toString();
+ document.write(result)
+</script>
+</body>
+</body>
+
+jab me isko browser me open karta hoon wohi hamko output me show karega
+>output me dekhega hamko /w3webschool.net/
+>agar me kuch modifier dunga wo dikhega aisa 
 
 
+agar mee 
+var patt=new RegExp("w3webschool.net",i) too hamko milega 
+/w3webschool.net/i
+agar mee patt=new RegExp("w3webschool.net",g) too hamko milega
+/w3webschool.net/g
+issme bhi jo output hogi regular expression ke form me hoga
+>uske bad ham dekhenge mobile number verification and cnic verirfication
+>last me ham banaynge email verification
+>
+video no 40
+============
+>isme ham regular expression ka phone number validation dekhte hai
+>java script me regular expression ko use karke isme ham dekehnge agar user phone number
+enter karega to kis tarah phone number enter karega
+>or kis type ka phone number enter karega 
+>yeh bohot easy and intresting hoga isko ham reuglar expression ko use karke hame
+>karenge mee text ediotor open karta hoon or new file banake me save karta hoon
+>phone.html iska name me save karunga
+------------
+><!doctype html>
+<head><meta charset="utf-8">
+<title>phone</title>
+<script>
+var reg=//;
+</script>
+</head>
+<body>
+<p> enter phone number</p>
+<input type="text" name="phone" onchange="">
+</body>
+</html>
 
 
+abb upar mee eek <p>tag likh ke mee likh ta hoon enter phone numebr
+>uske bad eek form banata hoon form me ham work karnege usme show hoga
+>usme syntax hoga aisa kii 
+/pattern/modifiers; 
+>uske bad semecolumn or slase bhi aaigei
+>aap ko pata hai ham upar dekhe the 
+^n-->mathches any string with n at the beginning of it
+>ham isme beginning bhi dekhege or ham isme ending bhi dekhege
+>n isme kuch bhi ho sakta hai string bhi hosakta hai or kuch value bhi ho sakta hai
+>sabse pehele ham beginning ko dekhte hai uske bad ham ending ko dekhte hai
+>beginning ke lea me likhunga ^ and ending ke lea me likhunga $
+>aab ham iss two sign ke andar work karenge joo phone number hoga user jo phone number
+enter karega wo khali digit hi hoga
+>isme ham 0 se leker 9 tak koi bhi value enter karsakta hoon
+>aap bataya tha brackets kis tarah use karte hai ham usko use karenge
+>[0-9] agar ham use karenge too ham 0 to 9 koi bhi number ham select karsakte hai
+>agar me likh ta hoon 
+var reg=/^[0-9]$/ iska matlab ho ga yee kii mee 0 se 9 tak koi bhi value enter kar
+sakta hhooon
+>uske bad mee dekhunga kee user kitne digit enter karsakta hai
+>n{x}->isme ham 0 se 9 tak koi bhi number ham use karsakte hai
+agar me likhu
+var reg=/^[0-9]{11}$/ iska matlab yeh 0 se 9 tak 11 number enter karsakte hai
+><script>
+var reg=/^[0-9]{11}$/;
+function phone_validation(phone){
+var ok=reg.exec(phone.value) 
+if(!ok){
+window.alert("invalid phone numebr");
+}else{
+window.alert("valid phone number");
+}
+</script>
+agar ham eek function banayge  function aise hoga
+
+11,18
   
 
