@@ -244,8 +244,46 @@ window.alert("invalid phone numebr");
 window.alert("valid phone number");
 }
 </script>
-agar ham eek function banayge  function aise hoga
+</head>
+<body>
+<p>enter number and press enter</p>
+<form>
+<input type="text" name="phone" onchange="phone_validation(this);">
 
-11,18
-  
+</form>
+</body>
+>mee eek html form banake isme input element dalke me parameter pass karta hoon
+this key keyword agar ham usme semecolumn dee ya nadee koi baat nain me phir bhi
+dedeta hoon semecolumn
+agar me browser me run karun orr likhu  kuch idhar udhar ka expression so wo kuch
+alag value populate karega wo invalid phone number phekega
+>matlab number na dalke kuch alag likh lu number ke jaga to wo aisa phekega
+>agar number likh ke bheju too woo sahi alert ouput me bhejega
+>agar me bohot sare digit chodun jooo more then 10 digit hoga woo invalid phone
+number bolega
+>agar me exact digit 10 number ka chodun wooo exact phone number chodega
+>kyun show ho raha hai kii me user ko bola hai kii 11 digit put karna hai
+>agar mee yahan pee 11 se kam digit put karta hoon tooo wooo invalid phone number
+bolega
+>agar mee yahan pee 11 se jada digit put karta hoon tooo wo invalid phone number 
+bolega
+>agar me likhunga pakistan ke country code +929876655432 too woo invalid phone
+number bolega
+>india ka country code dekhe to  ham dekhenge +91 too wo idhar  yeh bhhi invalid
+phone number hiii kahegga
+>iss waqt joo digits hai +91 and +92 ko milake 13 digits hai
+>agar mee var reg=/^[0-9]{13}$/; kardeta hoon too bhi idhar dekhega kii invalid phone
+number
+>agar + sign remove karke agar mee 0 likhluuu to wo valid phone number show karega
+>+ sign koo allow karne ke lea ham ye kam karenge kiya karenge 
+>var reg=/^[0-9+]{13}$/;
+>tooo ham  plus sign use karke agar mee 12 numebr use karunga too wo 13 digit numeber
+dalega agar mee kuch remove kardunga too wo valid phone number dikhegaa
+>woo india country code +91 dikehga or +92 tooo wo pakistan country code dikhega
+>too ham dekhe java script ke regular expression use karke ham kis tarah 
+>number koo valkdate karsakte ham ismee dekhe
+>iss me ham php mee hii karsakte hai 
+>abhi ham next class me ham cnic varification kee bare mme discussion karsakte hai
+
+
 
