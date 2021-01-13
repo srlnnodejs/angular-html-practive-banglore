@@ -283,7 +283,121 @@ dalega agar mee kuch remove kardunga too wo valid phone number dikhegaa
 >too ham dekhe java script ke regular expression use karke ham kis tarah 
 >number koo valkdate karsakte ham ismee dekhe
 >iss me ham php mee hii karsakte hai 
->abhi ham next class me ham cnic varification kee bare mme discussion karsakte hai
+>abhi ham next class me ham c nic varification kee bare mme discussion karsakte hai
+
+video no 41
+===========
+cnic validation  java script
+===============================
+>isme hamm cnic validation ka eek form banayeege
+>previous class me ham jooo java script ka phone number validation ka banayeethe
+>aab ham cnic validaiton ka eek  form baneyyyege
+>isme ham eek new file banake cnic.html banake me save karta hoon
+>isme ham phone ko change karke mee dalta hoon cnic jahan jahan phone tha usme cinc
+aagaya
+>yeh eek feature hai isme ham search karen orr joo text ham find karna chate hai
+>aab ham reg variable kee pas jayenge or starting and ending condition dekhenge
+>ham starting condition kee lea ham ^ carat sign use karenge or ending condition ke 
+lea ham $ sign use karte hai
+>accroding to pakistan jo cnic number hota hai woo istarah hota hai kiii pehele
+5 five digits atte hai uske bad - deke seven digit atte hai uske bad highpen deke
+one digit atte hai
+>yeh /#####-#######-#/ yeh pakistan ki joo cinc number validaton yeeh hai
+>isko ham follow karke ham aisa banayege joo user hoga  wo pehele five digit enter 
+karega uske bad woo highpen deke 7 digit dalega uske bad wo  highpen deke wo 1 digit
+dega
+>isme agar kuch miss hogaya too hame esse dekhenge 
+hame pehele asse lekhenge ham jante hai kii sare hii digit hoga too ham likhege
+[0-9] kyun kee sare hii digits hoga
+>to first part mee woo 5 digit enter karsakta hai isske lea mee likhunga {5}
+>uske bad user ko ham restrict karege highpen deneke lea to ham likhege - or highpen
+>uske bad wo seven digit enter karega hamm usko likhege [0-9] or seven digit ke lea
+{7} digit use karsakte hai
+>uske bad prir se 0 to 9one digit enter karega too is ke lea  ham likh sakte hai ki
+[0-9] pe {1} ham one digit enter karsakte hai
+>bohot simple hai koi muskil nain hai isme pehele 5 digit hai usme ham 5 number 
+dalenge 0 to 9 se ham 5 no dalenge wese hii sab likhege
+finally hamare reg=/^[0-9]{5}-[0-9]{7}-[0-9]{1}$/ issme ham aisa dalsakte hai
+kiii reg expression wo exact wese check karega
+s>
+>abb browser open karke dekhta hooon agar me text box ke andar 99999-9999999-9 karta
+thoon wo dikhaegaa kii valid no
+>agar me browser open karke agar mee 99999-9999999-99 karta hoon to wo dikhega
+invalid number 
+>agar mee aisa karta hoon to invalid number dekhega
+>agar mee sare hee theek likh ta hoon agar mee highpen remove karleta hoon tooo
+invalid hii show karega
+>issko ham dekhenge too ham dekh sakte hai kee kese ham quantifier or bracesses
+me dekhsakte hai kiii quantifiers and method fo regular expression exec use karke
+hame cnic numebr validation kartee hai
+>agar class me ham email validation use karsakte hai
+example
+================
+
+
+
+
+
+
+
+
+video no 42 cnic validation
+===============================
+>>heelo every one iam mmhasan
+>java script kee is class me email validaiton kee eek form banaeey ge
+>email validation haam regular expression ke through karege jeese kee ham
+>jese pehele ham cnic validation kaa eek form banaya tha aab ham regular
+or phone number verification haam banaya tha
+>agar haam cnic incorrect number likhunga too wo show karega kii cnic incorrect
+number hai aab ham bat karte hai kee email validation kee uske lea ham
+>mee eek new file banake ham usme name likhlu kee email.html
+>orr isko mee sage karleta hoon  previous code copy karleta hoon kii previous
+code same hii hai
+>logic same hii hai only joo regulare expression me ham likhe hai wohi change karna
+hai
+>abhi mee ctrl+f find karta hoon or jahan jahan cnic hai usko find all karta hoon
+or backslace add karke mee usme email likhleta hoon
+>or ctrl+f find karke jahan jahan number hai usko mee backslace marke remove
+karleta hoon
+>yeh bhi same logic hogi isme sabse pehele beginning condition and ending condition
+ham dekhenge
+>beginning condition ke lea ham dekhte hai ke ^ sign and ending condition ke lea 
+hame lete hai ke $ sign
+>isme mostly user _ use karte hai and . use karte hai mee asis likhlu kii [_a-z] 
+matlab under score use kar sakta hoon uske bad a to z use karta hoon
+>ho sakta hai kee kuch digits enter karta hoon  uske bad mee likh ta hoon + or
+uske bad mee eek bracket me (\.) use karta hoon iska matlab ye hai keii joo user
+hai kii wo dot bhi likhsakte uske bad (\.[_a-z0-9]) uske bad dot ke bad user .
+likhsakta hai uske bad _ likhsakta hai digits or letter dot ke bad bhi including
+underscore likhsakta hai uske bad me likhnga +sign +sign ka matlab +sign ke bad
+mee likhunga * sign agar mee +sign and * sign likhleta hoon
+>ham pehele quantifier lelete hai kee n+ isme kiya hoga matches any string taht contains
+atleast one n
+>iss tarah ham diskh sakte hai isme woo ham exact string match nain karte hai isme
+wo given string me kisko bhi match karlega
+>* matlab yahan ye atleast one ke bat karta hai * isme yeh zero and 1  match karega
+>lakin onword kuch bhi ho sakta hai issme isme kisibhi string koo match karneke
+lea ham + and * le rehe hai 7.23
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
