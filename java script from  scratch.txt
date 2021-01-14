@@ -593,14 +593,205 @@ dega
 >mujhe pata nain jab tak mee sab theek se bol leta hoon s
 
 
+callbacks
+===========================
+>call back function is a function it can be any function may be ananomous 
+function or arrow function ho sakta hai yaniki call back funciton is a 
+function is passed to argument of another funciton, koi function ko ham 
+agar or eek function ke andar argument pass karte hai to usko  call back
+function bolte hai,
+jo funciton pass ho raha hai usko ham call back function kehte hai
+>but simple kam hai ham techenically ham describe kea ahi but isme ham
+or ache se dekhlete hai
+>defination
+==============
+a callback funciton is a function (it can be  any function anonymous 
+function arrow function )passed into another funciton as an argument,
+which is then invoked inside the otuer funciton to complete some kind
+of routine or action.
+
+example ke taraf se me likha 
+funciton show(){
+console.log("iam show funciton");
+}
+
+yeh above functio simple function hai
+agar orr eek function ham likh te hai kii
+function geeky(callback)
+{
+
+}
+callback()
+yahan ham kuch bhi likhsakte hai
+>yahan niche ham callback() ko ham call kea aap dekhsakte ahi kii idhar
+paranthasis dikha raha hai
+>yaani kuch too hai is lea call ho raha hai kii praranthasis dikhraha
+hai
+>abhi ham  eek function dekhenge call back ka example
+
+function show(){
+console.log("iam show function");
+}
+function geeky(callback){
+callback()}
+geeky(show)
+
+>isme jo bhi function pass hota hai ham usko call back function kehte hai
+>jab kissi functio ko ham as a argument pass karte hai  or function ko jaha
+pass kar rehe hai udhar ham use karenge or call karenge to  ussko callback
+function bolte hai
+>isme kuch alag nain wohi arrow function , wohi annamous function 
+>usiko jab argument pass karte hai to usko call back function bolte hai
+>agar callback function mee koi parameter dena hai too kese denge
+>usme eek example dekhea ham eek function likhte hai function show(a)
+>agar ham eek function lete hai or usme ham argument a lete hai
+>baki sab theek hai uske bad ham eek geeky function lete hai uske andar
+var a=101 likhta hoon phir uske bad me call back likht a hoon tooo kiya 
+hota ahi
+> too isme step aisa rehega kii pehele geeky(show) pehele call hoga
+>uske bad geeky show me ham show ko pass kar rehe hai
+>function geeeky(callback) call hoga usme show pass hoga
+>uske bad ham jante hai kii  var a me 102 assign hoga uske bad callback(a)
+execute hoga;
+>abb ham jante hai kii callback ka name show hai show execute hoga with a argument
+ke saath
+>too function ka argument  or flow of execution aisa rehega
+>finally function aisa rehega kiii
+
+function show(a){
+console.log("iam show function"+a);
+}
+frunciton geeky(callbak){
+var a=101;
+callback(a)
+}
+geeky(show)
+
+>iska exectuion process ham bat karlea hai
+example2
+==============
+   >callback function aisa nahin kii basic dekhna wala function nain
+isme ham asia hii argument pass karte hai
+>usme ham log jahan pass karte hai uske andar pass karlete hai
+>call back previous example koo ham alag taraka see likh sakte hai
+>hota yeh hai kkii
+
+
+function show(a){
+console.log("iam show function"+a);
+}
+frunciton geeky(callbak){
+var a=101;
+callback(a)
+}
+geeky(show)
+
+
+isme ham geeky(show) likhne ke wajhee ham pura function koo hii pass karlete hai
+>too yeh bhi kam karega
+>
+frunciton geeky(callbak){
+var a=101;
+callback(a)
+}
+geeky(function show(a){
+console.log("iam show function"+a);
+})
+>show ke wajhe hamm pura funciton koo iske andar pass karlete hai too
+ultimatly wo pura call karlega
+onces call back call hoga tooo wo run ho jaiga
+>iska or eek example haiham usko dekhenge
+example3
+================
 
 
 
+frunciton geeky(callbak){
+var a=101;
+callback(a)
+}
+geeky(function(a){
+console.log("iam show function"+a);
+})
 
 
+yeh bhi waisa hii kam karega isme bhiii ham parameter kee andar ham pura 
+ananomous function banake paas karlege
+>isme show function name ko nikal kee ham ananomous function karlete hai
+>baki sabkuch jaisa tha waisa hiii rahegaa
+>
 
+example4
+=================
+>logo nee usko orr chota kardea jab hamare paas arrow function aagaya
+>usko bhhii ham arrow function likh ke orr chota banasakte hai
+>function geeky(callback){
+var a=101;
+callback(a)}
+geeky(a=>console.log("iam show function"+a)
 
+isme arrow function eek callback function hamare geeky() se function geeky(callback)
+ko pass ho raha hai as argument
+>yeh above structure hai wo jada tar dikhne ko milega jab ham javascript
+ka framework padhenge or uske library padhenge
+>react angualr view is tarahh kii library mee hamko dikhnee ko milega
+>jisme ham maxmimum time map function use karte hai usme ham argument ke 
+taraf se callback funciton use karte hai
+>so guys yahin hamare call back function yee hamare orr eek cheez hai jo dikhna
+chaihai
+>mee aap ko itna hii poochna chatahoon kiii itna aap ko samaj mee aagayakiya
+agar itna samajh me aagay too call back funciton khatam
+>callback funciton do tarah kii hota  hai eek hai synchronous dosra hai
+asynchronous call back function
+>in dono kii beech kiya differnce hai ham in dono koo ache se dekhlete hai
 
+example
+==========
+>function show(){
+console.log("iam some function");}
+function geeky(callback){
+callback()}
+geeky(show)
+console.log("end");
+
+is above statements koo ham synchronous call back funciton bolte hai
+
+>agar ham orr eek example dekhe too wo aysnchronour call back  funciton
+
+setTimeout(function show(){
+console.log("iam show function");
+},500);
+console.log("end");
+in above work koo ham asynchronous call back function bolte hai
+>synchronous ka matlab yeh hai kii it wait each operation complete after that
+it execute next function to operate
+>yeeh wait karta hai kiii eek banda pura kam khatam na karle dusra banda wait
+karta hai
+>synchronous mee kiya hoga pehele geeky(show) call hoga uske bad call back 
+chalega uske bad console.log("end") finally execute hoga
+>jabtak pura function and inside callback funciton execute na haoga wo
+console.log "end" wait karega
+>yeh synchronous mode pe chal raha hai iske just opposite me a synchronous 
+operation hoga
+>is operation mee kiya hota hai kii yeh never wait each operation has to be
+complete rather it execute all operations in the first GO only.
+>setTimeOut() iss ka defination kahan likha hoga hame pata nain
+>ham itna jante hai kii woo callback function koo argument leta hai 
+ye kiii  isme callback funciton kooo ham as a argument pass karte hai
+>jese kiii ham geeky ko define kea hua hai and usko call karte hai
+>but setTimeOut koo hame call kea hai kaha define kea hua hai hamko
+pata nain hai
+>set time out koo ham define karte hai orr callback koo ham pass kate hai
+>iss case mee kiya haai kiii yeh wait nain karega yeh kehta  haii kiii
+>yeh function 5 second ke bad hii work karega
+>isme yeh wait nain karega yeh first isko execute karega console ko 
+asynchronous me console.log("end") koo first execute kardega
+setTimeout(function show(){
+console.log("iam show function");
+},500);
+console.log("end");
+>uske bad woo set time out funciton koo execute karega
+>too yeh dono example hai asynchronous and synchronous kaaa
 
 
 
