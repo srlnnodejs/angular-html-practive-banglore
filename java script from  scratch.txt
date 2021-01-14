@@ -889,7 +889,58 @@ body ke andar aajaiga
 >agar if ki condigton false haoga tooo  wo second body koo execute karega
 >example
 ===========
- 
+if else
+=======
+int a;
+if(a<5)
+{
+printf("\n bca");
+printf("\n mca");
+}else{
+printf("\n bsc");
+printf("\n msc");
+}
+printf("\mba");
+
+condition 1
+==============
+a=4;
+sabse pehele ham lege a=4;
+a less then 5 hai too kiya hoga\
+isme condition true hoga wo if ke bracekets ke andar aaiga too print
+kardega bca and mca
+>agar woo condtion true hoga tooo wo  first condition execute hoga too
+ese koo nain jaiga
+>if ka condition false hoga too wo else me jaiga
+>too esle me nain aaiga sidha niche aaiga wo print kardega bca,mca,mba
+output
+========
+bca
+mca
+mba
+
+
+condition 2
+====================
+a=10;
+agar  a ka value 10 hoga
+>isme condition false hai if ke bracket me joo hoga isme skip kardega
+>condition false hoga too wo if ke ander nain aaiga wo sidha else ke andar
+aaiga
+>else mee aaiga too print kardega bsc,msc useke baad wo else ke bahar nikalgea
+or print kardega mba
+>
+
+
+nested if
+============
+
+
+
+
+
+
+
 
 
 
