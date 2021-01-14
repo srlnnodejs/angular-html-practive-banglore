@@ -794,6 +794,32 @@ console.log("end");
 >too yeh dono example hai asynchronous and synchronous kaaa
 
 
+conditional statement
+=======================
+aaj ham janege conditionl staement ke baremee
+ >conditionalstatement ham dicision making statement kehtehai
+>conditional statement aisa hota haikkii
+>if
+>if else
+>nested if
+>nested if else
+>if with multiple condition
+>if else  with multiple condition
+if
+============
+sabse pehele ham if condition koo dekhte hai
+>syntax
+==========
+if(condition){
+body}
+>agar condition true hai andar aaiga jo bhi body me hoga usko execute kardega
+>agar condition false hai wo bracket ke bahar nikaljaiga
+
+if else syntax
+================
+
+
+
 
 
 
