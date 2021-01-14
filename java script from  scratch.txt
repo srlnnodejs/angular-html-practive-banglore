@@ -378,13 +378,219 @@ wo given string me kisko bhi match karlega
 >* matlab yahan ye atleast one ke bat karta hai * isme yeh zero and 1  match karega
 >lakin onword kuch bhi ho sakta hai issme isme kisibhi string koo match karneke
 lea ham + and * le rehe hai 7.23
+>reg=/^[_a-z0-9]+(\.[_a-z0-9]+)*$/
+> iss above condition bhi same hogi hame isme beginning condition and endign condigion
+pehele dekhenge
+>ham beginning condition ke lea ham lete hai ^ and ending condition ke lea ham lete
+hai $.
+>yahape mostly user _(under score lete hai) to me beginning me likh ta hoon ki /^[_]$/
+>var reg=/^[_a-z]$/ -ham mostly underscore lete hai uske bad ham a to z use karenge
+>usme pehele use a to leke z tak kuch bhi charecter likh sakta hai ho sakta hai ki
+wooo digits bhi likhsakta hai kii woo 0 se leke 9 [0-9] likh sakkta hai uske bad 
+mee  +sign use karke brackets lunga (\) bracket ke andar meee \. likhleta hoon
+>iska matlab yeh haibraket ke andar(\.) iska matlab ye hai kii user hai woo
+dot bhi likhsakte hai
+>uske bad mee (\.[_a-z0-9]) agar mee a-z ke bad 0-9 likhunga uske bad mee le sakta hoon
++ sign lunga iska lena ka matlab var reg =/^[_a-z0-9]+(_a-z0-9+)*$/; after 0-9 ke bad
+mee +sign lunga uske bad *  sign lunga * sign leneka matlab abb me batunga kee
+mee * sign and +sign kyun leta hooon isme aap bolsakte haii kii ham jooo quantifier
+lea hai starting introductio mee quantifier me  n+ ham dekhe the n+ ka matlab 
+n+ string is that contian one n isme hai any string mins isme hai kii wo kisiko 
+bhi match karlega exact match ham nain karwarehe hai kee ham joo given string
+hai wo kisike sath wo match karwalega
+>n+means yeh yaha atleast one ka bat karwa raha hai 
+>n* isme hoga kiii 0 or 1  0 se leke on word kuch bhi hosakta hai wo jitne bhi 
+ho sakta hai kisi bhi string ko match karwane ke lea ham + or * le rehe hai
+>above is reg=/^[_a-z0-9]+(\[_a-z0-9]+)*$/ isme  ham do zaga +sign lea hai
+>do sign +sing lene ka matlab ye hai ke inme se wo kisiko bhi match karsakta
+>hai ya to woo _match karlega or a-z match karlega or 0-9 match karlega
+>user _likh sakta hai or a to z ke knadar kitna chai lekh sakta hai
+>or 0-9 ke andar kitna bhi likhsakta hai aither 9998 or abc kuch bhi likhsakta hai
+>ho sakta hai kii user a to z se kuch bhi nain likh sakta or 0-9 se kuch bhi 
+nain likh sakta +sign yeh hai kii user aither _ or 0-9 or a-z se kuch bhi 
+likh sakta hai magar baha ja nain sakta hai
+>usme user \ slace or uske bad . likha hai uska matlab too isme bracesses ke andar
+wo (\.[_a-z0-9]) isme aisa kii aithe _ score hai or a to z hai or 0 to 9 hai
+> above me user aiter one conditon likhega or two  condition likhega or 
+three to three conditon likhega magar four condition nain likhsakta ahi
+>uske bad ham likhege @ sign yeh compolsury ho ta hai kissi bhi mail ke andar
+>@ sign ke bad again user [_a-z0-9] user kuch bhi likhsakta hai
+>aap jante hai kii @ ke bad kabhi bhi _nain atta hai too ismee ham _nikaldete hai
+>ham jante hai kii @ ke bad gmail asakta haii ham jante hai kkiiii gmail [a-z0-9]
+ke andar koi bhi value ke andar aasakta haii
+>(\.[a-z0-9]+)$/ ussm e after . to jante hai kii com atta hai or +sign iss lea
+hai kiii koi bhi usko sahi mile usko woo run karwa dega
+>uske bad * use hota hai same previous jesa or uske bad ham n{x,} too ham
+usme minimum x le charecter le sakta hai or maximum ham kuch bhi le sakta hai
+>{2,} too user atleast 2 or kitne bhi charecter le sakta hai
+>yeeh hai hamara pura email ke lea regular expression bohot simple hai isme
+koi compleceted cheez nain hai agar ham abc@gmail likh ta hoon usme ham
+ jane ge kee valid email hai yaa  nain
+>agar mee suru me _ score likhta hoon too wo valid email dekhega
+>underscore ke bad agar _m.abc@gmai.com liktha hoon to wo valid email likhega
+>agar mee -mabc@gmail.com likh ta hoon too wo invalid email address likhega
+>too isme aisa hai kiii koi programme or language allow nain karta hai kii
+starting mee ham - or _ lele kyun ke surume under score or highpen likhna
+achi baat nain hai
+>agar mee m_abc@gmail.com likhun too wo valid email likhsakta hai
+> ye badi senseitve cheez hota hai  kiii me yaha a-z lea hoon only small cheez
+lea hoon
+>agar m_Abce@gmail.com agar le leta hoon too yaha pee wo invalid kardega
+>too me user koo capital letter allow nahin kea tha mee usme khali small
+letter allow kea tha
+>hjam capital allow karne ke lea ham /^[_a-zA-Z0-9]+(\.[_a-zA-Z0-9]+)*@[a-z0-9-]+(\.
+[a-z0-9]+)(\.[a-z]{2,}$/;
+>isme ham aisa likhsakta hai agar ham likhte hai kii Abc@gmail.com too abb wo
+valid email address batasakta hai
+>pehele woo capital letter allow nain karta tha aab mee . ko likhta hoon too
+wo invalid email  bataiga . ke badminimum 2 allow karega
 
 
+closure
+=============
+>java script me closulre kiya hota hai
+>a closure is a function having access to the parent scope.it preserve the 
+data from outside
+>isme clousure is a inner funciton that has access to the outer (enclosing) 
+function variables.
+>dono hii example sahi hai but dono hii example kaa ham alag alag example
+dekhenge
+>every clousoure have three scope 
+>local scope(own scope)
+>outer function scope
+>global scope
+>local scope kiya hota hai or global scope kiya hota hai sab ham jante hai
+but outer function scope kiya hai ham nain jante hai
+>eek funciton ke andar dusra funciton banate hai jooo funciton bahar rehta hai
+usko outer function bolte hai
+>jab uske andar dusra function banate hyai usko inner function bolte hai
+>inner function uske outer function variables ko access karsakta hai
+>closure ka concept kiya hai kii ham nesting ka  concept padhte hai 
+>sabse pehele defination 1 
+<script>
+var i=10
+function show(){
+var j=20;
+document.write(j+"<br>">);
+}
+show()
+</script>
 
+isme output aap ko milega 
+j 20
+abhi schreen me 20 dekhai deta hai ttooo isme closure kiya hai ham dekhenge
+>clousure ka matlab yeh hai kii ye apni out side variable ke data ko  preserve
+karta hai
+>iska matlab yeh hai ki ham parent scope value idhar i hai ham usko acceess
+karsakte hai
+><script>
+var i=10
+function show(){
+var j=20;
+document.write(j+"<br>">);
+document.write(i+"<br>">);
 
+}
+show()
+</script>
+from above example ham dekhenge kii outer varibale value ham inside function me 
+access karsakte hai
+abhi output me run kare teoo
+20
+10 
+dono value dekhai dega yeh hota hai closure in dono kee beech closure create
+ho raha hai
+>ye apni outside scope ko access karsakta hai
+>actually yeh closure ka defination haii iskoo hi closure ham bolte hai idhar
+closure define ho raha hai
+>abb dusra ham dekhenge issme ham nested funciton dekhenge ham idhar doo
+condition dekhenge 
+>pehela nested function or dusra closure actrually closure hiii nested function
+hai or nested function hiii closure hota hai
+>
+<script>
 
+function show(){
+var j="J a local variable of outer function"
+document.write(j+"<br>")
+function innerFun()
+{
+var k="K a local variable of inner function";
+document.write(k+"<br/>");
+}
+innerFun()
+}
+show()
+>isme pehere show() call hoga functiionshow() execute hoga uske bad 
+>innerFun() call hoga or innerFun() execute hoga
+>idhar output
+=-==============
+j a local variable of outer function
+k a local variable of inner function
 
+yeh nested funciton ka concept hai isme clousure kahan atta hai jab aap
+inner function ke andar outer function ke variable ko access karte hai
+>idhar j is outer funciton variable ager ham inner me display karne ke 
+try kare agar yeh display ho jaiga too sochngee kii clousure banraha hai
+>
 
+<script>
+function show(){
+var j="J a local variable of outer function"
+document.write(j+"<br>")
+function innerFun()
+{
+var k="K a local variable of inner function";
+document.write(k+"<br/>");
+document.write(j+"<br>")
+}
+innerFun()
+}
+show()
+
+</script>
+>agar ham isko run karte hai agar isme ham run kare kii ham dekhee kii
+output mee 
+j a local variable of outer function
+k a local variable of inner function
+j a local variable of outer function
+
+>agar ham output mee dekhenge too upar haisa dekhege too hamko malum hoga
+kii hamare clousure mil raha hai
+>clousure mee orr eek batt haii kii outer function inner function koo
+access karnain sakta
+>inner function outer funciton kii variable koo access karsakta ahi
+>isme dekha kii inner function outer function ke variable koo access karsakta
+hai or global scope ke variable ko access karsakta hai
+>isme problem yeh hai kii outer function inner function kee value koo
+access karnahin sakta
+><script>
+function show(){
+var j="J a local variable of outer function"
+document.write(j+"<br>")
+function innerFun()
+{
+var k="K a local variable of inner function";
+document.write(k+"<br/>");
+document.write(j+"<br>")
+}
+innerFun()
+document.write(k+"<br/>");
+}
+show()
+
+</script>
+j a local variable of outer function
+k a local variable of inner function
+j a local variable of outer function
+
+in console
+==============
+k not defined
+
+>iska matlab yeh hai kii inner function kee value outer function me dekhai nain
+dega
+>mujhe pata nain jab tak mee sab theek se bol leta hoon s
 
 
 
