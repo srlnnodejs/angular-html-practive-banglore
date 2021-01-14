@@ -815,9 +815,81 @@ body}
 >agar condition true hai andar aaiga jo bhi body me hoga usko execute kardega
 >agar condition false hai wo bracket ke bahar nikaljaiga
 
+example if
+==============
+int a;
+if (a<5)
+{
+printf("\n bca")
+printf("\n mca");
+}
+printf("\n bsc);
+
+output
+=========
+condition 1
+===================
+
+a=10
+here condtion false hoga
+too print output mee aaiga 
+output
+========
+bsc
+condition 2
+=======================
+if ham dege a=4;
+isme conditon ture hoga
+output me aaiga
+output
+==========
+bca
+mca 
+bsc
+
+
+to agar condition true hoga too teen statement ouptu mee aaaiga
+isme kiya hoga isme pehele if ke statement execute hoga uske bad
+bahar aake or eek statement execute ho jaiga
+
+bca
+mca
+bsc
+
+agar condition false hoga too output mee eek hii aaiga 
+bsc
+
+condition 3
+==============
+if a=5 kiya hoga
+isme 5 lessthen 5 too condition false
+isme output me if kee andar keee statement execute nain hoga
+if condition ke bahar condition execute hoga
+
+output
+=========
+bsc 
+
+
+is tarah if ka use hoga progamming me chaliea ham dikhtehai kii
+if else kese kam karta hai
+
 if else syntax
 ================
-
+syntax
+==========
+if(condition)
+{body}
+else{body}
+isme  aisa hogakii if condition check karega agar condition pass hoga wo 
+body ke andar aajaiga
+>agar if ki conditon true hoga too else ka  body ke andar nain aaiga
+>agar if ki conditon false hoga too wo else ke body ke andar aaiga
+>agar if ki condition true hoga too wo first body execute hoga
+>agar if ki condigton false haoga tooo  wo second body koo execute karega
+>example
+===========
+ 
 
 
 
