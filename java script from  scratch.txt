@@ -934,7 +934,350 @@ or print kardega mba
 
 nested if
 ============
+>nested if ka syntax dekhenge
+>
+syntax
+==========
+if(condition1)
+{
+if(condition2)
+{
+body
+}}
+too two bracket close hoga first eek bracket close hoga 
+too first bracket inner if ke lea close hoga
+useke bad ka bracket woo outer if ke lea close hoga
+>nested if mee kiya hoga agar condtion 1 true hai too andar aaiga check karega
+second condition agar second condition false hai too check karega or bahar
+nikaljaiga
+>agar first condition true hai too second condition kee andar aaiga
+>agar first condition false hai too jahan se brackeet close hai udhar see
+wo bahar nikaljaiga
+>isme haam eek example me samajh rehe
 
+if(nested) example
+===================
+int a;
+if(a>5)
+{
+if(a<20)
+{
+printf("\n bca");
+printf("\n mca");
+}
+pirntf("\n bsc");
+}
+printf("\n msc);
+
+output
+===========
+condition 1  a=10
+=================
+condition true hai agar condition tture hai a ka value greater then 5 hai
+>too wo if ke andar aaiga
+>uske bad a<20 condition true hai tooo condition true haii to andar aaiga
+>print karega bca
+>print karega mca
+uske bad bahar nikelega or print karega internal if ka bracket close hoga
+>pirnt karega bsc
+>uske bad wo bahar nikelega or print karega 
+>print karega msc
+
+output
+========
+a=10
+o/p
+===
+bca
+mca
+bsc
+msc
+
+if(nested) example
+===================
+int a;
+if(a>5)
+{
+if(a<20)
+{
+printf("\n bca");
+printf("\n mca");
+}
+pirntf("\n bsc");
+}
+printf("\n msc);
+
+conditon 2 a=40
+=================
+>condition check karega a morethen 40 condition true too andar aaiga
+>uske bad wo andar aaiga 40 less then 20 too wo condition false wo bahar
+jaiga baki inner bracess kii andar aaiga
+>isme internal if ka jo bhi body hoga wo skip ho jaiga 
+>uske bad usko statement milega printf bsc uske bad print karega bsc
+>uske bad bracket close hoga external if kaauske bad usko milega msc
+
+output mee aaiga
+================
+ouput
+======
+a=40
+====
+bsc
+msc
+
+if(nested) example
+===================
+int a;
+if(a>5)
+{
+if(a<20)
+{
+printf("\n bca");
+printf("\n mca");
+}
+pirntf("\n bsc");
+}
+printf("\n msc);
+
+condition 3 a=3
+================
+int a
+isme ham check karte hai kkiiii 3 greater then 5 hai ttooo kiya hoga
+>condition false hai too kiya hoga isme external bracket isme open hua hai
+>or close hua hai wo bahar nikal jaiga andar jaiga nain iske beech jo bhi
+hoga sab skip hjaiga
+>directly print karega msc
+
+output 
+=======
+msc
+
+
+nested if else
+===============
+>chaliea ham iska condition dekhte hai kii first ham pehele condition dekhte
+hai
+>uske bad ham dusra condition dekhte hai
+>
+syntax
+=========
+if(condition1)
+{
+if(condition2)
+{//body of if condition 2
+}
+else{
+//body of else condition 2
+}-
+}-external if ka body ka bracket close 
+else{
+//body-external if ka  esle  body
+}
+nested if else  aisa hoga kii if condition 1 true hai too andar aaiga if condition
+2 true hoga too or andar aaiga body me jo hoga print karega agar 
+ye condition false hai too else koo jaiga to conditon 2 ka else condtion print
+kardega or bahar nikaljaiga
+>agar starting mee condition 1 false hoga ttooo condition 2 bala if ka detial
+skip hojaiga agar pehele bali condition false hai
+>wo sidha aajaiga else ke andar else ke body me joo bhi hoga print kardega
+>agar condition 1 true hai too wo second conditon me aaiga agar second conditon
+true haii ttoo condition 2 wala body koo print kardega
+>condition false haii tooo wo else mee jaiga
+>internal if ke else me jaiga or print kardega or bahar nikaljaiga jab internal
+else ke bahar nikalga too wo or eek else milega but wo us else ka andar nain
+jaiga
+>kyun kii wo peheli if ke andar ja chuka haii or elss ko print karchuka haiii
+or wapis aakar oww conditon1 ka else mee na jakar direct bahar nikaljaiga
+>nested if else me kiya hoga
+
+int a,b;
+
+if(a>5)
+{
+	if(b<20)
+	{
+	printf("\n bca");
+	}
+	else
+	{
+	printf("\n bsc");
+	}
+printf("\n msc");
+}else
+{
+printf("\n mca");
+}
+
+condition a=10,b=12;
+=======================
+>if a=10 and b=12 too kiya hoga a  more then 5 hai condittion true hai too
+kiya hoga
+>wo if condition kee andar aaiga
+>b less then 20 condition true hai too nested if ke andar aaiga
+>print kar dega bca
+>print karedega bca uske bad wooo else ke andar nain jaiga or print karega msc
+>uske bad jo external if hai uske bracket close ho jaiga abhi curser external
+if ke andar hai kyun kiii condtion true hai too wo else ke andar nain jaiga
+
+int a,b;
+
+if(a>5)
+{
+	if(b<20)
+	{
+	printf("\n bca");
+	}
+	else
+	{
+	printf("\n bsc");
+	}
+printf("\n msc");
+}else
+{
+printf("\n mca");
+}
+
+output
+=======
+bca
+msc
+
+
+agar ham orr eek value lenge 
+int a,b;
+
+if(a>5)
+{
+	if(b<20)
+	{
+	printf("\n bca");
+	}
+	else
+	{
+	printf("\n bsc");
+	}
+printf("\n msc");
+}else
+{
+printf("\n mca");
+}
+condition 2 a=12 and b=40
+=========================
+>abhi 12 greater then 5 condition true condition ture haii to andar aaiga
+>againg 40 lessthne 20 condition false hai to curser else ke andar jaiga
+wo nested if kee else ke andar jaiga
+>else ke andar jaiga or print kardega bsc
+>uske bad nested else ke bahar jaiga curser or eek statement milega print karega
+msc
+>bsc
+msc
+>aab curser starting if ke andar gaya tha tooo wo main else kee andar nain jaiga
+too isme output
+================
+msc
+bsc
+
+
+int a,b;
+
+if(a>5)
+{
+	if(b<20)
+	{
+	printf("\n bca");
+	}
+	else
+	{
+	printf("\n bsc");
+	}
+printf("\n msc");
+}else
+{
+printf("\n mca");
+}
+condition 3  a=2, b=20
+=========================
+>too isme kiya hoga a ka value not more then 5 hai too kiya hoga conditon false
+too condition false hai tooo
+>too if ke ander joo bhi hai wo skip ho jaiga
+>2 is morethen 5 conditon false hai too kiya hoga
+>tooo andar nahin jakke wo skip ho jaiga wo directly wo else ke andar aajiga
+> to else mee ham dea hai mca too wo print kardega mca
+>
+
+output
+===========
+mca
+int a,b;
+
+if(a>5)
+{
+	if(b<20)
+	{
+	printf("\n bca");
+	}
+	else
+	{
+	printf("\n bsc");
+	}
+printf("\n msc");
+}else
+{
+printf("\n mca");
+}
+condition 4 a=3 and b=7
+=========================
+>isme kiya hoga a more then 5 condittion false too if ke andar joo bhi
+hoga woo usko skop kardega
+>sidha else me aaiga print kardega mca and curser bahar nikaljaiga
+>
+iss tarah ham nested if else use karenge programming me
+
+output
+===========
+mca
+
+if with multiple condition
+==========================
+
+isme ham dekenge logical and && mins dono condition ture hona compulsory
+>isme koi eek bhi condition false hai too  condition false
+>agar dono condition true hai to condition ture hai
+>too isme kiya hoga 
+if(condition1 && condition2)
+{
+//body of if
+}
+if(conditon1||conditon2)
+{
+//body
+}
+
+if else multiple condition
+=========================
+syntax
+======
+>if else with multiple condition 
+if(condition1&&fcondition2&&condition3)
+>agar teeno condition true hoga too if ke condition true hoga
+>tino me se eek bhi condition false hoga too condition false ho jaiga
+>uske bad aaiga body or body ke bad bracket close hojaiga
+>usek bad hamara else aaiga or ham else ke body ham likhenge 
+> agar if ki condition true hai too else ke andar nainjaiga
+>agar false hoga too else ke andar jaiga
+>else ke body me jo bhi hoga print kardega
+>isme if else use hua hai or multiple condition use hua hai too isko ham
+bolte haikii if else with multiple condition 
+
+if else iwht mc
+================
+
+if(condition1 && condition2 && conditon 3)
+{body
+}
+else
+{
+body}
 
 
 
