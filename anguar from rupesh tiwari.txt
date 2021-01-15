@@ -138,5 +138,88 @@ some virus your compurter there is a risk is first thing
 >second problem is cross request  shifiting
 >what happend by default cookies goes to header of every message you send
 >there is chance to hack your cookie data to some other side
+>oness you loging chess bank you get coookie you take that cookie now it is your
+laptop
+>now it is saved in your laptop
+>next you went to some other website and there you open some page
+>some one write code and they can get cookie form your
+>they will get all your details and they will go chessside and use your details
+>so ther are this kind of risks this is called as cross side scripting
+>you can sea same cookie different differnt website
+>when we sending request server side how can we know we recieving same cookie
+>what request we sending to the server server knows that this is the cookie
+>that i say you have to store cookie some where your server so next time
+the request come you verify that cookie matching
+>but cookie has to be save to some where there are many softwares are 
+available you intercept your pipeline in server every time request come 
+you intercept request get cookie available and verify cookie good
+>your server or your database some where then you are good
+>question
+as iam client iam requesting to server and server producing me a cookie
+>how could i know i got same cookie what i requested
+>some other users might send request and might send their cookies instead
+of mine
+>in server side ok in server side some dedicated data base where you store
+your cookie one and data
+in data base you stored your encrypted cookie data
+>cookie 1 and cookie 2 in data base you can save like this type of data
+>when request come to server you can identify the cookie
+>if cookie present in data base if present then decode it and give information
+>if there are many users then many cookies are saved here
+>and there have own expire and every thing
+>if they are expired they are redirect to login page
+>thees are the things another two disadvantages like this
+>one it stores in machine other is is crosss side sifting issue
+>and third is if you like to scale your apis for the mobile devices
+>for your ios or android this kind of devices if you use your web apis
+>then problem is some of devices are dont support cookies some of them
+so this willl not work on them
+>these are the restriction of cookie based authentication next we go jwt 
+token based authentication
+
+
+video no 47
+===================
+>in client side angualr side we say that any message goes has to be 
+intercepted and token has to be putted in  header
+>that will make sure by putting  http interceptor in app level service
+>similarly form server side any http message coming we need to intercept
+before it goes to any particular resource area before it goes to 
+any product routes or authentication route   or user route which ever 
+route you want to go
+>before it goes you have to do this auth work now question arrises who
+will do all of this showld i write entiee code or  i wil take some help
+>beccause this interception is not easy task
+>like if google thing you need intercept differently  if other thing
+you need to intercept other way all code you dont need to write
+>any question before what i want to do
+>this is the conecpt that is valid for any kind of server if it is c# or
+sql server same thing we have to do
+>in c# we have http module
+>they called it http module which is basically nothing but which is intercept
+>what is http module in c# it intercept the pipeline and it get request object
+out of this
+>in server side this is http moduel and it intercepting http request and you
+take http request and you do same thing
+>then what are thing we have discuss it holds any technology
+>in order to create jsonwebtoken we need to use jsonwebtoken library
+>in order to intercept the we need some library teh famous is one is passport
+>passport mins what it should have your information or details
+>fi you go passport.org or passport in npm you search its a huge basically
+node package like very famous one  they have there own website passport
+>and it has many other plugins passport npm you search  like for google
+facebook for every one they have
+>question is which one use for intercepiton is passport 
+>in ordr to crete we use json webtoken
+>these are the two library we are focusing on or node library
+>next we explain how the passport works how we hookup into  nodejs and iam
+giving all of you this knowledge because when i do coding at that time
+it is huge to graps everything lets goo passport js is famous one 
+now days every one use is wildly
+
+>
+
+
+>
 >
 >
