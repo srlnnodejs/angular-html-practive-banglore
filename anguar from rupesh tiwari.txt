@@ -217,9 +217,95 @@ giving all of you this knowledge because when i do coding at that time
 it is huge to graps everything lets goo passport js is famous one 
 now days every one use is wildly
 
+video no 48
+===============
+>now we will sea which library used to authenticate authenticate any type
+request coming using json web token and famous one is passport thing
+>you can sea lot of download here is one famous one
+>example of passport is is express js compitable in meanstack we normally
+use express js for our server in express js they have funda mental block
+example middleware fundamental block in express js
+>what is middle ware is you can intercept any type of request and response 
+what ever you want and also you can build custom interceptor right.
+>who can intercept tthat those are the middlewares,now passport is the middleware
+just imagine is one of the middleware passport is middleware form  edxpress
+point of view we will use passport is middleware we saying app.use there
+will put passport function core part of passport is passport has some other
+middlewares which is plugin in passport itself.
+>the role of passport is to get the token you decoded ones you decoded 
+you make a call all of the function which you want to execute that is what 
+passport will doit it is allow you the oppurtunity where you do all this
+>it allow to you opprutinity to decode token and all do tthat
+>so it automatically intercept header and it grab token from it
+>it will do for you and you no need to do for that
+>and then it will give you take token and dow what you want to do 
+>then you will say json web token decode it and go to mongodb go to se
+user exist or not and comeback.
+>second thing you do with passport is this is your local starteregy  to do
+the endpoint thing right there is two startegry one is json webtoken startegry
+or local strtergy ,there is many startergy in passport but iam discussing 
+only two startergy one is local and other is jwt
+>and name saying local mins intercept the request get email id and passoword
+out of this
+>lets sea you are first time you are trying to login at that time you 
+will get emaiil id and password because you dont know jwt at the time
+>but you need oppurtinity to intercept that kind of request and take email
+id passoword and authenticate finally create json web token and return token
+out of itin local startergy you just get user like this
+>in jwt startergy you just get intercept request or get email id passowrd 
+or different thing jwt staretergy mins is revisit startergy in local mins 
+is login startergy  frist time you login or register
+>local mins first time you trying to login or registe you need to afcturela pass the
+data to server and server has to intercept request get email id and password
+out of this and try to create token out of this
+>here you are creating token in jwt startergy you assuming token is coming in the
+request take the token and get the user
+>final goal is user should be there for next pipe line happen
+>when ever http request coming from the token get user put into request object
+>so that it goes to some project ro some where you should have request.user
+>for example you going to product route you should have request.user
+>who will put user object in request this middle ware this middle ware
+>this middle ware job is intercept request get the token and from the token
+get the user and put that user object to request object again so that it 
+goes to next resourses it goes to product route or some other routes
+>like that i told you it is intercept it is road there is one single rolad
+where message is coming
+>this middleware is in server side
+>that interceptoor is in client side in server side this interceptor will come
+>it will take message form message it take token out of header then all of the
+startergy we discussed we ask jsonweb token to decode it and get user object
+out of this ones you get user object put that user object to message back
+>in the reqeust object then request comes to if you will say product 
+it will go product in product controller you will check my request.user 
+and what is id of user and what are the product of fo user  purchased
+>we can do all of those for that customer you can do many thing ones you 
+get customer id and user id  you can fetch his order all of thing how do 
+you get customer id customer id coming in the form of token
+>in token you have it  and you validate here 
+>tthere is two thing how to login and the person cokming with token how to
+validate it  there are two concern so there fore  passport have two 
+different middle ware that you have used it has many middleware but 
+we are saying that have two middleware we intrested in it 
+>1.passport-local-it is going to use local data base to get user object
+ 
+>passport-jwt
+
+>if you use social medea you use facebook you can use that this is nice 
+you can use all of them  and they are all of free
+>now we using passport loca when we login first time you can do you can
+check you in data base in local
+>and then we use passport jwt  in order to validate the jwon web token
+>in server side we use to create other folder called as middleware 
+>so that we have not written any middleware like this
+>we create middelware like this  will call this passport.js to do both 
+local and jwt 
+>in client side we create folder like http interceptor
+>we wll introduce client side called auth header interceptor.js
+>and ther will do all interceptor logic
+>so this is client side interecptor and this is server side logic
+>and here goes passport related stufs in server side
+>in client side goes all angualr stufs 
 >
 
-
->
 >
 >
