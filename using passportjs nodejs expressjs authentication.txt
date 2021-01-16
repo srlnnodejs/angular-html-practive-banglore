@@ -1,0 +1,268 @@
+authentication using nodejs passport and expressjs
+==================================================
+>ham authenticatin karenge wo bhi backend validation ke satha
+>jese ke aap dekh sakte hai kii ham hamare desktop me node authentication name
+ka directory open kea hai
+>mene usme switch karke rakha hai
+>eek npm project ko init karna hogga too islea hamko pehele npm init --y likhna
+hoga
+>uske bad hamee kuch package koo install karna hoga wo hoga express or ejs
+>ejs templating librrary hai hbs ke tarah farak bas itna hai kiii ejs more 
+power full hai hbs seee
+>ham ismee hbs see kam code likh ke bohot sara kam karsakte hai
+>uske alawa hamme data base se connect karne ke lea mongoose chaihai
+>uske alawa hamee eek dev dependency ka module chaihai wo haai kee nodemon ttoo
+ham eek self refreshing server create karsakte
+>or nodemon ko install karne ke bad hamme package.json mee thoda change karna
+padega
+>"scripts":{
+"start":"node index",
+"dev":"nodemon index"
+
+usme hamee package.json ke file ke andar jaake hamme upar wala thing script ke
+andar jake change karna hai
+>uske bad hamme index.js file banana hoga wohi hamare entry file hoga
+>index.js meee pehele eek basic server create karleta hoon
+>index.js
+=============
+const express=require("express");
+const app=express();
+app.get("/",(req,res)=>{
+res.send("hi from node authentication");
+});
+const port=process.env.port||5000;
+app.listen(port,()=>{
+console.log("server listning port ",port);
+}
+>jese kee upar aap dekhsakte hai kkii yeh eek basic sa code hai
+>express ko use karke eek server create kea hai uske bad base route mee ham 
+>eek console kea hai
+>uske bad hamme hamara termenal me run karna padega and hamme browser jake
+>hamme kholna padega 
+>hamme browser jake open karna padega 
+lcoalhost:5000
+to hamme dikhega
+hi from node authentication
+>yanikii ham good to go haiii 
+>mujhe views nain karna haii actually me pehelese hii views  ko likhke rakha hai
+>agar mee unke path ko copy karun or url tab me open karun tooo dekhsakte hai
+in hammme index view show hoga
+>saath mee hamare paas login view bhi hoga uske baad success view hai jo value
+ham dihaeege
+>even though pehelese hamare paas yeh teeno view available haiii
+>actually hame view pages ko change karke html change karke ejs karna padega
+>kyun kii ham obviously ejs use karne wallee hai
+>satthh me ham idhar alag file banengee routes.js usme sarre routes honge
+>to reoute.js
+===============
+route.js ke andar jaynggee or expressko import karlenege const express
+=require("express");
+>uske baad ham usme routes ka constructor banaynge  const rouites=express.Router()
+>ham rotues ka use kaese use karne walle hai too me likhun
+>routes.get hamm get kar rehe haii home routes koo pehele ke tarah ham eek 
+call back lenge
+>usme hamare forms hoga or arrow function use kaenge or usme ham send karenge
+>res.send(":hi iam from rotues");
+>kiss module seee ham kiya import kar rehe hai or iss module se ham kiya export
+kar rehe haiii isme ham likhengee
+>modue.exports=routes;
+>to kese banega code in routes.js mee chalo dekhlete hai
+
+routes.js
+===========
+const express=require("express");
+const routes=express.Router();
+routes.get("/",(req,res)=>{
+res.send("hii  from routes");
+});
+module.exports=routes;
+
+>uske baad hamee index.js mee import karna padega 
+>idhar hamare eek path hoga 
+const routes=require("./routes.js");
+too hamare index.js kese hoga
+>index.js
+=============
+const express=require("express");
+const app=express();
+const routes=require("./routes.js");
+app.use("/",routes);
+
+const port=process.env.port||5000;
+app.listen(port,()=>{
+console.log("server listning port ",port);
+}
+agar aap output dekenge too hamme pata chalega
+ouput
+=========
+hii form routes
+
+
+>abhi ham ejs use kar rehe hai too ham routes file me ejs koo set karletahooon\
+>abb ham set karlete haii view engine koo or hamare view engine hoga ejs
+routes.js me kam kartee hai
+>app.set("vew engine",'ejs');
+>abhi hamme set karna hoga view directory koo abhi view directory koo set karne
+ke lea hamme path ko st kar na hai joo core node moudle hai
+>too keese hogaa hame path ko import karengee 
+const path=require("path");
+> abhi ham idhar path desakta haii kiii joo directory koo set  karna haii uska 
+name or uske bad path module koo leke   
+>too abb ham keese path denge app.set("views",path.join(__dirname,'views'));
+
+>__dirname-hamare project ka directory malum karne ke lea uske bad views 
+>actually isko ham routes me nain karna chaihai hamee index.js ke file me 
+karna chaihai
+>tooo hamare index.js file kese hoga
+
+index.js
+============
+
+const express=require("express");
+const app=express();
+const path=require("path");
+app.set("vew engine",'ejs');
+const routes=require("./routes.js");
+app.set("views",path.join(__dirname,'views'));
+app.use("/",routes);
+const port=process.env.port||5000;
+app.listen(port,()=>{
+console.log("server listning port ",port);
+}
+
+
+>abb hamee routes.js  file mee render karna haii kisi bhi view koo too kese 
+kanregee kisko render karengee jahan par eek registrion form haiii
+>save karte hai or refresh karetee hai or browser ko jake dekhte haiii
+kiii eek registration form banjaigaa
+>simply bootstrp use karke banaya haii ismee kuch badi baat nain hai
+too hamare routes file kese dikheegaa
+
+routes.js
+===========
+const express=require("express");
+const routes=express.Router();
+routes.get("/",(req,res)=>{
+res.render("index");
+res.send("hii  from routes");
+});
+module.exports=routes;
+
+>too ismee kiay hogaa kiii res.rendr() eek method use karenge koi bhi template
+ko render karne ke lea isme kiya hua hai kiii hamare base route me or home
+route mee ham index template koo render kea hai 
+
+>iss tarah hamare registraion form aajaiga 
+>aab ham dekhte haii registration kee process hai joo kese kam  karta haiii
+>node authentication kee agar aham bat karen or kisibhi authientiicaiton ke
+process meeeuser ko register karna padta haii too kafi simple hota hai
+>hamme jo value chaihai hamm usse fetch karte hai or usse ham database me ham
+save karlete haii
+>better way save karne ke lea ham joo user ka password hai ham usko encrypt karege
+>too isme kiya hoga joo db admin jo super log hai woo iss password ko nahin 
+dekhsakte
+> signup process thoda tricky hojata hai yahan par signup karne ke lea ham
+passport js use karenge eek local starteegy create karengee eek user kooo
+find karete hai or uske password ko compare karte hai  agar hamme miljai
+too user ko serialize karte haaii  basically or user ke lea eek session 
+create kartee haii or usko login karwa dete haii
+>yeh sab karne ke lea ham use karte haii pasport js kooo bohot sarre startegy
+milta haii passport me  google facebook  local hamee yahapee passport local
+use karne wale haaiii isse use karke hamee local data base see authentication
+startegy ko run karsakte haiii
+>wahan pee bohot sarre startegy haii usmee ham joo bhi use karsakteee haii
+uske lea hamme jana padega 
+passport.org/packages/
+>local startegy ko implement karna thoda tricky haii to me uskooo implement
+karne wala hooon
+>saath mee ham mongo atalas database use karne wala hoon jisko  mee pehele 
+use karchukee haiii
+>philal ham sabse pehele apne database ko use karte haiiii
+>database mee hamme connect karne ke lea hame likhna parega 
+const mongoose=require("mongoose");
+>hamme mongodb koo connect karna haii to yahapee jana haaii kiyaa karnegee
+>hamme mongodb atalas koo jake pura configuarion karlena haiii
+>too jo link aaiga usko mongoose.connect() function ke andar dalke hamme
+connect karwalena haii 
+>mongoose.connec("url",{useNewUrlParser:true,useUnifiedTopology:true});
+>uske baad promise koo catch karne ke lea ham then function use karte haiii
+>too me log karunga or dekhungaa kiii data base connected dikh jaigaa
+>fine save karlete haii isss  and i hope koi error nain hona chaihai
+>agar yeeh kam karega too hamare data base connect ho jaiga or hamme dikjaiga kiii 
+data base connected
+>for porper connection ke lea 
+>iske baad ham registration process ko complete karna haiii too hamme abhi index.js
+ke file mee eek route likhna haii joo post route hoga 
+too index.js kee file mee likhna haii kiii
+app.post("/register",routes);
+to hamare index .js file kese dikhega 
+
+index.js
+============
+
+const express=require("express");
+const app=express();
+const path=require("path");
+app.set("vew engine",'ejs');
+const routes=require("./routes.js");
+app.set("views",path.join(__dirname,'views'));
+app.get("/",routes);
+app.post("/register",routes);
+const port=process.env.port||5000;
+app.listen(port,()=>{
+console.log("server listning port ",port);
+}
+
+>routes.js mee abb hame same chaihai  too ham likhenge routes.post too ham ko likhna haii
+kii register route or uske bad call bad call back funciton likhna haii frankly speeking
+signup process kafi simple haiii signup process mee hamme simply bolna haii ki database
+mee data ko dalna hai farak itna rahega kii hame beech me password koo encrypt karna haii
+
+>any way abhi hamme form see data chai hai joo ki post hoga  hamme body parser use karna
+hoga or body parser hamme bydefault miljata haii express kee sath hiiii
+>hamme routes.js ke andar bodyparser koo leke anna hai 
+too hamme abhi routes.js kee file mee kam karna hai 
+>orr hamme import karna hai body-parser koo routes.js ke file meee
+>const bodyparser=require("body-parser");
+>hamme set karna padega bodyparser koo 
+uske baad hamme bodyparser koo set karna padega kiiii 
+router.use(bodyparser.urlencoded({extended:true});
+>too iske baad ham kiya karsakte haiii ham value get karrte haii kii form bodyparser see
+>too ham value koo catch kese karengee 
+ham likhengee register route kee andar 
+var {email,username,password,confirmpassword}=req.body;
+>itna hamme karne se nahin hoga hammme index.ejs file mee jake dekhna padega kii hamare
+yeh joo name haiwo sahi hai ya nahin haiii
+>uske alawa hamme action me jake likhna padega kii <form action="/register" method="POST">
+>isko save karlete haii kii hope kiii koi error anna nain chai haiii eek issue hai kiii
+>agar hamm register route kee andar koi  http response nahin denge too yeh continues
+circulate karta rehega
+>too ham kiya karengtee kii ham uss template file koo leke aayngee to hame likhna padega
+>render funciton koo hamme use karna padega ham render karna chaigee login kooo 
+>agar ham kuch value dalengee register meee or value fill karletee hai uske baad 
+hame login koo immedetatly aajyengge 
+>too ham dekhe kii hamare code sahi me chalrahaii too abhi ham dekhengee yaha pee kuch
+>validation karna padega backend mee obvioulsy hamme frontend validation karna padega
+>hamme front end mee hamme dekhna padega sab value hay ya hain or hamme check karna padega
+kii dono password sahi hai ya nain
+>agar koi aisa insan hoo usse inspect element karna atta hoooo agar usse html css
+js sahise atta hi tooo wo in cheez ko achesee pass karsakta haiii
+>wo dekhenga kii hamare aap kitna asani see break karwa sakteee too hamme chekck krana
+haii kii hamee sab values milraha haii kii nahin
+>usme ham bolengee agar if(!email||!username||!password||!confirmpassowrd) isme kuch
+bhi nain to hamee kuch error show karna haiii
+>issmee mee eek variable use karleta hoon jiska name rehegaa err;
+>err me ham eek message pass kardenge usme likhengeee err="plsease fill all the fields"
+>iske bad hamme render karke hamme uss error ko show karna haiiii
+>too ham kiya karenge ham render kardenge index or uska key bhi rehega err or value 
+hamare yahan ki err ki barabar hoga
+>agar ham koi bhi value nain dalte haii too hamme error dikhna chaihai
+>ejs mee koi data hame show karwane ke lea hamme ejs ka templating tag koo use kartee haii
+>first hamee show karwane ke lea hamme abhi index.ejs me kam kar rehe hai
+15.45
+>
+>
+
+
+
+
