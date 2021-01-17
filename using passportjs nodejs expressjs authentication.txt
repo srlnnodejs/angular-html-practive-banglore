@@ -254,14 +254,239 @@ bhi nain to hamee kuch error show karna haiii
 >issmee mee eek variable use karleta hoon jiska name rehegaa err;
 >err me ham eek message pass kardenge usme likhengeee err="plsease fill all the fields"
 >iske bad hamme render karke hamme uss error ko show karna haiiii
->too ham kiya karenge ham render kardenge index or uska key bhi rehega err or value 
-hamare yahan ki err ki barabar hoga
+>too ham kiya karenge ham render kardenge index or uska key bhi rehega err or 
+value hamare yahan ki err ki barabar hoga
 >agar ham koi bhi value nain dalte haii too hamme error dikhna chaihai
->ejs mee koi data hame show karwane ke lea hamme ejs ka templating tag koo use kartee haii
->first hamee show karwane ke lea hamme abhi index.ejs me kam kar rehe hai
-15.45
+>sabse pehele hamme error dekhana cahihai ejs me koi data hamme show karwane ke lea hamme
+templating tag koo use karte haii
+>ejs mee koi data hame show karwane ke lea hamme ejs ka templating tag koo use
+kartee haii jo hota haii ki doo angle bracesses or do persentage sign
+><%%>
+>koi value ko show karna hai too hamme first angale bracesses ke sath persentage sign
+use karke equal lagana haiii
+>or beech mee hamm wo value koo daltee haii jo value koo hamme dekhanna hai
+>to ham index.ejs mee hamme kiya dalna haiii 
+> <h1><%=err%></h1>
+> agar mee browser jaun orr mee refresh karun too hamme pata chalega kii err not defined
+>yeeh iss lea kii ham simple java script ham use katee haiii err normaly defined nahain haii
+normally ham refresh kar rehe haiii too yeh home route se aa raha haii to hamee koi
+err nahin mil raha haiii 
+>agar mee /register karun too post request aaiga
+>aga mee get request karun too nahin hoga aap ko pata haii ham get request karsakte haii
+>too hame post request karne ke lea haame kiay simple java script likhna haiii
+>hamme ejs mee java script likhneke lea bhi hamme <% %> dalna haiii
+>hamme uske andar hamme likhna hoga ejs mee javascript code likhne ke lea ham simple
+template use karte haiiii jisme kiii ham javascript code likhsakte hai
+>hamme check karna haiii kii 
+<%if(typeof err!="undefined"){%>
+>agar err undifined nahin haii to kuch code ko show karna haiii
+>sabse pehele hamm <%}%> bracket koo close karle agar yeh undefined naahin hoga tabhi 
+hame error show karna haiii
+>agar woo undefined hoga tooo obviously hamme kuch karne ka koi jarrurat nain ue  yeh
+show nain karega too koi problkemk naahin haii
+>to finally ham kese likhngee 
+<% if {typeof err!="undefined") {%>
+<h1><%= err%>
+<%}%>
+>abhi ham usse refresh karen hamare error gayab hai  agar mee koi value nahin fill karu
+registration form mee agar mee register button dabauuu  too show karega please fill all
+the field
+>bina koi value fill karke agar mee enter marun too woooo
+dikhai gaa kii pls fill all the fields
+>main jata hoon bootstrap mee jahan mee eeek bootsrap ka theme
+>i think yeh ubuntu style tha   
+>too me boottstrap ke theme kee andar jake dismissible use
+kartha hooon 
+>me dismissible ko copy kar ke isko close karlete haii or ham
+ejs mee jake mujhe issme paste karna hogaa
+>if block mee dimissible ko paste karleta hoon wo kese dikhega
+index.html ke andar 
+==================
+<%if (typeof err!="undefined"){%>
+<div class="alert alert-dismissible alert-danger">
+<button type="button" class="close" data-dismiss="alert">$times
+</button>
+<strong>oh snap! </strong> <a hfref="#" class="alert-link">change
+a few things up</a> and try submitting again</div>
+<h1><%=err%></h1>
+<%}%>
+>fark bas yehe ke hame change of few thing ke jaga hamme  
+<h1><%=err%></h1> value show karna haiii too ham change of few
+thing koo pura hata kee ham error koo paste karlete haii
+><%if (typeof err!="undefined"){%>
+<div class="alert alert-dismissible alert-danger">
+<button type="button" class="close" data-dismiss="alert">$times
+</button>
+<strong>oh snap! </strong> <a hfref="#" class="alert-link">
+<%=err%>
+<%}%>
+
+>h1 koo bhi hatake sage karke ham kiya karengeee ham sabko
+<strong>kee andar dal dena haiii
+>strong ke bahar ka sab mee hata deta hooon
+>bas itna kafi haii dismissible use karne ke time me hamme
+java bootsratp ka sarre plugin lake end of the html body
+ke andar dal dena haii
+>ham ejs template mee bhi bootstrap ka plugin dalsaktee haii
+body kee andar ham pluging koo lake dalsaktteee haiii
+
+
+>i hope kii aab ye thoda sahi dikhegaa agar ham main menu me
+jaete haii or refresh karte haii tooo  form fiele na bharke
+agar ham register dabayngee too hamme red border keee sath
+kuch aisa  dikheega Please Fill All The Field close karke
+>ham uss value koo dalsakttee haiii
+>although hamm  register kii route mee bohot sarrre 
+validaiton kar sakteee  haiiiii caeck karna chatte haii kii
+email hai yaa nahinnn or koi log check karna chattee haiii
+kii koi fake email se generate ho raha haiii kii nnahiin
+>username kesaa hhee or password  or email or confirm password
+sab validation karsaktee 
+>aab ham password or confirm passsowrd dono value koo bhi check
+karengee agar dono value same nahin hooo tooo hamme copy karke
+hamme upar kaerror niche paste karna haii or likhna haii 
+kiii password dont matches\
+>mee orr eek password not matches confirm password too kiya 
+karengeee
+>agar dono valuee same nahain hooo to hamme same karna haii tooo
+too ham kiya likhengee hamm copy karke niche likh lenege\
+>ham error ko chodengee or likhenngee kii password dont match
+>find save karlete haii or dekhtee haii ko value hai or nahin
+>agar mee username daldunga or email daldunga or passwrod
+agar unmatched chodungaa too hamee error dekhenga password
+dont match iske alawa joo chai wwoo validation karsakte haooo
+koi farak nain padtaaa
+>issme kiya hoga kii agar koi koi value daldea haii by  or 
+passwoerd daldea haii agar dono password ka value match nain
+karta haiii too ham chatee haii ki dono email and username
+should available sirf password match nain karta haii to kiya
+hua
+>too ham kiya karengegee ham eroro kee sath kuch orr value 
+render karengeee
+>jese kii email woo email kii barabarhoga or username woo jokii
+username kii brarabar hogaaa
+>woo ham idhar index kee bad chod dea haii aap dekh sakte hoo
+error kee bad ham email and username choda hiiii
+if(password!=confirmpassword){
+err="password dont match";
+res.render("index",{'err':err,'email':email,'username':username});
+}
+
+routes.js
+===========
+const express=require("express");
+const routes=express.Router();
+const mongoose=require("mongoose");
+mongoose.connect("url",{useNewUrlParser:true,useUnifiedTopology:true}).
+then(()=>{
+console.log("db connected")});
+const bodyparser=require("body-parser");
+router.use(bodyparser.urlencoded({extended:true}));
+routes.get("/",(req,res)=>{
+res.render("index");
+res.send("hii  from routes");
+});
+
+router.post("/register",(req,res)=>{
+var{email,username,password,confirmpassword}=req.body;
+var err;
+if{!email||!password||!confirmpassword){
+err="please fill all the fields";
+res.render('index',{'err':err});
+}
+if(password!=confirmpassword){
+err="password dont match";
+res.render("index",{'err':err,'email':email,'username':username});
+}
+});
+
+module.exports=routes;
+
+>aab ham ejs koo jate haii  koi value koo chodneke lea hamm
+aisa karengee ki ham value ko set karnegee 
+>normally value available nain hota hhaaiii
+>ham yahan kiya karte haii templating tag ko use karlete haii
+or value fill kar rehe haiii ham use karlete haii ternary 
+orerator koo or hame use karke aisa likhtee haii  or ham bol
+rehe haii kkiii if type of  email not equeal to undefined 
+agar email undefind nahin hai to emaiil koo sho karega agar 
+undefined haii to kuch show nain karega or empty dekhegaaa.
+>kiya likhengee  uska examaplee niche likh lea haii aap deko
+<div class="form-group">
+<label for="email">enter your email</label>
+<input type="email" vlaue="% typeof email !='undefined'?email:'' %">
+</div>
+>same cheeze ham user name lke lie ham likh lete haiiii
+>same email mee value mee joo likhee ham copy karlete haiii
+or username mee jake paste karlettea hooon 
+>too abbb user name keese dikheega aap janotte hoo ccholo dekhetee
+hai
+>i hope kii abhi koi issue nahin hogaa
+>too hamare user namee kese hogaa ham dikhteee haiiii
+<div class="form-group">
+<label for="username">cohoose a username</label>
+<input type="text" class="form-control"  name="username"
+id="username" autocomplete="off"
+placeholder="username" value="<% typeof username!='undefined'? 
+username:''%>
+>i hope abhi koi issue nahin hogaa
+>agar mee email dalungaa kuchi bhi or password dalunga kuch bhiii
+or username dalunga if passoword match nain hogaa to hamme 
+error dikhegaaa
+>hamme error dikheega password match nahain hogaa or ham dekhege
+yeeh doo value joo username or email choda tha wo vlaue form
+mee aagaya hoga
+>aab kiya hoga passowrd match ho jaigaa too kiya hogga
+>simply hamme databse mee data ko save karna hii to hamee kiya karna
+haiiii
+too hamme encrypt karna padegaaa password koo too ham kese 
+password ko encrypt karengeeee 
+>to data koo incrypt karnee ke lea hamme module bcryptjs koo
+import karna padegaa orr hammee install karna padegaaa 
+npm i bcryptjs
+>hamm install karengee or yeh package hamare install hojaiigaa
+>isse use karke hamm password koo encrypt karenegee or use 
+usskoo compare kareneegeee 
+>abi ham dekhetee hai kii iskoo ham isme use karengeee 
 >
->
+>too routes .js file kese dikhegaa 
+==========================
+routes.js
+===========
+const express=require("express");
+const routes=express.Router();
+const mongoose=require("mongoose");
+mongoose.connect("url",{useNewUrlParser:true,useUnifiedTopology:true}).
+then(()=>{
+console.log("db connected")});
+const bodyparser=require("body-parser");
+router.use(bodyparser.urlencoded({extended:true}));
+routes.get("/",(req,res)=>{
+res.render("index");
+res.send("hii  from routes");
+});
+
+router.post("/register",(req,res)=>{
+var{email,username,password,confirmpassword}=req.body;
+var err;
+if{!email||!password||!confirmpassword){
+err="please fill all the fields";
+res.render('index',{'err':err});
+}
+if(password!=confirmpassword){
+err="password dont match";
+res.render("index",{'err':err,'email':email,'username':username});
+}
+});
+
+module.exports=routes;
+
+
+
+
+
+
+
 
 
 
