@@ -933,6 +933,192 @@ pee hamare values hoga aab yeh hamare normal route nahiiin haii
 >yaha par hamm thoda alag kam kartee haiiii
 >ismee hamare post login mee hamare request or response kee 
 sath eek next milegaa
->40.06
+>iss next kee sath hamme joo value hamme kam karna haiii woo 
+hamme simply use karna haii hamme call karna haii passport
+>or karna haii kii passport.authenticate or atuhennticate 
+ke lea ham use kartee haii local statergy kooo orr ham 
+kuch value bbii yahann pe pass karteee haiii
+>agar yehh failure ho jaigaa too woo redirect ho jaiiga 
+failuer redirect kooo login ko jaigga
+>success koo redirect hoga too hamee success.ejs koo redirect
+hoo jaiggee
+>uske bad hame callback likhnaa haiii 
+>
+too yeeh aisa dekheegaa routes.js kii file mmeee
+=======================
+routes.post("/login",(req,res,next)=>{
+passport.authenticate('local'{
+failureRedirect:'/login',
+successRedirect:'/success'
+})(req,res,next)
+})
+
+abhi hamkoo success route likh naa padegaa too success 
+route likhnee kee lea hamme lihnea padeta
+too success route mee likhna ahiii kii request and response 
+and arrow functionkuch nahin karna haii khali render karna haii
+eek ejs file kooo or render karteee haii eek ejs file kooo 
+joo bhiii haii ki success
+routes.get('/success',(req,res)=>{
+res.render("success");
+})
+>aab hamare index.js koo jakee hamme aap ko batana padega
+iss route kee bareme app koo eek post rotue kee baree mee 
+bata naa haii joo kii haii /login 
+>iske alawa oor eek route haii joo haii /success
+yehh post nahin hooo kiee yeh  get  routee haiii
+>too hamare index.js file aab kese dikh raha haii ham dekhngeeg
 
 
+index.js
+============
+
+const express=require("express");
+const app=express();
+const path=require("path");
+app.set("vew engine",'ejs');
+const routes=require("./routes.js");
+app.set("views",path.join(__dirname,'views'));
+app.get("/",routes);
+app.post("/register",routes);
+app.get("/login",routes);
+app.post("/login",routes);
+app.get("/success",routes);
+const port=process.env.port||5000;
+app.listen(port,()=>{
+console.log("server listning port ",port);
+}
+
+>i hope yee abhi tak aap koo sahi lag raha haiiii
+>  abhi hamme bohot important code likhnaa haii eek hota hai
+kii user koo serialize karna orr eek hota haii kii user koo
+deserialize karnaa 
+>kyun kee aisa hii ham sessions bana tee haiii 
+>jab baat session kaa ata haii to hamme cookies too chaihai
+>or hamme session bhi chaihaihongee
+>aab ham dekhtee haii kii user koo serializee kese katee haii
+or user koo desereialize  kese kateee haiii
+>
+maikiya kartahunnn authentition starategy kee niche mee 
+session ko likhtahooon
+>comment deta hoon end of authenticaiton taki aap koo patahoo
+kii purii statragy kahan taak haiii
+>too mee kiya karun likhunn passport.serializeUser orr yeh
+eek function call back deta haii return function mee hamme
+eek user milta haii or eek callback milta haiii or ham 
+function call back mee kiya kartee haii ham funciton callback
+mee cb me pass karlete haii null matlab error nahin haiii
+>or send kartee haii user kii id hamare user kii id hamkoo
+by default hamme database see miljata haiii
+>or deserailaizee mee ham kiaya kartee haiii kee passport
+deserializeUser  yahan par same eek function yeh accept karta
+haii id eek cb iss funciton return mee ham kiya kartee haii
+sabse pehele hammuser koo find artee haiii user.findById bcg
+ismee hamme id available hai or ham id koo passkartee haii
+orr eek function milta haiiii jahan pee hota haii error or user
+>ismee dhyan dee kii hamara model user hota haii too ham 
+user.findById(id,function(err,user){
+
+cb(err,user)
+})
+>orr isske andar ham pass kartee haii cb(err,user)
+>
+yeah haii kii hamara serialize and deseraillize ueer 
+too final code kesa haii hamare routes.js mee ham dekhtee hai
+serialize and deserialize breefly
+===================================
+>pehele mee type karlluunn code koo uske bad mee code koo explain karungaa
+>passport.serailizeUser((user,done)=>{
+done(null,user.id)
+}) 
+>abhi ham explain kar rehe haii kii passport.seriallizeUser  issme ham argument
+denge user.done uske baad ham callback function haii usme likhengee call back
+function mee done
+done mee ham likheenge paramerter null null matlab koi bhii error nahinn haii
+>or dusra item haii user.id yeh kiya haiii
+>sirialize user kiya haii yeh kiya karta hii basically socho kii hamare 
+eek client haii or dusra eek hamara server haiii
+>client matlab kii user haii joo kii hamare application use kar rehe haiii
+>user nee server pee login kiea theeh haiii server nee jiiss user nee 
+login kea uska data save kardea data base meee
+>user already login ho gaya too user abhii kuch data access karna chataa haiii
+>may bee uskoo post access karna hoo or uskoo uskiiiprofile access karna hoo
+>server kiya bolegaa abbe koun haii bee tuu main nain jantaaa  basically
+user login karlea haii too ham chattee haii ye abhi data accesss karsakeee
+>ham chatee haii kii server uskoo dee data server kese pechanee gakiii
+yahii user logged in huaa hhaiii
+>serealze user mee basically ham kiya kiya kar rehee haiiii jab user logged 
+in ho raha haii na uskoo ham uniquee identify code de rehe haiiii
+>unique identy fy code ham de joo rehe haii woo basically hamare code haiii 
+joo unique key hota ahii object in mongodb mee _id joo rehteaa haiii
+>agar ham id likhnee seee yeh puri ki puri id koo refer kar rehe haiii
+>as user logged in honee ke bad ham user kooo unique identify code derehe  
+haiii
+>passport.serailizeUser((user,done)=>{
+done(null,user.id)
+}) 
+>user.id ham derehe haii jab kab user koo koi data chaihaii too user nee 
+hamare paas yehe code leke aaiga yeahhii id hamare paas leeke aaiega
+>server bolegaa achaa tuu wohii insann ahii jiskoo ham code dea tha
+>uskee bad server again usse data dedega
+abhi deserrealize kiya hota haiii pehele mee code koo likh leta hoon
+=====================================================================
+passport.deserializeUser((id,done)=>{
+User.findById(id).then((user)=>{
+done(null,user)})})
+
+>Deserialize user mee hamme kiya karna haii basically passport.desriealizeUser
+basically yeh ulta hai serialize uer kaa ismee id recieve hoga or dusra 
+argument done recieve hoga isme ham wese karengee user.findById  joo above
+deserialize funciton mee hamlikhaa haii ye basically mongoose method
+mee ham use kartee haiii mongoose mee youtumbemee orvieeos dekhe hogge
+basically koi id se koi record find karna haii to find by id use karna haiii
+>agar find ho jaiga too hamee then funciton kee andar eek callback funciton
+likhnaa haiii basically callback function see hamme user return hoga
+>uske baad ham done call kar rehe haiii usmee parameter dengee first
+parameter ham null dengee null denekaa matlab koi error nahinn haiii
+>uske baad or eek parameter hamm user dengee
+>basically deserialize user mee ham kiya kar rehe haii abhi serialize 
+user mee ham user koo id de rehe ahiii
+>deserialize user mee kiya hogaa id return leke aaraha haii too hamme
+id se convert karna padega user too uskoo back user mee convert karna padega
+>id woo database see find karegaa or boleega kii ye user haiiii 
+>jab login ho chulka haii user too hamnee user koo id dedii  serialize mee
+>abhi desearilizee mee ham kiya karengeee jabhii koi user koo data chaihai
+too wohi user data id leke aaiga or bolega kii yeh id haii mere pass jab
+login kea tha tunne mere koo dea tha
+>yeh id haii leke jaoo mere koo joo data chaihaii merekoo return ddooo
+>server id leke jaiiiga or server uskoo deta deta joo bhi data uskoo chaihaiii
+>but itna easy nahin haii basically joo ham iskoo directly id nahin dengee
+>id ham uskoo eek cookie kee form mee dengee basically uss idd koo ham
+>encrypt bhii karengeee bhiiii
+>simply usko ham id nahin dengee usko ham enctypt karkee dengee uslea hamme
+eek package install karna padega wo haii cookie session
+>yahann pee mee instll karletaa hoon 
+npm install cookie-session
+>to hamme aisa karna hii kii const cookieSession=require("cookie-session")
+>usko use karnee kee lea hamme basically likhna haii kii
+app.use(cookieSession({
+maxAge:30*24*60*60*1000,keys:[keys.cookieKey]
+}))
+upar funciton mee ham cookieSession koo use kea haiii basically object mee
+hamme passkarna haii maxAge cookie hai kuch time kee bad woo expiree ho
+jaiiga too hamme time dena padegaa  millisec mee basically meee  chata 
+hoon kii 30days kee baad expire ho jayyy
+>pehele mahhiine mee 30day haii too 30likha haii
+>each day mee 24 hour hota haiii 
+>eek hour mee hota haii hamare 60 minitueess
+>eek minituee mee hamare hotee haii 60 seconds
+>eek second mee hamare 1000 milli second
+>aisa upar lihaa haii iskaa matlab haii kii yeh 300day kee bad expiriee ho jaiga
+>isme basically keys dena padta haii keys iss lea usehota haii kii iskoo
+encrypt karnee ke time me hamee use karna padegaa
+>keys value array hota haii basically array mee ham multiple key de saktee ahi
+>basically hamm eek hiii key banaleetee haiii
+>key banana haii too hamme basically hame  dev.js mee jaha sab key rahkahaii
+usmee rakhnaa chaihaiii
+>udhar mee jakee key deta hoon cookieKey:"akldsjf;lkjaf;lk"
+>hamkoo uss key ko present file mee requrire karkee 
+>basically hamm cookie create karleea haii aab hamm passport kee sathh cookie ko
+link karletee ahii
+>
