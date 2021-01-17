@@ -753,8 +753,60 @@ var localStartegy=require("passport-local").Startegy;
 abhi hamme passport koo use karna haii eek Startegy create 
 karnee keee lea 35.00
 passport.use(new localStartegy());
+>yahan par hamara eek new local startegy  hona yahan pee
+>sabse pehele hamme local startegy karlena chaihai iss local
+strategy mee kuch field hota haiiii by default aap ka username
+is username or password is password nahin haai  too hamme isse
+change karna hoogaa
+>idahar ;hamara username joo field haii usse mee set karleta 
+hoon email mee kyun kee email hamara uniqueee haiii
+>idhar hamm boeengee kii usernameField haii wo username naa
+hokee email haiiii
+>kyun kee hame database see front end see hammme email hii 
+milnee walla haiiii hope haii kii hamee emaill milne wala hoo
+>lets goo to to login change field username to emailll
+>too kese kanegge chalo login.ejs
+==================================
+<div class="form-group">
+<label for="username">enter your email</label>
+<input type="email" class="form-control" name="email" id="username"
+ atuocomplete="off" placeholder="email">
+</div>
+aisa ham login.ejs koo jakke sab change karsakttee haiii
+>hamme aab apna emmail chaihaiii
+>hamme lcoalStartegy mee usernameField set karnee kee bad
+ham eek call back likheenge usme hame milegaa 
+(username,password,done)
+>or hamm is call back function koo call kardengee
+>hamme check karna haii kii user exist hota haii kii nahin
+>'ham kiya likengee kiii user.findOne too hamme find karna 
+haii ki query haii kii koi email haii yaa nahinnnn
+>tooo ham joo username koo email see change kardea haii too
+ham aisa likhngee kii 
 
-
+user.findOne({username:email})
+>asia karne ke bad kiya hoga obviously hamme call back milega
+jahan hamme doo parameter milega woo haii eek eerror hota haii
+or nahin too data hota hiiii agar koi error milega simple 
+sa kam haii ham error  koo throw kardenge
+>agar hamme koidata bhi nahin milegaa too iska matlab haii
+kii user exist nahin kartaa haiiii
+if(!data) iska matlab yeh haii kii user exist nahin karta hiii
+>too yahan pee ham joo cheez return kartee hai woo haii done
+>agar ham done kee sath null or false passkarenn too yeeh hamare
+authentication sucessfull nahin thaa
+>iskme lea ham meessage bhi pass karenegee isske lea hamm
+request flask pass karengee joouse karengee thodi dermee
+>agar hamare dono statement sahi nahin hotaa haiiii
+>too fir ham compare karengee hamaree password kooo
+too becrypt.compare too kiya compare karna haii kee eek 
+password joo user nee abhi enter keea 
+>eek password joo kii hamare database see mila 
+>isme hame compare karne ke bad hamme eek clallback milega
+>call back mee hamare doo parameter rehegaa eek hoga err, 
+dusra rehegaa hamare match
+>sabse pehele hamme eek annomous arrow function koo use karna haiii
+>agar error hai too hamme simply throw error nahin karna hii
 
 
 
