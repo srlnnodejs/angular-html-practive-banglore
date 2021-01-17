@@ -807,6 +807,132 @@ password joo user nee abhi enter keea
 dusra rehegaa hamare match
 >sabse pehele hamme eek annomous arrow function koo use karna haiii
 >agar error hai too hamme simply throw error nahin karna hii
+ tooo hamare idhar mathch nahin hota haii too hamme
+return done(null,false) likhna padegaa
+>agar hamme math milraha hii too hamme return karna hiii
+return done(null,data)
+>too hame likhnaa haii kii return hogaa error hahin haii
+to error kee jaga mee null or dand data hamme pass karna hai
+>yeh jooo data haii woo particular user hotta haiiii
+>too hamare code aabhi passport localkese dikeega ham likhl
+lete haiii in routes.js mee
+var localStrategy=require('passport-local').Startegy;
+passport.use(new localStartegy({usernameField:email},
+(username,password,done)={
+if(err) throw err;
+if(!data){
 
+return done(null,false);
+}
+bcrypt.compare(passowrd,data.password,(err,match)=>{
+if(err){
+
+return done(null,false);
+}
+if(!match){
+return done(null,false);
+}
+if(match){
+return done(null,data)
+}
+})
+}))
+
+too isko ham ab routes.js me lagakee dekhleteee haiii
+routes.js
+==============
+
+
+routes.js
+===========
+const express=require("express");
+const routes=express.Router();
+const mongoose=require("mongoose");
+const user=require("./user");
+mongoose.connect("url",{useNewUrlParser:true,useUnifiedTopology:true}).
+then(()=>{
+console.log("db connected")});
+const bodyparser=require("body-parser");
+router.use(bodyparser.urlencoded({extended:true}));
+routes.get("/",(req,res)=>{
+res.render("index");
+res.send("hii  from routes");
+});
+
+router.post("/register",(req,res)=>{
+var{email,username,password,confirmpassword}=req.body;
+var err;
+if{!email||!password||!confirmpassword){
+err="please fill all the fields";
+res.render('index',{'err':err});
+}
+if(password!=confirmpassword){
+err="password dont match";
+res.render("index",{'err':err,'email':email,'username':username});
+}
+if(typeof err="undefind"){
+user..findOne({email:email},function(err,data){
+if(err) throw err;
+if(data){
+console.log("user exists");
+err="user already exists with this email....."
+res.render("index",{'err':err,'email':email,username:'username'})
+}else{
+bcrypt.genSalt(10,(err,salt)=>{
+if(err) throw err;
+bcrypt.hash(password,salt,(err,hash)=>{
+if(err) throw err;
+password=hash;
+user({
+email,
+username,
+password
+}).save((err,data)=>{
+if(err) throw err;
+res.redirect("/login")
+})})}}})}});
+
+
+var localStrategy=require('passport-local').Startegy;
+passport.use(new localStartegy({usernameField:email},
+(username,password,done)={
+if(err) throw err;
+if(!data){
+
+return done(null,false);
+}
+bcrypt.compare(passowrd,data.password,(err,match)=>{
+if(err){
+
+return done(null,false);
+}
+if(!match){
+return done(null,false);
+}
+if(match){
+return done(null,data)
+}
+})
+}))
+
+routes.get("/login",(req,res)=>{
+res.render('login');
+})
+
+
+
+
+
+module.exports=routes;
+
+
+aab ham login koo kese ues kartee haii obvioulsyy ham login
+koo post route use karteee haiii
+>too ham login mee kiya karnegee routes.post("/login") jaha
+pee hamare values hoga aab yeh hamare normal route nahiiin haii
+>yaha par hamm thoda alag kam kartee haiiii
+>ismee hamare post login mee hamare request or response kee 
+sath eek next milegaa
+>40.06
 
 
