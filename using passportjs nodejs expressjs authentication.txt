@@ -448,14 +448,164 @@ npm i bcryptjs
 >isse use karke hamm password koo encrypt karenegee or use 
 usskoo compare kareneegeee 
 >abi ham dekhetee hai kii iskoo ham isme use karengeee 
+>ham becrypt koo bhi andar leyengee ham kiya karengeee 
+cosnt bcrypt=requrie("bcryptjs");
+>yahan pee itnee mee kam nahin chaleegaa
+>or ham kiyakarengee ham check karengee kiii yeh user pehele
+see available haii kii nahin  too ham kiya karengee unique ness
+daltee haii kii user user mee or unique ness daltee kii email mee
+>mai yahan email mee unique ness dalna chattaa hoon yee kiii
+eek hii email mee eek hii user
+> ismee ham kiya karengee kii if type of error  undefined 
+too ham check karengeee kii  user haii ya nahinnn
+>obviouslly hamee model chihai ham database connect karelea haii
+magar hamare pass ko model nahin model nahin kiii matlab
+hamare pass koi collection nahin haiiii.
+>ismee puri tarahh se mvc pattern or kisi other pattern mee
+use kar raha hooon agar ham cheezo koo alag alag file mee 
+rekhengee to samajneemmee hamme asannhogaa
+>too ham orr eek file bana lete haii uska name model.js
+>inside models.js ke andar
+>isme pehele hamm mongoose ko import karengeee or ham isme
+user ka schema create karlengeee
+>uske bad user schema karne ke lea ham kaengeee const userschema
+=new mongoose.Schema({})
+>uske bad ham dalengee values kiya kiya ham dalengee 
+>hame email eek field lenge jiska type rehega string
+>required true matlab yeh hamme eekdam see chaihai hii chaihai
+>abhi hamme email ke saath username and password chaihai
+>obviously text hii rehengee or simple string hii regengeee
+>eek orr cheez haiii joo hame idhar cha rehe haiiiii
+>joo is programme ke lea haii orr usko authentication ke lea 
+kuch lena or dena nahinnn haiiiii
+>jo specific data show karwane ke lea hamm user koo eek or
+value dena wala haii jo haiikii messages yeh value rehege
+array array hone keii karan hamme idhar array symbol use karna
+padega
+> message:[{type:string}]
+>ham idhar aisa diclare karengee kii iiska har eek item string
+hoga
+>required nahin haii kii jarurui nahin haii ki user iskoo hamesa
+deee
+>obviously register karneke time me bhi user hamme yeh value 
+nahin dena wala haiiiii
+>yeh hamare user schema too ham jo abhi export karengee wo eek
+model hoga wo joo kii eek mongoose model haiii to ham kiya likhengee
+module.exports=new mongoose.model('user',userschema)
+too kiya kia ham iskoo export karne ke lea ham kiya kea 
+ham module.exports likhke e usme new mongoose.model likhke
+usem model ka name user dea or joo schema haii usko userschema dea
+>aab ham isme import kartee haii routes.js file mee
+>uske pehele hamare model kesea dikta haii usske dikhlette hai
+model.js
+============
+const mongoose=require("mongoose");
+const userschema=new mongoose.Schema({
+email:{
+type:String,
+required:"true},
+username:{
+type:String,
+required:ture,
+},
+password:{
+type:String,
+required:true},
+messages:[{type:string}]});
+module.exports=new mongoose.model("user",userschema);
+})
+upar wala module ham import karte hai route mee 
+us moduel koo hamee reoute mee import karna haiii 
+abhi hamme niche search karna hiii kii user exist haii ya nahin
+too ham likhengge user.findOne({email:email}),
+function(err,data){
+
+
+
+})
+>uske baad call back milta err and data 
+  >uske badd err tab milegaa jab koi error hoo or data tab
+kmilega jab koi user exist karta hoooo
+>agar hamme error miltaa haii to hame kuch nahin karna haii 
+simply hamee error ko throw kar dena haii
+>agar ;hamme data milega too issue yeh haii kii koi user
+exist karta haiiii
+>agar koi data milta haii to mee simply log kardeta hoon user 
+exist  by log hamme debug karnee mee asani hoti haiiii
+>abhi hamme kiya karna haii error koo set kardena haiii
+>err="user already existsss with this emaillll"
+>too ham joo if condition ham likhee haii usko kese likhengtee
+dekh tee haii
+if(typeof err="undefined"){
+user.findOne({email:email},function(errl,data){
+consle.log("user exists");
+err="user already exists with this email";
+res.render('index',{'err':err,'email':email,'username':username});
+}
+agar koi user nahin haai to hamme else kee andar likhnaa haii
+>password koo encrypt karna haii or eek user instance koo create
+karke hamme  user koo dalna haiiii
+>wo ham kese karengee encrypt ko karnee ke lea ham pehele bcrypt koo
+call karengee or generate karengee salt
+>becrypt kar eek method hota haii kii genSalt(10) genSalt method
+sabse pehele eek number leta haii kitna round  10,15,20 by 
+default 10 haiii
+>uske baad ham eek call back lete haii jaha pee error hoga or
+salt hogaa
+>kisa hogaa agar error hoga har bar tarah hamme throw karlena
+haiiii  agar koi salt milega too hamme password ko hash karlena
+haiiii
+>agar koii salt milta haiii to ham likheenge 
+bcrypt.hash(password) hash karnekee lea ham password koo hash
+karna chatte ahiiii or joo salt koo use karna chatte haiii 
+wo hoga salt uske baad hamme eek call back milegaa jisme 
+error hoga  nahin too hashed value hogiiii
+>agar hamme error nahin milta haii to hamme password ka hash 
+milegaa
+>mujhee bolna haii kii agar error aaiga too throw error
+>agar koi error nahin too hamme eek hash milgaya password seee
+>by default password joo password rahegiii
+>mee password ka value ko hash kee sath set karleta hooon
+ >uske baad ham eek user create karlete haiii  woo user 
+>'user koo ham joo value dene walle haii woo aisa hahiii kiii
+email,username,password
+>yeh sab dene ke bad hamme user ko save karlete haiii
+>abhi save karne kee time mee bhi hamme error milegaa
+>hamme error ,data doo parameter milegaa error hua too 
+user save hnahin hua haiiiii
+>koi bhiii error haii too hamme error koo throw karlena haiii
+>gar error nahin haii ham sucessfully save karlea too mee 
+redirect karna chaun gaa dusree route mee 
+res.redirect("/login");
+>too code kese dihega aabhii route mee thoda dekh lete haiii
+29.12
+>obviously hammare paas /login available nahain haii
+>sablse pehele hamm index .js kee file me jattee hai
+"usme login ka eek route banatte haiii
+>app.get("/login",routes);
+>by default hamme get requst rakhna padeta hame post request 
+hoga too ham redirect nahin kar payeenge
+>routes .js mee aake hamme code karna hogga
+routes.get("/login") jo kii ham 
+>routes.get("/login",(req,res)=>{
+res.render("login.ejs");
+});
+ham login
+else{
+bcrypt.genSalt(10,(err,salt)=>{
+if(err) throw err
+}
+
 >
->too routes .js file kese dikhegaa 
+>too routes.js file kese dikhegaa 
+
 ==========================
 routes.js
 ===========
 const express=require("express");
 const routes=express.Router();
 const mongoose=require("mongoose");
+const user=require("./user");
 mongoose.connect("url",{useNewUrlParser:true,useUnifiedTopology:true}).
 then(()=>{
 console.log("db connected")});
@@ -477,15 +627,132 @@ if(password!=confirmpassword){
 err="password dont match";
 res.render("index",{'err':err,'email':email,'username':username});
 }
-});
+if(typeof err="undefind"){
+user..findOne({email:email},function(err,data){
+if(err) throw err;
+if(data){
+console.log("user exists");
+err="user already exists with this email....."
+res.render("index",{'err':err,'email':email,username:'username'})
+}else{
+bcrypt.genSalt(10,(err,salt)=>{
+if(err) throw err;
+bcrypt.hash(password,salt,(err,hash)=>{
+if(err) throw err;
+password=hash;
+user({
+email,
+username,
+password
+}).save((err,data)=>{
+if(err) throw err;
+res.redirect("/login")
+})})}}})}});
 
 module.exports=routes;
 
+29.12
+after complete registration hame redirect ho jaigaee 
+/login koo obvioulsy hameare paas /login nahin haai too hamme
+kiya karna padega
+>hamme index.js file koo jame dusra route create karna padega
+app.get("/login",routes); by default isko get request rakhna
+padega hamme post request mee ham redirect nahin karpayeenge
+>too hamare index.js file kese dikeheegaa
+
+index.js
+============
+
+const express=require("express");
+const app=express();
+const path=require("path");
+app.set("vew engine",'ejs');
+const routes=require("./routes.js");
+app.set("views",path.join(__dirname,'views'));
+app.get("/",routes);
+app.post("/register",routes);
+app.get("/login",routes);
+const port=process.env.port||5000;
+app.listen(port,()=>{
+console.log("server listning port ",port);
+}
 
 
+>hamme index.js file mee hamee login koo get request rakhna 
+padega agar hamme post post request rakhennge too ham 
+redirect nahin karpayeege
+>or saath hii routes.js mee aake hame yanan paee cote karna
+hooga
+>routes.get("/login",(req,res)=>{
 
+res.render("/login");
 
+})
 
+>ttooo hamme kiya karna padega ham eek arror function call 
+karna padega iss me ham render karegee login.ejs koo or yeh
+kam chaljaiggaa
+>too ham check kartee yahan paee ham idhar register form koo
+jakke ham register kartee haii or dekhtee haii kiii woo login
+koo redirect hoo jaiggga
+>agar bina koi value dalkee register karnegee to hamme error
+milegaa please fill all the field
+>agar rnadomly kuch idhar udhar ka daldee or password koo
+ham mis matches daldeee to hammee dikhega kiii pasword doesnt 
+matches
+>agar ham sahi email or sahie name or same password dallel
+>too hamme login pagee koo leeke chale jaiiga 
+to noow everything working as expetion
+>agar mee db koo jakee dekhunn to pata chalegeaa kii hamare idhar
+sabhi user present haiiii'
+>khaas baat yeh kii sari value idhar hoga but password hai
+joo wo encrypt hogaa
+>agar koi person aisa hii db ko kholparaha haii phir bhi 
+aap ka password koo dikhnea paiiga
+
+>yeh process too kafi asan thaa intresting tab hoga jab ham
+passport use karke login ko implement karengeee
+>yeh thoda muskil hai although yeh hamme thoda simple 
+dikhtahaaiiii 
+>yahh passport koo include karna application mee dekhnem ee 
+passport js kee andar simple haii or yeh cheez karne mee thoda
+difficult hoogaa
+>sabse pehele hamme bapis authentication koo jake 
+>routes.js koo jake hamme check karna haii ki hame login kese
+karette haiiii
+>login karne ke lea hamme passport and passport local dono chaihai
+>sabse pehele hamme passport and passport local koo install 
+karna hoga
+>hamme likhna padegaa  npm i passport passport-local
+>enter matee haii yeh donoo install ho jaigaa or hamme
+eek startergy create karnaa haiiii or puri validation process
+ko complete karteee haiii
+>dono complete kartte haii dono complete hone kee bad ham
+user ko serialize or deserialize dono ko nahin kartee ahi
+donokoo hame quote kartee haiiii
+>startergy sucessfull hogi too user serialize hogaa or un
+sucessfull hogi too user deserialize hogga 
+>iss lea hamme thoda bohot code likhaana haii kee local
+startegy kee lea 
+>sablse pehele hamm routes.js kee file mee ham passport koo
+import karletee haiii
+>ismee hamme passport koo khalii import karna haii local kooo
+import karna nahiiin haiii
+>routes.js kee andr likhnaa hai const passport =require("passport");
+>iskee badd hamme routes.js kee andar nichee anna haii or yeh
+process thoda lamba haii to hamee dihre dhiere hamme sabkuch 
+karna haiiii
+
+>yahan mee idhar quote karleta hoon get login route kee upar
+//Authentiation startegry 
+atuhentication strategy kee lea hamme  chaihai passport local
+>hamme kiya karna haii kii hamme require karna haii passport-local
+orr passport local see hamme khali Strategy chaihai
+too ham keelse lihenegee routes.js kee file kee andar
+var localStartegy=require("passport-local").Startegy;
+abhi hamme passport koo use karna haii eek Startegy create 
+karnee keee lea 35.00
+passport.use(new localStartegy());
 
 
 
