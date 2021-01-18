@@ -1121,4 +1121,184 @@ usmee rakhnaa chaihaiii
 >hamkoo uss key ko present file mee requrire karkee 
 >basically hamm cookie create karleea haii aab hamm passport kee sathh cookie ko
 link karletee ahii
->
+>yeeh eek alaga videeo chal raha haii aap jantee haii 
+hamme passport koo import karlenana haiii
+>eek index.js kee file open karkee hamme simply passport koo import karlena
+haiiii
+>const passport=require("passport");
+wohii index.js file mee hamme likhhnaa 
+app.use(passport.initialize());
+uske baad hamme likhnaa haii kee app.use(passport.session());
+>or save karnaa haiii
+>issme ham dekha kii seriallize or de serialize kese karttee haii or 
+in the form of session ham keese code koo identify code bhejengeee or uskoo
+encryptt karkee dengeeee 
+>automatiically jabb ham receve karengee to decryptt karkee rakheengeee 
+>hamm encrypt  karkee bheegeee or receive karenggee tooo decryptt karkee rakh
+leengeee
+>hamm encode karkee bhejj leeteee haii jab recieve karengee woo decode karlegaa
+>serialize mee woo encryptt karkee bhejegaaa or orr jab wo deseerialize kargaa
+uss code koo wo decryptt karleegaa
+>simplee haii ismee orr koi logic nahinnn ahiii
+>yahii serializaiation or deserialization kaa funddea haii or keese hamm
+session koo cookimee chood tee ahii yahii detaill hamm bol deahaiiii
+challo hamm main videoo ko chalee jatteee haii
+==============================================================================
+>tooo ham abhii main vieeo koo hcalee geyee ham kiya karenggee ham 
+pehlee hamm passport koo set karletee ahiii
+>ham aabhiii rotes.js file mee kam kar rehee haii or passport koo sett karnee
+kee lea ham routes.use(passport.initilalize());
+>uske alawa hamme kiya karna haiii routes.use(passport.session());
+>hamme aabhii express session koo use karna haii too express session koo use
+karengeee iskoo parse karnee kee lea hamm chai haii cookie parser
+>uske bad hamm command dengeee npm i express-session cookie-parser yeeh dono
+markee ham jab enter kartee haii to install ho jaiiga uskee bad hamm donokoo
+phirr use kareeengee 
+>cookie parser koo parse karnee kee lea hamme express session kyun kee 
+hamare passport ka session depend kartaa haii kii express session mee
+>install hogayya aab hamme run karna haii issmee hamme doo cheez run karna haii
+>const session=requrie("express-session");
+>uskee baad hamaree aaiga cookieParser 
+ham aisa import karengee 
+const cookieParser=require("cookie-parser");
+aab hamme cookieParser orr session koo passport see pehele use karnaa haiii
+>aab hamm passport see pehele ham cookieParser koo use karengee  too kiya 
+likheengee routes.use or use kar rehe haii cookieParser koooo orr isse hamm
+eek key value detee haii joo kii secret hona chaii haiii 
+>too mee uskoo name dedeta hoon secret
+>tooo yeh hamare session koo use karegaa too ham bolegee routes.use 
+routes.use(session()) session kee andar hamare kuch value set hotti haiii
+>sabse pehele yaha kii secret kiaya hai obvioulsy secret secret haiiii
+>uskee baad hamm bata tee haii kee resave:true  haoo jaigaa 
+>useek badd ham bootee haii kee saveInitialized:true;
+>uskee badd or eek proeprty haii maxage matlab koi user logged in haii too
+hamm usse kab tak logged in rakhee
+>maxAge:300000
+>iska matlab yeh haiii kii koi user logged inn karegaa too doo week tak 
+cookie persitant rehee ga
+>iskee alawa ham use karna chatee haii fash koo uskoo hamm badmee usekarna 
+chatte haiii
+>orr hamm login karkee dekhtee haii kiii kuch ho raha hhiii kii nahiinn
+>i hopee kii hamm rakhee haiii mee ka password hamm mee mee haiiii rakhaa haiii
+>agar koi error nahinnn haii agar mee /login koo enter kartaa hoooon
+>agar me email dalunga orr password daloungaa  too kuch nahin ho raha haiii
+>kyunn kii ham hamare ejs file koo nahinn bataya haiiikiii hamme kiyaa karna 
+haiiii
+>form ka submit karnee kee time too form ka action rehe gaa /login or method 
+rahega POST aab lets sea hamme koi error mil raha haiii kiii nahinnn
+>aab ham login kar rehee haii orr dikhetee haii kii hamme error nahinn
+mil raha haiiii
+>error iss lea mil raha haii ki although hamm idhar username and email koo
+set kea haiii
+>kiya haua haii kii passport.use(new localStrategy({usernamefield:'email'},
+{email,password,done}))
+iss funciton koo ham value de rehe haiii ismee hamare username nahinnn 
+emaill hiii mil raha haiiii
+>agar usskee andar sab ham username hatakee email kardee too yeh query sahi
+pee kam karega
+>uskee baad hamme refresh karlenaa haii orr mee dalunn email mee mee@gmail.com
+>orr password enter karun too hamme yeh success page milegaa 
+too hamare routes.js filie keese dikheega chalooo ham dekhletee haiii
+
+routes.js
+============
+
+routes.js
+===========
+const express=require("express");
+const routes=express.Router();
+const mongoose=require("mongoose");
+const user=require("./user");
+const bcrypt=requrie("bcryptjs");
+const user=require("./model.js");
+cosnt session=require("express-session");
+const cookieParser=require("cookie-parser");
+const passport=require("passport");
+const bodyparser=require("body-parser");
+routes.use(bodyparser.urlencoded({extended:true}));
+routes.use(cookieParser("secret")); 
+routes.use(session({
+secret:"secret",
+resave:true,
+saveUninialize:true,
+maxAge:360000000
+}));
+//agar koi use login kartaa hii too doo week tak coookiee persistant
+regheegaa
+routes.use(passport.initialize());
+routes.use(passport.session());
+mongoose.connect("url",{useNewUrlParser:true,useUnifiedTopology:true}).
+then(()=>{
+console.log("db connected")});
+routes.get("/",(req,res)=>{
+res.render("index");
+res.send("hii  from routes");
+});
+router.post("/register",(req,res)=>{
+var{email,username,password,confirmpassword}=req.body;
+var err;
+if{!email||!password||!confirmpassword){
+err="please fill all the fields";
+res.render('index',{'err':err});
+}
+if(password!=confirmpassword){
+err="password dont match";
+res.render("index",{'err':err,'email':email,'username':username});
+}
+if(typeof err="undefind"){
+user..findOne({email:email},function(err,data){
+if(err) throw err;
+if(data){
+console.log("user exists");
+err="user already exists with this email....."
+res.render("index",{'err':err,'email':email,username:'username'})
+}else{
+bcrypt.genSalt(10,(err,salt)=>{
+if(err) throw err;
+bcrypt.hash(password,salt,(err,hash)=>{
+if(err) throw err;
+password=hash;
+user({
+email,
+username,
+password
+}).save((err,data)=>{
+if(err) throw err;
+res.redirect("/login")
+})})}}})}});
+
+var localStrategy=require('passport-local').Startegy;
+passport.use(new localStartegy({usernameField:email},
+(username,password,done)={
+if(err) throw err;
+if(!data){
+
+return done(null,false);
+}
+bcrypt.compare(passowrd,data.password,(err,match)=>{
+if(err){
+
+return done(null,false);
+}
+if(!match){
+return done(null,false);
+}
+if(match){
+return done(null,data)
+}
+})
+}))
+passprot.serializeUser(function(user,id){
+cb(null,user.id);
+})
+passport.deserializeUser(function(id,cb){
+user.findById(id,function(err,user){
+cb(err,user)
+})
+})
+routes.get("/login",(req,res)=>{
+res.render('login');
+})
+module.exports=routes;
+
+
