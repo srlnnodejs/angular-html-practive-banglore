@@ -1301,4 +1301,544 @@ res.render('login');
 })
 module.exports=routes;
 
+>49.26
+>uske baad hamme aabhi connect flassh karnaa haiii agar mee random 
+value dallkee agar mee form mee enter martahunn too hamme kuch nahin
+dikheegaa
+>iss lea ham use karnee walle haiii flashh kooo
+>usske lea hamme install karna hoogaa kii npm i connect-flash
+>iskee baad hamme flashh meessage koo use karna hogaa normally hamm
+kisi filee ko  render katee haii too  koi valuee koo send kar saktaa hoomm
+>aisa jagaa mee ham kisi kee value ko render nahinn kr rehee haii tooo
+>yaa phirr hamm redirect kar rehe haii hoottee haiii
+>koi value koo send nahinn karsaktee hhaaiii
+>too hamm flash message bhejj tee haiiii
+>sabse pehele hamme import karna padegaa flash koo too import karengee 
+kese karengee 
+>const flash=require("connect-flash");
+>flash koo set karna bhii thoda trickyy hota haii isskoo hamme set karna haii
+cookie or session kee baad
+>cookie or session kee baad hamme set karlengee 
+>aan connect flash ko set bhi karna hota haii joo ki thoda trickyy haii
+> routes.use(flash())
+>iske alawa hamme eek custom middleware bhi coute karteehaiii
+>woo dhyaan degaa kii hamme flashh message kese mill paiigaa
+>route.use(function(req,res))
+>middle ware aisa haii ki  uskoo request or response miltaa haiiiikii
+>jabbhiii ham koii middle ware koo call karteee hai tab iss middleware call
+hota haiii
+>khudd see request or response karrrkee or next() karnee kee baad joo 
+actuall routee mee  call kardetaa hhaai  theeek haaiii
+>kuch global variablee set karnaahaii hamessa kee lea 
+
+//globall variablle yahan pee set karnaa haii response.locals too hamme
+response mee local mee success messages kiya milta haiii
+res.locals.success_message=req.flash("success_message":) 
+>hamme yahann pee kahii too error mil raha haiii
+ 
+routes.use(function(req,res,next)=>{
+res.locals.success_message=req.flash("success_message");
+res.locals.error_message=req.flash("error_message")
+res.locals.error=req.flash("error");
+})
+>kyun kee hamm passport js use kar rehe ahii yaha pee joo error milegaa
+aisa hii flash kee through mileegaa
+>waisa karnee kee bad hammee vlauee ko  showw karlenaa chaii haii
+>too ham kiya karengee user register karnee kee badd login hota hii
+too ham user koo bol na chatte haii kii user ne succes fully register 
+kea or login karsaktaa haiii
+>mene github mee registrer karkee dekhaa haii kii kese user register karnee
+ke baad login karsaktaaa hiii
+>aisa haii kii kuch user chattee haii kii koi user register karrnee kee baad
+by defaullt login bhiii karlee
+>too kiya hogaa kii req.flash("success_message":"registerd successfully and
+login too continuee");
+>aab hamme isse kahan show karnahahii hamme login.ejs mee show karnaa haiii
+> obviouly yeehh bhii simple dismissible alert reheega
+>bootstrap mee jakke hamm simplee yehh green wagareeause karleeteee haiii
+>copy karleeteee haii or aake login.ejss mee form kee upar hamm pastee karlete
+haiii
+>yahh joo flash request mil raha haii yeh normally hamesa availablee raeehe ga
+>yahann pee actulaly hamee kuch nahinnlikhnaa haii kii valuee undefinedd haii
+yaa nahinnn
+>valuee empty hoo saktee haiiii
+><% if success%> agar koi success message haii too ham show karenegee or 
+success message nahinn too koi baat nahinnn
+>ham likheengee 
+<%if success_message!=""%>
+>agar hammare yeh value empty nahin hota haii to hamme use karna haii paranthasis
+>eek line kee bad dusree linee kee lea hamme templating tag use karna hoga
+><%fi(success_message!=''){%>
+
+
+<%}%>
+>iss upar wala cheez kee andar hamme html kaa cheez paster karnaa haiii 
+>or templating tag use karttee <%=success_message%>
+>isse ke tarhh hii ham eerror message bhii shoow karsakteee  haiii
+>error show karwanee kee lea mee chli jataa hoon index.ejs koo 
+>hamare error show karna haii too meee copy karleeta haoon or copyy karke
+mee login.ejs mee atte haii simple susccess message jaisa hamme error mesage
+lelenaa haii
+>too phirr hamare yahann pee error show karellena haiii
+>hamme khalli yehh success message orr error message show karlenaa haiii
+>yahan pee ham atte haii wapisorr chaleetee haii authenticaiton mee
+>ham middware flsh mee next call kea nahinn haii to yehh waha hii fasa
+rehe gaa
+
+>orr login koo bhi batanaa haii kii koi bhii error hota haiii to hamme 
+error flashh karna chaii haiii
+55.00
+>49.21
+==========
+>abhii mee login hoo jauunn or success page koo chala jauunn or phir seee
+mee retrun aajaunnn too mrea cachee clear nahinn hotta haiii
+>sabse pehele mee connect flash karna chaata hun
+>hamme abhi error show karna haiii
+>lets mee login form mee email or passowrd daldunga too mujheee too mujhee
+kuch nahinn dikh raha haiii or user koo pata nahin chal raha haiii
+kiii kiya error aa raha haiiii agar mee galat creadential dunn too
+>too hamme import karnee walle haiii connect-flashh koo 
+>too hamme install karna hoga >npm i connect-flash
+>phir hamme iss flash message koo use karna hoggga
+>flash message kaa khasiat yah haii kii meee aap kooo bata duuunnn 
+>ham jabb yahh appe kisibhii file koo render kar reeheh ahaiiii
+>matlab routes.js mee render kar rehe haii too too value hamm send 
+kar saktee haii key and value pair meee
+>aisa jaga pee jahann kisi value ko render nahinn kar ree hee haiii
+or khali redirect kar rehee haiiii
+>too bhii hamm koii value ko send nahinnn kar saktteee 
+>too hamm kiya kareengee flash message bhejengeee 
+>sabse pehele hamme message flash koo connect karna chatte ahiii
+for simple kee lea hamm connect karengeee 
+const flash=require("connect-flash");
+>connect flash koo set bhiii karna hota haii woo tthoda triky haii
+ham abhi routes.js kee file mee kam kar rehe haiii
+>isse hamme karna hotta haiii cookie or session kee baad
+>jahan  router.use(passport.session());
+>likhaa haiii uskee nichee ham set karengee 
+>routes.use(flash())
+>too hamm kese karneegeee 
+
+
+routes.js
+===========
+const express=require("express");
+const routes=express.Router();
+const mongoose=require("mongoose");
+const user=require("./user");
+const bcrypt=requrie("bcryptjs");
+const user=require("./model.js");
+cosnt session=require("express-session");
+const cookieParser=require("cookie-parser");
+const passport=require("passport");
+const bodyparser=require("body-parser");
+routes.use(bodyparser.urlencoded({extended:true}));
+routes.use(cookieParser("secret")); 
+routes.use(session({
+secret:"secret",
+resave:true,
+saveUninialize:true,
+maxAge:360000000
+}));
+
+routes.use(flash());
+
+
+//agar koi use login kartaa hii too doo week tak coookiee persistant
+regheegaa
+routes.use(passport.initialize());
+routes.use(passport.session());
+mongoose.connect("url",{useNewUrlParser:true,useUnifiedTopology:true}).
+then(()=>{
+console.log("db connected")});
+routes.get("/",(req,res)=>{
+res.render("index");
+res.send("hii  from routes");
+});
+router.post("/register",(req,res)=>{
+var{email,username,password,confirmpassword}=req.body;
+var err;
+if{!email||!password||!confirmpassword){
+err="please fill all the fields";
+res.render('index',{'err':err});
+}
+if(password!=confirmpassword){
+err="password dont match";
+res.render("index",{'err':err,'email':email,'username':username});
+}
+if(typeof err="undefind"){
+user..findOne({email:email},function(err,data){
+if(err) throw err;
+if(data){
+console.log("user exists");
+err="user already exists with this email....."
+res.render("index",{'err':err,'email':email,username:'username'})
+}else{
+bcrypt.genSalt(10,(err,salt)=>{
+if(err) throw err;
+bcrypt.hash(password,salt,(err,hash)=>{
+if(err) throw err;
+password=hash;
+user({
+email,
+username,
+password
+}).save((err,data)=>{
+if(err) throw err;
+res.redirect("/login")
+})})}}})}});
+
+var localStrategy=require('passport-local').Startegy;
+passport.use(new localStartegy({usernameField:email},
+(username,password,done)={
+if(err) throw err;
+if(!data){
+
+return done(null,false);
+}
+bcrypt.compare(passowrd,data.password,(err,match)=>{
+if(err){
+
+return done(null,false);
+}
+if(!match){
+return done(null,false);
+}
+if(match){
+return done(null,data)
+}
+})
+}))
+passprot.serializeUser(function(user,id){
+cb(null,user.id);
+})
+passport.deserializeUser(function(id,cb){
+user.findById(id,function(err,user){
+cb(err,user)
+})
+})
+routes.get("/login",(req,res)=>{
+res.render('login');
+})
+module.exports=routes;
+
+>upar routes mee flash kaa likhaa haii agge jab orr kam hoga ussme 
+or data dalengeee
+>ham custom middleware use kartee haii orr yeehh hamme dhyan deta haii
+kee hamme flash messages kesa milta haiiii
+>routes.use(middleware) middle ware kee khasiyat yehee haiii kiii uskoo
+request or response miltaaa haiiii 
+>jabhiii ham kiisii routes koo call karteee ahiii too hamare yeh routes
+call hota ahiiii
+>khud see request or response kee sath joo karna haii wo kartaa haii
+or next();  karke actuall route koo call karna haii woo call kardeta
+haiii
+>too ham kese karenngee 
+>yahann pee hamm global valriable set karna haii hamesa kee lea 
+//global variablees set karna haii 
+res.locals.success_message kiya kee success message show karna haiii
+>yeh hogga req.flash("success_message)
+too kese hogaa res.locals.success_message=req.flash("success_message");
+>orr error message bhii show karna hogga 
+>res.locals.error_message=req.flash("error_message");
+>orr pehele bhii defined karna haii 
+res.locals.error=req.flash("error");
+>pehele seee bhii defined karnaa theek haii kii ham jab passport me use
+karttee haiii wahan hamme local starteggy authentciation kee lea hame
+joo error milegaa wwese hii milegaa
+>aisa karnee kee bad hamm chaee too value koo showw kar saktee haiii
+>sabsee pehele hamme dikhanna  chattee haii kii register karnee kee bad
+>hamm register karnee ke bad hamme send karna haii lgoin page mee  
+
+chalooo upar wala code ham kese likhtee haii chaloo dekhengee 
+>routes.use(flash());
+//global variables
+routes.use(function(req,res,next)=>{
+res.locals.success_message=req.flash("success_message");
+res.locals.error_message=req.flash("error_message");
+res.locals.error=req.flash("error");
+})
+>aisa likheene kee bad aab chaii too ham value koo show karwadetee
+haiii
+>sabse peehle mee flash message koo dikhanaa chatta haunn register
+karnee kee bad 
+>too hamm usse batana chattee ahii kii uss person nee success fully regi
+ster karlea haii aabhii login karna chatte ahiii
+>meene github mee joo source code upload kea haii usmee hame yehe 
+dekha haii kee kese user ;success fully login register hone kee bad 
+login karsaktaa haiii
+>kuch logg chatte haii kii koo user regissssster karnne kee badd 
+by default login bhhii karlee 
+>req.flash("success_message");
+>i hopee kii yee abhii sahii hoo success_messsage  yeh hamare key
+haii value hamme set karna haiii too vlaue kiya dengee 
+req.flash("success_message","registerd successfully . login to continue");
+
+routes.js
+===========
+const express=require("express");
+const routes=express.Router();
+const mongoose=require("mongoose");
+const user=require("./user");
+const bcrypt=requrie("bcryptjs");
+const user=require("./model.js");
+cosnt session=require("express-session");
+const cookieParser=require("cookie-parser");
+const passport=require("passport");
+const bodyparser=require("body-parser");
+routes.use(bodyparser.urlencoded({extended:true}));
+routes.use(cookieParser("secret")); 
+routes.use(session({
+secret:"secret",
+resave:true,
+saveUninialize:true,
+maxAge:360000000
+}));
+
+>routes.use(flash());
+//global variables
+routes.use(function(req,res,next)=>{
+res.locals.success_message=req.flash("success_message");
+res.locals.error_message=req.flash("error_message");
+res.locals.error=req.flash("error");
+nex();
+})
+
+
+//agar koi use login kartaa hii too doo week tak coookiee persistant
+regheegaa
+routes.use(passport.initialize());
+routes.use(passport.session());
+mongoose.connect("url",{useNewUrlParser:true,useUnifiedTopology:true}).
+then(()=>{
+console.log("db connected")});
+routes.get("/",(req,res)=>{
+res.render("index");
+res.send("hii  from routes");
+});
+router.post("/register",(req,res)=>{
+var{email,username,password,confirmpassword}=req.body;
+var err;
+if{!email||!password||!confirmpassword){
+err="please fill all the fields";
+res.render('index',{'err':err});
+}
+if(password!=confirmpassword){
+err="password dont match";
+res.render("index",{'err':err,'email':email,'username':username});
+}
+if(typeof err="undefind"){
+user..findOne({email:email},function(err,data){
+if(err) throw err;
+if(data){
+console.log("user exists");
+err="user already exists with this email....."
+res.render("index",{'err':err,'email':email,username:'username'})
+}else{
+bcrypt.genSalt(10,(err,salt)=>{
+if(err) throw err;
+bcrypt.hash(password,salt,(err,hash)=>{
+if(err) throw err;
+password=hash;
+user({
+email,
+username,
+password
+}).save((err,data)=>{
+if(err) throw err;
+req.flash("success_message","registerd successfully login to continue")
+res.redirect("/login")
+})})}}})}});
+
+var localStrategy=require('passport-local').Startegy;
+passport.use(new localStartegy({usernameField:email},
+(username,password,done)={
+if(err) throw err;
+if(!data){
+
+return done(null,false);
+}
+bcrypt.compare(passowrd,data.password,(err,match)=>{
+if(err){
+
+return done(null,false);
+}
+if(!match){
+return done(null,false);
+}
+if(match){
+return done(null,data)
+}
+})
+}))
+passprot.serializeUser(function(user,id){
+cb(null,user.id);
+})
+passport.deserializeUser(function(id,cb){
+user.findById(id,function(err,user){
+cb(err,user)
+})
+})
+routes.get("/login",(req,res)=>{
+res.render('login');
+
+})
+
+routes.post("/login",(req,res,next)=>{
+passport.authenticate('local',{
+failuerRedirect:'/login',
+successRedirect:'/success',
+failuerFlash:true})(req,res,next)
+})
+routes.get("/success",(req,res)=>{
+res.render("success");
+})
+module.exports=routes;
+>aab hamme upar wala joo likehe register kee andar flash message hamme
+login.ejs mee show karnaa haiii
+>too yeh hamare simply dismissible alert rehega aab ham chaee too 
+bootstrap alert message hammm ikh saktee ahiii
+>lets sea hamm green wala use karleettee haii]
+>hamm ussse compy karkee ham login.ejs koo  jakke hamm form kee upar
+ham paste karletee haiii
+>yehh joo flash ka reqest message milraha haii kii wo hamesa normaly
+availablee raehe gaa
+>yahhan pee hamme aisa kuch nahin likhnaa haii kii yeh value kabhii
+undefined hoo ga akii nainn
+>value empty ho saktii haiii
+>agar koi bhii success message haii too hamm success message show karnegee
+>agar koi succccess message nahinn haii to koi baat nahinnn
+><%if (success_message !=""){%>
+
+<%}%>
+>joo upar wala hamme show karnee ke lea madat hoogga ismee bad hamme
+paste karna haiii too hamme idhar sab show karna haiii
+>kese akrengee aisa karnegee 
+><%if (success_message !=""){%>
+<div class="alert alert-dismissible alert-success">
+<button type="button" class="close" data-dismiss="alert">&times</button>
+<strong><%= success_message%></strong>
+</div>
+<%}%>
+>or error message bhi show karsaktee haii too error message bhii show
+karna haii too hammme kiya karna haiii  too index.ejs koo jana haii
+yahann pee hamare already error message show kea hua haiii
+>mee kiya karunnga mee copy karlungaa or login.ejs koo jata hunnn
+>pastee kartahoon or issme type of check karna koi jarurat nahiinn haii
+>agar hamare error de raha haii agar error not empty too hamme idhar
+error show karwadena chaihai
+>hamme bas success message or error show karna haii or ham aab bootstra
+kee page koo jatte haii 
+>or authentication koo jatee haii or refrshhh karteee haiii
+>actureally yeh haiii kii jahan ham custom middle ware likha haii uss 
+jaaga mee next koo call nain kea ahiiii
+>agarhamm next koo call nahin karengee too yaee yahii pee phasa 
+re he jaiigaaa
+>too hamme login meee hii dikhanna padee gaa kii koii error hoo too hame
+error flash hona padegaa failuermessage:true login rotutes mee likhenge
+>aab haam register mee jatte hai orr dikhetee haii kii hamme success 
+flash milta haii kii nahin
+>aab haam register karengee or dehttee haii hamme succcess flash 
+milrahha haiii
+>agar mee galat credential see login karun too hamme error nahin mil
+rahai ahi
+>kyun kii hamm error messages koo set nahinn kea 
+>routes.js mee jatee hai orr set kartee haii  kuch error messages
+>hamm local startegy mee jakee login kaa details value set karlena hii
+agar success hoga too kiya likhanna haii or failure hoga too kiiya
+likhanan haiii
+>i hope hamme error abhi show nain karna haii 
+
+var localStrategy=require('passport-local').Startegy;
+passport.use(new localStartegy({usernameField:email},
+(username,password,done)={
+if(err) throw err;
+if(!data){
+
+return done(null,false,{message:"user doesnt exists"});//yeh line change
+haua haiii
+}
+bcrypt.compare(passowrd,data.password,(err,match)=>{
+if(err){
+
+return done(null,false);
+}
+if(!match){
+return done(null,false,{message:"password doestnt match"});//yeh line
+change haua haiii
+}
+if(match){
+return done(null,data)
+}
+})
+}))
+>iske alawa i hope kii hamare idhar koi error show nahinn karna haii
+>to ham agar idhar localStartegy hamare important thing haiijoo login
+karwata haii yehe hamme login mee help karta haiii
+>idhar joo message likha haii woo hamme flash hogaa agar hamm 
+kuch galat password or email duunn tooo
+yehh simple haii hamme log out quote karna hogaa 
+yehh simple haii hamme koi value pass karna chaiihaii
+
+>aab hamm dekehngee kii log out kese karrnegee
+===================================================
+>kafii simplee haiii hamme logout koo quote karna hogga yeh simple
+haii hamme koi value pass nahin karna padegaa
+>hamm boletee haii kii routes.get("/logout"(req,res)=>{
+req.logout()
+res.redirect("/login");
+})
+bass upar jitna lihaa haii utna hamme routes.js kee file mee likhnaa haii
+itnee mee kam nahin chaleggaa obviouslyy 
+>hamme wapis jakee hamme hamare aapps koo bhi batana padetgaa hamm
+joo naya route kea haii logout orr yeh get haiii
+to index.js kee file mee ham jakee changee karletee haiii
+>or success.ejs koo bhii batana hogga
+>success.ejs mee joo form hai uska action /logout mee rehega
+>orr eek baat haii hamm userkkoo bhii show karletee agar success hota
+haii too kiya karnegee ham 
+router.get("/success",(req,res)=>{
+res.redirect("success",{"user":req.user})
+})
+ham aisa karkee hamm jansaktee haii kii koun loggedin user haiii
+>aisa karnee kee bad mee success.ejs meejake mee welcome kee had
+templating tag use karletaa hooon
+>yeeh user hamme pura user dega hamme khalii user ka user name dena haii
+>jab login karteee haii hamme miltahaii kii welcome try
+>
+success.ejs
+===============
+<body>
+<div class="container text-cneter">
+<h3 class="p-4">welcome<%=user.username%></h3>
+<h3 clas="p2">if you sea this page<br/>then you have logged in successfully</h3>
+<a class="btn btn-danger" href='/logout' method="/GET">logout</a>
+<div class="container p3">
+<form >
+<div class="form-group">
+<textarea class="form-control" name="msg" id="msg" cols="30" rows="3" maxlength="200"
+placeholder="enter osme message 200 charecter"></textarea>
+</div>
+<div class="form-group">
+<button class="btn btn-outline-success" type="submit">add mesage</button>
+</div></div>
+</form>
+</div>
+</body>
+
+abhii kiya haii kii jabb hammbutton log out koo click kartee haii
+to hamm login mee chalee jattee haiii issue yehh haii kii 
+jab hamm back kartee haii too hamme yehhh page mil jata haiiii
+>matlab ham logout haoo gahyyye or ham login pagee koo chalee geyeyye
+success pagee sese nikal  gayaae but againn hamm back button marttee haii
+too again hamm success apgee koo ajatttee haii yehh nahihn honaaa chaihai
+>kuch bhii name desaktee haii butt yee hamare authenticate haii kii
+nahinn hamme show akregaa
+>dusra baat yehh kii hamm log out karnee kee waqt session koo clear 
+karwadenaa chaii haii
+>ensure hamme batana padegaa hamm jabb logout kartee haii to unn sarre
+cachee koo clear kadeee
+>1.03
+
+
 
