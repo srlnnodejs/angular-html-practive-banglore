@@ -1838,7 +1838,115 @@ nahinn hamme show akregaa
 karwadenaa chaii haii
 >ensure hamme batana padegaa hamm jabb logout kartee haii to unn sarre
 cachee koo clear kadeee
->1.03
+>aab hamme routes.js mee kam kar rehee haiii
+>too log out karnee ke leaa hamme 
+routes.get("/logout",(req,res)=>{
+req.logout();
+rewq.redirect("/login")
+ })
+>hamm log out honne kee baad hamme login routee mee redirect hoojanna
+chaiiihaiii
+>issmee bhii kam nahin baneegaa obvioussly hamme index.js mee jakke hamme
+app koo bhiii batana padegaa
+?>ham nee eeek naya route banayaa haii woo haii 
+logout and success
+>hamme success.ejs mee jakke ;hamme batana padegaa action joo haii 
+>logout hooga
+>default hamara get request koii issue nahinn haiii
+>abhii yee hamara welcomee user haii hamm user name shoo karleenge bohott
+intresting reheegaa
+>sabsee pehele hamme routes.js mee ja raeeehe haii orr jab suceess
+koo jarehee haiii
+to hamme user koo bhii show karwadenaa haiii
+>routes.get("/success",(req,res)=>{
+res.render("success",{"user":req.user})
+})
+
+>hamme jansaketee haii kii loginuser kounn haiii
+>isske lea mee templete enginee kee tag mee jamkee me showw karleta hoon
+<%=user%>
+> agar mee refresh karunn too hamme kuch nahin dekh raha haii
+>too ham aab succes.ejs mee kam kar rehe haiii
+>yee woo form haii jisse use karke hamm message dene walle haai
+>yanni kii usercase specific messsages koo enter karnee walle haii
+>normal logout yee haii 
+<a class="btn btn-danger" href="/logout"> karleege too hamare
+kam baneega or refresh karttee haii or logout mee click kartee haii
+too yeh logout hogayya
+>issue yeh haii kii ham jabb back karengeee hamme yeh page success
+page bapiss mil ja raha haiii
+>log out hoo gaya phir bhiii
+>sabse pehele hamme use karna hogaa custom middlware  kuch bhii name
+de saktttee haii bass yahii kii yehh authenticated haii ya nahiinn uss
+baat koo ensure karegaa
+>dusra bat yeh kee hamme log out hotte time mee hamme session koo clear
+kardeena chaiihaii
+>hamme specifically batana padeega kii ensure authenticated jabhii 
+call kea hii unn saree function kee cachee koo clear karddee
+>kese kartee haii yeh hamm jaldii dekhtee haiii sabsee pehele hamm
+routes.js mee code karletaa hoonn
+>ensure authenticated
+>hamme reoutes.use(function(req,res,next){
+res.locals.success_message=req.flash("success_message");
+res.locals.error_message=req.flash("error_message");
+res.locals.error=req.flash("error");
+});
+>iss upar wala middleare kee baad hamm dusra middleware koo dalttee
+haii orr hamme kiya hogga ensure karna hoggga kii user authenticattd
+haii kii nahiinnn
+>eek function hoga 
+const ensureAuthenticated nahinn too check authenticatteed
+>sincee yeh eek middlware haiiii ussmee request bhii hogaa or response 
+hoga
+>yad rakhoo yehh nex kafii jarurii haiii
+>agar hamm use nahinn kareggee too hamme error mil jaiigaa
+>yahann pee hamme kiya dekhaanna haii 
+>cosnt checkAuthenticated=funciton(req,res,next){
+if(isAuthenticated()  )
+}
+
+agar yeh authenticatedd haiii tooo hamme yahan pee kuch cheez koo set
+karnaa haii hamme response koo set karna haii sabse pehele hamme cache
+control karnaa haiii too hamm likhletee haii kii cache-control , no-cache
+iska matlab yehh haiii kii sab cache clear ho jana chaihaiii
+> dusraa kii private kii yehh sabb private reheegaa
+>orr kuch bhii store karnaee kee jarurat nahiinn haiiii
+>must revalidate matlab phirssee revalidatee karna hoogaa
+>uskee alawa hamme postcheck orr precheeck karna chaiihaii
+>uskee baad hamme karna hogga retrun next()
+>yeh bohott jaruri haii nahinn to ham pichlee barr hamm loop mee 
+phes jayengee
+>agar yeh person login nahinn haii too kiya karna haiii 
+>then res.redirct("/login");
+>agar koi bhii authenticated nahinn too hamm simplyy login kee route mee
+chala janna haii
+>kafi jaruri haii kii kisikoo ham yeh sitution kee batt karlette haii
+>too hamare middleware kese rehega
+
+const checkAuthenticated=function(req,res,next){
+if(req.isAuthenticated()){
+res.set("cache-control","no-cache,private,no-store,must-revalidate,
+post-check=0,precheck=0")
+return next();
+}
+else{
+res.redirect("/login");
+}}
+too hamm kiya karnegee ham iss situation kaa batt karleetee haiii
+>hamme checkAuthenticated middleware koo hamme 
+router.get("/success",checkAuthenticated,(req,res)=>{
+res.render("success",{"user":req.user})
+}
+hamme checkAuthenticated middleware aisa likhna haiii 
+
+>jabhii hamm /success route koo call kareengee yeehh khu ba khudd 
+call hojaiigaa orr bolega authenticatedd haii ya nahiin
+>1.09
+
+
+
+
+
 
 
 
