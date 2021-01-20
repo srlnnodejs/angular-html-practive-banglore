@@ -1,0 +1,106 @@
+rxjs promise vs observable
+=========================
+>iss video kii andar hmm aap koo bantayeennge promise kiya hota haii
+observable kiya hota haiii
+>promise or observable kee andar kiya difference haii or kiss casee me
+hamme promise use karna haii kiss case mee hamme observable user karna
+haiii
+>promise
+============
+sabse pehele hamare promise kee promise mee kiya hota haii ki promise
+koo eek duty dadii jatii haii or usse bolna padta haiiikii aapkoo
+x kam karna haiii
+>woo ho jata ahiii too woo resolve karkee kuch value return kartaa haii
+>agar woo nahin hota fail hota haii too error return kartaa hii
+>ya phir error hone kee bad kiya karta haiii kiii kuch value return 
+karletta hai
+>example eek becha koo bolee kee market jake e bredd leke aao becha 
+ne pucha haii kiii bread nahin mila too kiya karunn too mummy naee bola
+hgaii kii bread nahin mila too andee le anna
+>too becha koo duty dede haii usse bread lanna haii agar bread mila nahinn
+too anda lana ahiii
+>same isssi taraha hamare promise kamm kartaa haiiii
+>bring bread naam ka eek function haiii
+>ussme hamm kiya kanegee retun karengee new promise yeh bar bar vlaue 
+return nahin kartaa sirff eek bar value return karttaaa haiiii
+>yahan pee yee orr eek funciton koo call karegaa woo funciton siBreadAvilable
+>agar bread availablee haiii 
+>too promise kee andar kiya hogaa likheegaa kiii if(isBreadAvailable)
+>too resolve ho jana haiii  or output mee dena haiii bread is here
+>value pass karlena ahiii here is your bread
+>agar yeeh resolvee nahinn hota haii else
+>bread nahin haiii too yeh kiya karegaa yeh reject karlega orr bolega
+>bread is not available
+>tooo isne error throw kardea bread available nahinn haiii
+>jab mee funciton koo call karungaa bringBread() issmee hamme
+two funciton milta haii eek then milta haii orr eek catch milta haiii
+>then kee andar kiya miltaa haii hamme result milta ahii kii joo 
+resolve honee kee bad hamme milta ahiii
+>too ham upar orr ;eek functiion banateee haii function isEggAvailable()
+>too eggAvailable nahinn haiii
+>agar egg nahin or bread nahinn too wooo reject karleega
+>too yahann bread mili naa anda mila
+>bringBread function koo agar ham then karengee agar promise fullfill
+ho jaigaa
+>too yyahan pee console log karwakee dekengee kiya mileega
+>dhyann rakheea agar hamare promise resolve ho gaya too hammare koii
+dusrii koi value nahinn milegaa 
+>catch kee andar agar hammare error atta haiii too hamare error 
+miljata ahiii
+>too hamme puri file koo hamme fun karna haiii
+>too ham kiya karnegee node index.js 
+>ouput=here is your bread
+>too bread available thii too hamme bread millla
+>aab mannloo bread available nahinn haii anda available haiii
+>tab mujhee kiya milee ga bread not available here your eggs
+>naa bread available haii oorr anda availablee haii too dekhteee haii
+kiiya milta ahiii
+>too ham choddengee output mee this is  a error
+>agar donofalse haii tooo hamme milegaa bread and egg both not avalialble
+>
+example
+===========
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+observable
+=============
+observable kese kam karta haii oblservable aisa kam karta haii kii
+jaise fm kam kartaaa hii
+>yahannpee kiya hogga agar ham on kanregee 95.33 fm mee wahann pee 
+jo bhii kuch chal raha haogga or joo bhiikuch milraha hogga agar
+hamm usse subscribee karegee too hamme continiunss ssunai degaa
+>constinuesly hamm value koo recieve kartee reheogee
+>
+
+
+
+
+
+
+
+
+
+
+
+
