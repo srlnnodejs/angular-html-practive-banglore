@@ -1,0 +1,164 @@
+Promise verses observable
+==========================
+Promise
+=========
+both promises and observable provide us with abstraction that help us deal
+with the asynchronous of our applications.how ever there are important
+differences between the two
+>promsises work with asynchronous operations and they either return us a 
+single vvalue that is promsie resolves or an error message that is promise
+rejects
+>another important thing to remember regarding promises is that a request
+initiated from a promise is not a cancellable . there are some promise 
+implementation libraries that allow us to cancel  promsie but.the javascript
+native promsei impolementation doesnot allow for this.
+
+
+>promise and obervable kaa work eek hii tarahh hotta hii butt issme
+orr ussmee difference haiii.
+>promise kiya karta haii kii promise work with asynchronous operation 
+ they aither return a single value issme kiya haii kii single vlaue
+return karta haii nahin too kuch error value return kartaa haii
+>jabb hamm promise kee sath work kartee haii too woo single value 
+return kartaa haii agar promise resolvee ho gayay nahinn to promise
+error return kartaa a hhii agar reject hoo jata ahhiii too
+>agala cheez hamme yaad rakhnaa haii promise mee agar hammm koi request
+initiateed kardeaa too uskoo hamm cancel nahinn karsaktteee halakii 
+kuch library haiii aissee joo allow karata haii kii promise kee request
+koo cancel karnee kooo
+>butt javascript kaa native promisee ahii usse allow nahinn kartaa haii
+>yehh bhhii eek main reasonn ho ta haii kii promise kaa drawback
+>promise mee koi request initiatedd kardeetee haii usse haam cancel nahin
+karsakteee haiii
+>agar koii issue bhii atta haii too isse hamm cancel nahinnn karsaktee
+>
+hamm yeh dekhteee haii kii kon kon see promise mee problem haiii
+================================================================
+>what if i want to cancel a request to the API
+>what i want to retry a failed  call
+>as your application gets bigger, Promises become hard to manage
+
+
+agar api see hammme koi request koo cancel karna hoogga too kiya 
+karengee 
+>agar hamare koi request fail kargaya too hamm usse retry kese karengee
+>yeh dono main reason hota haii promise kee lea
+>dostoo hamme koi api mee request bhejj dea orr hamme koi problem aagaya
+ussko cancel kese karengee
+>joo kii promise hamme provide naahinn kartaaa haiii
+>yehh chota application mee manage hoo jata haii agar badee applicaiton
+mee baat karee hamm promise koo manage karnee mee problem hota haiii
+>tab hamare seen mee atta haii observablee
+
+Observable
+============
+>an observable is an array or sequence or a sequence of eventsw over time
+.it has at least tow participants. the cereator the data source and the 
+subscriber subscripiton where data is being consumend and compared to 
+promise and observable  can be cancelled.
+
+>rxjs is all about unifying the ideas of promises callbacks and data flow
+and making them easier to work with.
+
+>observable provides operator like map ,foreach resuce simililar to an
+array .
+there are also powerful operator like retry(),reply(),retryWhen(),delay()
+
+>inn sarre cheez koo observable short out kartahii joo promise mee dekhai
+dea thaa 
+>usmee cancel karnee kaa provision haii aap try karsaktee ahiii
+>retry() karsaktee haii delay bhii karsaktee ahii retry()
+>inn sarre cheez koo use karkee hamm promise ke sarre drawbackk haii
+usskoo easilyy short out karsaktee haiii
+>issme two participant hotta haii joo kii data source hotta haii
+>dusra subscriber jooo hotta haiii kii wooo subscribee mee joo atta ahii
+woo data joo atta hiii uskoo consumee kartaa hiiii
+>mins jahann see data atta ahii woo data source hoo gayyaa oorr jjahann
+pee data consume hotta haiii 
+>as compare too promise observablee can bee cancel observablee koo ham
+cancel karsaktee haiii
+>mins rxjs nee uskoo pura easy karlea haiiii
+>obserbale provide kartaa haii map reduce  similar too aarray
+>issme power full operator haii retry() kaa agar usmee aap ka koi 
+request atta haii oor request fail karletaa haiiii  ussmee promise meme
+hamm nahinn karpatee haii abhii observablee mee ham karsaktee haiii
+> uskee baad reply() bhii karsaktee haii or retryWhen() bhii karsakteee haii
+>yaa koi request koo delayy karnaa haiiii too delay ka bhii method 
+hamme user karnaa hahiiii
+>mins bohot hii easy karlea haiii kisi bhii request koo manage karnee
+kee lea yehh main difference haii dono mee  iskaa hamm examplee 
+karkee dekheengee too aap ka example orr clear hoo jaigaa
+>chalooo chaleaa project kee taraff eek project create karkee dekhtee
+haii or examplee karkee dekhleetee haiii 
+>wahann pee aap koo live difference mileegeaa orr pata chelegeeaa 
+kii dono mee difference kiyaa haiii
+>project start
+==============
+>usse pehelee hamme node ka command kholna hogaa 
+>kiss folder kee andar hamme project create karnna haii cd projectname
+>uskee bad ham likheenge ng new angularproject
+>uskee baad hamme yeh poocheengeaa would you like too add routing 
+agar ham yes kartee haii too woo routing kaa file add akrdeegaa
+>uskee baad hamm css select karkee enter kardengee tooo hamm enter kardegee
+too hamare project create honna suru hoo jaiigaa
+>thoda saa tile lagtaa haii uskee baad hamme ng servee karkee browser
+mee kesa dikhtaa haiii
+>usske baad hamm projectt kee andar jaingee or hamm dekhengee kiya hota
+haiii
+>sabsee pehele hamm ng serve karkee dikhleete haii kee kesa hamare page
+open hota haiii
+>uskee baad hamm terminall open karengee or likhengee ng serve
+>uskee baad hamm brwoser mee jhaingee or iskaa port joo hota haii
+4200 iskoo open karengeee
+>uskee baad ham kiya karneegee kii hamm jayengee kii dekhengee kii
+app.component.html mee jayengee 
+>wahann joo banaya hua cheez haii sabkkoo dleete karlengee 
+>hamm app.component.ts koo jayengee or hamm title koo saha shoft 
+solutionlikh saktee haiii
+>matlab hamare eek server haii orr client mee eek text box haii 
+ussme haam promise kaa request bhejengee 
+>jese kii haam eek i click karnegeee too eek request hamare 
+client see server tak chalajaigaa
+>i selected country koo serarch karegaa
+>jabb ham in choda dusiree baar ahamre in jaiiga server mee
+>usermee serarch karegaa api mee agli baar hamaree
+>jab ham ind chodengee too hamaree teesra request jaigaa server mee
+>minss bar bar eek hii work kee lea hamm request bhejj rehe haiii
+>mins kisi request koo cancel karnee kee lea hamare paas solution 
+nahinn haiiii
+>yahhi observablee mee kiya hott ahii kiii ham kis request koo cancel
+karsakteee haiii
+>matlab aab hamm i choda agli baar n choda matlab kitni mili seacond mee
+>ham agle request koo cancel karsaktee haiii
+>user ind karega to ind bhejdengee agel bar hamm or eek request bhejengee
+>agle baar india type kearegaa to india serarch kerlegaa
+>mins bar bar hamm eek hii work kee lea ham request bhejj rehe haiii
+>par kisi reuest  ko cancel karnee kee lea hamaree paas soloution nahin
+haiii
+>observablee mee kiya hota haii ki ham kisi bhii request koo cancle kar
+saktee haiii
+>observable mee agar pehele hamm i click kea uskee badd hamm n click
+kea hamm kitnee bhiii mili sec kee lea hamm request koo cancle bhiii
+karsaktee haiiii
+>tab tak user ind type karchukaa reheegaa 
+>pher haam agale kuch mili second kee lea hamm request koo cancel
+karsaktee haiiii
+>phir agli baar hamm india type karlea haiiii
+>phir india search karleega yehh boltaa haii kii ham bar bar 
+request koo hit nahin kar reeh haii api koo hit nahin kar rehe haiii
+>ham request koo customize kar rehee haii kitna milli second kee lea
+hamm request koo managee kar kee rekhnaaa haiii
+>iss sare cheez koo observablee hame degaa 
+>ham apnee taraff see customze karsaktee haiii
+>retry karbkarnaa hamm set karsaktee haii reply kab karna hamm 
+set karsaktee haiii
+>mins alag alag method provide kartaaa haii observablee ismee hamm
+hamaree request koo customize karsakteee haiii
+>jismee hamaree applicaiton  kaa performancee hogaa pura first hoogaa
+>motivee yeeh karnaa haii kii applicaitonkee performancee koo better
+karnaaa haiii
+>chaleaa iskaa praticlee karnegee orr aap ka concept orr achee see
+clear hoo jaigaa
+>yahhnnn pee ham request bhejj rehee too kiss tarahhh kaa hamare kam 
+hotaa haiii
+10.36

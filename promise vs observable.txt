@@ -60,13 +60,7 @@ kiiya milta ahiii
 >
 example
 ===========
-
-
-
-
-
-
-
+>
 
 
 
@@ -90,9 +84,36 @@ jaise fm kam kartaaa hii
 >yahannpee kiya hogga agar ham on kanregee 95.33 fm mee wahann pee 
 jo bhii kuch chal raha haogga or joo bhiikuch milraha hogga agar
 hamm usse subscribee karegee too hamme continiunss ssunai degaa
->constinuesly hamm value koo recieve kartee reheogee
->
+>constinuesly aap value koo recievee kartee rahoogeee issi tarahh 
+hamare kam kartaa haii obseevabllee
+>yahan pee manloo observablee.interval
+import{interval} from "rxjs";
+interval{period:1000};
+>yeeh kiya karegaa kii har eek second mee value koo throw karegaa  bohot
+tarahh kee observable haii ham agge dekhengee aab haam difference 
+dekheetee haiii
+>funciton listenRadio():Observable<any>{
+return interval(period 1000);
+}
 
+
+listenRadio().subscribe()
+
+
+>radio sunna haii hamme too jabb mee call karunga listen radioo too
+yahann pee me subscribe karunnga jese youtube channel koo aap subscribe
+kartee hoo jese latest video atta haiii aap turantt subscribee karttee 
+hooo 
+>ussi tarahh aap yahhann pee iss radoo channel koo subscribe kea 
+>subscribee honne kee baad kiya hoga wahann pee jitneebar value throw
+hogii utnii bar aap kii valuee  miltii rehee giii
+>usske baad ham kiya karenegee hamme value milegee error
+>koi error aaga woo aap koo yahann pee miljata ahiii
+>agge ke video mee dikhnaa haii kee error keese throw karnaa haii
+khud kaa observable bana na haii ham dekhengee 
+>main philal abhii difference dikhnaa haiii console.log(data)
+yeh wala observable haii joo eek second mee value koo throww karegaa
+>
 
 
 
