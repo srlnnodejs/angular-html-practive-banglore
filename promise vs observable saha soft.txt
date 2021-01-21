@@ -162,3 +162,79 @@ clear hoo jaigaa
 >yahhnnn pee ham request bhejj rehee too kiss tarahhh kaa hamare kam 
 hotaa haiii
 10.36
+
+sabse pehelmee hamm aap.component.html mee jayengee or eek text box 
+design karlengeee
+>janahnn par serach kaa  result aaigaa woo ham dikhaa lengee
+>too hamare html keese rehee gaa
+app.component.html
+====================
+<div style="text-align:center">
+<h1>
+welcome to {{title}}
+</h1>
+</div>
+<h1>country name serarch</h2>
+<input #trem type="text" (keyup)="serarch(term.value)">
+<hr/>
+<div *ngIf="resutls.length>"0>>
+<li *ngIf="let restlt of results">
+{{result.name}}
+</li>
+</div>
+</div>
+
+
+issi text boxx koo hamm define karnegee app.component.ts page par
+>ngIf mee kiya hogaa hamaree result ka length mee kiya kiya haiii 
+hamare list mee show karlegaa
+>upar hamare interpolation use karkee hamm sab dekh saktee haiii
+>agla work hoga hamare aap.component.ts pagee par
+=================================================
+>yahann kiya hogga 
+>sabse pehele hamm http client koo import karengeee @angular/common/http
+>uskee baad hamm kiya karngee ham eek constructor lelengee ham constructor
+koo inject karlengee
+>ham constructor mee ham likhlengee 
+constructor(private http:HttpClient)
+>uske baad ham eek array banaletee haiii
+>uskee baad result namm ka eerray bana lete haii too hamare jitna
+result aaiga hamare result kee andar aaiga
+> uskee baad ham eek method banayngee joo search wala method hogga 
+>jo search wala method hogaa search wala yee uss method koo hamm
+define karlengee yahann par
+>yann par hamm kiya kartee haii ham eek api use kartee haiii api kaa
+url haii ham usmee hit kartee haii
+>toPromise  leke hamm promise mee output dekhtee haiii
+>uskee baad hamare data aaajaigaa hamm kiya karngee ham data 
+this.rsult mee ham save karlengee
+>uskee baad ham result koo ham aap.component.html mee bind karlengee
+>uskee baad ham usse use karngee kee lea haamm aap.module.ts kee file 
+mee jayengee 
+yanann pee ham import karlengee @angular/common/http yahan pee ham
+use karlengee  HttpClientModule koo import karlengee 
+>uskee baaad hamm koi bhii module import kartee haii too imports
+kee andar rekhtee haiii
+>Http module koo copy karkee hamm imports kee andar rakhlengee
+>iskee baad ham isme run karakar
+>iskee baad ham run krkee brwoser mee run karkee dekhenge iska effect
+>yahan courntry name search mee aaraha haii orr eek text box araha hai
+>kuch bhii search krengee too hamare idhar eek text box mee ham 
+kuch type karngee too ika effect hamrae nichee aaiga
+>jsese kee mee i type kartaa haoo aap dekh saktee kiii  
+>i jis country mee haii sab aajaigaa orr yanahh appee 226 result console
+mee aagaya
+>jab mee n type kea too dubara request gaya orr in ka combination mee
+jitna result haii sab aagay 68 result aaya
+> jese mee d type kartaaa hooon too
+>again result chalagaya or 5 result aagay
+>iskee baad ham idhar i type karngee too 2 rresult aaiga
+>mins jitna bar type kartee haii kiii utni baar indi  prhir eek type 
+kartaa hoon too 2 result aaiga
+>jab indian type kartaa hoon too eek result aaiga
+>mins jitna bar ham type karrehe haii utni baar hamare requst jaraha
+haii server par yeh eek draw back haai joo application koo slow 
+karsaktaaa haii
+>application mee bohott hhii bada effect la sakta haiii
+>iskoo theek karneke lea observable koo dekhtee hai
+15.59
