@@ -238,3 +238,59 @@ karsaktaaa haii
 >application mee bohott hhii bada effect la sakta haiii
 >iskoo theek karneke lea observable koo dekhtee hai
 15.59
+>
+
+
+observable
+=============
+>observable use kar kee hamme kiya kanrnaa haii hamme simple 
+app.component.html koo jana haii joo pehele seee haii uskoo hata dena 
+haiii 
+> uske baad haam form control user kartee haii input mee ham reactive
+form user ;karngeee 
+>uskee baad hamme app.module.ts ko jayengee or hamme import karna hoga
+forms moduel kooo
+> hamm kiya karengee hamm
+imports{FormsModule,ReactiveFormsModule} form "@angualr/forms";
+hamme yeh dono import karnaa haiii
+>yeh donokoo import karkee hamme imports kee andar rakhnaa haiii
+>uskee baad hamm app.component.ts koo jayengee orr hamm formcontrol
+and rxjs koo hamm import karlegee
+>uskee baad hamme pehelese likha hua tha joo search method with promise
+hamme hata denaa haiii
+>usekee baad hamm wohii term koo rakhlege joo funciton front end mmee
+bind hua hai
+>uskee baad hamm ngInit banayngee 
+>usemee kiya kar rehee haii kii this.term.valueChanges ham karnegee 
+>or hamm
+>deBounceTime hamm 400 millisec rekhngee orr yeahh kiya karegaa hamare
+400 milli sec tak jitna bhiii reqest hogga hammare request cancel kardega
+>yahann par hamare kuhc error araha haiii too hamme rxjs koo hamme
+install karna padegaa
+>ismee ham type karengee npm inststall --save rxjs-compat
+>jese enter hit karengeee hamare install honee leage gaa
+>abhii hamm ngserve karlengee browser mee jayengeee 
+>agar hamm iss funcito ssee ham .deBounceTime orr distincUntilChanged
+koo hata lete haii too yeh bhii hamare promise kee tarahhh kam karengaa
+>yahii dono method hamara observable alag set kartaaa haii
+>ham debounce time set karlete haii itna mee jitna requestjaigaa woo
+hamare debounce ho jaigaa matlab cancel kardega
+>aab ham kiya karnngee ham browser mee jayngeee ham jitne wajee tak 
+ham type nahin karenge wo utni time tak request nahinn bhengeaa
+>ind karnee kee baad hamare reqeust gaya
+>magar promise mee hamare uus time taak 3 bar chalagaya hotta
+>agar mee code mee see mee debounceTime or distinctUntiChanged koo
+hata deta haoon too 
+>too yeh  promisee kee tarahh work karegaa
+>save karke dekhnegee or ind type karngee too 3 bar reqesut chala jaigaa
+>dekheaham jese browser mee type kea ind teen bar request gaya
+>observable hamkoo wese haii bohot sare methodd deta haii usse use
+karkee hamm apnii appicaiton koo first karletee ahii
+>phir see hamm dono method koo dalkee ham phir see dekhengee or dekh
+tee haii kiya hotta haii 
+>hamare 3 word tak woo request nahin bhejegaa
+>tooaisa kuchnn methodd bagera hammare observable deta haiii
+>joo applicaiton koo first bana leta haiii
+>agar aap kii mind mee kuch confusion hoo app jarur save karea or 
+like kejea or share kejea 
+>
