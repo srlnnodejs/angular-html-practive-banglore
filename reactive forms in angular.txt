@@ -78,3 +78,140 @@ form it makes data exchange possible between template and class
 >form will be
 app.component.html
 ===================
+<div class="container-fluid">
+<h2>registration form</h2>
+<form>
+<div class="form-group">
+<label>username</label>
+<input type="text" class="form-control">
+</div>
+
+<div class="form-group">
+<label>password</label>
+<input type="password" class="form-control">
+</div>
+
+<button class="btn btn-primary" type="submit">register</button>
+
+</form>
+</div>
+video no 18
+===========
+>all right so far we just added html we havent added any code related to
+reactive form so lets get started this video
+>in angualr we need able to work with reacive form we need to required 
+reactive forms module
+>first step we need to open app.module.ts and import reactive forms module
+form angualr/forms
+>also make sure to add on imports array
+>reactive form module gives access of bunches of different classesand dire
+ctives that all nessary to build reactive form 
+>out of those two classes make up the building blocks for reactive forms
+>they are form group and form control
+>here reactive forms form represent by model component class
+>and to be able to create back model make use form control and form group
+classes
+>in our demo application we have three field
+>username,password,confirmpassword
+>each of the form field define instance of form control classes
+>and overall form it self in composist define instance of form group 
+>basically entire form represent form group and each form field represent
+form control
+>for a class
+>lets understand better with this code
+>as we worked before in app.module.ts
+how to lloook like
+app.module.ts
+=============
+import{BrowserModule} from "@angualr/platform-browser";
+import{ngModule} from "@angular/core";
+import{ReactiveFormsModule} from "@angualr/forms";
+import {AppComponent} from "./app.component";
+@NgModule({
+declarations:[AppComponent],
+imports:[BrowserModule,ReactiveFormsModule],
+providers:[],
+bootstrap:[AppComponent]});
+})
+export class AppModule{};
+
+>next come to app.component.ts in this class we going to create new 
+from group instance represent user registraiton form
+>registrationForm=new FromGroup()
+>make sure to imports the class form @angual/forms
+>import {FormGroup} from "@angular/forms";
+>next step to initilize for form group with object controls present in the
+html
+>register form have three form field lets specify them in form group con
+structor
+>within paranthasis we going to have objects
+>this object contains three instance of form control classes
+>one for username one for password and finally one for confirm passowrd
+> if you wish to have default value any of the form field you can pass
+that value in form control constructor
+>lets add default value for username field viswas
+>now our forms model is ready
+so our app.components.ts looks like
+===================================
+import {component} from "@angualr/froms";
+import {FormGroup,FormControl} from "@angular/forms";
+
+@Component({
+selectro:"app-root",
+templateUrl:"./app.component.html",
+styleUrls:["./app.component.css"]
+});
+
+export class AppComponent{
+
+registrationForm=new FormGroup({
+userName=new FromControl("viswas),
+password:new FromControl(""),
+confirmPassword:new FormControl("")
+})}
+})
+> next step to associate the above model to view which needed html form
+> for that reacive forms module provided certain directives
+>on the form tag we use  form group directive and bind registration form
+group 
+<form [formGroup]="registraionForm">
+>to bind each of form control we bind form control name directive
+>for username is formContrlNmae="userName"
+>for passwordis formControlName="password"
+>for confirmPassword is formControlName="confirmPassword"
+>so what we have done we created 1:1 assocation  in the formGroup and 
+fromControl and corresponding html elements
+>entire form associtated [formGroup]="registrationForm"
+> and individual form control associated corresponding html elements
+>userName password and confirmPassword
+>now we have created communication layer betwwen model and view
+>to visualize communication we need to interpolate component class to 
+view with json pipe
+>{{registrationForm.value|json}}
+app.component.html looks like
+==============================
+
+
+
+>now i save this and had to browser 
+>you can sea three input field and username field hav viswas as 
+specify in formms control
+>in bottom you also sea form group value
+>username viswas when we type password value will updated similarly
+for confirm password as well
+>and there we go we have created first reactive form 
+>it si preety simple form for serves puprpose 
+>for summarize there are three steps to create reactive forms
+>first step define html form component template
+>second step define form model in component class
+> third step use directive provide by reactive forms module to associate
+model with view
+>at any point of time formgroup.value which can be posted to server to
+requeid
+>now iam good understanding how reactive form works
+>
+
+now the app.component.html
+
+
+
