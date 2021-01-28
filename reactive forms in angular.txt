@@ -212,6 +212,183 @@ requeid
 >
 
 now the app.component.html
+==========================
+<div class="container-fluid">
+<h2>registraiton form</h2>
+<form [formGroup]="registrationForm">
+<div class="form-group">
+<label>username</label>
+<input formControlName="userName" type="text" class="form-control">
+</div>
+<div class="from-group">
+<label>password</label>
+<input type="formControlName"="password" type="password" class="form-control">
+</div>
+
+<div class="form-group">
+<label>confirm password</label>
+<input formControlName="confirmPassword" type="password" class="form-control">
+</div>
+
+<button class="btn btn-primary" type="submit">register</button>
+</form>
+{{registrationform.value|json}}
+</div>
+>there is three step to create html form first step to define htmpltemplate
+>second step define your form model your component class
+>third step use the derictive provide by  to reactive model to associate 
+model with view
+>at any point of time formgroup.value provide \
+>now we have good understanding how reactive form works
+>take look few more concepts about reactive forms
+video no 19
+============
+>in last video we seen how to create registration form using form control
+and form group classes
+>we learn that form control class is used for individual form element and
+form group class used to represent entire form 
+>apart form that form group class also can use together different form control
+>for example city state and postal control can conme one form group is 
+adderess
+>lets understand this better with the code
+>in app.component.html we going to add three new field
+>one for city one for state one for postal code
+>all three fields are enclosed with containing div tag
+>right after confirm password i added these fields
+><div>
+<div class="form-group">
+<label>city</label>
+<input type="text" class="from-control">
+</div>
+<div class="form-group>
+<label>state</label>
+<input type="text" class="form-control">
+</div>
+<div class="form-group">
+<laebl>postal code</label>
+<input type="text" class="from-control">
+</div>
+</div>
+
+>containig div tag with three inputs
+>one for city one for state one for psotalcode
+>now lets update our form model
+>we need to add three new instances in form control but i mention is like
+a group in address field
+>to achivieng we need form group class
+>in form.control.html
+=======================
+address:new FormGroup() 
+>we specify object  three form controls
+>city state and postalcode
+>let add html to bind form control
+>
+in app.component.ts i have to write 
+export class AppComponent{
+registrationForm=new FormGroup({
+userName:new FormControl('viswas'),
+password:new FormControl(''),
+confirmPassword:new FormControl(''),
+address:new FormGroup({
+city:new FormControl(''),
+state:new FormControl(''),
+postalCode:FormControl('')
+})
+})
+}
+>goback to app.component.html make use formControloName directive
+>one is city state and other is postal code
+>to enclosing div tag name is address in address form group
+>so now angular treats now new div tag in form gourp now map form control
+>to the form control within address form group
+>city state and postal code
+>let me move interpolation of top of the form
+>if you take browser you can sea form vlaues
+>city state and postal code are group in to a object
+>named as address
+> when building compolex form managing different area of information
+>easier in smaller sections
+>in such senario use nested form group break large forms
+>smaller and more managable onse
+>in next video we sea managing form contrl and form groups
+video no 20
+=================
+>in this video we need to set form control values with out user interaction
+>that is setting values programmatically
+>for example we might have to return form data from backend api and servies
+>update form control to new values
+>we can do that using set value methodsby reavctive forms
+>let take a example
+>we set default value of user name field
+>specifying value for form control constructor
+>instead let set values for different form controls automatically
+>in html wee need to cfreate new button for load api data
+>button so load api data
+>class is button <button class="butn btn-secondry">load api data</button>
+>left margin ml-2
+>type=button
+>on click button iam going to invoke loadapi method
+>lets define this metod in the class
+>the button like bee
+<btton class="btn btn-secondry ml-2" type="">load api data</button>
+>on click button iam going to invoke load api method
+>lets define this method in the class
+>app.component.ts
+================
+loadApiData()
+{
 
 
 
+}
+>this method going to set different form control values
+>setting vlaue progammatically we have set value method
+>set value called either in form control calss or form group class
+>frr our purpose wee need to call registration form group
+>in the method we need to write 
+loadApiData()
+{
+this.registrationForm.setValue()
+}
+set value method accepts objects that matches structure of form group
+>contrl as kyes
+>we have userName:Bruce
+and password and confirm password test
+>address and city 
+city as city and state as state and psostal code 123456
+
+loadApiData(){
+this.registrationForm.setVlaue({
+userName:'bruce',
+password:'test',
+confirmPassword:'test',
+address:{
+city:'city',
+state:'state',
+postalCode:'123456'
+}})}
+
+>so exact structure of registarion form group like will be
+>if you save this and goback to browser click on load api data and you
+can sea form control populateed the dummy data
+>we have all data all username password city and state and postalcode
+>lets say we need to populate username and password not address field
+>in the code iam going to remove address key form setVlaue method
+>now iam get back browser and click load api data we sea it doesnt work
+>if you open console you can sea error 
+>must supply value address with form control
+>so set value very strict mainting structure of form group
+>you have to pass all form control values
+>if do you have set values for only of filds little can make use patch value
+method 
+>go back to vs code change set value to pathch value
+>and parameter be a object contain few of formcontrl is necessary
+>now i complettly remove address object and iam go back click on load apidata
+method 
+>we can sea only we set vlaues for user name for input fields
+>so set vlaue and pathch value really important when we use api as service
+>set value is used to we need to set all vlaue of from control
+>patch value to be used to set few value of form control
+>all right that is managing form control for component class
+>for reactive forms
+>
