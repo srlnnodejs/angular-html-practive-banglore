@@ -184,7 +184,7 @@ fromControl and corresponding html elements
 >entire form associtated [formGroup]="registrationForm"
 > and individual form control associated corresponding html elements
 >userName password and confirmPassword
->now we have created communication layer betwwen model and view
+>now we have created communication layer between model and view
 >to visualize communication we need to interpolate component class to 
 view with json pipe
 >{{registrationForm.value|json}}
@@ -391,4 +391,97 @@ method
 >patch value to be used to set few value of form control
 >all right that is managing form control for component class
 >for reactive forms
+>while we doing set value or patch value the data populating in template
+output 
+
+video no 21
+=-=========
+>so far we seen how to create form model using form group and form control
+classes
+>but you can sea creating multiple form control manually become very repetative
+>to avaoid this angualr provide from builder service interns providing 
+methods providing genreating form controls
+>we will still be creating instances of form control just like how we doing
+right now with much lesser code
+>in this video lets refactor our code and utilize form builder service  create
+a form model
+>now i mentioned form builder is a service
+>first step import service and injected in to the constructor
+>instead of FormGroup and FormControl i need to import formbuilder
+>and then constructor lets injected
 >
+constructor(private fb:FormBuilder)
+>second step use this instance of form builder service to generate form 
+control
+>so let me comment out existing model 
+>create one using formBuilder service
+>registrationForm=this.fb.group to create form group we called group 
+metthod
+now the form will be
+i wil show end or midde seure
+>group method takes object for different form control keys
+>so first key is username
+>this time the value is an array
+>the zeroth index value is defauult value
+>to be want user name viswas is default one
+>similary password and confirm password
+>next we have address
+>address will be another form group
+>so again we need to call group method for from builder instance
+is this.fb.group 
+>it retruns takes object and again form controls are key
+>so objects we has form control has keys
+>city state and postal code
+>if you save this and take look in browser 
+>you can sea the default vlaue of viswas for username field
+>when typing value of other form control you can sea on the top the
+value can updated in form model
+>form builder nothing but simple alternative of formgroups and form
+controls
+>and we will be stiking this form builder way of createing form control
+for rest of the code
+>alright so far we seen how creat models
+>associtte with form html
+>set default values and also set form control valuees programatically
+>next lets take look validation in reactive form
+lets look how form looks like
+=============================
+app.component.ts
+================
+import{Componetn} from "@angualr/core";
+import{FormBuilder} from "@angular/froms";
+@Component({
+selector:"app-root",
+templateUrl:"./app.component.html,
+styleUrls:["./app.component.css]});
+
+export class AppComponetnt{
+constructor(private fb:FormBuilder){}
+registraitnForm=this.fb.group({
+userName:['viswas'],
+password:[''],
+confirmPassword:[''],
+addrss:this.fb.group({
+city:[''],
+state:[''],
+country:['']
+}})
+
+loadApiData(){
+this.registrationForm.setVlaue({
+userName:'bruce',
+password:'test',
+confirmPassword:'test',
+address:{
+city:'city',
+state:'state',
+postalCode:'123456'
+}})}
+
+
+
+
+
+}
+
+

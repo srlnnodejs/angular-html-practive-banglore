@@ -1,0 +1,216 @@
+jquery
+==========
+video no 1
+==============
+>iss tutorial mee ham jequey hota kiya hai orr isse hamme kyun use karna
+hai ham dekhengee
+>sabse pehele hamare paas question ooth ta haii kii jquey hai kiya
+>jquey eek light weight java script library hai ismee sara ka sara kam
+hamare java script mee hota haiii
+>problem kiya thi pehele jo pehele hamm java script mee kam karte the
+>jab ham java script mee kam kartee the isske kandar hamme kuch
+problem attithi orr kuch code complex ho jata tha
+>jese hamme bade bade selector likhne padtethe dom koo target karne ke lea
+>hamme complex animation karnipadtithi too code lenthy ho jata atha
+>lanthy dom ke manupulation ho jatithi
+>agar hame html dom ke andar koi value ko set karna or get karna too
+woline lanthy ho jati thi
+> last mee agar hamme javascript mee ajax ka code laganeiii too woo
+bohot lanthy ho jata that
+>kam se kam 10 line likhne padti thi too jquey kee team nee kiya kea
+>unnohonee kiya kia inn sarri problem koo chote chote funciton mee daldea
+or unn funciton koo name deedea\
+>orr enn function koo collect karkee eek file kee andar daldea
+>uska eek name dedea uska name haii jquery
+>actually hamme jab bade bade kam karni haii  ham eek chota sa funciton 
+lete haii jquey
+>wo jequey kee andar pehele hii define haii uskoo laganee se hii wo 
+bohot bada kamm hojata haiii
+>man lejea aap ka ajax hai agar ajax likhnee haiii too das line likhene koo
+koi jarurat nahinnnn haiii 
+>simple aap eek hii line likhkee aap puri ki puri ajax codde karsaktee hai
+>simple jquey ka joo team haii unka eek hii moto haii kii write less and
+do more
+>matlab kam se kam code likho or jada se jada output gain karo
+>  aab ham yahan pe dekhenge kii jquey koo kyun use karnachaihai
+>iske use karne ka joo pehela faida haii wooo short selectors
+>jooo selector chotee hojate haii
+>variety of funciton for animation
+>ismee kiya haii kii variety offunciton haii animation karnee ke lea
+>aap koo alag alag tarahh kee animation karnee kee lea bohot tarah kii
+funciton miletee haii
+>easy dom manupulation agar aap html ke andar koi value koo set karna 
+hai or get karna haiii too wo kitna easy ho chukahai jquey kee through ki
+woo aapko simple doo words likhkar wo kam hojaigaa
+>ismee css ke sytling karna bohot hii asan haii or bohot hii simple haii
+>agar aap dom ki kissi value ko target karna chatee hai too itna simple hai
+kii aap do word likhkee haii aap target karsakteee haiii
+>aap koo complex code likhnee kee koi jarurat nahin haii jese kii hamm
+java script mee likhtee thee
+>simple ajax code too kiya haii kiii aap eek line likhee kee haii das line
+ka ajax code karsaktee haiii
+>too ham likh saktee haiiikii
+>showrt selectors
+>variety of animation funcitons
+>easy dom manupulations
+>easy css styling
+>essy dom traveeeersing
+>simple ajax code
+>ismee short selector jeaise kee aap ko pata haii kiii javascript kee 
+andar class koo target karnee ke lea hammare alag selector banta tha
+>id ko seelct karnee ke lea alag or tag koo selectkarnee ke lea alag
+selector banana padta tha
+>javascript mee ap koo jab kuch class name koo aap target karte the too
+aap kiya likhte the 
+document.getElementbyClassName("classname");
+>or andar hamare yahan pee hamare class ka name aajata tha
+>jquey kee andar hamare kitna simple hota hai dekhea 
+$(".classname")
+>isse tarah hamare yahan aap java script mee aap id koo select kartee the
+too aap koolikhnahaiiikii 
+document.getElemenetById("idname");
+>agar hamme yahi kaam hamme jquey mee likhnahai too hamme kiya karna haii
+kii 
+$("#idname")
+dolor or round bracesses ka andar hamme #likhke hamme id name daldena haii
+>agar hamme tag name koo select karna padta tha too hamme kiya likhna 
+padta tha too hammee
+document.gtetEelmentByTagName("tagname")
+>isse cheez koo hame agar jqyer kee angar hamme likhna haiii too hamme 
+$('tagname');
+>too yahan pee dekha hamme alag lalag name yaad karnee keekoi jarurat nahin
+haii 
+>simple aap eek hii tarikee ka selector yaad karengee orr usi see aap kiii
+sare kam ho jaigggeee
+>yahan pee or eek bat hamjquey kee andar kitna bhi complex selector hooo
+ham yahan par ham lee saktee haii
+>issme ham dekhtee haii kii benifit kiya haii hamme jquey use karnee kebad
+>sabse pehele hamare benefit haii joo browser independent haiii
+>ismee aap jquey chalanee kee baad aap koo yeh dekneee kee jarurat nain
+padtii koi cheez chrome mee chalrehee haii or firefox mee nahinn chalraehe
+haiii
+>agar aap eek code aap jquey mee likha haii too wo sarei browser mee 
+run karega haii karegaa
+>iska dusra benefit haii kii increase coding speed 
+>matlab aap kii seelctor sab itna chota ho jata haii kii aap kii coding speed
+bohot teez hojatii haiii
+>too isko sikhnee se pehele hamme dikhnnaa haiiii kii hamare paas kiya 
+knoowledge hona chaihai
+>uske pehele hammse pehele anna chaihaii htmll,css basic java script
+>agar aap ko basic javascript nahin aatti too bhi aap jquey siksaktee haii
+>magar aapko html and css ke propoer knowledege honee chaichia
+
+>last mee dikhtee haii kii jquey ka code karnee ke lea hamare paas kon kon
+see editor hona chaihai
+ntoepad
+nodepad++
+vscode
+++sublime
+atom
+
+video no 2
+================
+>hello dosto swagat haii hamare youtube channel yahoo babame>
+>issme aap dekhnee wale haii ki ham kese jquey kee file koo ham html kee
+file ke andar implement karsaktee haiii
+>agar aap jqeery koo html kee andar implement karna chatee haii too uskee
+teen step hotii haiii
+>pehela steep hota haiii kii aap uskii file koo download karengee
+>aab dusri kam yeh kee aap joo file download kea haii usko script tag
+ke trhough html kee andar embed karna haiii
+>uske baad ham kiya kartee haii ham alag se script tag likhtee haii orr
+uske andar ham sare code karteee haii
+>ismee joo second step and third step haii uskoo ham pura or thoda details
+mee batata hooon
+>agar aap jquey kee file koo download karlea haii too aap uskoo head kee
+andar aisa likhengee script tag kee andar
+>uskee baad aap alag kee script tag likhsaktee haii aither head tag
+ke andar likhsakteee haii nahinn too body tag kee andar likhsakteee
+hai
+>baas eek hii baat aap kooyadd rakhnee haii kii aap joo jquey kee file
+haii uskee baad hii ap koo scrript tag laganii haii
+>useke pehele app lagayngee too aap ka jquey kaa code bilkul nahin chalega
+> to
+kiasa hoga code
+<html>
+<head>
+<script src="jquey"></script>
+</head>
+<body>
+<h1>hyahoo baba</h1>
+<script>
+</script>
+</body>
+</html>
+>aaia ham dekhtee haii ham praticallly
+>sabse pehel aap ko donwload karna padega tooo aap ko official websit mee
+jana haiii jquery.com
+>wahan pee right mee download kee lea aap kee eek link haii jahan pee aap
+jake aap download karsaktee hai
+>wahi side mee aap ko dekhna haii kii jquey kaakiya use haii wahi likha 
+hua haiii
+>upar padh saktee haii kiiwoo cross browser compatable haii
+>yueh css3 complaint haii or light weight haiii
+>matlab joo jquey kaa file haii wo only 30 kb haiiii
+>aab ham jake download kartee haii
+too ham orr eek page koo navigate ho jaigee wahann hamme milega
+doo link eek compress or eek uncompress
+>agar aap compress ko dekhengee click karkee too wo unreadablee hota haii
+>iska matlab yeh haii kee aap uskoo read nahin karsatkee haii 
+yeh file bohot jaldi open hoti haiii
+>kyun kee wo minify file hoti  haiii uske alawa joo dusra file hota haii
+>usko aap read karsatkeet haii 
+>agar aap padhna chatte haiii too aap compress file lesakettee haii
+>too compress ko hamee lena haii too kiya karnegee aap koo compress kee
+likn koo right click karna haii or karna haii savelink as
+>aap koo jahan par isse download karna haii too mera forlder haii yahann
+pee to mene pehele see yahnap eee mee download karkee rakhann hoon
+>too aap ko rename karna haii too aap koo rename karsaktee haii
+>save karne kee bad hammare dusra step hota haii kee hamme iss file koo
+hamme html kee andar include karna haiii
+>include karnee kee lea ham kiya kea ham eek document bana lea haii
+>or document kee anadar hamme kiya karna haii hamme title tag kee niche
+or head tag kee andar hamme eek tag lena haii script tag
+>uske andar mee use karungaa source too hammee external javascript file
+laganee haiii
+>uss file ka name yeh haii jquery.js
+>wo hamare js folder kee andar rakhi hui ahii
+<script src="js/jquey.js"></script>
+>agar aap dekhna chatee haii kee file include hua ahii kii nahin aap 
+wahan right click karkee viewpagesource karttee haiii tooo
+>too upar dekhengee too aap koo hamare jquery file dikhenga head tag 
+ke andar
+>agar mee usko click karke dekhunggaa agar woo include ho gai hogii too
+usmee hamare code khuljaiiga
+>aab mee apkoo dikhataa haoo ismee hamare tesra step
+> iske andar aap jquery ka code html kea andar dalke dekhengee too yahan par
+>yahan body tag kee andar script tag leleta hoon or view source band
+karletaa hooon
+>wahan mee jquey kaa code likhnaa suru karletaa haoon me likhaa 
+$() dolar round brasses
+>ismee ham dikhane chatee haii kii ye run ho rehei haii kii nahinn
+>iskee accroding ye file chalreheii haii ya nahinnn
+>uske baad me likhunga document.ready funciton uske code ke andar aate
+hai  mee alert laga deta hooon
+>alert wese hii kam karegaa jaisaii haii java script me karta tha
+>waisa hii yahh java script haiii
+>dekhea mee print karkea or file koo savee kea
+>yahann pare hamare joo alert box haii woo open ho chuka haiii
+>message bhi aagay 1
+>iska matlab haii kii hamare jquey hamare haii run honee lagii haii
+>
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js/jquery.js"></script>
+</head>
+<body>
+<h1>hyahoo baba</h1>
+<script>
+$(document).ready(function(){
+alert(1)
+})
+</script>
+</body>
+</html>
+

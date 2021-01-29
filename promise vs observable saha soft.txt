@@ -53,7 +53,7 @@ mee baat karee hamm promise koo manage karnee mee problem hota haiii
 Observable
 ============
 >an observable is an array or sequence or a sequence of eventsw over time
-.it has at least tow participants. the cereator the data source and the 
+.it has at least two participants. the cereator the data source and the 
 subscriber subscripiton where data is being consumend and compared to 
 promise and observable  can be cancelled.
 
