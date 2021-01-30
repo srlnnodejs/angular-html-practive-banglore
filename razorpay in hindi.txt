@@ -1,0 +1,21 @@
+razorpay in hindi
+=====================
+>razor pay kiya hai
+>agar aap ka business online hai aap chatee haii kii online hii payment
+kareen tooo razor pay acha option ho sakta haiiii
+>razor pay mee kiya haii razor pay eek payment gateway hai
+>jisme aap apni customer see online  payment accept karsaktee haii
+>bina kissi dikkat see
+>iske lea aap kiya karege aap aap ka payment page ka link aap website
+mee dalsaktee hai or uska link customer koo desaktee haiii
+>aaiea ham dekh tee haii kee app razor pay mee payment page kese 
+banasaktee haii
+>apne razor pay mee login karnee ke bad aap click karsatee haii 
+Payment Pages agar aap koi bhi page pehele se bana ya hua ahii to woo 
+aap ko dikhna suru ho jaigaa
+>naya page banane kee lea aap click kejea +CreatePaymentPage button pe
+iske baad aap pehele se joo template banaya haua haii usko choose karsatke
+haiii
+>nahin to simply aapna bhi koi neya template bana saktee haii
+>lets say me idhar choose kar raha haoon product sale ka template 
+>

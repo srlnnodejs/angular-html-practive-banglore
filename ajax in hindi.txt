@@ -1,0 +1,94 @@
+ajax in hindi
+==============
+>sabse pehele yee dekhletee haii kii yeh ajax kiay hota haiii
+>ajax ka full foam hota haii kii asynchronous java script xml
+>asynchronouse java script xml ko milke yeh hamar ajax banahua hai
+>actueally xml ko use kar rehe tthe oo yeh bana haii now a days
+instead of xml we using json
+>bohoto koo lagta haii kii jab wo web designing mee jatee haiii
+jab woo koi database server or kisi cheez ko rnder kateee haiiiunko
+web page mee dikhana hota haii to tab unko bola jata haii kiii ajax 
+koo use karo tum
+>too aap sochtee haii kii ajax koi progamming langulage 
+>me bata deta hooon ajax koip programming language nahinnn hai
+>ajax kiya karta haii bohot sari language kee combinationkee through
+hamm ajax koo use karsakteee haii
+>jese kee XMLHttpRequest koo use karke mee server koo request bejj
+sakta hooon
+>ham aisa server koo request bhejteee haii or server kiya karega hamme
+response dega too ham response koo handle karne ke lea ham HTML dom koo
+use karteee haiii
+>or java script funciton kee through ham dilplay karwayngee hamare web
+page meee
+>toohamme isko kese include karna haiii
+what is ajax
+==============
+AJAX=Asynchronous javascriitp and XML
+AJAX is not a programming langualge
+AJAX just uses a combination of 
+A browser built n XML Http Request  object 
+(to request data from a web server)
+javascript and HTML DOM (to display  or use the data)
+
+ajax ka main moto kiya hai kii koi eek web page haii samajhee rehe hoooaap
+>usme aap multiple java script code alag alag jagee mee likha haua haiai
+>agar aap ka page aapko interactive banana haii
+>us samay kiya hota haii kii
+agar eek particular person jaga haii usme aap quey kea hua ahii jahan pee
+date chal raha haii or dusra jaga haii jahannnpe aap chatting kar rehe 
+hooo 
+>teesra jaga aisa haii kii aap kuch typing kuch kar rehe haooo
+>ye batanee ka matlab haii kkiii eek sath multiple kamm chaltee rehena
+>matlab eek chalraha haii too dusra naihnn rukna ischaichi
+>jitna kam haii sab chaltee rehena chaihai uska matlab kiya haii kii
+asynchronous
+>ajax ka main kam kiya haaii jabhii koi request karteee hoo woo aap 
+koo lakee dee bina page koo refresh karkeee
+>whole page koo aap ko dena haii too aap koo page koo bina refresh karkee
+hii woo aapko background mee data koo show karwana haiii
+>wohi kam ajax possible karwa ta haii theek ahii
+>dekhea ham iska example dikha saktee haiii mai iska basic standard
+dekhtahooon or bolta hooon yehh kese kam kar rha haiii
+>pehle yeh hamar browser haii agar aap facebook meekuch kam kre rehe hoo
+agar aap koo facebook mee kuch comment likhna haiii or like karna haii
+>lets say aap google mee kuch query search kar rehe hoooo
+>aap ne dekha hoga aabhi aapkoo me dekha deta hooon
+>uss samay kiya hoga kii aap xml http request ka eek object create kartee
+hooo uss object kee through aap request send karoggee hamare server
+koooo jab wo jata haii all internet kee through 
+>server hamare proccess karega uske bad wohi response jahan ham bhejethe
+hohi aake paste jo jaigaaa
+>bina whole page koo refresh kea 
+>iska matlab yahi haii kiii aap ka normal page work chalraha haiii
+magar woo effect nahinn dega agar ap chateee haoooo too aap koo example
+dekha deta hooon guys
+>dekhea yeh face book hai mostly face book mee ham ajax use karteee haii
+>agar mee eek photo mee like karta hooo aap jantee agar mee like karta too
+whole page refresh hota haii too yahan nahinn hota hai
+>socho agar mee yahan pee kuch comment karleta haooon matlab mee abhi
+face book kee page mee hoon aap socho kiii aap face book keee page mee
+hoo 
+>ro kisikoo comment kar rehe hooo 
+>too kiya hua bina page koo refresh hue hii hamare update ho chuke haiii
+>too yeh kese hua haii ajax kee through
+>matlab jahan pee app chatting kar rhehe hoo jahan pee ap friennd request
+kar rhe haoo jahan pee aa kuch kar rehe haooo too aap particular 
+wohi section mee kuch change kar rehe hooo too 
+>too usi pee hii changes hooga baki jaga meee kuch nahin hoga
+>mene like kea too khali like change  hua comment kea too dekha khali
+uski hight badhgaiiii
+>yeh hamare add hogaya
+>baki pageon koo kuch nahin hua tooo yeh ajax kee through possible hai
+>dekhoo agar mee url mee kuch likhraha hoon too jese jese likhraha hoon
+hamare input server mee jaraha haii or uss kee base meejoo output 
+aaraha haiii wooo hamme yahann pe outpu meeeee kikha rahahaii url meee
+>in google mee bhiii aap kuch likhteeee hoo tooo uskee output meee 
+aaraha haiii
+>matlab aap kuch serarch kar rhe too ussi jaga mee hii  aap koo arraaha
+haiii
+>dekhea whole page kooo kuch nahin hoo raha haii or dekhea niche 
+joo araha haiii too bilkul ajax kee through hoo raha haiiii
+>next video mee mee simple karke dikhaungaa idhar
+ham country,state,city koo dekhrehe haiii
+>agar ham country kooo select  kartteee haiii
+>

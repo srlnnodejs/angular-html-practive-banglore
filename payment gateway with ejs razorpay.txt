@@ -1,0 +1,217 @@
+razorpay payment gateway with ejs    29-1-2021
+======================================
+>wee all doing with nodejs and template making with ejs
+>we dont need to any exprerience in ejs because we only going to do 
+only one aspect that using the variable we going to sending from backend
+to frontend
+>for that purpose only we going to use ejs
+>other wise we would have done in html
+>first of all lets make an entry point app.js
+
+app.js
+======
+>open the terminal taking little bit of time
+>on terminal add npm init actually we dont have to put anything to init
+>just change the name into razorpay
+>if you name as razorpay while installing package you will be introuble
+>name any other thing like payment
+>we done npm init and we got package.json file
+>in this package.json file we need to store all dev dependency 
+>scripts and meta data all 
+>now will be installing require npm packages
+>most important is express and dotenv becaure we writing key id and 
+key secret in dotenv file
+>because we dont want to any other person look into the code find out the
+key id and key secret
+>those are thing that wee need to write in file doesnt need to be display
+>code like if you use mongodb you know secret urls
+>that contain password as well db
+>so these are thing we need to display the code 
+>all those stufs we need to store in dotenv file
+>and those env variable can use code itself
+>so express dotenv and cors bodyparser and razorpay and crypto for encoding
+the data
+> that will be sening in payment toatlly six packages installing it gona
+take some time
+>now iam installed express dotenv cors and body-parser razorpay and crypto
+for encoding the data that will be sening in payment row
+>go to terminal 
+install
+>npm i express body-parser razorpay cors crypto
+install all thing in command line
+>in mean while go to razorpay payment page
+>gather the key id and key secret
+>now go razorpay side
+razorpay.com
+=============
+>do login but you do signup first  after signup you will get email and 
+password
+>after login you will get razorpay dahsboard 
+>for getting key id and key secret first time you need to  click setting
+>and click on apikeys
+>because ihave already generated key once there ie option to generate test
+key
+>here is the test key because currently running in the test mode
+>to activate in live mode i need to activate live account
+>so this is for demo purpose only iam running in test mode
+>because iam already generted test key before iam getting option of 
+regenerating
+>click that and click on De activat Old Key Immedetly
+>and here i will get all details i need
+> as a keyid and keysecret
+>so i will be creating .env file right now
+>pelase enter details in .env file
+>.env
+==========
+inside .env file lets enter the key id first
+>.env
+=======
+KEY_ID="asldjfak;lfjd;kslafjd;lskf"
+KEY_SC=";J;KLSAJDFKASJDK;LSAJDKHASPOFUEIOWRQUPEOR"
+
+this done lets move to app.js file
+>do the basic stufs that is requireing package
+>lets start work in app.js file
+>first import express package
+>do dotenv configuraiton required because we suing dotenv file 
+>in order to install we need to import npm package and requrie into app.js
+file
+>then go to cross origin resource sharing 
+>you can skip the part now import bodyparser 
+>now import crypto next thing iam going to explaining payment flow
+>so that we can make smooth tranzition between front end and backend
+>to avoid confusion 
+>crypto all the packages been required
+>let to to image part download the payment flow image
+>so before image go to app.js file and write your scripts
+app.js
+========
+let express=require("express");
+const dotenv=require("dotenv");
+const cors=require("cors");
+const bodyParser=require("body-parser");
+const crypto=require("crypto");
+
+>now move to image part so here we have image of the payment flow
+> as a client you will get the front end template at your schreen
+>details we will pass through razorpay payment gateway through api
+>amount and there is the details like name or some thing
+>but amount is most important thing 
+>to create instantiate the order
+>and while doing with inr the default package payment mode for razor pay
+is paisa not  rupes
+>waht is rupes you want you have to multiply in to 100  and pass the amount
+>so for ten rupes you need to put 1000 
+>first step customer proceed to pay first here 
+>backend api it fires oerder api 
+>creating in order 
+>order is created by razor pay it returns order id
+>what we do we need to capture order id and store in input field
+>and then we going to make checkout from out of this
+>we will put details like this order id and amount
+>the razorpay key and all this we creating checkout form submitting 
+the checkout form back to the razor pay
+>this will be also done by api it self that done the process done payment
+is verified
+>razor pay retruns set of credentials
+>razorpa_payment_id,razorpay_order_id,razorpay_signature
+>at the end we will comparing razor pay signature and expected signarture
+>if both signature same we will tell payment is cpatured and we did
+sucessfull payment tranjaction
+>so this is the basic payment flow that we are following
+>instead of backend lets start doing front end part first
+>that willl bee you can easyle understand
+>so we creting views folder here inside view folder we need to creating
+payment.ejs
+===========
+10.07
+=====
+>will be createing views folder here inside view folder we creating 
+payment.ejs
+>ejs just only html but you can also add java script on it
+>for more lenthtee i have written code here and i will be explain code
+to you
+>first thing you will put label for amount 
+<label for="">Amount:</label>
+>what ever peace you want you multiply by hundered and put here
+>and right here input field weill bhe give id will be order-amt that in later
+we can refer and fetch order amount from write here
+<input type="text" id="order-amt">
+>given to little space and this is the button will be embadding event
+listner to it that will create order and recieve order id from razorpay
+server
+>we given special id 
+<button id="order-button1">create order</button>
+<br/>
+>and we written script here that added event listner when we click on the
+button the function will be fire
+>which will be having event in the parameter
+document.getElementById("order-button1").onclick=function(e){}
+>it will be creating post request to this url
+var url="/api/payment/order"
+>which will be instantieate order and create order and collect order id
+from server
+>and what details we sending amount,currency,reciept, payment_capture
+>that actually payment capture method will be either 0 or1
+>1 for the automatic payment capture and 0 for manual
+>by default we using automatic payment capture 1
+>the currency is inr
+>reciept is any thing unique string you can put here
+>reciept you have to put wthcoding001
+>its upto you what ever you want
+var param={
+amount:document.getElementById("order-amt").value,
+currency:"INR",
+receipt:"whcoding001",
+payment_capture:"1"};
+>that done we collected we collect amount from input field 
+that is 
+amount:document.getElementById("order-amt").value
+>we have given id order-amt and now we going to create new xml http request
+>now what it will do it will recieve the response from backend and update
+>the dom without actually rerendring the page
+>that done when ever we will be getting response
+>when ever we will recieve order id from ther server that will be a 
+state change this  xmlHttp request will listen for it whenever there will
+be state change it will fireup a function 
+>when readyState===4 actually means that we got resposne successfully
+>executin this below if block
+now the thing will be pass then we will store in it 
+document.getElementByiD("rzp-text").value=res.sub.id
+
+var xmlHttp=new XMLhttpRequest();
+xmlHttp.onreadystatechange=function(res){
+if(xmlHttp.readyState===4){
+res=JSON.parse(xmlHttp.resposneText);
+document.getElementById("rzp-text").value=res.sub.id
+}}
+>so we havent created the input field for actually storing value here created 
+and write here earlier input field itself
+>will be creating it later here id is rzp-text  will be pupulating input
+field with order id automatically 
+>document.getElementById("rzp-text").value=res.sub.id
+>if you got confuse what is the above line it is input field wrote here
+below html order id to automate things 
+<input type="text" name="" id="rzp-text">
+>so last thing we done specify this is post request we have writter above
+xmlHttp.open("Post",url,true),
+inside above request true means request we sendign asynchronous
+>so will be waiting for the actual response
+>not automatically render the data
+>that done we have to set request header 
+>xmlHttp.setRequestHeader and we have to send data in the form of string
+>
+
+
+
+var xmlHttp=new XMLhttpRequest();
+xmlHttp.onreadystatechange=function(res){
+if(xmlHttp.readyState===4){
+res=JSON.parse(xmlHttp.resposneText);
+document.getElementById("rzp-text").value=res.sub.id
+}}
+}
+>
+
+
+
