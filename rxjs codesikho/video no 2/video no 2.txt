@@ -1,0 +1,86 @@
+rxjsvideo no 2
+================
+ iss video kee andar haam kuch observable kee operrator koo dkehna walle hai
+>sabse pehele mee import karwaunga something from rxjs woo  hoga Observable
+>yahann pee sabsee pehele haam batt karnee walee haii joo function haii woo hai
+hamara map function
+>map function kiya kartaa haii joo bhii origirnal vlauee thii joo observable
+nee throww karii uskoo changee kardetiii haiii yehhh kam hota haii hamare 
+map fucntion meee
+>jo bhii original value observablee nee throw kari uskoo badalna kam hota haii
+map funciton kaaa
+>usse pehele joo bhii subscribee karee ustakk pohonn cheee changes karnaa haii
+>changes karna tampring karna yeeh kam hota haii map observablee kaa
+>yanann pee manloo eek intervall tha joo eek minitue kee andar value koo 
+bhejnee wala thaaa   uskoo subscribe kara too hamme data milegaaa
+>data milenee kee baad hamme console.log karwaungga too kiya hogaa
+>too mujhee 0 1 2 3 4 iss taraha see vluee milegii kiyaaa
+>ref 1.31
+>yahnn pee 0,1,2,3 aisa vlue milnee lagee gaa
+>too hamare code kaisa hogaa
+index.ts
+==========
+import {Observable,interval} from 'rxjs';
+
+interval {period:1000}.subscribe(next:{data:number}=>{
+console.log(data);
+})
+>agar mee uskee beecch mee agar mee pipe lagadungaa pipe 1.39 dekhea hamare
+rxjs kaa version haai joo  version 6 kee upar haii dekheeea hamare rxjs kaa
+version 6 haaiii version 6 kee upar haii ham.pipe lagateee haiiii
+>orr jitneee bhiii operator haii woo hame pipe kee andar hee likheeteee  haiii
+1.52
+>iska faida kiya haii ham logo ko alag see import statement nahinn likhnaaa haii
+>yehh naya tareeeka haii nai observable kee library meee 
+>yahann pee mee kiya karngaa yahann pee mee likhunnga map  2.08
+>mujhee map operator use karnaaa haiiiii
+>uskee baad hamme little chadkhanii karnii haiii map kee andar hamme data koo 
+2 see multiply karwalenaa haiiii
+>index.ts
+=============
+import {Observable,interval} from 'rxjs';
+import {map} from 'rxjs/operators';
+interval(period:1000).pipe(map(project:data=>data*2))
+.subscribe(next{data:number}=>
+{console.log(data)});
+>hamme idhar map operator use karna haiii uskee baad hamare yahann value thii
+uss data koo 2 kee sathaa multiply karwadenaa haiii
+>2.16
+>kiya hua idhar joo value hamee mil rehe thii uskee beech mee meene tampring
+kardeeee
+>too kiya hoga joo originall vlauee thii 0,1,2 ,3,4
+uskoo multiply kardooo 2 peee 
+>too kiya hogaa jabb uskoo mee subscribee karungaa too hamme 0, 1,2,3,4 kee 
+jagaa kuch orr dekhai degaaa
+>node index.js
+>refer2.43 dekeha hamare subscribe hoogayaa or output mee hamare 0,2,4,6,8 aaraha
+haiii
+>yahann pee kiya hua ouput valuee tempring hoo gaiii yeehh baat haiii kkiii 
+map kam kese kartiii haii
+>aab map kaa use kese karengeeee 
+>dekhea map kaa use boot jaga use kartgeee haii uskmee eek lelo function haiii
+>us function kaa kamm tha hamare server haii uss user koo fetfch karnaa 
+>hamare server jooo backend kaa usse userkoo fetchh karna map ka kam thaa
+>index.ts
+=========
+import{Observable,interval} from 'rxjs';
+import{map} from 'rxjs/operator';
+function fetchuser(){}
+>dekhea mee idhar observable bana ta  hoonn iss tarahh see khudd kaa observable
+banateee haiii
+>jiskee andar ham koi bhii value throw karsaktee haiiii throw karnee ka kiya
+tareeka haii hamare observer milta haii hammme
+>joo observ karegaa kiya value throw karnaa haii orr kiya error throw karna haiii
+>agar mee likhunnngaa observer.next() 3.44 asia mee use karungaa 
+>agar next kee andar mee joo value dalungaa woo value subscribee honee kee
+baad recive hoggiii or jab mee .error ka andar dalta hoon too wo error kee andar
+jaigee
+>or javi koi error aata haii observablee kee andar wo wohii rook jaigaaa
+>agar yahann pee manloo hamare joo backend thaa 
+>yahann kiya hoga hamare const user={data:{firstName:'sam',mob_no:'9988776655'}}
+observer.next(user);
+>yahnn peekiya hogaa hamare value 4.29
+
+
+
+
