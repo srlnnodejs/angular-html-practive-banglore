@@ -1,0 +1,402 @@
+Multer in nodejs
+=====================
+>dosto aaj mee ap koo banungaa nodejs mee app file kese upload karengee 
+sinle hooo or multiple hooo 
+>dosto last video mee ham bataya tha crud operation keee bara mee kese 
+nodejs mee crud opertion karteee haiiii
+>ref 0.27
+>ajj mee bataungga kiii single or multiple file kese upload kese karengeee 
+>dost yee joo file upload karnee kea funda haiiiismee mee multer use karunga
+joo multer nodejs kaa eek module haiiii
+>pehele mee multer module koo install karletaa haoooon
+>terminal mee likhengee npm install multer
+>ham multer module koo install karlea ham iskee andar joo package.json haii
+ham iskoo dekhsakteee haiiiii
+>aap dekhsakteee haiii kiii multer hamare install hogayaa haiiiiii
+>ref1.07
+>dosto file upload karnee kee lea mene eek route banaya nhaaiii blog.js
+>route blog.js kee andar eek route banaya haii jooo haii hamara create route
+>ref 1.18
+>uss blog.js koo mene app.js mee call karke rakha haiiiii
+>blog.js koo call karke or use karke rakha haiiiii
+>ref 1.36
+>uskee baad ham view bhiii banaya hua haii woo bhiii aap deksakteee haiiii
+>view mee ham khali title rakha haua haiii abhii ham form create karungaa
+>1.42
+>file kooo upload karnee kee lea ham form create karteee haiiiiiii
+>dosto sabse pehele mee eek form create karletaa hooon create.hbs meee
+>create.hbs mee ham kam kar rehe haiiii
+>too hamare create.hbs kese dikheegaaa
+create.hbs
+===========
+<div class="container">
+<h1>{{title}}</h1>
+<hr/>
+<div class="row">
+<div class="col-md-6">
+<form action=""></form>
+</div>
+</div>
+</div>
+>dosto form kee andar hamare /blogs/uplload route banateee haiii  method post 
+rakhege dosto iska enctype hoga idhar multipart/form-data
+>iske andar file upload karnee kee lea hamme enctype hamme multipart/formdata
+likhna padtaa haiii 2.36
+>eek div crate karletaa haooon usmee mee file upload karnee kee sath sathh 
+text text upload karneee kee bhiiii proviison rakhuunngaaa
+>ham dekhengeee file upload karnee keee sath sath idhar ham kese data koo node
+mee get karengeeee
+>2.48
+>too hamme div ka andar hamme rakhnaa haiii
+<div classs="form-group"></div>
+>hamme input type text koo lena haiiiii name=title lena haiiii placeholder also
+hamme title lena haiiii 
+<input type="text" name="title" placeholder="Title">
+>3.12
+>dosto eek field orr meee cratekarta hooon yahannnpee uskaa input type file
+hoga input type file hoga name ham rakheengee blogimage
+>or eek button create karleta haoon 
+<button type="submit">uplaod</button>
+>button type submit hoga and upload rahega uska keyworkd
+4.07
+form hamare keaisa dikheega chalo dikhleetee haiii
+>
+create.hbs
+===========
+<div class="container">
+<h1>{{title}}</h1>
+<hr/>
+<div class="row">
+<div class="col-md-6">
+<form action="">
+<form action="/blogs/upload" method="post" enctype="multipart/form-data">
+<div class="from-group">
+<input type="text" name="title" placeholder="Title"/>
+</div>
+<div class="form-group">
+<input type="file" name="blogimage"/>
+</div>
+<div class="form-group">
+<button type="submit">upload></button>
+</div>
+</form>
+</div>
+</div>
+</div>
+>aap upar dekhsakteee haiii action haii /blogs/upload
+>abhii ham blogs.js kee file kee andar jayeengeee 
+>4.18
+>dosto sabse pehele mee iskoo run kartaaa haooon
+> npm start
+>ham url mee jayengee or ttype karengee localhost:3000/blogs/create
+>too hamare webpage dikhjayeega
+>4.41
+>yahan par haam nee bootstrap use kea hua haiii tooo 
+>mee class call karletaaa haoonn class="form-control"
+4.56
+>uskee baad mee button mee class rakhletaa haoon 
+<button type="submit" class="btn btn-success">upload</button>
+>button mee hamm success class dedengee
+>aabhi itna classs dekee mee browser pagee koo refresh karletaa hoon
+5.17
+>aap dekhsakteeee haii kiii bootstrap kaa  class add hogayaa haiiii
+>dostoo mee idhar eek title lea hoon text box or browse button lea hooon
+usee mee image upload karna jaarahahooon
+>dostoo imee hamare jooo blog.js file haii ismee andar mee post route likhunngaa
+orr jiske dwara mee file koo upload karungaa
+>dostoo meene multer joo install kea hua haiiii sabse pehele mee blogs.js kee
+andar import karleetaa hooon
+> var multer require multer
+>dostoo kee mene jaisa file koo upload karungaa uskooo hamme disc folder mee
+store karna haiiii
+>to hamare blogs.js file kaisa hogaa
+blogs.js
+============
+var express=require("express");
+var router=express.Router();
+var multer=require("multer");
+
+/*create blogs*/
+router.get("/create",function(req,res,next){
+res.render("create",{title:"Create Blog"});
+});
+module.exports=router;
+
+>6.11
+ >dosto hammare joo image upload hoga hame kisi folder mee store karna haiii
+>first of all dosto mee storage eek variable leeleta hooon 
+var storage=multer.diskstorage 
+uskee baad file koo hamme kahan pee rakhnaaa haiii hamme destination hamme
+define karna haiiii
+>destination:function(req,file,cb)
+>iske andar ham teen parameter rakhengee req and file and cb means callback
+>6.40
+>ham aabhii callback likhengee uske andar frist parameter hoga hamara null
+or second paramter hoga wo folder name jahan pee aap file koo store karke 
+rakhnaa chateee haiii
+cb(null,'uploads/')
+>too hm route folder kee andar mee eek folder create karleta hooon
+>folder kaa name hoga uploads
+>7.12-7.13
+>iske andar hamme file koo upload karwalena haiiiiii
+>hamme uploads kee andar file koo upload karwalena haiii
+>dosto cb hamare call back funciton haii orr eek baat jabhiii hamare cb koi 
+funciton hota haii uska first parameter hamare error funciton hota haiii
+too hamare error function null haii idhar
+> too cb ka first parameter haii usmee ham null pass karengee or second paramter
+haii usmee ham uploads kee andar ham file upload karengeee 
+>dosto hamare file kaname kiya hoga ham dekhngee filename:function
+>hamare function kee andar teen parameter haii eek haii request req doosra file
+teesra haii cb mins call back function
+>uskee baad hamm callback function koo callkarnegeee  cb mee dosto yahan par 
+hamare aisa rahegaa kiii file cb kkee andar aap first parameter null hogaya
+dusree parameter hamare file ka jitna hamare yahann pe rehegaa
+>jese file ka information jaisa file ka path  kiya haii or file ka original 
+name kiya haiii kis size kaa file haiii uskee andar joo  original filee haii
+mee uskoo leta hooon 
+filename:function(feq,file,cb){
+cb(null,file.originalname)
+}jaisa kee hamare original name manoo kii abc.jpg haiii  for ussi call back
+funciton kee andar file koo unique karnee kee lea ham date funciton lelete haiii
+>Date.now uske baad plus sign liga lea 
+>abhiii is tareeeke se dostoo hamm storage koo define karleete haiii
+>8.43
+>is tara see hamm Date koo add karkeee mee file kee sathh mee abhiii 
+define karlea
+>aab iss tarekee see dostoo mee storage koo definee karleaa hooon
+>nichee likhleta hoon 
+>hamare file blogs.js kakisa hoga ham dekhletee haiiii
+blogs.js
+========
+var express=require("express");
+var router=express.Router();
+var multer=require("multer");
+var storage=multer.diskStorage({
+destination:function(req,file,cb){
+cb(null,'uploads/')
+},
+filename:function(req,file,cb){
+cb(null,Date.now()+file.originralname)
+}
+var upload=multer({storage:storage});
+router.get("/create",function(req,res,next){
+res.render("create",{title:"create blog"})
+})
+})
+>iskee andar ham kiya likheengee  var upload=multer({storage:storage})
+>matlab meene upar wala define storgae jismee multer.diskstorage likha hua haii
+nam niche wala storage mee assign karwa dea
+>uskee bad hamm post request banaunga nich router 
+too hamare aab blogs.js kaisa hooga  
+>ham eek post requrest banayeengee yahann par hamare haiii kii /upload 
+ham joo upload path ham form mee dedea hiiiii
+>uskee baad ham kiya karengee post request kea usmee ham aisa karengee kiii
+ham route lengee /upload
+>rotue kee baad ham middleware dengee upload jooo storage hota haiiii 
+>jo upar hammdefine kea hau haiii file ka joo input filed haiii wooo aap ne
+parkkarlea middle ware ee andar blgoimage kee name meee uskee bad 10.05 koomma
+deke call back funciton likh lete haiiii  jismee paramteter rehegaa
+req,res and next
+router.post("/upload",upload.single("blogiamge"),function(req,res,next){
+var rileinfo=req.file.filename;
+var title=reqw.body.title
+console.log(title);
+res.send(fileinfo);
+})
+
+>dostoo hamm joo file upload kea haii hamme uska detail dekhanna hiii hamare
+ouput mee dikahana haiii tooo
+>too hamare file ka information joo aii gaa wwo hamee dikhanna paregaa
+>jo inofrmation hamare return multer seee aaiga ham uskoo dikhanyeengee
+>dosto hamm file kee information lene ke lea hamm letehaiii kiii 
+var files=req.file;
+orr hamare joo title hamare haiii uskoo lene kee lea hamm letee haiii kiii
+var title=req.body.title
+>dosto hamee dihar pee console.log karkeee hamm title koo console mee dikha
+leta hooon
+>usekee baad hamm res.send karkee ham file info koo pass karleeteee haiii
+>refer 11.26
+>dostoo ham dekhtee haiii kiii kiya kiya hamare information ataa hiiii
+>dosto hamm compile karteee haiii or run karteee haiiii
+>dosto hamm npm  sart karkee ham dekhlteee haii kii kiya output attta haiii
+>dostoo hamare runn hogaya hamm eek bar refresh karletaa haooon
+>suppose mee title mee daldea hello
+>browse koo karkee mee eek image upload karleta hooon
+>suppose mee eek watch lea hooon upload kea hooon
+>11.48,11.49
+>dosto meee image koo upload karta hoooon
+>dosto mee eek watch lea or upload karlea tooo dektheee haiii kiiikiya atta ahii
+output mee 11.58 refer
+>output mee hamare complete file information aajaiga in browsermee
+>
+filename:"blogimages"
+originalname:"watch1.jpg"
+encoding:"7bit"
+mimeType:"image.jpg"
+destination:"uploads/"
+filename:"04273810924738.jpg"
+path:"uploads\04273810924738.jpg"
+size:9879
+
+dosto hamare yahan pee eek json response milgaya 12.05
+>dosto jese mee send kea tha  upar hamare file name joo folder mee move
+hogaya boo alag bangaya
+>jses hamare wahan par date time aagaya
+>datetime kee saath hamare original name hamare add hokee aagaya
+>upload path dikharaha haiii kiii uss folder kee andar hamare upload
+hoogaiiii
+>waisa hiii hamm data base mee ham store karengee hamm woo file name haii
+hamm store karleengee 
+>uss name mee hamare database mee  file upload hogaii hogeee
+>sabse pehele haam folder keee andar jana haiiii aap jaea uploads kee andar jaiea
+>uploads kee andar aap dekhsaketee haii kii aap ka image upload hoo gaya haiii
+>koi orr file upload karna haiii too upload karsakteee haiiii
+>phir see upload karnegee or dekhengee hamare image uplod hoogai haiii
+13.31
+>dosto iis taraka see hamm file koo upload karengee 
+>dosto hamare title bhi hamare console hoo raha haii 
+pehele case mee hamme hello mila ahiii
+dusra casee mee hamare hi mila hai
+>too aap koo data base mee sage karna haii too aap ko karna haii req.file.filename
+>agar ham file koo store karengee db mee 
+var filename=req.file.filename karkee ham store karsaktee haiiiii
+>file name and title aap database mee aap insert karsaktee haiiii
+>ok dn 
+refer 14.22
+>for create hamme jana padegaa localhost:3000/blogs/create
+> 
+ham kiya aab 14.39 reference  too aab hamm message heello dalda 
+>image koo select karlea or uskoo upload karletaa hooon
+>
+iss takreeke see ;ham single filee koo uplaod 
+dostoo agar aap mutiple file koo upload karna haiii too kaisa karnegeee
+>
+
+finalyyy hamar blogs.js keese dekhega dekhletee haiii
+blogs.js
+========
+var express=require("express");
+var router=express.Router();
+var multer=require("multer");
+var storage=multer.diskStorage({
+destination:function(req,file,cb){
+cb(null,'uploads/')
+},
+filename:function(req,file,cb){
+cb(null,Date.now()+file.originralname)
+}
+var upload=multer({storage:storage});
+router.get("/create",function(req,res,next){
+res.render("create",{title:"create blog"})
+})
+router.post("/upload",upload.single("blogiamge"),function(req,res,next){
+var rileinfo=req.file.filename;
+var title=reqw.body.title
+console.log(title);
+res.send(fileinfo);
+})
+})
+module.exports=router;
+14.18
+==========
+agar ham multiple file koo upload karna hai too kaisa karnegee hame dekhltee
+haiiii
+>yahann pee dekhletee haii kaisa multiple file upload karewaeengeee
+>jo route /upload haii usko /uploads karletaa hooon
+>or upload.signle likha haii middle ware mee wo change karlenge upload.array
+>multiple file uplod kar rehe haii too aap komma dalkee aap karsakteee haiii
+>aap kokma kee baad jitne file uplod karna haii utna number daldengeee
+>5 file upload karnee kee lea wooo fit hoo gaya or jada karnegee tooo errror
+hoo jaigaaa
+>or uske baad hamare req.file joo niche haii woo multiple kee lea req.files
+hoo jaigaaa
+>too hamare multiple file uplod route 16.15
+>hamare route kese rahegaa hamare 
+router.post("/upload",upload.array("blogimage",5),function(req,res,next){
+var fileinfo=req.files;
+var title=req.body.title;
+console.log(title);
+res.send(fileinfo);
+})
+>aab hamara blogs.js kaisa dikheegaa
+blogs.js
+===========
+blogs.js
+========
+var express=require("express");
+var router=express.Router();
+var multer=require("multer");
+var storage=multer.diskStorage({
+destination:function(req,file,cb){
+cb(null,'uploads/')
+},
+filename:function(req,file,cb){
+cb(null,Date.now()+file.originralname)
+}
+var upload=multer({storage:storage});
+router.get("/create",function(req,res,next){
+res.render("create",{title:"create blog"})
+})
+router.post("/upload",upload.single("blogiamge"),function(req,res,next){
+var rileinfo=req.file.filename;
+var title=reqw.body.title
+console.log(title);
+res.send(fileinfo);
+})
+
+router.post("/uploads",upload.array("blogimage",5),function(req,res,next){
+var fileinfo=req.files;
+var title=req.body.title;
+console.log(title);
+res.send(fileinfo);
+})
+})
+module.exports=router;
+
+>uskee baad mee form koo jaungaa or mee form action haai woo 
+/blog/upload haai uskoo mee uploads karleta hoooon
+>
+create.hbs
+===========
+<div class="container">
+<h1>{{title}}</h1>
+<hr/>
+<div class="row">
+<div class="col-md-6">
+<form action="">
+<form action="/blogs/uploads" method="post" enctype="multipart/form-data">
+<div class="from-group">
+<input type="text" name="title" placeholder="Title"/>
+</div>
+<div class="form-group">
+<input type="file" name="blogimage"/>
+</div>
+<div class="form-group">
+<button type="submit">upload></button>
+</div>
+</form>
+</div>
+</div>
+</div
+
+>upar form aap dekh saktee haiii
+>multiple file upload karnee kee lea aap ko input type joo file haaii uskooo
+aap koo mutiple attribute add karlena haiiii
+<div class="form-group">
+<input type="file" name="blogimage" multiple/>
+</div>
+>too dosto phirsee ham iskoo run karlteee haiii 16.41
+>browser koo jakeee mee run karltaa haooon
+localhost:3000/blogs/create
+>dostoo uploads kee andar wala sarre file delete karltaa hooon
+>koi bhii title daldea multiple file select karnee keee lea aap kooo mee control
+key dabakee char file select karlena haiiii
+>orr uskoo mee open karlta hoooon
+>aap koo dihraha hoga 4 file selected too aap 17.30ko refer kejea
+>jab upload click karta hoon upload karlta hooon 
+>dostoo aap dekhsatkeet 4 file uplald hoo gaya 17.39
+>aab ham folder mee dikhsaktee haiiii
+>
+
+
+
