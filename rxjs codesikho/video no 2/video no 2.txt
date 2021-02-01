@@ -81,6 +81,26 @@ jaigee
 observer.next(user);
 >yahnn peekiya hogaa hamare value 4.29
 
-
+too aab ham log dekhengee kii filter kese work kartaaa haiiii
+==============================================================
+>filter ka kam kiya hota haiii kii aap uskooo eek condition dengeee 
+>jaisa hamm map user kar rehe haii idhar kiya hoga kiii ham filter observable
+kooo use karkeee ham condition dalengee agar woo condition true hoggiii tooo
+hiii hamare subscribee functiion tak data phonch payeegeeeiiii
+> agar condition false hogii too hammare yahnnn subscribee kee andar value
+recieve naihnn hooogeii
+>agar meee idhar use kartaa hunn interval or intervall kee andar aap koo value
+pass karneee haiii
+>har eek second kee adnar hamare valuee koo pass karnii haiiii
+>orr mee uskoo subscribee karnee see pehele hamm lagayuengee pipe 
+>pipe kee andar dalungaa filter fiter kee andar eek eek karkee joo bhiii
+valuee pass karnee haii hamare eek tarikee see woo bodyguardd hoogaya
+>yee bodyguard hoo gaya woo kiya karegaa pehele body guard kee pass jaigaa
+orr wo bolegaa kii aap jasaktee hoo too hii woo jaigaa
+>body guard nee bola kee gun lejannaa building kee andar allow nahinnn haiii
+too  body guard saman check karegaa agar uskii andar gun hogiiii too bahar bha
+gadega too aisa hogaa
+>yahann par dekhea hamare data mila mujhee error dikha raha haiii kyunn kiii
+>8.42
 
 
