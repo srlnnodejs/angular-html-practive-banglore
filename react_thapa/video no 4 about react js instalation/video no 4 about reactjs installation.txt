@@ -122,6 +122,100 @@ mee react mee kam karsakuuu
 >aap koo react mee kismee kuch open karnaa haiitoo aap koo react app bolengee
 >10.06
 phase 1 uploadded
+>mee new drive mee gaya orr likha mkdir
+>mkdir reacttutorial
+>maee kuch bhii likhee leteaa react tutorial bohott bada haoo rha haiii
+too reacttut likhleeta hooon
+>cd reacttut
+>uss folder kee andar hamme react kaa app create karnaa haii
+>aap koo kiya karna haai create-react  -app apple aap ka project kaa name khali 
+likhnaa hiii
+>aap koo project kaa namee aap koo angle bracesses ka andar nahin likhnaa haii
+>aap koo dikhanneekee leaa aap ko mee dedeta haoonn thapaapp
+11.46
+>thapa nahin likhee kee aap koo awesomeapp likh dena haii oorr aap koo 
+enter karrlenaa haii
+>beleve mee guyss mee windows 10 use kar raha hoon mera cpu i3 kaa sixth generation
+kaa haii
+>mee iss lea bata raha haoonn kii aap mujhee nichee comment karkee jarur batao
+>i3 6 th genn haii prirr bhii mujeehee install karnee kee lea mujhee minimumm
+10 minituee lageee ga
+>d:\reacttut>create-react-app awesomeapp
+>mee upar wala command likh leta haooonn 
+>upar wala command likhkee hamme enter hit karlena haiiiii
+>beleve me guy s mee i3 6th gen use karta hooon
+>12.03
+>15.34
+>aab hamare install hoogaya aab aap dekh sakteee haii hamare package.json filee
+haiii idhar 
+>jabhii ham react mee kam karteee haii hamare package.json filee booth important hai
+>hamare project kee jitna bhiii information haii or meta daat haii yhh hii hamare
+store karta haiii
+>or yee yee bhii store karta haii kii hamare yeeh jooo project haaii ismee kitna
+dependency package haiiixxx
+>15.57
+>hamare yee  project haii ispee dependent haiii aap dekh sakteee ho dependencides
+>aap dekh sakteee hooo react mee dependent haii jiskaa version aap dekh sakteee
+hoo 16.13,1
+>abhii mee jiiss react kaa version mee kam kar rha hoon iska version haii 16.3.1 
+react dom kaa version yeh haii 3.4.1
+>kyun kiii dostoo sabse jada important yeehii haiii kii package.json file kyun kii 
+dostoo iskeee madat see hii ham hamre project keoo easily kisiskoo share kar
+sakteee haiii
+>16.21
+>in case issi project mee kisikoo kam karna pada too woo check karegaa too malum 
+hoga kii woo react kee kiss version meee react-dom kee kiss verion mee or react-script
+kee kiss version meee woo karm akr raha haii
+>dekhea mee left bar mee dekh ta hoon pehele mere khali node modules tha or package
+.json file tha
+>16.59
+>ones hamare react app completly install hogaya hamare syswtem mee now we have 
+public folder
+>uske baad index.html finally indexx .html 17,15
+>uskee baad aap yahann pee dekh saktee haii we have src folder 
+>src yee sab guys ham next video mee dekhengeee atleast hamm hello world 
+likh kee hamm kikhaataaa hooon
+>sabse pehele haam install kea too we have npm start 
+>react chalaneee kee lea hamme eek server chaihai orr ussko chalanee kee
+lea hamme npm start likhanna haiii
+>agar aap koo production version mee dikhana haii too aap koo likhnaaa haii 
+>npm run build
+>we have npm test and we have npm run eject
+>iss sab koo ham bad mee dekhenge sabsee jada haamare important haii npm start
+>usse pehele hamme yaad haii kiii issi folder kee andar hamneee apana aap 
+create kea haiii
+>wwoo dikhna kee lea mee dir likhunngaa too ussi folder kee andar jitnee bhiii
+file or folder haii mujhhhaee dekhaii dene lagee
+>dekho hamme react sugestion kar raha haii kii cd awesomeapp type karkee hamre
+enter karo 
+>ones aap joo likhteee hoo aap npm start karna 
+>hamkoo cd awesomeapp likhnaa haii 
+>now mee actual aapp kee andar mee ghus gaya hooon
+>iss aap koo hamme run karnee kee lea hamme likhnaa hoga npm startzzxxxxx
+>automaticlayy woo start hoo jaitigaa or run karegaaa 3000 port number mee
+>localhost:3000 mee yehhh load hoo raha haiii withnin a second yee hamare
+load hoogaya haiii
+>yeeh dekhea connection and boom yeehaiii guyss hamare react app
+>yehh haii guy hamare complete react instalation in our local system
+>too guys aaap bohot easily dekh saktee hoo hamme hamare react app mil lchukka haii
+>aand aab mee aapkoo eek cheez bataunngaa
+>lekin mee aap koo hello world karkee dikhata hooon
+>dehkea dosto mee kiya karta hooon mee  index.js file open karta hooon
+>index.js mee jooo <App/> dikh raha haii naa iskoo pehele mee hata deta hooon
+>mene aap koo dikhhaya thaa we haave react and react dom 
+>ReactDom.render matlab bhai iskoo dikhao mujhuueee khalii h1 dihanaa haii 
+>aap koo agge pata chalegaa kii mee html mee code nahin karraha hooon 
+>yahan pee mee likhleta hoon iss tareeke see hello world
+>aap koo ctrl+s save karna haii aap nee dekha automatically yeh set karlea haiii
+>and boom guys aap dekh sakteee hoo heello world>
+>eek second hamare spelling wrong hooo gaya ctrl+s save kartaa hoon 
+>next video mee ham dekhengee kii menen joo hello world likha kese aaya servermee
+>unn sarre logic connectiviity hoo raha haii hamm next video mee dikhnveee 
+>lakin aap kee sarre doubt clear hoo gaya hoga kee react app koo install karnnee
+kee lea aap koo iis kis procedure mee kam karna padegaa
+>is url kee link nichee haii>thank you so much take care
+
+
 
 
 
