@@ -1,0 +1,133 @@
+>hello guys ham eeh fifth video mee kam suru karnee jaarehe haiii 
+>ismeee hamare kiya hoga ham dekhteee haiiii>
+>hamm joo pichlee videoo mee kamm kea thaa hamm uskooo continuee kartee hiii
+>chal reehe haiii
+>orr ham owhii project hee haam run karteee haiiii>
+>jooo kuch package.json filee haii ham neeuska discussion karlea haiii
+>aaj hamm sabse pehele ham samajheeenge folder structure in react js>
+>i hope aap logo koo clear dekhai deta hoga sari folder and fils joo iss project
+kee andar haii 
+>sabse pehel we have node_modules 
+>basically node_modules kiya hotaa haii yeeh aap koo guysbata ta hooon
+>jab hamne react app install kea thaa jab hamnee likhatha npm install -g create-react
+app
+>jese ham iss command koo likhaa 
+>yehh hamme milgaya thaa baiscally guyss
+>hamaree react app mee jitnee bhii dependency haii woo sab hamare node_modules
+mee hamare installed haiii
+>aab pehela folder aap koo pata chalgayaa that is node_modules
+>we have package.json file iss mee joo important haii uskee behalf mee mee
+bata raha hooon
+>haam package.json file kee baree mee bata raha hoon jsimee baiscally hamare 
+react aap kaa meta data haiiii
+>hamare joo react app haii uskkaa complete information yahann pee hamare bataya 
+hua haaeeiii
+>hamm joo react kaa apap use kar rehe haii uska verionkiya haii uska react dom
+kaa version kiya haii sab kuch idhar bataya hua ahiii
+>aap dekh saktee haoo inn tono kaa yahann pee verion likha hua haiii
+>and then we have script also yaad hai aap koo react script start
+react script build basically yehhh wohii haiii
+>you know hamme start karnaa hiaii too hamme yeehh likhnaa haii or build karna 
+haii too hamme yahee lihanna haiii 
+>hamare dreact aap ka actualyy meta data haii actually uska package ka verion
+haii
+sab package.json kee andar rehtaaa hiii
+>aga aapkoo floder kisikee sath share karnna hoo aap yahii iskssi file koo save
+karnii kardoo yeh inough haiii
+>actully hamare devloper koo konsa version meee kam kar rhaa hiii uskoo kmil
+jaigaa
+>package.lock.json file kaa koi jarurat nahinn haiii
+>gitIgnore hamee malum haiii
+>setuptext.js kuchi bhii nainn 
+>serviceworker.js koi jarurat nahiiin
+>joo logo hammee dekhaii deta haii uskoo bhii unoonee svg mee dikhayya haiii 
+>woojoo logo gol gol ghum raha haii that is because of logo.svg
+>index.js hamare sabse jada important file hai
+>aap koo sab delete karre kee eekdam starte see bataungaa kiya hota haii
+>yahiii woo filee haii ismee ham pura code hamare likhnee wala hooon
+>index.css bonee kee jarurat nahinn css joo ham norma use kartee haii 
+>aisa haii kii bohotoo kaa doubtt haii kii react meee css kses karngeee 
+>jaisee hamm normal  css karteee haii waisa karngeee
+>dekhea hamm code mee change kea jaisa hamm normal css mee karteee haii samme
+wahii haii kuch alag nhahinn haiiii
+>we hame app.js file yehh componentt file haii abhii hamm component padha nahinn
+haaii
+>robo.txt yee guys aap koo malum haai jabb hamm websitee koo google kaa joo 
+croller matlab find out karnee kee lea use hota haii iske bhii hamme jarurat
+nahiinn haiii
+>manifest.json filee basically hamme haamare aap kee information provide karta hai
+>yee hammare application kee inforamtion provide karta haii in a plain json text
+file
+>yeeh joo likha hua haii yehh json text haiii
+>json format mee yee hamare applicaiton kee information provide karta haiii
+>dekhea upar hamme short_name hamare yeehee haii React App
+>uskee andar ham joo icon use rkar rehe haii favicon.ico
+>matlab yehh joo top mee dekkhai deraha haii youtubee wala symboo wo bala haii
+>i hope aap koo pata chalgaya hoga aap koo favicon boltee hai iskooo
+>then uske upar manifest.json kee upar logo orr eek logo
+>index.html
+>mee yeehh hamare puri react aapp mee hamare one html file haii hamare index.html
+haii hamme iskoo chunaa bhii nahin chaichiii
+>socho pehele hamm jaab website create kartee thee hamare puri puri code html mee
+hota htaa
+>hamme index.html koo touch bhii nahin karna haiii aa chaooo 
+>too head kee andar aap kuch link wagaree add karsakteee hoo magar body kee andar
+aap koo touch bhiii nain karnnaaa haiii
+> bina html koo chuee hueee hii bina kia haee hii aap browser mee data dikha rehe
+hooo
+>uskee baad favicon.ico hammnee joo aap koo batya thaa itna sab mene aap koo 
+bata dea really hope aapkoo folder structure pata chalgaya hoogaa
+>aap kee mind mee aisa bohot cheez pata hoga kii yahann pee bohot sarii haii woo
+kam kee nahinn haii
+>as a beginner hamme inn sabb cheez mee padhnaa hii nahin chaichaiii
+>dekhea yeeh haii joo setup serviceworker logo delete kardooo
+>mee aap koo bata ta hoon iskoo aap jitnaa simplee raktee hoo utna better haii
+>package.json rehenee doo or gitIgnore haii uskoo bhii hatadooo
+>package.lock.json filee haii uskoo bhii hata dooo 
+>App.js joo haii alag sa component haii hamme agge dikhnaa haii aabhii aap koo App
+and App.css iskee bhiii jarurat nahinn haiii Aap.test.js haaii iskoo bhii hatadoo
+>hamare source folder haii baiscally teen hii filder haii hamare
+>>eek node_modules folder haii eek public folder haii or eek src folder haii 
+>src mee hamare paas bass index.js file haii joo hamm pehelee see hii
+>bachpann see haii hamm kartee aayee haiii
+>index.css hamm pehelseee hii kartee aayee haii hamee jarurat nahiinn haii
+>public mee hamare robot.txt or manifest.json logo512.png logo192.png hamare
+jarurat nahinn haii 
+>sab hatadoo jitna simple haaa hamare filee yehh faviccon isskoo bhiii maroo goli
+isskoo bhii nichee rakhooloooo
+>too hamare kiya rehga node_modules uskee baad public mee hamare index.html raheega
+>uskee baad hamare src mee index.js rehegaa or index.css rehegaa 
+>package.json aapp rakhoo important haii uskee baad node_modules haiiiimportant
+>readme.md kii jarurat nahinn haii yee hamme itna kuch nainn karnaa haii
+>yehh haii hamare folder structure dekhoo kitna  mee kam kardea menne agar 
+pehele kam kardetaa oto mujhhee kuch bolona nain padtaa
+>now ham dekhengee hello world examplee 
+>sabse pehele hamme index.html mee atte haii sabse pehele hamme aap koo dihana
+haii kii html file koo touch nainn karnaa haiii
+>aapkoo joo bhiii hara hara comment dikhraha haii uskoo mee hatadoon
+>har hara hara comments koo mee hata deta hoooon 
+>and guys aap notice karo ctrl+s save kartaa haoonn
+>dekhea hamare !Doctype html aap dekhea ajkal ismee hii kam hota haiii
+>aap dekhsaktee hoo hamare joo html file haii ismee kucdh hai hiii nainn
+><noscript>koo hamm iss lea use kartee haii kii kisinee javascript koo disable
+karkee rakhaa hoo 
+>koi browser agar support nain kar raha hoootoo simply aap koo <noscript> dekhai
+dehaga noscipt kaa content dekhai dega
+>eek div haii jiskoo hamm id dee rakha haiiii root kuch bii nain haiii
+>issi koo hii dhyaan mee rakhkee hamare project create karnaa hai 
+>aab mujhee heello world dikahnna hai theek haii
+>mere public folder mee jata hoon hamare src folder hai 
+>index.css hamme koi jarurat nain haii only index.js ko jana haiii
+> sabse pehele aap nichee wala portionn hatadoo 
+>sabsee pehel hamme sab hata dena hainn 
+>mene kiya batayaa tha hamme index.html chuna haii nainn haii or bakii jitnaa
+thaa sabb hammnnee delete karlea haii 
+>noww eekdamm fresh suruat karnaa haii sabsee pehele mee batata hoon
+> jabhii aap react mee kam kar rehe haoo aap koo doo module seec= chaihii hii chai
+haii jiskaa hamme requirement haii 
+>pehele hamme React module koo import karnaaa haii 
+>var React=require("React");
+>uskee baad hamme ReactDOM require karnaa haii kyun karna hai bolungaa
+var ReactDOM=require("react-dom");
+> aap dekhea ksab 10.00
+
