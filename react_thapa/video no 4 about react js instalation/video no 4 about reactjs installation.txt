@@ -1,0 +1,127 @@
+reactjhs installaiton
+========================
+aaj mee complete react js installation complete kar raha hoon mee laready 
+guyss mee line by line sabkuch likha haua haiaiii
+>uskka likn bhii mee description or comment section mee provide karsaktaa hoon
+>aaja ka video bohot important haii hamm finally react koo hamm loocal machin
+orr local system mee install karsaktee haiiii
+0.42
+>dekhea guys hamme kon konsee step lagee gii react koo properly install karnee 
+kee lea 0.47
+>sablke le same hogii installation aisa nahin kii aap mac use kar rehe haii
+too aap kee lea kuch alag hoga sabke lea kam same hota haii
+>agar aap nodejs kooinstall kartee hoo to  automatically aap kaa npm instll
+hoo hiijata ahiii
+>sabse pehele hamare kam hoga kee install nodejs and npm
+>uskee baad install karnaa haii installl visuation studio code or sublime or atom
+or brackets
+>aap koo joo chaihaii aap instll karsaktee hoo filal mee visual studio code chuna
+haii instll karneekee lea
+>1.19
+>pehele haam sabhii step bata deta hoon ham one by one hamm instll karengee
+>or last orr teesra hamare instlal react from terminal
+>ham cmd kee through instll karna haii hame instll karnee kee time mee kiya
+kiya code likhnaa haii
+>hamme likhnaa haii 
+a>npm instll -g create-react-app
+>uskee baad hamare properly instlal hua haii kii nahin hamkm check karnegee 
+create-react-app --version
+>1.45
+>last step haii hamare 
+create-react-app <projectname>
+>last step haii hamarehmare upar wala create-react-app likh kee hamare project
+kaa name likhnaa haii too hamare kamm complete hoo jaigaa
+>aaj kee video mee hamme sabkuch implement karnaa haii or mee joo kuch bataya
+haaii mee websitee mee mention karchaka hooon2.08
+>sabsee pehel hamme kiya karna haii hamme instll karna hai instll nodejs
+>aap koi bhii brwoser open karsaktee hoo mozzila opera chrome kuch bhii open karsaktee
+hooo
+>aapkoo simly url mee likhnaa haii nodejs aapkoo kuch downlod kuch nahin likhnna
+haii 2.19
+>sabse pehea hamare page aaiga hamare official nodejs.org
+>2.23
+>simply aap uskoo click karsaktee haii aap jese click karengee aap koo uskaa landing
+page milegaa usmee aaiga downlod for windoos
+2.30
+>reason yee mujhee windowss dikha raha haii kii iskoo malumm haii mee windows 
+systeme usee kar haha hooon
+>agar aap mac or linux use kr rehe hoo too aap dekhea likha haua haii ki other 
+downloads 2.41
+ >too aap koo likhnaa haii kii windowws machintioos or source codde kuch bhiii
+likhnaa haiii
+>abhi mujhhuee joo chaihaii aapkoo already muhjhee availablee haiii
+>aap koo doo verison dekhaii dekga eek haii latest joo current haii orr 
+dustraa kki long term support 
+>lts joo haee wo most of user kee lea recomondded haii kyunn kee wor mostlyy
+stable version haiii
+>orr joo latest feature woo eek phase pee chalraha haii jahann pee abhii implement
+hoo rha haiii sabkuchh 3.06
+>ahii kiya haii kii yahappee joo bhii aapkoo dekhai dega woo haii kii logn term
+support
+>joo bhii aap uss cheez koo download karlejea
+>joo bhii karoo aapkoo download hoochukaa haiii
+>usmee reght click karkee aap show in folder mee click karsaktee hoo 3.33
+>by default windows system haii joo usmee jitne bhiii download hota haii woo
+sabb downlod mee rehta ahiii
+>too aap dekhsaktee hoo kii aap ka nodeversion 12.6 eek fil aak e ruka haii 
+>aapkoo uss exefile koo right click karnaa haii orr aap koo click karnaa haii
+instlall
+>next next karkee aap koo finish karlena haiii
+>agar aap kaa eek bar instlal joo jaigaa too aap koo cmd open karnaa haiii
+>aab ham joo nodejs install kea we have too check woo properly install hua ahii
+kii nahinn
+>aap koo teerminal mee simply likhnaa haii node -v
+>aap dekh saktee hoo version 12.6.3 joo abhi download kea hua haii
+>jabb aap node koo install kartee hoo aapka npm vii install ho jata haii
+joo kii woo  node package manager
+>aap koo simply aap koo check karnee ke lea aap koo dalna haii 
+>npm -v 
+>aap koo joo dekhai dega aap koo npm kaa verrion aap koo 
+dehaiii degaa 5042
+>hamare first kaam tha kkii install nodejs and npm woo complete hoochukaa haii
+aab second steep haii joo install visual studio coddee hamme instlal karna haii
+>hamm video no 2 meee kese viscode install karsaktee haii usmee kse kamm karngee
+usikka video instlal karkee me boldeaa hoon
+>6.13
+>aakb moment haii aap koo react kese instlal karneegee yee hhai actuall moment
+>react koo install karnee kee lea hamme open karnaa haii terminalll
+>sabse pehel hamme kiya karnaa haii kii hamme install karnaa haii kiii
+>npm install -g create-react-app
+>aaap kooo globallyy react aap koo instlal karnahaiiaap koo globally react js koo
+instlall karna hiii
+>too aap koo doubtt haiii kii aap koo kidharr install karnaa haii too aap 
+kiya akrengeee ap jidhar kamm karrehee haoo jooo bhii terminall mee wohii hii
+aap isskoo chipkaa dooo
+>npm instll -g create-react-app
+>7.59
+>iska matlab haii kkiiaap globally aap reacat app koo install karssaktee hooo
+>simplyy hamm joo jahaz udana  haiii too udanee see pehele hamee eek maidann
+crete karnaa haiii naaa 
+>agar maidan ready hoo jata haii too flight kisis kee country kee lea hamare
+take off lesaktee haiii
+>‫iska matalab yehekii aap 
+>simpley create react aap likh lee aap kisis jagaa ppee jakee aap likh saktee hoo
+create react app 
+>woahann pee aap kaa react kaa app banjaiigaa 8.11
+>npm  install -g  create-react-app yeeh haiii kii mee react koo globally mee
+system mee install karna cahatta hooon
+>8.30
+>itna aap koo likhann haii or simplyy aap koo enter hit kardenaa haiiii
+>eek baar aap koo install karnnee kee baad aap koo check karnaa haii 
+>create-react-app --version
+> aap koo dekhanaa haii ye eglobally instlal hua haii kii nahin agar hua haii too
+konsaa verion hua hai aap dekhea
+>create-react-app --version mee likhletaa hooon
+agar aap koo veriosn mill gtaya too ap kaa create-react-app globally install hochuka
+haiii
+>9.25
+>aap kahipar bhii kabhii bhii kisi drive mee bhii kisi bhiiii react app koo 
+open karsaktee hoooo
+>abhii mujhee kiya karnaa haii abhii actually mujhhee aap create karna haii kii
+mee react mee kam karsakuuu
+>aap koo react mee kismee kuch open karnaa haiitoo aap koo react app bolengee
+>10.06
+phase 1 uploadded
+
+
+

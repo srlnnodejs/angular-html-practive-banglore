@@ -1,0 +1,147 @@
+reactjs
+==================
+vscode for react js
+>you have to simply write vscode download
+>wo 62 bit kii 32 bit chinta matt keejea aap dewn load keejea orr aako koo nichee 
+description mee emill jaaigaa
+> dont warry 64 bit haii or 32 bitt haii aap simplyy downloadd kejeaa
+>aab aaap dekhsaketeee hoo kii new pagee open hotaaa haiiii automatii nicheee mera
+joo setupp haii download hoo raha haaiii 
+>yeeh 56.3 mbb kaa haii download honee wala haiii
+>aab download hoo chukaa haii too aap folder mee jaiea oor aap dekhee saktee haii
+kii hamaree visuall studioo code kaa hamare iconn aagaya haiii1.44
+>aap koo right click karkee simply open karleenaa haiii
+>open hoo chukaaa haii too hamm ismee install karchuukkee haii
+>simply hamme i accept thee agreement choose karnaa haii
+>most off the timeehammee next next next too karnaa haiiiii
+>too dekhsakteee haii kii aap 
+>yehh 3.52
+>extension batanee see pehle challo eek page create karleteee haiii file koo 
+jayengee or new file koo click karnegee
+>new file mee jake kuch bhiii likh leta haoonn orr ctrl+s click karleetee haiii
+>basically directily mere vinod bahadur thapa nam kaa folder mee jake save 
+honee wala haiiii
+>theek hai dosoto eek file create karlettaa haoon index.html
+>index.html kee andar mee simple sa helloworld likh kee batata hoooon
+>aab hamm index.html mee likhnaa suru kar rehe haiii
+index.html 
+==============
+<html likhkee enter hit kea too automatically close nahinn hua closing angle 
+bracket likhetee hoo automatically close hoo jaitii haiii
+><html>
+
+
+
+</html>
+
+aap kuch likhnee kaa jarujrat nahinn haii aap directly html likhooo aap kooo
+bohot sarre suggestion aayengeee aap kee time mee ham html5 use karteee haiii  
+naa kii simple html use karteee haiiiii uska eek update version haiiiii agar 
+mee html5 mee jaakee enter hit karta hooon too dekooo boom pura structure aajata
+haiii 4.52
+
+>index.html
+============
+html:5
+
+>yahii best partt again again <h1>mee jata hoonn too guys kuch nain atta ahiii
+lakinn dekhoo guyss 
+><h1>kea andar mee hello world likhraha haooon </h1> likhrahaa haooon
+>ones aap save karteee hooo too aap simply right click karetee haoon simply aap 
+open karogee index.html ko right click karkee open with karogeee copy path
+5.16
+>simply aap dekhsakteee hooo copy path
+>copy path koo click karrkee or uska short cot bhii dikh sakteee hoo 
+ctrl+alt+c
+>aab mee hamare browser mee chaltaa haooon ctrl+s save kartaa hoon and boom
+>dekheaa hamare browser mee helloWorld!! aagiag
+#5.32
+>aisa hiie ham h1 ke andar style tag sab likhsakeet haiii
+>lets sayy hamm color wagaraa sabb le letee haiiii yahannn pe dekh saktee hoo
+guys  hamare automatic color kaa suggestion aasaktaa haiii
+>6.02
+>agar mee simply script tag use kartaa hoon eek script likheeen see dusra 
+script automatic aajata haiiii
+>><script>
+
+
+</script>
+>lets script kee andar eeek object create kartaaa huunn meee
+>eek object banadeta hoon script kee andar  key value pair lets name :vinod dedta
+hooon 
+6.33
+>dekho next time mene jese obj. click karttaa hunnn too mujhee too jese obj.
+3click kartaa hunnntoo mujhee name miljayeega 6.53
+>this is the beauthy guys hamme vs code bata raha haii kiii
+>yehh aap object banayyaa haii ismee aap konsee properrtyy bana kee rakaha haii
+usmee aap kiya include karkee rakhaa haiii
+>aisa vs code mee bohot sare shortcut haii agar mee 
+<h1>likha hoon 
+</h1>likha hoon
+<h2>liha
+</h2>
+likha or ctrl+d mee kea too mee sare h2 changee karsaktaa hoooon
+>aab mee ctrl+s save kartaa hooon7.38
+>too ham suru karteee haii react development
+>react developmet
+hamm ee sabsee pehele hamme extension mee jana haii (ctrl+shift+X) nahin too 
+click karnaa haiii 7.51
+>orr aap koo search karnaa haii extention mee 7.56
+>babel javascript 
+8.000
+>bsiscally babel javascript kiya kartaa kiii ham es6 code likheegee too woo usse 
+highlight kardee gaa orr bolegaa kii actuallyy hamm lkihnnnaa kiya cchaa rehee haii
+>hamm pehlesee hii Babel javascript koo enable karkee rakhaa haiii
+>iskoo install nahinn kea haii too isss tareekee see yahann pee install dikhaii dea haii
+>aap install karsaktee hoo 8.19
+>simply aap install kejea babeljavascript mee 
+>usmee top mee aap dekh saktee hoo kii vscode syntax highlighting for todays javascript
+>8.39
+>iskaa actuall use kaese hoo rha haii agge hamm jarur dekheengeeee
+>yeehh kiya kartaa haii kee hamm joo bhiii react code likheengee orr hamare jitna
+bhiii ecma script code haiii woo sukoo highlight kardee gaa color usskaa 
+different dikhaaegaa 8.54
+>or thoda yehh dikhnee mee acha lagee gaa
+>theeek haii dostoo aap babel javascript koo jarur install kejea
+>second ly aap koo simply search karna haii extension mee es6
+>aap jese kee es6 koo dekhsaktee hoo jacascript (es6) code snippets
+>aap koo milsaktaa haii 9.10
+>usmee aap click karogee too aap dekhsaktee hoo kii aap koo kuch code snippet mil
+jaigaa
+>9.13
+>wahann pee bohto shortcot milegaa aap dihsaktee hoo yehh jarurr kamm aynegee
+aap iskoo bhiii jarur install kijeaagaa
+>9.26
+>java script es6 code snippets
+>already pehele see availablee haii hamare
+>extension mee jakee hamme install karnaa haiiibuss
+>9.33
+>eek orr chaihaii too uskee lea mee kiya kartaoohnn directlyy mee aap koo react
+kaa project mee lieke jataa hoon
+9.38
+>agge ham next video mee dekhengee aap kis tareeeke see aap uskkoo installl
+karsaketee hooo
+>aap koo react kee project mee leke jata hoonn
+>9.42
+>agge ham next video mee dekhngee ham kis tareeek see hamm uskoo install kar
+saktee haiii
+>mee kuch texst react demo bana kee rakha haii apkoo kuch problemnahoon
+>jese mee index.js kee file mee jake click kartaa haoon too aap dekh saktee
+hoo aa kuch snippet likha haua haii aap dekhsaktee hoo kii yahann pee
+achaee tarekeese highlight hua haiii10.02
+>ismee saf pata chalta haii kee ham kahanne pee kiya likhaa haii yee horaha
+haii simplee babel javasccript kee wajee see
+>10.07
+>dekhea hamare harr cheez kkee pichee hamare icons bana haua haii aagar
+aap kpp uss icons koo pana hoo too aapkoo kiya karnaa haiii
+>aap koo extension mee jana haiiyahann pee aap koo kuch recomondded haiii 
+>aap koo udahar likhnaa haii vscode icons 
+>10.38
+>again hamme isskoo alreay installkia hua haii too hamne install nahin kea
+too hamme woo install dekhaii dega
+>10.41
+>aap koo install karna haii aap install karogeee too aap koo kuch iss tareeke see
+aap koo dekhai degaa
+10.47
+>too itna hii vscode mee kese basic kam kartee haiipatachalgayy hoga thank yous
+so much
