@@ -129,5 +129,108 @@ haii jiskaa hamme requirement haii
 >var React=require("React");
 >uskee baad hamme ReactDOM require karnaa haii kyun karna hai bolungaa
 var ReactDOM=require("react-dom");
-> aap dekhea ksab 10.00
+>aap koo reactDom koo import karna padega
+hamm yeheh doo module kyun reaqueire kar rehe haiii iska kiyya jarurat haiii
+>dekhea hamare require mee joo modules kaa nam likhraha haoon wooo complete
+small case mee haii jo variablee lea ahii woo camalcase haii 
+>aab mujheee kiya karnaa haii aab mujhee hello world browser mee dikhanna haii
+usse pehele  
+>aap koo cm dopen karna haii mee d drive jakeee mere folder koo copy path karkee
+mee idhar paste kartaa hoon
+>go inside folder directory koo jakee npm start likhlena haii
+>sabse pehel hame react batanee see pehele mee react dom koo use karleta hooon
+>hame aisa likhnaa haii kii ReactDOM.render idhar render eek method haii 
+>render kaa simple matlab haii kii dikhaoooo
+> aap dekh saktee haiii hamare server on hoo gayaidhar perfectt
+>yeeh joo render haii woo teen paramter legaa koun sa teen paramter lega woo mee
+aap seee batata hooon
+>render funciton mee hamme teen paramter chodnaa haii kiya dihanaa haii , kahan
+dihanaa haii , or call back
+>simplyy aap english mee bhii likhsaktee hee  what to show and where to show
+and callback as it is
+>too aap koo pata chalgaya hamme kuchh too dihanan ahii
+>dekhea outpu fail dikha raha haii kyun kiii hammnee kuch likha hiii nahinnn haii
+>sabsee pehele hamme kiya dihana haii too meene <h1> tag lalkar ussme data 
+dal deta hooon </h1> yeeh hoo gaya kiya dikjhanna haii aabhii hamme kam karna haii
+kahann dikhannnaa haiii
+>hamm nee likh lea hamme hellloo world dikha naa haii joo h1 mee hona chaihai
+>hamm uskee baad jana haii kaha dikhanaa haii too dekha haam kabb index.js filee
+koo run nain karteee the browser mee runkarnee kee lea aap koo .html file mee
+hiii jana padegaaa
+>hamare paas abhiii filal eek hii html filee haii joo index.html file haiii
+>jismee hamare eek hii div haii usmee ham id dea haii rooot
+too hamare index.html file kease dikh raha haii thoda dekhea
+index.html
+=============
+<!Doctype html>
+<html lang="en">
+<head>
+</head>
+<body>
+<noscript>you need to enable javascript to run</noscript>
+</div id="root"></div>
+</body>
+</html>
+
+>ham sabkoo malum haii javascript kee madatt see aap koo koii bhiii id koo use
+karnaa haii too aapkoo dom kaa use karna padegaa
+>i hope dimag kee batti jalii iss lea hammnee react dom use ea tha
+>react kee andar haam javascript kee manulpulation and updation karsakteeee haiii
+>usskooo use karnee seee pehele hamme yee react-dom module usee karna padegaa
+>imean iskoo get karna padta haiii
+>orr yeehh jooo hamare <h1>hello world<h1>likkhee  haii iskoo likhnee kee lea 
+hamme react kaa jarurat padtaaa haiii
+>aisa haai kii aap koo html likhanaa hoo too hammee react module kaa jarurat haii
+>uskee baad hamme dom manupulationkarnaa hoo  or document object kee saath
+kheelna haoo too hamme document object kee sathh kam karnaa haii
+>yee donoo kee neeed hamee pata chalgayaya lakinn hamme pata karna ahiikii 
+yueehhh kese karmmm karegaa
+>iskee pechee hamare babel haii or we have jsx haii hamre 
+>filal hamme dehea ham likh lea kiya diikhana haii hamm likh lea or r kaha 
+dikhanaa hai hamanee nahin likhaa ahii
+>hamme index.html mee joo id haii root hamme usmee dikhanna haiii
+>hoo hamme kaha dikhanaahaii jaga mee hamme simply jana haii or likhnaa haii
+document.getElemetById("root");
+>hamme simply yehaiii likh lena ahiiii
+>orr ithna lekhee kee save karrkee browser koo jata hoon 
+usssee pehele hamare codee kese hoga thodeea dekehea
+index.js
+==========
+var React=require("react");
+var ReactDOM=require("react-dom");
+ReactDOM.render(<h1>Hello World!!</h1>,document.getElementById("root"));
+>aab mee browser mee chaltaa hooon refresshh kartaa hoon aap dekhsaktee hoo booom
+>dekhea guy s itna simple thaa react mee hello world kaa eek programme likhna
+>actulally hamar <h1>ka part hamare kdkhaii deraha hai actulally hamare
+html nahinn haiii
+>yeehh basically kehletaat hahii jsx
+>jabhiii ram react module koo imort kartee haii iskee saath hamme milta haii
+babel
+>
+babel
+=============
+what is babel babel kiya haiii babel kee ssaath hamare orr eek cheez suna hoga
+hamare ;uska name haii webpack
+>webpackk kiya kartaaa haii hamare jitnee saree file and folder haii unkoo 
+bundlee bana kee rakhtaaa haiii
+>kahinn orr hamee jana naa padee or bhataaknaa naa paddeee ok
+>best paart jabb hamme reactt kka ap install kar reehe thee hamare idhar babel
+or webpack automatically install hoo gaya
+>jese haam react koo import kea aab hamm kiay karsaktee haii hamare babel kaa 
+jitnaaa faidee haii woo hamm react kee iss cheez mee use karsakteee haiii
+>phirr bhii mee bata deta hoon kiya haii babel babell joo haii baiscally wooo
+java script kaa compiler haiiii you knoww pehele kee java script kaa code hota
+tha theek hai now days joo code haii ecma script haiii
+>or morden java script booltee haii hamare browser yahh nainn samjhh taa haiii
+>babel kiya kartaaa hii uskoo compileekarkee aisa code bana deta haii jiskoo 
+browser samajhh leeta haiii 
+>aap koo react sikhee kee lea ap koo es6 see 10 tak ana chaihaii
+10.35
+>
+
+
+
+
+
+
 
