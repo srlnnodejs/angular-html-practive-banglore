@@ -1,0 +1,126 @@
+intoduction to jsx
+======================
+>yeeh sixth video honne jara ha haiii react js tutorial meee
+>iss play list kaa linkk hammnee discription orr comment section mee dedea
+>aaj kaa video bohott important honee wala haiii aaj haam dekheenge introduction
+off jsx or what iss jsx mee batanaee wala hoon
+>jsx kaa full foamm hota haii guys java script extencsion
+>bohot jagee mee hamare aisa hotaa haii kii javascript xml
+>java script extension bhii keh saktee hoo or java script xml bhiii keh saktee
+hoo
+>jiskee baat hamm boleegee kii 
+>aabhii jsx kiyunn jaruri haaii hamme iskoo samajhenna bohott jarurii haiii
+>mee batanna chaungaa hamare previous videoo haii jahann pee hammm hello world
+likha haiii
+>isskoo haam scratchh see samjhaa thaa hammnee dekhaa thaa hamm sabhiii ka sabhiii
+hamm dekhaa thaa yehh sabb kahansee aayee orr harr kisikaaa kamm kiyaa haiii
+>agarr aap koo koii bhii partt chaii haii too iss part koo jarur dekheea
+>aap koo joo right sidee mee h1 kaa joo part dikh raha haii aap koo obviouslyy
+lag raha haii kii woo htmll kaa part haiii
+>yeeh joo html jesa element hai isss koo hamm html naa bolkee isskoo hii 
+bolteee haii jsx in react
+>and mee iskoo jsx kyun boltaa hoon 
+>mee eek bar phirr see likh leta haooon
+>java script html and java scirpt xml 
+>iskoo jsx expression iss lea boletee haii dekheea 
+> sabsee pehele mee cmd open karkee khud kaa folder kee andar chala jata hoon
+>agan muujhee awsomeapp kee andar jana haiii
+>abhii mee run kar rha hooon npm start
+>aap koo pata chal gaya kii hamm joo html kaa cheez likh rehe haii woo html
+kee tag kee andar hamm uskoo hii boltee haii kiii jsx
+>hamm eek barr start karnee kee baad ham dekheelengee kee kiya output anne wala
+haiii
+>pehele hamare heello world thaa abhii likhletaa hooon thapa techecnical
+>mere server load hoo raha haii too hamme output mee aaigaa thapa techenical
+>finally aap koo miljaigaa hamare thapa techenicall
+>lekin orr eekc cheejj aap koo mee batana wala hooon 
+>haam iss react module koo kyunn import karengeee 
+>hamnee too kahinn use nainn kea haii 
+>aap kaa dom mee eek function haii render orr react kaa kiya kam haii idhar
+>dekheea hammm react koo joo import kea thaa uskoo comment out kardea haiii
+>ctrl+s save kartaa hooo orr mee browser mee chaltaa hooon 
+>too dekhtaa hoon kiyaa atta haiii
+>faild to compilee dikha raha haiii 
+>aap koo dekhai dega kee react must bee in scope whin using JSX
+>khud react bol raha haii kii react scope off jsx
+>aagar aap koo react mee html jesa dekhnee wala element hamm jiskoo boltee haii
+jsx>
+>you have to import react module
+>bohottoo koo yahii doubtt haii kii hamm kyunn react modulee koo import karenegee
+>takii aap jsx koo use karsaketee haiii 
+>yahann pee aisa kii jabb hamm react domm koo le rehe haii too idharr hamm
+react kaakuch nainn kar rhee haii kahann jahann html call hauahaii 
+>too aisa kiya hoo raha haii kii yehh jsx binaa react module kee challi haii 
+nahinn raha haiii
+>too yahii hamare bohott hii importantt haii iskmooo pehelee achee see sunna chai
+hii>
+>aab mee chal raha hoon babel mee ahmmnee already batayaa hii 
+>to meene pichele baree videoo mee mene babel kee baremee bata raha hooon 
+>yahh kiya haii kii hamare mordenn javascript compiler haiii
+>phierr see mee babel mee leke jaaraha hoon yahaan pee hamm milegaa babel.io
+>tryit out mee jana haii 
+>yehh part koo karletaa hoon copy oorr kiya karungaaa 
+>or lekee mee tryit out kee left columnn mee pastee karlta hooon 
+>to joo code ham likhh rehe hai left sidee kee try it out meehamme woo 
+right side mee aisa dekheegaa 
+>jiss mee dekhea hamare react dom eek min ismee hamare clear dekhai nain degaa
+>wohii code copy karkee mee idhar ichee pastee karletaa hoon 
+>joo pure comment dekhai dee rhaahaii wowo bata raha haii kiiyehh pure react
+js kaacode haiii 
+>iskoo thoda saaa kam zoom karleetaa hoon 
+>joo eek linee kaa codee haii hamare idharr aap eeek linee code karogee yaa
+itna sarre linee kaa codee likhoo geeee 
+>too guyss hamm jooo upar reactDom wala part joo haii likheeteeh ussko compile
+kartee haii or run karteee haii too hamare aisa nichee wlaa aajaigaa 
+>niche dekhsaktee hoo sirff h1 tag kee lea inhoonee reacttkoo import kea haii 
+>iss case mee acturall mee kuch aisa haaii reacll meee 
+tooohamare  code kaisa hoga
+index.js
+===============
+import React from "react";
+import ReactDOM from "react-dom"
+ReactDOM.render(<h1>Thapa Technical</h1>,document.
+getElementById("root"));
+
+
+ReactDOM.render(React.createElement("h1",null,"Thapa Technical"),document.
+getElementById("root"));
+
+>aab aap koo clear hoojaiigaa ki hamm react module koo kaisa import karr rehe haii
+>hamm react kee madatt see ham createElement hamm use kar rehe haii 
+>mee eek naya h1 element create karr raha hoon 
+>woo h1 element create karr rhaa hoon orr dusraa paramter hamare null hota haii
+koi attribute haii yaa nahinn dekhanee kee lea filal
+>and last one is children
+>andar kuch nested element hai ki nain orr uskee kuch value haii kii ninnn 
+>uskee andar kuch haii ki nain sirf yahii haii ki thapa technicall haii 
+>agar aap simply aap h1 uaprr kee tareeekee see likh rehe haoo too browser mee
+iss tareekee see hoo rhahaii
+>because of your babell
+>already hamm nee batayaa haii kii babl bohott hii mportant rolee play kartaa haii
+>too kiya hotaa haii kii aap simpleeyy h1 likh ttee hoo to bhii babel uskoo 
+aisa kardee gaa compilee keii browser pura sakajhee jaigaa
+>yahii hamare jsx aab aap kaa doubttclear ;hoo jana chaihaii ki hamm react dom
+koo kyunn use kar rehe haiii 
+>kii hamme render mehtod kii jarurat haii orr react.create element kyunn call
+kar rehe haii kii hamme jaisa h1 jese elemente haii waisa naya  naya eelment
+create karsakuuunnn
+>last mee document.getElementById yee too samee haii 
+>yehh hoo gaya isskoo mee comment out karlteeaa haoon orr guyy s eek tareeka
+mee  bata deta hooon
+>aab mee eek pure java script bata raha hoon ismee hamare babel convert kar 
+raha haii hamme kuch karnee kaa jarurat nahiin 
+>agar apa sirff purree sirf pure java script meee karnaa haii too aap kiay 
+karngeee 
+>hamm simplee aisa likhnnnahaii varh1=docuemnt.crateElement("h1")
+>ab h1 kee andar hamme kuch likhnaa haii 
+>h1 kee angar mujhee inner html likhnaa haii 
+>h1.innerHTML="THAPA TECHNICAL"
+>actulaay iss part koo mujhee uss document mee dikhanaa haii jimee iskoo show
+akrnaa chattaa hoon 
+>uskee baad mee doucment.getElementByiD copy karkee pastee karlteeaa haoon 
+>last mee eek semi cloumn dekhea 
+>upar wala linee mee comment out karletaa haoon 
+>jab hamm react mee kar 9.00
+
+
