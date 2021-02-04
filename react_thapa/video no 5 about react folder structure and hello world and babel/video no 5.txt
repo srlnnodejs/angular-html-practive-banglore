@@ -225,8 +225,36 @@ tha theek hai now days joo code haii ecma script haiii
 >babel kiya kartaaa hii uskoo compileekarkee aisa code bana deta haii jiskoo 
 browser samajhh leeta haiii 
 >aap koo react sikhee kee lea ap koo es6 see 10 tak ana chaihaii
-10.35
->
+17.38
+>const jooo haii abhiii hamare jooo actual browser nahinnn samajjhh taaa haiii
+>babel uskooo convert karkee uskooo var mee convert kartaaa haiii
+>ussi tareekee see mene idhar simplyy fat arrow function use kea haiii jabb ham
+browser mee pass karteee haiii nooo babel kuch iss tareeeke ssee convert karletaaa 
+haiii
+>jisse browser kooo samjheee 
+>jaise ham left mee fat arrow function likhee haii right mee hamm uss function
+expression banayeengee
+>yhee babel aap ka code aap kaa joo mordern java scritp mee jooo bhii likhooo vii sa
+convert kardeegaa javascript keee usss formatt mee jisse browser samajhee sakeee
+>hamme babel kooo khudd seee import karneee kee koi jarurat nahiinn haii auto
+matically hamm jabb react module import kar rehe haii hamme mill rahaa haii
+>iskaa matlabbb yehhe haiii kii ham hamare mordeen java script mee react app
+kaa part use kar rhee haiii
+>aab haamme idhar require likhneee kee jarurat nahinn haii basicalliyy haam
+jab nodee mee kakam kartee thee likhthee the
+>instead of require es6 mee hamare import export kaa eek concept haii 
+>aap koo aisa likhnaa haii kiii 
+var React=rquire("react") iskee badlee mee aap koo import React from "react";
+>aab aap koo pata chala hamm import kyun use kar rehe haiii
+>kyun kii guys haamm jaabb react module use kartee haii hamme uskee saath 
+babel hamme usske sath mil jata ahiii
+>babel kiya haii kii woo mordenn java script koo support kartaaa haiii
+>hamm morden java script kee code koo likh saktee haii code mee babel hamare
+automatically compile kardee gaa
+>browser kooo jesa chaihaiii js uskoo mill jaiggaa
+>jahann pehele mee var simplee likhh rahah thaa yahh parr mee morden javascript
+kaa es6 kaa code likh raha hooon
+> 
 
 
 
