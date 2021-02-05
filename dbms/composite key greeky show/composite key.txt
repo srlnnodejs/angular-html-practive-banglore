@@ -1,0 +1,41 @@
+>composite key
+==============
+ >composite key kaa matlab yeehaa haii kiiiii aap doo columnnn koo milakee aap 
+eek column bana saktee haiii 
+>aaj haam batt akreengee kee compositee key kii haam log bohott sarree 
+kyss padhh chukkee haii 
+>composite key aaj dekhee tee haii
+>compositee keyy kaa matlabb yehh hota ahii kiii aap doo columnn mila kee aap
+koo eek primayy keyy bana naa haiii 
+>yaa fir aap kiyaa karengee doo columnn koo mila kee aap aap kaa joo recordd haii
+aap uskoo uniqulyy aap identyfy karsakteee hoo  
+>mere kehennee keaa matlabb yahii haii kee inn doo columnnkoo dekhajaii coursecode
+orr date koo 
+>aapp koo donooo columnn koo milakkee aap purii recordd koo uniqullyy identyfy kar
+sakteee hoo
+>magar individually aap eeek dekhkee aap koii columnn koo identy fy nain karsaktee
+hoo kyunn kii c125 yahnan pee frist row mee haii and fourth row wmmee haii
+>abhiii hamare c125 kaa data retrivee karnaa haii tooo aap koo doo data retrivee 
+honngee
+>too aap confuese hoojayhneegee kee aap kiskee lea aap searchh kea haii 
+>uniqueylyy identy fyy aap individually nainn karsaktee hoo jaisa kii aap dono 
+>agar mee aap koo bata ta hoon c125 kaa record batayeea too aap mujhee puchengee
+kii konn saa tareeekhh kaa 12 tareekh kaa or 21 tareeekh kaa
+>iskee jareea aap pura recordd koo nain batasaktee haiiuniqullyy 
+>agar mee kahunn c125 mee 12-1-2014 kaa batayeea matlabb aap mujhee bata saktee
+haii kii c125 and 12-1-2014 koo milakee eek uniqulyy identyfy kartee haii kii
+>ismee duplicasy kaa problem nahin hooraha haii aap inn dono koo milakee appa 
+individuall recordd find karsakteee haiii 
+>too doo recordd koomilakee hammm koi rcord koo uniqulyy identyfyy karsakteehaii too
+uskooo bolteee haiii composite keyyy
+>iss table mee hamare corusecode and date haii joo hamme donokoo milakee hamare 
+uniqullyy identyfyy kartaa haii donokoo milakkee
+>individually kahajeeea too hammare idhar uniqulyy identifyy nain hogaa because
+>agar 12-1-2014 ko dekhengee too yehh hamare uniqullly identfyy nainnkaregaa aisa
+nahinnn haii
+>12-1-2014 koo c programming haii too 12-1-204 kooo data structure haii
+>course code bhii hamare uniqullyy iednty fyy nain parparigaa agar donokoo ham agar
+miledee too ham uniqlyy idetyyfy karsaktee haii
+>c-125 hamare first row mee haii too hamare kiahan bhii nain milegaa c125-12-1-2014
+>yahhann ds144 12-1-2014 haii kahann bhi hamme nain milegaa kiaidhar
+>individuyally hamm dekhee too c125 bohot jaga ahii to duplicayy haii
