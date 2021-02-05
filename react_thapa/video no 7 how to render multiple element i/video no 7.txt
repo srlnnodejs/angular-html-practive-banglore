@@ -1,0 +1,108 @@
+video no 7
+===================
+>hii guyss hamm abhiii takk kiya kar rhe haii hamm render method kee and ar
+hamm eek hii element use kar rehe haiii 
+>yhee joo kuch likhaa haii yehh sabb previous video mee batayaa tha woo play list
+mene batayaa hamare nichlee descripton mee hamm dedea ahiiii 
+>filal hamme issiee hata deta hoon hamme isska koi jarurat nahinn haii 
+>mene iskoo aisa rakhee deta hooon docuemnt koo nichee lata hooon 
+>index.js
+===========
+import React from "react";
+import ReactDOM FROM "react-dom"
+ReactDOM.render(<h1>THap a tehcnincal</h1>, document.getElementByID("root"));
+>hamnee sabkuchh samjee lea eek eek linee eek eek key workd kkoo hammnee 
+samjeee leaa
+>aabhii hamme kiay dekhnaa haii
+dekhea outpu mee kiya atta ahii hamare browser mee  
+browser
+=========
+THap a tehcnincal
+
+>mene aap koo bataya tha what is render method yad karoo
+>kiya haii kii kiya dihannaa haii orr komma deeke hamme kahann dikhannna haii
+> kahann dekhaanaa haii woo bala part hamm alreadyy karchukkee haii 
+>mene bola yahii haii kii hamare document mee joo bhiii idd mee root deke rakha haii
+usmee dekhaoo >
+>kiya dikhanna haii hamare idhar khali thaapa techinical nainn dihamnna haii hamare
+idhar komma separate kar rha haiii 
+>mee orrr eek paragrap deke mee likhh luu Plz like and share 
+>
+>index.js
+===========
+import React from "react";
+import ReactDOM FROM "react-dom"
+ReactDOM.render(<h1>THap a tehcnincal</h1>
+<p>plz like and share<p>
+, document.getElementByID("root"));
+
+aisa upar jaisa likhuu too kiya hogaa dekhea 
+>aap dekh saktee hoo koma kee nichee red haii 
+>ctrl+s save karreetaa hoonn yeeh hamm joo part likhh rehe haii naa hamare html 
+element hamare actuall they are called jsx in react 
+>yahh aap koo yadd rakhnaaa hii basss 
+>aagar meeaap koo outpu dekhauunn compilee karkee hamare output mee kuch aisa atta
+haii 
+>Failed to compile
+>reason hamme aisa dikha raha haii kii yahann pee hamae dikha rhaa hii kii parsin
+error dikha rhaa hii jahann pee hamme Adjacent JSX element must bee wrapped in and 
+closing tag
+>aap koo pata chala yeehh joo adjscent html ka element haii hamare adjscent matlab
+hamm eek saath do do use kar rehe haii 
+>yeeh bol rhaa haii kii aap koo multiple eleemnt use karnaa haii to you must wrapp
+inn encloosing tagg
+>enn dono koo koii bhii kissii bhii enclosing tag kee andar wrap karloo 
+>kisi eek div kee andar rakhdoo jahann pee tumm inn dono koo use karsakteee hoo
+>javii aap render method koo use karogee it onlyy takees single element 
+>hamee malume haii kii h1 one element haiii 
+>h1 element haii too yehh hamare one hoogaya naa 
+>render method sirf eekk hii methodd koo call kartaa haii 
+>eek singlee element koo mantaaa haii yahnnn pee hammkiyaa kia hamm h1 elemetn bhii
+use kea haii or paragraph tag bhii use kea haii 
+>khali paragraph nain pura ka pura code koo bata ta huunn too yehh biii eek element
+haii
+>yehh paragraphh orr h1 doo element hoo gaya haiii
+>render method needs only one 
+>aap kaa ajjj kaavideo aisa important haii kii aagar aaap koo multiplee jsx element
+use karnaa haii too 
+>kyunn kee aap koo mee bohott bata dea hoon kii yeehh html element ninn yeeehh haii
+jsx elemnt 
+>agar aap koo render mehtod kee andar aap koo multiplee jsx method use karnaa haii too
+>you have to rapid it aap  koo koi bhiii methodd lageee kee yeehh too bhaii single
+elemnt haiii 
+>too woo simplee haii guyy ss hamm jabb koii bhiii eek doo teen tag lete haiip project
+mee simplyy hamm guyss hamm div tag lete haiii
+>div kee andar hamkm multiplee kuchh bhii add karsaktaa thaa 
+>agar aap div leletee haii too aap koo h1 and p donoo aap kee div kee andar haii too
+aap koo render method aap koo yehh dono eek hii manegaa
+>aap eek render mehod kee andar aap multiplee jsx element keese use karsaktee hooo
+>to hamaree code kaisa dikhaageaa dekhea
+>index.js
+===========
+import React from "react";
+import ReactDOM FROM "react-dom"
+ReactDOM.render(<div><h1>THap a tehcnincal</h1>
+<p>plz like and share<p></div>
+, document.getElementByID("root"));
+>aap dekhea ouput mee kiya haata haii
+
+browse
+==============
+Thapa Technical
+Plz like and share
+
+>asia aap jitnnee bhii leseaketee hoo orr savee kar sakteee hooo too div kee andar
+
+>pls subscribe my channel koi nain aap dekhogee kaisa atta haiiii
+>this is the beautyy aap sirff div keee andar aap yeehh sabkkooo likhh saktee hoo
+>agarr aap kaa react kaa verison 16.x.x kuch bhii uparr haii 
+>kasia pata chalgeeaa apa jaoo package.json filee koo dekhea aap koo sab dekhai
+dega 
+>aap koo 16.13 see uapr haii 
+>agar aap koo 16 see uapr hoo too aap koo div naa bhii likhoo chalgeeeaa 
+>now it actulayy accept array of an element 
+>agar mee const kuch array banataa hoon agar simplyy ismee kuch add karnaa hoo
+>agar mee array mee kucha asia save kartaa hoon
+cosnst arr=['vinod','thapa','bahadur']
+>basically hamme square bracesses kee andar hamme komma koo seperate karlena haii
+> 6.39

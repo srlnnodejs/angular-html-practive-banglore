@@ -121,6 +121,73 @@ akrnaa chattaa hoon
 >uskee baad mee doucment.getElementByiD copy karkee pastee karlteeaa haoon 
 >last mee eek semi cloumn dekhea 
 >upar wala linee mee comment out karletaa haoon 
->jab hamm react mee kar 9.00
+>jab hamm react mee kar rehe haii that is called jsx jab ham uskoo run katree
+haii with help of babel babel uskooo compile karkee hamare browser koo dikhata
+haiii 
+>orr joo third example haii usmee naa react na babel 
+kaisa example haii 
+var h1=document.createElement("h1");
+h1.innerHTML="THAPA technical";
+document.getElementById("root")
+>pure pure javva script kee madatt se ehamme koi eelment create karnaa hoo to is
+tareeekle see hamm crate karteeee haiiii 
+>abhii mee ctrl+s save kartaa hooon or browser mee chaltaa haooonn too ddekhea
+guyss hamme kuch dekhai nain de raha haiii 
+>hammene yehh joo document.getElementBy ID OR ROOT KEA HAII ISKKKE SAATHhamnne
+kuch joiin nain kea haiiii
+>i mean agar hamnee eek h1 element create kea haii atleast hamme uskee saatha
+join karna padegaaa 
+>uskoo add karnee keee lea hamare doo div bala root hamm hamare jooo index.html
+haiii aap koo likhnaa haii appendchild basically hamme yahannn pee new child
+likhleenaa haiii 
+>iss index.html mee hamme adia root kee andar kuch add karteee haii too 
+uskoo likhnee kee lea hamare paas eek method haiii appendChild
+>aap koo jiiss bhii eleement kee nam dogee aabhii hamm h1 create kea haii 
+ham h1 create kea haii too hamme idhar h1 dal dena haii 
+> ctrl+s save kea too aap dekh sakteee hoo hamm react kaakuch choose nain 
+kea hamm sirff java screipt use kar rehe haiii 
+>save kartaa hooon orr browser mee dikhtaaahooon hamme error dikhraha haii 
+>that is failed to execute appendChild  on Node parameter 1 is not type child
+>too guyss hamme idhar double quotee hata dena haii orr likhnaa haii too
+aap koo dikh jaigaa kiya hota haiii 
 
+var h1=document.createElement("h1");
+h1.innerHTML="THAPA technical";
+document.getElementById("root").appendChild(h1);
+>and browser mee chalataa hoon and boom guysss 
+>yahann pee guyss aap koo mee teen tareeke bataya jahannn pee aap react app
+chala saktee hoo dikha sakteee hoo 
+>eek tareeeka haii hamme reactt mee karnaa hii hai that is help off jsx
+>dusra hamare browser mee likhtee hue hamare browser mee iss takrekeee see dekhai
+detahaiii woo haii React.createElemet
+>teesra hamare agar aap java script mee kam kar rehe hoo aap koo koi eek naya
+eek eleemnt create karnaa haii h1 in case hamme aisa haii likhnaa haii 
+>and teeno meee hamme samee output hamm arra haiii 
+>aisa hee mee hata deta hooon simplyy mene uncomment kadea second
+option thaa 
+>mainee simplyy alag alag tareekee see react hamm iskkoo challarahee haii 
+>that is guyss hamm are iss teen tareek haii hamare dikhannee ke lea hamare
+keese kamm hotaa haii 
+>index.js
+=============
+import React from "react";
+import ReactDOM FORM "react-dom"
 
+ReactDOM.render(
+React.createElement("h1" null,"hhapa technicla"),document.getElementBId("root");
+
+var h1=document.getElement("h1");
+h1.innerHTML="thapa tefchnical subscribe";
+document.getElementById("root").appendChild(h1)
+>really aap kee sarree doubtt clear hoo gaya hoogaa kiii hamm react domm
+kyuynnn use kar rehe haii orr react module kyunn use kar rhee haii or yehhh
+jsx ka matlabb kiya haaiiii >
+>abhii bhiii eek bar bata doonn jabhiii aap render method kee andar html
+jaisa kuch tag likheee haii woo html eleement nainn haii uskoo hii hamm 
+jsx bolteeee haii jabb hamm 
+usko run or compilee kartee haii hamare babel joo react kee compiler miltaa hii
+woo uskoo iss tareeke see convert kar leta ahii
+kaisaReactDOM.render(React.createElment("h1",null,"thapa techniclal"),document
+.getElementById("root"););
+>yehh asia haii kiii hamare browser isskoo samhjhee 
+>teesra hamare simple java script kee madat see kisa likh reehee haooo 
