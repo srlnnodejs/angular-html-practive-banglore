@@ -106,3 +106,34 @@ dega
 cosnst arr=['vinod','thapa','bahadur']
 >basically hamme square bracesses kee andar hamme komma koo seperate karlena haii
 > 6.39
+>agar aap kaa version  16.xx kee uapr haii too kese pata chleegaa mee aap koo baataya
+thaa hamaree package.json filee mee sara version batayaa haii 
+>aab haamare version 16.13 kaa version haii ttooo koi tension nahinn haii 
+>agar 16 uapr hooo naa hamare idharrr aap yehh div naa bhii likhoo chalegaa 
+>aap kiya karogeee now it will accept array of element 
+>agar mee simple array off valuess koo add karnaa hooo too hamme kiya karna hogaa
+>basically haam square bracesses kee andar add kar rhee haoottee yahii kamm
+haii arrayy kaa 
+>yahhnnn pee eek square bracesses opening orr closingg chaii haii 
+>guyss aap dekhee saketee haii mene aaap kee lea likhee bhbhiii lea in react verison
+16 kee baad in render method itt will return array of element
+>aab yehh array of element koo return karsaktaaa hiii 
+>ismee simplyy iss tareekee ssee dekhee rehe ahii kyunn kii hamm functionalll compo
+nenet koo dikh reehe haii naa kii class compoenent kooo dikh reeha hii 
+>jabii aap koo element pass karogee too app komma doogee or bologee yehh pehela
+index noo 0
+>index noo 1 mee thapa iss tahara haii aaap kooo pata chall jaigaa 
+>iss tareeke se lal noo kaa wave hamare dekheii de rhaa haii
+>dekheea guyyss jahann meee idharr mee div likh jahaann mee div likhh raha thaa
+aabhii idhaar hamare array aa rhaa hiiii
+>ReactDOM.render(
+[<h1>thapa technical</h1>,
+<p>plz like and share to all</p>,
+<h2>plz subscribe my channel</h2>,],document.getElementyById("root"));
+>
+
+
+
+
+])
+>

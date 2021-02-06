@@ -1,0 +1,126 @@
+About react fragement
+>guys aaj kaa video bohot important haii guys yeehh wohi code haii mene joo aaap koo 
+Previous video mee batayaa thaa 
+=>ReactDOM.render([
+<h1>Thapa technical</h1>,
+<p>pls like and share to all</p>
+<h2>plz subscribe my channel</h2>
+],document.getElementById(“root”));
+>ham bataya tha hamm kiss tareeekee see multiple jsx element kaa use karrkee hammm 
+Render method mee dalsaktee haiiii
+>eek aap div use kar sakteee haii orra ap kaa version 16 see upar hoo aap array of element
+Bhii use kar saktee haiii 
+>mee eek cheez react fragment aaj dikhanna chaungaa use pehelee mee kyunn react fragment
+Dikhana chaungaa aaj mee boltaa hooon
+>iskoo refresh karletaa haoon ouput sahii haii agar mee chaltaa haoon source meee 
+>agar mee zoom karleta hoon agar mee div dikhaunnn 
+>jahann pee mee dikhaunnn yeehh mere div id=root yehhh basially hammare  thoda 
+Zoom karee ap koo dikha deta hooon jahannn pee mee aap koo dikha rhaa haoon yahana
+Mere div id=root haii  yehh basically hamare index.html mee yehhh wala dikhai derahahaii
+<div id=”root”>
+</div>
+>aap dekh saktee haii right side mee aap kaa index.html mee div part empty haiii
+Too hamare code kaisa haii 
+Index.html
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+</head>
+<body>
+<no script>you need to enable java script to run this aapp</noscript>
+<div id=”root”></div>
+</body></html>
+
+Yahnn pee ap koo kuch nainn dikh rhaa haii aap koo upar sirf eek div dikhh raha hiii 
+>div kee andar joo aaraha haii mee idhar see uskoo send kar rha ahoojnn 
+Index.js
+reactDom.render([
+<h1>Thapa technical</h1>,
+<p>plz like and share to aall</p>,
+<h2>plz subscribe my channel</h2>,],document.getElementById(“root”));
+>jab mee usss  div ka id pass kartaa hoon too hamare h1 p and h2 mee pass karletaa hooon
+>hamm nee see bohott log div use kartee haii hameesa 
+>yehh komma komma isss lea thaa hamm array of an element hamm use kartee haiii
+>agar mee iskoo div kee inside rakhtaa hoon orr likhtaahooon too guys
+>too hamme dekhoo komma dekhai de raha hiiii  jook ii bohot faltu dekhai de raha haii
+Basically
+>uss komma wageraa hata deta hoon space deta hoon new line mee leke chaltaa hoon
+>aab mene div likhaa hoon orr kuch mujhee iss taraha see dikh raha haii 
+>baat yahii haii kii guys hamare react.fragment kaa topic chal raha haII ABHIII TAKK MENE
+AAPKOO ISS KAA KUCH BATAYA NAINN AB BATA TA HOON KIAY HAII REACT.FRAGMENT
+>AGAR MEE DIV LIKHTAA HOON NAA <div id=”root”> HAI  ap dekh saktee haii ham jab
+Mee simply array use karta hthaa naa mare iss div kee andar tenoo ouput aarhee thee.
+>jab mene div likhtaa hoon too mera div kee andar orr eek div ban gaya haii to mujjheee
+H1 paragraph h2 mil raha haiii 
+>yehh guys react.fragment kyunnn use karna chaihaii mee aap koo batata hoon 
+>aap div use kartee hoo naa render method kee andar aap multiple jsx element koo uusee karoge
+>too guys uskaa actuall impact kuch iss tareekeesee hoor aha haii
+>eek div kee andar hamm joo already bool rehe haii joo id haii usmee jakee iss div koo 
+Daldoo 
+>lakin guys sath bhii saath yehh doo div haii naa guys yeeh doo dusra div viii add kardeta haii
+>too eek extra node hamare idhar badh raha haii hamm css mee dekhengee grid 
+>jab css mee hamm grid choose karteee haii hamare uss samayy thoda problem aaraha haii
+>aabhii saktaa haiii uss time mee 
+>too guys yahiii extra div hammare joo create hoo jata aii yahii extra div use naa ho ham miss
+Lea hamm use kartee haiii react.fragment
+>dostoo mee yahiii joo div haii iskoo ctrl+d press kartaa haoon or ctrl+d karkee mene dono
+Div koo access kar pa rhaa hoon
+>uss div kee jagamee aap koo likhnaa ahiii R capital and f capital
+>aap koo div kee jagamee ap koo likhnaa haiii
+React.Fragment
+>too guys aap kaa code kese deikegaa chaleea dekhetee haiii 
+>joo div hamm use kar rehe thee hamm abb likheegeee React.Rragment
+>I hope aap logoonee bohot baar suna hoga aye react.fragement
+>too hamare index.js file kese hogaa hamm dekhengeee 
+Index.js 
+===========
+ReactDom
+react
+
+
+ReactDOM.render(
+<React.Fragment>
+<h1>thapa technical</h1>
+<p>plz like and share to all</p>
+<h2>pls subscribe my channel</h2><React.Fragment>,
+document.getElementById("root"));
+
+>mee iskoo ctrl+s save kardetaa haoon iskoo 
+>and yahann pee aap dekh saktee hoo same ouptut aaraha haiii 
+>agar me div expand karkeee dikhtaa haoon too mujhee pata chalegaa kii
+meee pehele mee joo div kee andar orr eek div likhkee mene dekh raha htaa
+>too mujhee orr eek div dekheii detatha 
+>abhhii woocheez nain haiiii
+>uss div kee andar as child inn teenoo koo dikhaa raahh haaii 
+>aabb mee div hata dea hoonn use kar raha hoon React.Fragment
+>too hamare joo extra div orr extra node hamme joo banrahaa thaa woo hamme
+niainn mil raha haiii
+>woo cheez nainn bantaaa haii woo best haiii 
+>aab aap kee mind meee aarahaa hogaa kii div use karun kee react.fragment
+use akrunn kee array of element use karunngaa
+>too simplyy aap React.Fragment use keejea kyun kii iskee faidee haii
+yehh little bit faster haii aagar hamm nee React.Fragment koo agar hammm
+div kee saath comapre karngee or array of element kee sathh sue karngee too
+>or itt conusme leeess memory alos
+>or eek jada div hota too thoda more memory use karletaa  uss cheeez koo 
+recty fy karnee keee lea hamm React.Fragment use kar rehe haii
+> aap koo batahaii advance javascript mee hamm classes padhrehe tee too 
+hamm idhar classes bhiiii use karksakteee haii joo kiii actually classes
+jeaisa ninnn thaa 
+>functional component kaa syntatical sugar kehleta thaa 
+>iss tareek see  aap react fragment likhtee hoo react fragemnt kaa hamare paas
+eek syntatical sugar form haii 
+>agar aap React.Fragment naa likhooo matlab aisa hoo kii hamm yehh likhnaa 
+hii naa pagdeee 
+<>
+</>
+>dikhtaa haii simplyy itann hiii likhuu or ctrl+s save kartaaa hoon
+>and browser mee jakee dekhunnnnn too guyss aapkoo samee ouput aaraha haii
+>yahii guyy ss aaj kaa video itnaa haii basically hamm react.fragment batayaa
+orr kyunn ussee hota haii bataaya haii 
+>or version 16 mee kyun relese kea gaya thaa 
+>agar mee div use karteee too woo div eek extra layer mee add ho karr
+>abhii hamm dekha react fragement uska eek syntatic  sugar form bhii haiii
+thank you so much
+
+
