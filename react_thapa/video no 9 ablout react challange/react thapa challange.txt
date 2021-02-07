@@ -1,0 +1,137 @@
+video no 9 about jsx challange
+===============================
+>create react from scratch
+>add one h1 element to it
+>add one paragraph element  in it
+>add list of fav 5 netflix serries in it using an order list
+>dekhea guys yeh joo challange haii bohott hii jada simple haii 
+>already yeh sab kuch dekh chukaa haiii
+>hamme simple eek aap create karna chaiahii usmee eek h1 hona chaihai
+>eek paragraph hona chaichiai
+>orr 5 netflix serries hamme likhnaa haiii
+> aap kaa ouput kuch aiasa dihannna chaihaii 
+>1.09
+>jahannn pee aap kaa eek hading hoga jhahann pee aap simplyy aap kaa name 
+likhongee
+Thapa  Tehcnical Netflix Pick
+>and theen eek paragraph hoga usmee aap likhoo gee
+List of 5 Best Series
+>or eek haii order list
+1.Dark
+2.Extra Cirrcular
+3.My Holo Love
+4.My first-2 love
+5.Mr Robot
+>aab guyss mee aap koo step by step bata ata haoon soo guysss aap nee 
+>so guyss mee vs code mee aachhukkaa hoon orr iskoo zoom karletaa hoon
+>tooo guyss hamme inedx.js mee kam karnaa haiii
+>hamm janteee haiii aap koo react mee kam karnaa haii too you have to import
+react from react module
+>import React from "react"
+>and aap koo react dom bhii imprt karna a haiiii kahann see react dom balii
+moduleee  see
+import ReactDOM from "react-dom"
+>;hammnee alreadyy samjhh chuukee khaaiii kyunnn hamme react and react dom module
+import karnaa haiii 
+>aabb hamare react domm emee eek method haiii render orr last mee hamme guys
+hamme eek semi columnn add karnii haiii 
+>mee batana chaunngga guyyss hammnee hamara pehela step complete karlea
+create react app form scratch
+too hamre code kese dikhraha haiii 
+===================================
+index.js
+========
+import React from "react";
+import ReactDOM from "react-dom";
+ReactDOM.render(
+<>);
+>Now we have to add one h1 element add karengee kese add karnegeee simplyy
+bohott easy haii hamm aisa hii add karengeee 
+<h1>Thapa Technical Netflix Pick</h1>
+>eek baar h1 kee andar likh lea hamare yeeh kamm bhiii complete hoo gaya
+>aabhiii yahaan pee aap koo eek koma dekhea aab yyahahnn pee ap h1 kee baad
+aap komaa dejea orr dekhea jahann pee ham likhtee haii yahann pee kahiii too
+render kanaaa padegaaa 
+>woo render kahann kartee haii we havee index.html mee usmee eek id detee haii
+woo hota haii root
+>too hamare index.html kese hott ahii chaloo  dekhetee haiii
+>index.html
+==============
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<noscript>you need to enabale java script to this</noscript>
+<div id="root"></div>
+</div>
+</body>
+</html>
+>aap koo likhee kee aapp koo index.html render karnaa haii 
+>hamme index.js mee likhnaa haii 
+document.getElementById("root"); aap koo simplyyy iss linekoo aap kooo
+index.js mee jahan render karrehe haii chod dena haiii
+>make sure aap koo  uss linee kee bad semi columnn nahinn dena haii
+aap semicoulumn dena dengee toooo mee app koo dikhaa saktaa hoon 
+>aap semi column dengee too yahann pee eeke error aaajta haii kiya error
+we havee parsing error :unexpected token, expected","
+>aap koo semi columnn naihnn dena haiiii
+>uskoo as it is rakhoo ctrl+s karnaa haii mainee already hamneee server 
+on rakha haii or server on keardeaa too boom guys
+>mujhee browser mee yeh chaichii
+=================================
+Thapa Technical Netflix Pick
+
+too hamare index.js file keaisa hogaa abhhii
+===============================================
+>index.js
+========
+import React from "react";
+import ReactDOM from "react-dom";
+ReactDOM.render(<h1>Thapa Technical Netflix Pick</h1>,
+document.getElementById("root"));
+> aab hamme paragrap chaihaii too mee kiya karungaa mee yahann pee jatahoon
+>theek nichee hamare h1 tag kee mee eek p tag add karlta hoon
+>orr paragraphhh koo close karletaa hooon hamee likhnaa haii 
+><p>Here the list of my fav 5 netflix series</p>
+>aissa likhnaa haii aap koo kuch bhiii likhnna haii aap koo Here h capital
+kejea
+>ismee bohott hii jada important cheez honee wala haii mee batata hoon kiya
+honee wala haiii
+>yahann pee aap dekhea right side mee eek h1 haii dusra p haii hamm nee previous
+video mee samjhaa tha hamm kavi bhii multiple html element koo naihnn likh
+sakteee eek saath
+>yeh joo Render method haii iskooo eek hee node orr eek hii elemeent chaihai
+>butt idharr doo element haii too kiyaa karngeeeg
+>too iskee lea hamm samjhaa thaa kii hamm React.fragment usee karteeehhaaii
+>hamm sysntatic sugar form use kartee haii jismmee hamare simplyy batt
+katham hoo jata ahiii 
+>hamm divbhii liklete haii kamm karegaa 
+>naoo aap koo totalyy upto youu aap koo simplyy aap koo syntatic sugar use
+karna haiii nnnaa ap kooo React.fragement usee karnaa haiii
+>mee jan bhuujj kee div use karraha haoonn kii yehh thoda simplee lagtta hiii
+>agar nain chaihaii too aap uskoo delete karlejeea 
+>aisa nainn haiiikii aap koo chaihaii hiii chaihaiii 
+>hamme last mee kiya chaihaii hammare 5 net flix seriess chaihaii eek order mee
+>aap koo iss lea aap koo order list kee leaa aap koo ol likhdenaa haii
+aap koo 
+<ol>denaa haiii
+>orr aap koo ol kee andar li lihnaa haii 
+mene already mene listt likhh rakahahhaii hamare code kaisa rehgaa dekhea
+>ismee jada kuchh haii nainn hamare li koo copy kea hua haii bsss simple
+>
+>index.js
+========
+import React from "react";
+import ReactDOM from "react-dom";
+ReactDOM.render(<h1>Thapa Technical Netflix Pick</h1>
+<p>Here the list of  my fav 5 netflix series</p>
+<ol>
+<li>dark</li>
+<li>extra curricular</li>
+<li>my holo love</li>
+<li>my first 2 love</li>
+</ol>,document.getElementById("root"));
+>ctrl s save karkee refresh kartaa haoon boom guyss ap dekh saktee haii aap koo 
+mkill jaigaa browser mee 
+>thank you so much
