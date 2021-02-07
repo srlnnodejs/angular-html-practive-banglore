@@ -1,0 +1,248 @@
+video no 9 about jsx challange
+===============================
+>create react from scratch
+>add one h1 element to it
+>add one paragraph element  in it
+>add list of fav 5 netflix serries in it using an order list
+>dekhea guys yeh joo challange haii bohott hii jada simple haii 
+>already yeh sab kuch dekh chukaa haiii
+>hamme simple eek aap create karna chaiahii usmee eek h1 hona chaihai
+>eek paragraph hona chaichiai
+>orr 5 netflix serries hamme likhnaa haiii
+> aap kaa ouput kuch aiasa dihannna chaihaii 
+>1.09
+>jahannn pee aap kaa eek hading hoga jhahann pee aap simplyy aap kaa name 
+likhongee
+Thapa  Tehcnical Netflix Pick
+>and theen eek paragraph hoga usmee aap likhoo gee
+List of 5 Best Series
+>or eek haii order list
+1.Dark
+2.Extra Cirrcular
+3.My Holo Love
+4.My first-2 love
+5.Mr Robot
+>aab guyss mee aap koo step by step bata ata haoon soo guysss aap nee 
+>so guyss mee vs code mee aachhukkaa hoon orr iskoo zoom karletaa hoon
+>tooo guyss hamme inedx.js mee kam karnaa haiii
+>hamm janteee haiii aap koo react mee kam karnaa haii too you have to import
+react from react module
+>import React from "react"
+>and aap koo react dom bhii imprt karna a haiiii kahann see react dom balii
+moduleee  see
+import ReactDOM from "react-dom"
+>;hammnee alreadyy samjhh chuukee khaaiii kyunnn hamme react and react dom module
+import karnaa haiii 
+>aabb hamare react domm emee eek method haiii render orr last mee hamme guys
+hamme eek semi columnn add karnii haiii 
+>mee batana chaunngga guyyss hammnee hamara pehela step complete karlea
+create react app form scratch
+too hamre code kese dikhraha haiii 
+===================================
+index.js
+========
+import React from "react";
+import ReactDOM from "react-dom";
+ReactDOM.render(
+<>);
+>Now we have to add one h1 element add karengee kese add karnegeee simplyy
+bohott easy haii hamm aisa hii add karengeee 
+<h1>Thapa Technical Netflix Pick</h1>
+>eek baar h1 kee andar likh lea hamare yeeh kamm bhiii complete hoo gaya
+>aabhiii yahaan pee aap koo eek koma dekhea aab yyahahnn pee ap h1 kee baad
+aap komaa dejea orr dekhea jahann pee ham likhtee haii yahann pee kahiii too
+render kanaaa padegaaa 
+>woo render kahann kartee haii we havee index.html mee usmee eek id detee haii
+woo hota haii root
+>too hamare index.html kese hott ahii chaloo  dekhetee haiii
+>index.html
+==============
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<noscript>you need to enabale java script to this</noscript>
+<div id="root"></div>
+</div>
+</body>
+</html>
+>aap koo likhee kee aapp koo index.html render karnaa haii 
+>hamme index.js mee likhnaa haii 
+document.getElementById("root"); aap koo simplyyy iss linekoo aap kooo
+index.js mee jahan render karrehe haii chod dena haiii
+>make sure aap koo  uss linee kee bad semi columnn nahinn dena haii
+aap semicoulumn dena dengee toooo mee app koo dikhaa saktaa hoon 
+>aap semi column dengee too yahann pee eeke error aaajta haii kiya error
+we havee parsing error :unexpected token, expected","
+>aap koo semi columnn naihnn dena haiiii
+>uskoo as it is rakhoo ctrl+s karnaa haii mainee already hamneee server 
+on rakha haii or server on keardeaa too boom guys
+>mujhee browser mee yeh chaichii
+=================================
+Thapa Technical Netflix Pick
+
+too hamare index.js file keaisa hogaa abhhii
+===============================================
+>index.js
+========
+import React from "react";
+import ReactDOM from "react-dom";
+ReactDOM.render(<h1>Thapa Technical Netflix Pick</h1>,
+document.getElementById("root"));
+> aab hamme paragrap chaihaii too mee kiya karungaa mee yahann pee jatahoon
+>theek nichee hamare h1 tag kee mee eek p tag add karlta hoon
+>orr paragraphhh koo close karletaa hooon hamee likhnaa haii 
+><p>Here the list of my fav 5 netflix series</p>
+>aissa likhnaa haii aap koo kuch bhiii likhnna haii aap koo Here h capital
+kejea
+>ismee bohott hii jada important cheez honee wala haii mee batata hoon kiya
+honee wala haiii
+>yahann pee aap dekhea right side mee eek h1 haii dusra p haii hamm nee previous
+video mee samjhaa tha hamm kavi bhii multiple html element koo naihnn likh
+sakteee eek saath
+>yeh joo Render method haii iskooo eek hee node orr eek hii elemeent chaihai
+>butt idharr doo element haii too kiyaa karngeeeg
+>too iskee lea hamm samjhaa thaa kii hamm React.fragment usee karteeehhaaii
+>hamm sysntatic sugar form use kartee haii jismmee hamare simplyy batt
+katham hoo jata ahiii 
+>hamm divbhii liklete haii kamm karegaa 
+>naoo aap koo totalyy upto youu aap koo simplyy aap koo syntatic sugar use
+karna haiii nnnaa ap kooo React.fragement usee karnaa haiii
+>mee jan bhuujj kee div use karraha haoonn kii yehh thoda simplee lagtta hiii
+>agar nain chaihaii too aap uskoo delete karlejeea 
+>aisa nainn haiiikii aap koo chaihaii hiii chaihaiii 
+>hamme last mee kiya chaihaii hammare 5 net flix seriess chaihaii eek order mee
+>aap koo iss lea aap koo order list kee leaa aap koo ol likhdenaa haii
+aap koo 
+<ol>denaa haiii
+>orr aap koo ol kee andar li lihnaa haii 
+mene already mene listt likhh rakahahhaii hamare code kaisa rehgaa dekhea
+>ismee jada kuchh haii nainn hamare li koo copy kea hua haii bsss simple
+>
+>index.js
+========
+import React from "react";
+import ReactDOM from "react-dom";
+ReactDOM.render(<h1>Thapa Technical Netflix Pick</h1>
+<p>Here the list of  my fav 5 netflix series</p>
+<ol>
+<li>dark</li>
+<li>extra curricular</li>
+<li>my holo love</li>
+<li>my first 2 love</li>
+</ol>,document.getElementById("root"));
+>ctrl s save karkee refresh kartaa haoon boom guyss ap dekh saktee haii aap koo 
+mkill jaigaa browser mee 
+>thank you so much
+===========================================================================
+video no 10 about jsx expression in hindi
+===========================================================================
+>dekhea guyss hamm kiya kareengee hamm eek index.js file likhengee issmee kiya karengee
+>index.js
+==============
+>index.js
+========
+import React from "react";
+import ReactDOM from "react-dom";
+ReactDOM.render(<h1>my name is vinod</h1>,
+document.getElementById("root"));
+>iskoo browser mee chalanaa haii yehehe chalgeeaa orrr hamm kiyaa karengee too 
+or brwoser mee kiya aaiga dekeheea
+o/p
+=============
+my name is vinod
+
+>agar mee eek const create karletaa hoon orr usmee likhee leataa hoon 
+>const name="my name is vinod thapa"
+>simplyy mee copy karrunn orr mee chipkaa duunn to  dekhoo guyyss hamare kiyaa hoga
+idhar pee 
+>idhar hamare my name is vinode thapa aaiga  orr my name kiya aaiga
+>aap dekhea mujhee my name is flname dikhai de raha haii 
+>aab mee kiya karunn hamare idhar constant create kea haii uskoo mee agar idhar lekhunn
+too mujhee dekhaii dee aaj hamare simplee sa kam yahiin haii bass kissii tareeke see 
+hamme yahann dikhanana a haii basss 
+>aap  jantee haii hamare joo render method haii hamme usskee andar hamme likhnnaa haii
+kii kiya dikhanna haii orr kahann dikhanaa haii bass simplee iss cheez koo  likhnaa hai
+>kahann dikhaana haii wo harr baarr same rehenaa wala haii koi difference nainn haiii
+>ismee hamme dikhanana haii kiii kiya dijhaana a haii woo simplee eek html element too
+haiii 
+>basically yee hamare file haii woo kiya haiii hamare java script kaa file haii hamm
+java script kee andar html jaisa dikhnee wala hamm use kar rehe haiii
+>because off react module theeek haii 
+>aab hamre html kee andar hamare java script koo likhnnaaa  haii too kaisa use karengee
+>agar ;java script kee andar hame html koo use karnaa haii tooo kiyaa  karrengeee 
+> with help of diagramm meene aap kee lea ready kea haiii 
+>sabsee pehele hamare paas eek javascript kaa file haii theek haiii
+>that is index.js theek haaii 
+>uskee andar hamm with jsx yeaahh html jaisa dikhnee wwalli eleemnt koo use karsaktee haii
+>hamm eek html dikhnee wala element koo use karsakteee haiii 
+>uskee andar hamme kiya karnaa haii phirr see java script use karnaaa haiii 
+>java script kee andar htmlkoo use karnee kee lea mee jsx use kartaa hoon that is react
+module
+>uss html kee andar mujhee java script use karnaa hooo too hammee kiya karnaa haii 
+>woo bohott hii simplee haii hamm karsaktee haii with help of curly bracesses {}
+>agar mee simply aisa llikhunngaa inside pair of curly brasses too hamme milegaa
+<h1>my name is {flname}</h1>
+>iskoo savee karkee mee browser mee dekhtaa hoon too hamare milla my name is vinod
+thapa
+>import React from "react";
+import ReactDOM from "react-dom";
+const flname="vinode thapa";
+ReactDOM.render(<h1>my name is {flname}</h1>,
+document.getElementById("root"));
+
+browser
+=========
+>my name is vinod thapa
+
+>ismee expression kuchh thaa hii nain becausee expression is combinaiton off operands and 
+operates
+>ismee kuch nainn that ismee eek variablee that joo kii haii first and last name
+>ismee hamme yeeh cheez samjaa kee haamkoo java script kee andar html or html kee andar
+java script likheene kee kea hamme pair of bracesses likhana haiii 
+>dekhea guyss aab haamm dkehteee haii kii iskoo hamam experession mee kasiass convert
+karteee haiii
+>ismee kiya add carta hoon mee react kaa syntatic sugar kaa form user kartaa hooon
+>agar mee likhujnn my lucky no is 5
+>to kiya hogaa browser mee hamme my lucky no is 5 milegaaa 
+>now aaj haam kiya padeheengeee expression 
+>java script meee expression likhenee kaa tareeka yahii haii kyunn naa mee 
+2+3karuddunnn
+>dekhea guysss hammee 2+3 dekhai deraha hii mmaii kiya karu aab
+>this is called expression issmee eekk operand haii eek operator bahiii haii
+>agra aap koo html kee andar aap koo java script likhnaa haii aap koo pair of curly
+bracesses kee andar aap koo likhleenaa haii boom {2+3}
+>aab aap guys aap dekhoogee mee aap koo leke jata hooon 5
+> agar mee {3+3} karddunnn aap dekhoo geee aap koo output mee 6 milegaaa
+>agar mee {3*3}karduunn tooo hamme output mee 9 dekhaii degaaa
+>guyss yahii haii hamare madsatt yehhh joo pair of curly bracesses haii aap koo iskaa
+sahii use aanna chaiihaiiii 
+>aap dekh saktee ehaii kiisi bhiii variablee ko create karsakteee haii orr simplyyy
+yahhann para hamm showw karwwaa sakteee haiii 
+> usss curly bracesses kee andar aap kuch bhiii likhh saktee hiiiee
+>agar {math.random()} likhunnnn too kiya hoogaa mujheee koi bhiii randomm number milegaa
+>orr iskoo refreshhh karunn to mujhueee randomm number hii milegaaa
+>too guyuss hamme asia miltaa haiii 
+>yahhiii haii guyss aap koo java script kee andar kese html element use karsaktee hooo
+orr html kee andar keses java script use karteee hooo aap koo pair of curly bracesses
+use karnaaa haiii bssss 
+>iss par of curly bracesses kee andar hamm sirff or sirff expression usee karsaktee
+haiiii naa kii statement
+>agar mee iss curly bracesses kee andar mee likhnnn 
+{if(3<4){
+console.log(true);
+}else
+{
+console.log(false)
+}
+>hamm issmee koi direct value nainn derhee haii hamme ismee condition pakada rehee haiii
+>ekhoo uskoo upare walaa statement koo wwooo samjeehee gaa nainn 
+>agar guyss hamm aap koo yahii lakee chall rehee hoo too guyss hamme error dekheii dega
+>aap curly bracesse kee andar expresssion iss lea use kar rehe hoo kiii aap koo
+value return kar raha haoo
+>yahann pee aap koo check karnaa haii agar yee truee huaa too yahh  karrunnga nainn
+too wwoo karungaaa 
+>aap sirf or sirff expression mee aap kaa joo varibalee wwooo use karssakeetee hoo
+>too aaj hammnee likhaa kii jsxx kee andar aap koo javascriiptt koo likhnaa hot too
+kaisa aap likhoogeee 
