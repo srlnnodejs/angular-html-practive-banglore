@@ -1,0 +1,125 @@
+ejs template engine by explosive web tech
+=========================================
+>hamm agge dekhee haii diffentent different template enginee kee bareee mee
+>kounsee kounssee typee kaa template enginee nodejs mee haiii jaisee kee ejs 
+>handlebar and pug haiii
+>ajj kee video mee hamm dekhengeee ejss kee bareee meee
+>ejss kiyaa haii globall npm repository haii iskoo hamm download karengee by  npm
+>iskoo hamm project kee andar use karengeee as a view templating enginee
+>uskee lea hamm cmd mee jatee haii orr type karteee haii 
+c:\Users>npm installl --save ejs
+>jaisa yeehh hamare project kee andar aajaigaa hamm uskoo use karegee as default
+template enginee kee tarkeeeseee
+>hamm logonne simplee require kardeaa require("ejs");
+>uskoo ejs variablee mee store kardeaa
+>too hamre aap.js file kaisasa dikh rahaiih
+app.js
+===========
+const express=require("express");
+const ejs=require("ejs");
+const mainRoute=require("./route/route");
+const PORT=3000;
+const app=express();
+
+
+
+
+app.use(mainRoute);
+app.listen(port);
+>eek bar ejs variabl mee store honee kee baad hamm nodejs koo batayngee kiii hamare
+default template enginee kiyaa haiii 
+>aap koo ejs template enginee mee store karnee kee lea aap koo karngaa haii
+app.set methond set method doo argument leke jaigaa 
+>eek haii kiya set karnaa haii dusra haii kounsaa view enginee set karnaa haii
+hamme view enginee set karnaa haii or ejs view enginee ste karnaa haii
+too hamme likhnaa haii
+>app.set("view engine","ejs");
+>jaisa hamm view enginee set kardea hamm log banasaktee haii view folder 
+>orr jooo view folder haii uskee andar sare kee saree html orr sare kee saree 
+ejs file raheegeii hamaree 
+>jiskoo hammmm response bhejengee jaissa kii browser http request bhejegaa server
+mee
+>tooo kiya hoigaa hmamm joo request a raha haii server mee hamm text kuchh
+>'naa bhje kee hamm pura kaa pura html file bhejngeee
+>dekhee hamare route.js filee kaisa haii
+route.js
+==============
+const express=require("express");
+const rotue=express.Router();
+route.get("/",(req,res,next)=>{
+console.log("get route to home");
+});
+route.get("/const",(req,res,next)=>{
+console.log("get route to home");
+});
+module.export=route;
+
+
+>too hamm view folder banatee haii or vieww kee andar hamm  letee haii eek file
+that iss home.ejs
+>yehh hamare home.ejsmee hamm pura kaa pura home page kesa dikheega hamm pura 
+deginee karengeee
+>hamm simple title daldengeee homee
+>or andar body kee andar hamm h1 kee andar hamm home daldengee
+too hamamre home.ejss kaisa dikhgaaa
+home.ejs
+=============
+<!DOCTYPE html>
+<haml lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewprot" content=width="device-width, initial-scale1.0">
+<title>home</title>
+</head>
+<body>
+<h1>home</h1>
+</body>
+</html>
+>too hamm testing kee purpose hamm routess kee andar hammhome dalrehee haiii
+>javii hamare incoming request aaraha haii /mee hamm as response hamme pass karnaa haii
+ejss filee
+>res.render too hamme ejs file orr koi bhii filee bhejjj nii haiitoo hammeresponse mee
+hamme render method use karnii haiii 
+>simplee koi text or json or html element send karnaa haii too hamme use karnaa hai
+res.send methodd
+>hamme simplee eek file bhejnii haii iss lea hamme likhnaa haii res.render
+>too hamme kiya render karnaa haii hamme render karnaa haii home.ejs
+>hamm log yahann pee home.ejs kardeea simplee 
+>too hamaree server chalu karngeee hamm npm start likhngeee 
+>yehh npm start hamare server challu kardegaa using nodemon
+>too haam iss koo eek run karkee dekhtee haiii
+>too hamm idhar simplee server mee chalteee haii or run kartee haii to hamare
+aarahaii home
+>jese hamm request bhejaa / mee woo request hamare handle karii yehh middleware
+>too hamare route.js file kaisa haii
+route.js
+============
+route.js
+==============
+const express=require("express");
+const rotue=express.Router();
+route.get("/",(req,res,next)=>{
+console.log("get route to home");
+res.render("home.ejs");
+});
+route.get("/const",(req,res,next)=>{
+console.log("get route to home");
+});
+module.export=route;
+
+>yehh wail middleware as response hamme dea home.ejs filee 
+>home.ejs mee hamm nee joo h1 likha thaa hammare output aagaya home 
+>agar hamm /contact mee agar hamm request bheejtee haii too hamare /contact mee
+hame dusra page chaihaiii too kiya hogaa 
+>too hamm dusra view banatee hhaii contact.ejs
+>yehh joo contact.ejss haii ismee pura ka pura contact page design dekhgaa simple
+>too hamm daal rehee haii contact 
+orr hamm likhrehee haii contact
+>contact.ejs
+================
+aab route.ejs mee hamare /contact kaa joo page aaigii too hamme render karnaa haii
+contact walapage
+>hamme render karnaa haii contact.ejs
+>javii hamm request bhejengee browser mee contact pagee mee hamare contact aajaiga
+
+
