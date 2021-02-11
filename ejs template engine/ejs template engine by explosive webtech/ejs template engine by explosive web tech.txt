@@ -109,17 +109,96 @@ module.export=route;
 
 >yehh wail middleware as response hamme dea home.ejs filee 
 >home.ejs mee hamm nee joo h1 likha thaa hammare output aagaya home 
->agar hamm /contact mee agar hamm request bheejtee haii too hamare /contact mee
+>agar hamm /contact mee agar hamm request bheejtee haii too hamare /contact
+ mee
 hame dusra page chaihaiii too kiya hogaa 
 >too hamm dusra view banatee hhaii contact.ejs
->yehh joo contact.ejss haii ismee pura ka pura contact page design dekhgaa simple
+>yehh joo contact.ejss haii ismee pura ka pura contact page design dekhgaa
+ simple
 >too hamm daal rehee haii contact 
 orr hamm likhrehee haii contact
 >contact.ejs
 ================
-aab route.ejs mee hamare /contact kaa joo page aaigii too hamme render karnaa haii
+aab route.ejs mee hamare /contact kaa joo page aaigii too hamme render karnaa
+ haii
 contact walapage
 >hamme render karnaa haii contact.ejs
->javii hamm request bhejengee browser mee contact pagee mee hamare contact aajaiga
+>javii hamm request bhejengee browser mee contact pagee mee hamare contact
+ aajaiga
+>too hamare route.js kaisa rahehagaa aab
 
-
+route.js
+==============
+const express=require("express");
+const rotue=express.Router();
+route.get("/",(req,res,next)=>{
+console.log("get route to home");
+res.render("home.ejs");
+});
+route.get("/contact",(req,res,next)=>{
+console.log("get contact page");
+res.render("contact.ejs");
+});
+module.export=route;
+> simply hamm contact page koo aisa access karpayngeee 
+>jabhii hamm http request bhejengeee browser see contact takk hamare 
+contact pageee aajaigaa dekhea kasiase
+http:3000/contact
+=================
+contact
+>jaise ham /contact mee request bhejaa too contact mee handle huuuii yehh
+waill middleware mee yehh joo middleware haii hamare response kee ander
+render kara contact.ejs 
+or conatact.ejs kee andar ahamre simple h1 haii jooo aajaigaa 
+>hammnee keiya kiea doo request hammnee handlee kearii uskee response mee
+hamm log templating enginee passkarlea
+>hamm jantee haii simplee template enginee koo use karkee hamm 
+simplee data pass karsakteee haiiii 
+>ya fir dyanamic content banasakteee haiii 
+>  for examplee hamare home.ejs joo middleware haii usmee data aaigaa
+data base see
+>yeeh joo data hai hamm simplee data koo hamm render methodd kee andar
+hamm pass karsaktee haiii 
+>by using java script object
+>aap koo javascript object pata nainn too java script object kiya haii
+eek key value pair hota haiii 
+>for examplee hamm daltee haii object kee andar hamm {name:"explosive webtech"}
+>hamm kiya kar rehe haii hamm render kee andar hamm home.ejs koo render
+kar rehe haiii orr hamm data koo bhii render kar rehe haiii
+>yehh joo home.ejs haiii hamare uskee andar hamare data bhii accessable haii
+>too hamme data koo print karnaa haii too data koo print karnaa too simple
+hamare paas eek syntax haiii 
+>ham opening and closing do symbol lengee <> sukee andar hamm doo persentagee
+lengee <%%>too kiya hogaa 
+>hamme kiya karna haii print karnaa haii kiya karnaa haii hammme name
+print karnaa haii name joo haii hamare key haiiiii
+>name haii joo kiy haii joo object hamm pass kar rehe haiii orr uskee joo
+value haii hamm uskee against pass karrehe haii 
+> hamm kiya kar rhee haii hamm home.ejs kee andar hamm yehh value hamm 
+dynamically print kar rehe haiii 
+{name:"xplosive webtecch"}
+>hamm kiya karengee hamm sumoo jakee simple save karengee orr ouput dekhngee
+too hamre home.ejs kaisa hoga thoda dekh letee haii
+home.ejs
+=============
+<!DOCTYPE html>
+<haml lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewprot" content=width="device-width, initial-scale1.0">
+<title>home</title>
+</head>
+<body>
+<h1><%=name%></h1>
+</body>
+</html>
+>orr eek barr hamm request bhejengee home par kiya atta haii dekhtee haii
+>dekheeaa hamare ouput mee hamare xposive webtech aagaayy
+>hamare joo dynamic text haii joo hamare idharr aajagiaaa
+>yehh joo text haii hamm databasee see fetch kartee haii filal hamare yahan
+hamare koo data base nainn haiii too simplee ham idhar normall string daltee
+haii
+>lakinn joo data aaigii hamare data base kee andarseee aaigaaiii
+>hamare home.ejs haii ham dynamic content generate kar rhee hii using
+ejs
+thank you so much
