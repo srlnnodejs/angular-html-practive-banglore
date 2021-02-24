@@ -1,0 +1,73 @@
+>behavioural subject
+========================
+iss video kee andar hamm dekhengee behavioural subject kiya hota haiii
+>jiiss tareekee see observablee kam karata haii samm tareekaa ssee
+behaviour subject kam karta haiii
+>abb donokii andar difference kiya haiii yehh bhii eek observable haii
+jabb dono normal hota haii woo bhii eek observablee haiii
+>yahann pee sabse bada difference kiya haii kmee mene bataya tha pichli
+video mee observablee eek fm channel kee tarah haii
+>jab hamare hm chalta haii too kiya hota haii jab hamm subscribee kartee
+haiii too latest kiya hota haii hamm ussee ppaa lete haii joo latest 
+cheez hota haii
+>wohii same kam behavioural subject kartaa haii idhar jjoo behavioural subject
+kaa fm haii woo same fm haiii 
+>jab aap behavioural subject koo run kartee hooo too woo initially woo 
+gana play karegaa kiynn kii ismee hamme initiallly dene padtihaiii
+>usskee pichkee keaa reason aap koo bohot jaldii samajee mee aajiggaa
+> aab manloo hamare fm kee andar joo song play karnii haii woo yehh sari
+haiii 
+>nahinn woooo senorita badguys or friends aisa hii sab song likhlea haii
+>initially jooo song hoga aisa hogaa kuch bhii likhletee haii first song
+likhletee haiii iskoooo 
+>pehela gana initially hamare aisa first song play hoga dekhea
+const fm=BehaviourSubject(_value:'First Song')
+>uskee baad eek function likh letea hiii kii change song 
+>ismee kiya haii chaloo kuch kamal dekhanmelegaa kiya haiii
+>uskee bad kiya kartaa hoon jaissee hamare change song kee andar value
+fire kartee thee us tarah hame value fire karteee hiii 
+>to next method use karkee hamm value fire karltee haiii
+>wahann pee observable mee kiya hota tha hammme vlaue milta tha hamm next
+kartee the but idhar ham kidhar bhii next karlengeee
+>yehh too aagaya pehela difference orr dusra difference kiya haii kii 
+initially hamm eek value pass karengeee yehh hamare eek funciton haii
+change song namee kaa
+theek haiii
+>sabsee pehele hamm fm koo subscribee kara subscribe karnee kee time mee
+ham kiya likhngeee
+fm.subscribe(next(song:string)=>{
+console.log(song);
+});
+changeSong();
+>yahan pee ganne changee honee suru hoo jaingee eek eek hokee ganne change
+honne suru hoo jaingeee
+>yahnee pee mee set time out karke chod deta hoon orr bolota hooon kii
+yeh function tab call hoga jabb hamare char minnituee hamare khatam 
+joo jaigaa
+>4 second kee baad mee phir uskoo subscribee karungaaa
+>too kiya kea ham pehele hamm fm channle koo subscribe kea orr ganne 
+challeeyye orr uskee baad hamm kiya kea kii hammm song koo changee kea 
+one by one
+>sukee baad jab hamare ganne khatam honee kee baad hamare value fire
+honnee khatam hoogayee uskee bad last mee hamme woo song miljaigaa
+joo set time out mee hamare likha haiii
+>joo norml observabel hoga jab see app fire kartee hoo tabsee leke aab tak
+jitna value fire hogee woo hamme milte haii lakin
+>but behaviour subject mee kiya hoga kii jabsee value subscribee haua haii
+usekee badd pehele walii latest joo value hogii hamme mil jaiigaee
+>subscribe nahin rakha thaa usse pehele joo value hogii hamme miljaigiii
+>abhii usee ham run karkee dekhletee haii hamme kiya mila joo pehele valuue
+hame milgayaa
+frist song
+>jab koi value fire hui nainn agar hamm uskoo subscribee karlea too latest
+value uska last value hogii hamare first value ho jaigeii woo haii friends
+
+>after 4 seconde hamme milgayaa friends jab kiii hamm uskoo subscribee kara
+tab koi bhii value fire nahinn haua ahiii
+>lakin joo last vlue fire huii hogi hamme milgaiii iss lea woo initial
+value mangtii haiii manloo koi value frire karinainn koi vlaue fire
+kanree kee adara uskoo subscribee karlea too kiya hogaa 
+>too latest vlaue kiya hogii hamare firstsong hogiii too islea hamee
+idhar initial vlaue denin hotii haii
+>latest value joo hotii haiibehavioural subject usse bhii return karta haii
+

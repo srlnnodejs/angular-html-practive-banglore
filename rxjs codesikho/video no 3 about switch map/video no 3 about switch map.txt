@@ -1,0 +1,33 @@
+switch map in rxjs
+==========================
+>dekha switch map kee andar kiya hota haiii hamnee map mee kiya karatha
+tampring karithii data kiii 
+>jooo observer hamare fire kar rahatha valuee hammnee uskoo changee kar
+lea thaa hamnee uskee beech mee tampring karithee  jiskoo hamnee karathaa
+map kee trough
+>swithch map mee kiya hota haii difference yehhee haii wahann pee tampring
+huii thi joo observablee nee value firee keea thaa uskee upare
+>idhar thamring honee waliii haii puri kii puri observablee kee uaar
+>ismee kiya hogaa socheea kii hamare eek observablee "A"haii uskoo subscribe
+karnee kee baad dusraa observablee aaigaa "B"
+>yehh joo B Observablee haii joo jependd kartaa haii A observablee kee uapr
+>Matlab hamare yehh joo A observablee thaa hamnnee uskoo subscribee nain kea
+>A observable kee baad hamare B observable aaya orr hamme joo end mee mila
+hamare B observable
+>Yahan pee hamare joo tampring huii hamare puri ki puri observablee kee
+hoo gaiiiii
+>aab aap logo koo itnaa acheee see samajmeen nainn aaraha haii jabb 
+karkee dikhaungaa too samjj mee aajaigaa
+>Yahann pee hamme mill jaigaa hamare value from observablee B
+//Observable A->Observable B->Value from Observable B
+>kiyaa hoo rhaa haii hamare eek observablee A tha hamm subscribee karnee
+keee jagaa hammnee lagayaa swithc map>
+>To switch mapp nee hamme return keea dusraa observablee B
+>jab hamm A koo subscribee karngee hammme A milnee kee jaga hamme value
+milegaa B
+>eek baar hamm iskoo karkee dekhtee haiii 
+>use case kiya haii
+========================
+aagar aap dukan mee gaya hoo hapkoo dukann wala cheenii degii jab tak dukan
+wale kee paas cheeni nain hoggii aap koo dukan walla chee
+>
