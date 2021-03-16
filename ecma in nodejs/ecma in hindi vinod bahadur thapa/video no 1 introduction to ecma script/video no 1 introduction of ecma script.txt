@@ -1,0 +1,52 @@
+ecma
+==========
+>introduction of ecma script in hindi aaj se neya series suru hoga 
+jiska name haii ecma script 2015 
+>iska matlab yeh haii nain kii joo advance java script tutorial haii
+woo khata hoo chukiii haii yeha joo ecma script 2015 haii yehh advance
+javascript kaa eek hissa haiiii
+>aab tak jitna samjhaa best naw hamme ecma script 2015 koo samajhnaa 
+jaruri haiii  iss series mee pura ecma script batana chatta hoon
+uskee baad hamm remaining advance java script kaa topic haii woo pura cover
+karengee
+>sabsee pehele hamm welcomee karna chaungaa welcome off future of java script
+>jee haan guys eecma script koo hii aap bohot baar suna hoga morden
+java script kee jaisa that is also know as kii future of java script
+>so aaj hamm idhar kiya dekhnee walle haii introduction of ecma scritp
+2015
+>sabsee pehele hamme 1996 mmee java script koo create kea gaya thaa 
+net sctipt compny nee kea thaa 
+>uskee baad uskoo kuch name dene kee lea 1997 mee hamare name deneke lea
+hamare idhar 1997 mee ecma international compny koo submit kardea 1997 mee
+>as result hamare uska namee kiya hua uska name hua ecma script
+> compny kaa ecma or netscript kaa script milkee bangayaa ecmascript
+>jabb 1997 mee ecma script ban gaya thaa too 2015 mee asia kiya hua kii
+hamm iskoo boltee haii es6
+>usse pehele bohot sareupdate aaye joo update aaye hamm uss sare update
+hamm java script mee kar hee rehe haii too es6 mee bohot sarre topic koo
+introduce kea gaya haiii joo kii bohot hii jada popular hoo gaya aab
+hamm uskoo morden java script boltee haii uskaa hii use kartee haii 
+>uss 2015 mee update kea gaya kii har saal 2015 see woo log kuch na kuch
+update kartee rehengee ecma script mee 
+>that is annual releses in ecma script too aap koo pata chala kyun 
+ecma 2015 famous hua usmee bohot saree new topic introduce kea haua
+\haii orr bohot sare new topic gradulaayy aaigaa 
+>takii woo banee rehee kyunn kee ecma script 2015 koo hii hamm es6 boltee
+haiii ussi tarahh hamm ecma script kaa 2016 kooo ham bolengee ecma script
+7
+>wese hii hamare paas es7 hai es8 hai or es9 bhii haiii 
+>yahii haii guy s hamare introduction history off ecma script 
+>really guys aap koo intorduciton pata chalgaya hogaa aab hamm kiya kiya
+clear karengee iiss topic mee dekhea 
+>hamare idhar hamm cover karengee 
+let and const
+template string
+arrow function
+deStructuring
+objectProps
+defaultArgument
+array in es6
+new no methdos
+new global mehtods
+>
+>

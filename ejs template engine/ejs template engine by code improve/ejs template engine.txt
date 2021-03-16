@@ -1,0 +1,127 @@
+ejs template engine
+=======================
+ welcome dosto hamm ejs template engine kee baramee padhangee ham dekhnge
+view enginee kyunn use hotaa haiii hamm last time dekha joo data hamare
+aa raha haii sab static haii hamme dynamic data chaihaii -pic
+>too hamme dynamic data kab chaihaii jaise kii hamm last video mee html
+kaa page banaya thaa hammnee usmee kiya ho raha tha joo data haii wooo sara
+static haiii joo aap kaa routes mee aaye orr controller ssee aayee aap 
+set nainn kara pa rehe haoo
+>too uss casee mee aap koi naa koi view enginee use kar naa padegaaa
+>chaii woo aap kaa ejs hoo pug hoo orr hbs hoo 
+>aaj kii purii video mee hamm discuss karengee hamm onlyy ejs viw engine
+kee baremee
+>kaise uskoo installl karogee kaisaa uskaa viw karagooe ora kiaisa uska
+lay out hogaa  
+>a to z harr cheez possible haii hamm try karengee aap koo batanee koo
+>start kartee haii kiya haii yehh
+>abhii hamm package.json mee jayengee too hamm dekh saktee haii hamare
+pass only express haii
+>too ismee hamm ejs installl karleteee haii kiya hota haii hamm dekhteee hai
+>hamm command dekhengee npm install ejs
+>right side dekhea kaisa install ho raha haiii 
+>dekhea ham nee enter kea dekhea aap kaa idhar install hoo gaya
+>aap ka install hoo gaya yahan pee dekhoo yahha ejs aagay hammara
+>uskee baad hamm uskoo band karleta hoon aap kooo jana haii aapnii file mee
+>matlabb aap.js mee jana haiii dekhengee kiya hoo raha haiii
+>yahann pee aap koo set karnaa haii aap kaa viw enginee yah aap koo yaad
+rakkhnaa haii hamesaaa 
+>kounsa set karnaa haii ham set kar rehe haii ejs right mee dekhea
+>aab aap koo left side mee jana haee aap koo folder bana naa haii views
+kaa
+> abhii hame view kee andar hamme ejs kaa file bana naa haii chalooham
+likhtee haii eek file banateee haiii file kaa name hogaa hamare home.ejs
+>jooo file aap save karogee uskee pehele hamae.ejs anna chaihaiii 
+>aab joo file bana haii hamm uss walii file koo call karwaengeee 
+>joo kii hamare home.ejs filee haii hamme route mee call karwaengee
+>home page kee lea hamm iskoo call karwatee haiii okk pehee hamm koi
+file koo send karnee kee lea hamare response mee hamm likhtee thee sendfile
+  >aab hamme kiya karnaa hoga hamme aab karanaa haii render
+>iskoo mee start karleteaa hoon likhtaa haoonn nodemon app.js
+>orr server mee aakee hamm refresh karteee haii hamme milegeaa cannot find
+moudl'html'
+>too hamme kiya karna haii hamme change karnaa haii html file koo change karna
+haiii inthe place home.html kee jagah mee hamme likhnaa haii khalii home
+>abhii bhii hamare view nainn dekha raha haii hamme kiya karana ahii 
+hamme likhnaa haii 
+> aap koo likhnaa haii simple home
+>kiya likhnaa haii aap koo 
+resp.render("home");
+>too uskoo run karta hoon aap dekh saketee haii hamare home.ejs aagaya
+>too aap kaa code run hoogaya too aap koo iskee andara koi bhii data
+pass karnaa haii too aap kiya karengeee 
+>home kee bagal mee hamme pass karnaa haii second parameter aap pass
+karsaktee haiii aap koo second parameter aap koo pass karnaa haii name
+>kyun kee aap koo name dekhannaa haii name hamme likhleaa code improvee
+>ussk cheez koo hamme home.ejs mee dikhana haii too kiya karengeee
+>koi bhii cheez show karnee kee lea hamme iss cheez koo dikhana padegaa
+><%=variablename%>
+>isskoo save kartee haii too dekhetee haii hamare yehh aagaya code 
+imporve
+>iskee andar hamme kuch bhii edit karwanna haiii too kiya karengee 
+>aap dekhoo yehh restart nainn hoo raha haii jabkee 
+>agar hamm change kartee haii ejs file mee orr save kartee haii too hammare
+kuchh change nainn hogaa bss kahli change hogaa kiyaa hamare js file mee
+hamm change kartee haii sorr save martee haii too hamare server restart hoga
+>too hamme hamare right side dekhea kiya hoo raha haiii hamare save karnee
+par hamare dekhea js mee save kartee haii too wohii hamare effect hota haii
+>too hamme kasisa malloom hoga kee hamare wohii file save kea haii too
+hamme kiya karnaa haii consolee mee dekhnaa haii kii kounsa file hamare
+changee haoo raaha haii too dekeha console mee aap dekh saktee haii 
+woo bol raha haii watching extension js,mjs,json too hamm iss extension
+kaa change kartee haiii too hamare server start hota haiii 
+>inn eeeno file kaa extension meee koi change hoga woo restart hogaa nain
+too nain hogaa 
+>too aap koo nodemon koo batana haii kii aap abhii js file koo dekhoo orr
+ejs file koo bhii dekhoo sath mee orr koi file hota haii too uss file koo
+bhii dekhooo ap dekhea hamme likeh haii kii
+nodemon app.js -e js,ejs,json,html
+>abhii hamm enter kartee haii too aap dekhsaktee haiii kii 
+>too hamnee uskoo batadea kii js htmlejs json enn charro extension mee koi
+bhii change kartee haii tooo hamare save kara orr yeh dekhoo kiyaa aaraha
+haiii hamare dekhoo hamare start hoo gaya hampp dekhea kiya hua
+>too yeh too haoogaya hamare data yahann takk aaraha haiii too 
+>aab hamm ismee aateee haii orr ismee hamm aapkoo condition batatee haiii
+>eek variablee hamm banaletee haii orr likhtee haii kee
+let params={}
+>eek object banatee haii orr saree object hamm iskee andar ahmm daltee haii
+>orr uss paramss koo ham second paramter mee hamm pass karltee haiii 
+>orr uss params koo hamm object kee andar pass karletee haii too kiya hoga
+>too hamare sahi kam kar rha theek haii dekhe 
+>koi bhii id aap koo pass karnii haii to aap koo kiya karnaa haiii suppose
+hamme array passkarna haii array blogs:[] 
+>agar hamme koibhii blog pass karnaa haii to hamme kiya karnaa haii
+>hamem likhnaa haii 
+blogs:['node','angular','react','php','java']
+too hamme kiya karnaa haii 
+>too hammnee yahhann hamm array bana lea orr yah sara ahmmnee yahan passkarlea
+>aab name id yehh saree value hammare yahann pee putput mee miljaigaa
+>dekhea keaisa milegaa output 
+>too hamm kiya karengee hamm home.ejs mee jayengee orr likhengee ham
+for name hamm likh lea thaa too kiya likha thaa hammenee
+
+Hello EJS <%=name%>
+<p>Id is <%= id%><p>
+too aap ouput dekh saktee haii hamare name kee lea eek aagaya orr id
+kee lea hamare oorr eek aagaya
+>aab hamm aatee haii iskee andar hamm lagatee haii if else condition
+>pehele hamm if lagatee haii orr uskee baaad hamm for loop hamm samjhatee
+haii aapkoo 
+>aagar apkoo dekhnaa haii kii aap kaa joo id haii woo agar greter the
+2 ho gaya too kiya hogaa too aap kaa joo heading haii woo hoo jaigaa
+hoome
+>too hamme dekh naa haii agar hamare idhar id 2 see jada hota haii to 
+hamare idhar homee aaiga nain too  hamaree idhar blog aaiga okk
+>too hamm kaisa likhengee chalea dekhteee haii yaaro
+Hello EJS <%=name%>
+<p>id is <%=id%>
+</p>
+<% if (id=2){%>
+<h1>home</h1>
+<%}else{%>
+<h1>blog</h1>
+<%}%>
+>too hamm aisaa likhtee haii too kiya hotaa hii hamm iskoo sahii karlete
+haii eek baar 
+>ab hamm iskoo chekc kartee haii orr dekhe ahmare kiya aaya 
+>

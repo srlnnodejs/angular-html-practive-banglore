@@ -1,0 +1,186 @@
+vide no 2 let and const
+========================
+>challea suru kartee haii sabsee pehele ham batate haii yehh kiii 
+yehh hamare ecma script 2015 kee upar hamare second video honee walle haii
+>yehh advance java script tutorial kaa eek hissa haii 
+>dekhea kiya hota haii let and const in ecma script 2015 in hindi
+>dekhea hamm idhar khali let and const use nain kea haii aap koo 
+mene clear karnee kee lea mee var key word kaa bhii use kea hua haii 
+>or hamm achee see samajhheenge hamm kii var let and const kab or kahan
+hamme use karnaa haiii
+>aap dekh saktee hoo aap koi bhii variable declare kartee hoo varkeyword
+leke uskaa joo scope hota haii uskoo function scope  bolte haiii 
+>wahii aap agar kuch key word declare kartee hoo kuch let cand const 
+variable leke uskaa joo scope hota haii woo block scope hota haii
+>yehh joo var hota haii woo function scope hota haii or let and const haii
+uskoo block scope kehtee haiii 
+>orr mee bohot sare example or praticle karkee dekhaungaa orr app ka bohot s
+sarre doubtt lcear hoo jaigaa or sabse pehel hamare morden java script
+haii usmee morden java script mee boltee haii kee var key word koo use hii mat hii karo 
+boltee haii sabse pehele hamm dekhengee let and const sabse pehel hamm 
+var let and const teeno kee saatha eek eek praticle karkee hamm 
+dikhanenegee
+>sabse pehele hamm hamare sublime editor mee aagye haii usko ham 
+pehele save karengee ctrl s mee or sabsee pehel ee ham dekhengee
+let const and var koo leke dekhetee haii 
+>pehel hamm script tag koo declare katee haii or sabse pehele kiya hai
+hammare var ka let ka and const kaa kam kiya haii kee varibale koo 
+declare karna haiii 
+>normal hamm varibale ko declare karneee kee lea ham var keyword koo 
+use kartee thee
+<script>
+
+var name="vinod"
+console.log(name)
+
+<script>
+>sabse pehel hamm eek varibale ,lete haii uska name lete haii 
+var name 
+uskee baad hamme uss varibale mee hamm name assign kartee haii vinod
+>phele mee normal dikha rha hoon usmkee bad aap koo pata chalegaa 
+kee let and const kiya kar raha haiii 
+>agar mee normal mee save karta honn or ctrl+s save karta hoon orr
+browser mee jata hoon or inspect mee gaaya orr zoom kea dekhea kiay 
+aaraha haii aap dekhsaktee hoo guys aap koo dekh sakta haii kii
+idhar vinod
+>console mee output mee aap koo dikhegaa aap kaa 
+vinod
+object
+>usse kee baad hamm jatee haii uskoo copy karletee haii orr ouput mee
+jatta hoon 
+>orr uskoo copy paste karleteea hoon orr uskoo upar wala koo mee comment
+karletaa hoonnn 
+> sabsee pehel mee var see kea too mujhee joo chaihaii mujhee mil gaay
+or usskee baad mee likhta hoon bahadurr same wohii instead of var
+mene kiya kiea let
+>let kaa kam bhii wohii haii variable koo declare karna hiii 
+uskoo save karlte hoon ctrl+s orr dekheta hoon uskaa ouput kiya atta hai
+<script>
+
+let name="bahadur"
+console.log(name)
+
+<script>
+//output mee
+bahadur
+
+>aab mee kiya krta hooon aab mee again iskoo mee karta hoon copy orr 
+const mee declare karta hoon guys aap jatee haii kii previous mee
+aap jantee haii kii c java or php mee hamare har jaga const key word use
+hota hiii hamm jantee haii data types mee aap kaa const use hota haii
+jahan pee aap most lyy use kea hoga aap isstarekee see use kea hogaa 
+
+>aap dekhea aap most ly use kea hogaa 
+const pi=3.212 
+>aap nee aisa likha hogaa 
+>i mean aisa varibale jainsa kii kisi kaa value kabhii change nain 
+hoos saktee haiii 
+>constat variable haii uskii kaa matlab haii hamm aisa hii samajhaunga
+pehel mee let koo kar leta haoon comment out  or const kee lea joo 
+lihungaa mee bahadur kee badlee mee likhleta ahoonn thaapa
+>takii hamme pata challe kee perfectly aa raha haii kii nainnn 
+>guy s sabse pehel hamare praticle example yahii tha uskee baad hamm
+yahii dekhnee walle haiii guryss too hammare yahii dekhe kii aap var 
+use kartee thee or let use kartee thee or const use karo koi matlab nainnn
+>hamme ouput aaraha haii theek haii 
+>jabtakk yehh doo line kaa code haii tab tak hamare ouput aaraha haiii 
+>aab mee eek naya example bataungaa 
+>const kaa output dekhea 
+<script>
+
+const name="thapa"
+console.log(name)
+
+<script>
+//output mee
+thapa
+>ab mee eek naya examplee bataungaa dekehaa aab mee eek name likhletea haon
+orr iskaa value change karletahonn or uskaa name likhleta haonn thapa
+> or console.log kart ahoon aab guys aap koo guess karnaa haii kii ouput
+kiya aiga 
+
+<script>
+var name="vinod"
+name="thapa"
+console.log(name);
+
+<script>
+console o/p
+=============
+thapa
+
+
+>aab ouput mee kiya aaiga ap koo batana paregaaa 
+>pehel mee eeek name lelea variable mee var name="vinod"
+uskee baad hamme letna hann dusra name 
+usmee hamme value store karna haii thapa
+>too output mee kiya meelega ahamme dekha 
+>too aap koo output mee dekhea aap koo mileggaa thapa 
+>vinode aap koo nain melegaa aap koo optput mee vinod nain mila 
+aaap koo output mee milegaa thapa 
+>jabkeemee proper tareeke se mee vinod likha orr output mee aap koo milega
+thaapa 
+>iska matlab yehii haii kii pehel hamme vinod hamnee likha tha uskee
+bad woo change hokee hamaree thapa agaya 
+vinod koo hata kee thapa aagaya
+>in case of var uskee badd hamm kiya kartee haii 
+>uskee baad mee copy karleta honn or paste karltea hoon orr mee var
+kee badlee mee likhtahonn let 
+
+<script>
+let name="vinod"
+name="thapa"
+console.log(name);
+
+<script>
+console o/p
+=============
+thapa
+>aisa updare jaissa mee var kee badleem ee let likhleta ahoonn aab kiya
+hota haii iskoo dekhea haii 
+>too kiya hota haii name="vinod"
+or name="thapa"
+aisa hota haiii 
+>aab mee let key word use kea haii too hamme kiya milegaa hame milega
+vinod milega nahin to thap milegaa joo upar var kaa sath hua wohii 
+>yahnn pee mee refresh kartahoon or dekhetaa honn orr sochoo kii kiya 
+hoo raha haiii thanks guyss aap nee guess karlea to aap koo milgaya
+thapa 
+>tooa aap guys aap logonee dekhelea kii var or let mee kiya hota haii
+var or let almost same same haii aap logon nee dekh lea 
+>usse pehel hamme eek example dekha wwoo same same haii orr uskee baad
+hamme same ouput dekhe reh ahii orr ouput mee dekhetee haii kee
+koi difference nain haiii
+> hammnee let use karkee bhii uskaa value change karwaraha hoon 
+>abmeekiya kartahoon uskoo hatata hoon orr change kartaa haonn
+instead off let mee use kartaa haoon const aab kiya hoga guys
+>const matlab const value aisa hii value koo hamm assign kartee haii
+kii uskaa value koo ham change nain karsakteee haiii 
+><script>
+const name="vinod"
+name="thapa"
+console.log(name);
+</script>
+> 
+
+ouput mee
+===============
+
+>uncaught
+typeError:assignment ot constant variable
+
+>too ouput mee error arraha haiii kiya error aaraha haii kii output 
+that iss type error aa raha haii 
+>bata raha haii kii aap const leke name dedea too value assign karlea gtoo
+phir see kiynn kar rehe hoon 
+>to hamme yehh pata chalgaya kii aap const use karogee orr
+jii value hamme declare kartee haii const kee lea ham uska vlaue 
+hamm kabhii bhii uska value change nainn karsaktee haiii 
+>to guyss aap ka programme mee koi value fix rehenee wala hoo kiska 
+value hamee sa fix rehna wala haii aap use karsaktee hoon cnst to 
+pehelsee hii mene aap ko pata dea thaa morden java script bota haii 
+kii aap var use hii mat karoo orr use hii karoo let and const
+>too aap koo const wahii use karnii haii jab ki koi vlaue aap koo fix
+rakhnii haii kahii bhii uskee value change nain karwanii hainn 
+orr eek baat joo var ahii aap kaa function scope haii or let and const 
+haii hamare block scope haii iskaa kiya matlab haii dekhoo 7.48
