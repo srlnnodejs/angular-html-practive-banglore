@@ -1,0 +1,127 @@
+git stash 
+==============
+hello every one e session loo manam git  stash andi nerchkuntunaummumm
+>git stash annte anti stash andukuu use chentunamunnn stash anduku
+use chailalii manni
+>first what is stash anii mata  stash annte temporary area ana manta
+>branches concept telusu branches ante anti  git branch annte 
+>git branch ante two brnach achindiii
+>apudu antee naenu 
+>ipudu naku rundu branch achindi git branch anttee
+>git branch
+extra
+*master
+>appudu nanu branch loo pani chestunanu apudu nanu master branch loo
+pani chenstu nanu nakuu extra branch loo samandanm undadu mata
+>epudu nanu staging area loo unanu files both brnach loo kana padthadii
+>so adi avoid chesdanikii manamm stash use chestunanu
+>epudu nenu ls command istanu too nakuu files doruku tadii
+>apudu nanu new file create chestanuu nakuu touch file.txt chestanuu
+nakuu new file astadii
+>chudandi right loo file create ainindii  file.txt aindi 
+>so aap file loo echo command use cheskonnii content istunanu 
+>so apudu nanu status chustee git status anntee nakuu red color loo naku
+fille dorukutadiii 
+>so nakuu file.txt mani kota file asata dii antee
+>so apudu nanu master brnach loo unanu okko sarii extra branch loo checkout
+aau konii chustanuu file unadi or ledu 
+>so nenu extra brnach ki move autunau chustunanu file.txt unadi or ledu
+chudendi 
+>extra branch loo bhii file.txt unadii 
+>actually file create undi master branch loo file.txt extra brnach looo
+available undi 
+>so manakii elanti problem oddu manii git manakii okka area provide
+istunadiii 
+>adde stash area manii cheptunauu 
+>soo stash area eyy branch kuu relation unaduu iddi separate area antee
+>stash anduku antee suppose miru extra branch loo unaruu some project
+chestunaruuu
+>suppose miruu extra branch to move aaukonii bere branch kii move aayaruu 
+>a file anni alaga undi poindiii commit aauleduu only miru add chesaruu 
+antee 
+>so miruu commit cheaileduu only add chesaruu antee soo andii autadiii
+>soo miruu apuduu master branch kuu astaruu mikuu ye yee file unaii 
+extra branchloo motomm master branch kii astaii antee 
+>so okko project file were project ko astadii anduku antee with out commit
+chaileduu maniii
+>so andi chestanmuu manam temporary ga anni file ekaada branch 2 loo
+store chestamiuu so miru temporary ga store chesta ruu or apudu kawalii
+antee apudu addi marei retrive chestaruuu 
+>so manakii extra nunchi master kii eladanii kii munduu file manam stash
+loo unchistamuu or ye sambandamm unduudu kii akadakii move auntam 
+time looo
+>so why stash antee stash loo temporary file store chestamuu anteee 
+>so stash kii move aundanii kii mundu manakii konchomm condition use
+chailayylii condition anti anteee 
+>condition anti antee apudu ani file cache area loo unadi apudu wadu file
+tiskunatuu antee 
+>cache area antee middle area mata file working direcotry loo untee
+tis kududu only staging area loo tis kuntadiii 
+>so file anii stagin area loo untee tis kuntadiii 
+>working directory loo untee tiskududu matat
+>orr local repository loo untee filee were branch kii samandam undudu 
+mata
+>so ee files ante accept chastadii antee staging or cache area file
+only accept chestadii anteee 
+>so e file kii pani chestadianikii manam ayalii git add file name
+>apudu git stash command istee wadi stash area kiii move aautadi antee
+>so file must should cache or stagin area loo unaali suppose file 
+working directory loo undii nenu epudu staging area loo adding chestunaun
+>working area loo undii mana file.txt epudu staging area kii add 
+chestunanuu 
+>soo staging area loo save chestudaniikii mana kii command andi ayalii
+>manakii command antee git stash save <"message">
+>file stash area kii altadiiii 
+>   stash area nunchi maana bracnch kii ella move chailalyy  soo epudu
+file stash area loo untaii maana stash area loo konchuu riviison maintain
+chastaii anteee 
+>stash 0
+stash 1
+stash 2
+>anii file ante anii filee stash loo untiaii antee 
+>so 100 file manamu stash loo unchistamuu antee stash0 okko division ante
+>soo stashloo division maintain chastadi mata 
+>so another file create chestamuu touch file 2
+>soo manam condition andi antee aa file must and should stading area 
+loo unnaliii 
+>soo staging area loo unnalii antee git add . anistee andi autadiii 
+>git add . command istee a files staging area ki allipotadii 
+>tarabataa manam git status aisstee manakii anni file list ostadiii 
+>so nanu ee branch loo unanu antee nanu extra mani branch loo unanu 
+>apudu antee nanu git stash save "thes are new files "rastamuu" 
+>antee wadu chupistadii saved working directory and index state on extra
+the are new files head is now 72c9c98 login modified
+>atla move aautadii 
+>soo ipudu miru list alaga chustaru antee git stash list git statsu
+astamuu antee anti autadii 
+>so git status chustamuu chustee kana padtadii mana working directory 
+clean undii 
+>working directory clean undi anntee aa rondu file stash area kii 
+alli poindii 
+>soo check alaga chestamuiu antee git shash list soo ekada observe 
+chestee miruu chustaruu manakii konchumm file division maintain gaa 
+untaiii anii andi anteee stash@(0)
+tarabata stash@(1) anteee 
+>on extra these are the new files anni chupistuaddiii 
+>so andi store chestamuu or andi file untaii anii mamu sea chestamuu
+anteee 
+>so how to sea stash list antee etla mikuu kana padtadii anteee 
+>so file anii independent anteee soo file yee branch kii sambandahm
+undaduu so file anii ipudu stash loo untaii anteee 
+>so manakii a file kii adde branch kii accept chailaliyy anttee 
+manaakii copy paste and cut and paste chayaalii antee 
+>so copy paste method and cut and paste method chustamuuu 
+>sppoo apply anee command istee data anii motomm stash nunchii copy aunkoni
+manakii a ye branch nunchi achaaii aa branch kii altaiii anteee 
+>adde pop anii command use chestee adii cut and paster autadii antee 
+>so chustamuu so stash area nunchii mana m delete chaiyallii antee
+geit stash drop antee patricular stash delete aipotadii
+>so manamm 2 files extra anni branch loo create chesamuu or stash loo
+petamuuu 
+>so files master brnch loo unaai anduku antee files anni so nenu mas
+master anni branch loo unanu soo master brnch loo files access
+chaiachhu
+>so files apudu stash loo unaii anni file any branch loo access chai
+acchuu
+>soo stash anii extra anii branch kii create autaii anteee so mana
+extra extra branch loo 12.24
