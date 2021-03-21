@@ -133,7 +133,53 @@ magar hamme c1 kaa data nain chaihaii
 jis employee kaa department no c1 haiii uskee alawa saree data chaihaii 
 >too hamare query kaisa hogaa 
 >select * from  emp join department on emp.depno=department.depno and 
-emp.depno<>c1;
+emp.depno<>'c1';
 >too kiya hogaa joo c1 nain haii baki sarii joo match joo rehe haii
+>too aab kiya hua dono table join hoo gayee orr joo table nain mili raha hai
+c1 nain haii woo chod kee c2 wala hii aa raha haii.
 
+question
+===========
+question haii kii mujhee krishna kaa department find karnii haii 
+
+>mujhee nain pata employee ka data eek table mee or department ka data dusra 
+tablee mee pada haii 
+>too hamme krishna kaa department namee find karnii haiii 
+>aab hamme iskoo kaisa karnii haiii aab mee kiya karungii sara data show 
+hojaii mee find karungii 
+>too mujhee kiya karinii haii too hamme join karinii haii hamme inner join 
+llaganii haii hamme emp kee saath department join karnii haii first aab 
+dono table join hoogaya haii join matlab simple inner join too ismee ouput
+kiya hogaa joo match hoga wohii show hog
+>too condition kiya haii mujhee krishnaa kaa deptname chaihai
+>too pehele hamme eek supquery laganii padegiii 
+>too isse pehelee hamme krishnaa kaa dept no chaihaii simple quary laganii haii
+>too query lagayngee kiyya 
+>select depno from emp where name ='krishna';
+>too execute karnaa haii hamme patachaljaigaa kii krishnaa kaa deptno kiya haii
+>too hamme output mill gaya haiiii 
+>too hamme iss result koo join karengee dusree tablee meee hamme dusrii tablee 
+kaa namee bhii pata chaljaiii 
+>aab hamm paste karengeee puranii walii query kooo
+>too hamnee kiya kea hamnee first table koo dusrii tablee koo join karleaa or
+condition kiya likha haiikii dusra table kaa depno hona chaihaiii already hamare
+paas result aachukaa haiiii 
+>that mins department.depno=(select depno from emp where name='krishna');
+>too kiya hogii jiskaa department noo c2 hogaa 
+>to idhar kiya hogaa hamare idhar sub query chaligii pehele jiska name 
+krishana hoga uska depno=c2
+>too condition kiya hogiii simple tareeke see condition bolunn too select * from
+emp join department on diska department no c2 hoga
+>too aab kiya hua krishna ka depart name research aagayaa too hamme wohii
+chaihaii or baki onn koo dekhnee kaa koi faida nainn haiiii;
+>too mee and condition lagadungiii kiay lagaungii department.depno=emp.depno;
+>too execute kea too duplicatee aaya thaa woo chalagayaa  name krishana haii
+wohi show hua or bakii elemeinate hoo gaya.>
+>too hamare qury kaisa hogaa chaliea dekheaa
+>select * from emp join department on department.depno=(select depno from emp 
+where name='krishna') and department.depno=emp.depno;
+>
+>
+
+  
 8.23 
