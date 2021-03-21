@@ -1,0 +1,139 @@
+sql joins
+=============
+ sql joins kiya hota haii kii combin karna haii do or do see jada 
+tables koo combine karnaa hai based on some common field.
+>for example hamare paas eek table haii emp or department orr
+dono table maiii filed alag alag haii aap dekh saktee haiii
+>for example yahii hhaii kii employee ka detail s hamare eekm emp table
+mee  pada haii emp table mee empno name salary depno pada haii 
+>dusra table mee depno depname or location pada haii 
+>hamm kyun data koo eek tablee mee nain rakthee haii kii data redundancy 
+pee problem aahjaii gaa too hamm kiya karengee kii data koo different 
+different table mee rakheengee 
+>jab koi query laganii haii too aab aap koo eek see jada table mee 
+hamme kamm karnii hoo too hamee sql joins use karna padegaaa 
+>aab sql joins char tara kee sql joins haii
+>inner join
+>left join
+>right join
+>full join
+left join
+==============
+> dekhea hamare joins bohot easy haii hamm eek eek karkee ham example 
+kartee haii
+>dekhea hamare inner join kiya hota haiii 
+>pehele mee syntax bataduu iskaaa 
+innerjoin:it returns rows when there is a match in both tables
+>iskaa syantax bataduunn 
+>bohot easy haii pehele mee syantax bataduunn syntax mee dekhunn kese kam
+kataa haiii 
+>lets mujhee data chaihaii letss hamme emp or dept dono table koo combine
+karnii haii 
+>hame emp and department tablke koo pehele combine karnii haii too kiya likhengee
+>too hamm kya karengee hamm likhengee kii 
+>select first tabhle all data from emp uske baad join likhnaa haii too kis
+table kee saath join likhnaa haii department table koo join karna haii 
+or hamme eek criteria mention karna padta haii kii hamm kiss criteria mee
+hamm join karengeee 
+>too mene combine karungaa on the base of department noo jahan pee department
+no samee hii ham us base mee combine karnegeee to ham kiya likhengee 
+emp.depno =dusratable department.depno  
+to hamare query kiya likha haii 
+
+>select * from emp join department on emp.depno=department.depno;
+>too hamare kiya hoga hamre upar walee quey koo likhengee too kiya aaaiga
+>hamare idhar eek table emp or dusre table kaa name department dono table
+join hoga  orr matching keyword rehegaa  depno
+>select * from emp join department on emp.depno=deparment.depno;
+>hamare on idhar keyword haii or condition ham likhgengee emp.depno=
+department.depno
+>jesekee meene bola joins char tara kee haii too hamm abb inner likhsaktee
+haii join see pehele
+>too hamare query kiya hogaa 
+>select * from emp inner join department on emp.depno=department.depno;
+>ham yeh quey likh lea or aab ham execute karengee kiya atta haii 
+dekhtee haiii
+>dekhea kiya aaya ouput mee dekhe pleasee 
+>yeahnn pee hamre c1 and c2 kaa data aaraha haiii 
+>dekhea hamme c1 and c2  ka data aaraha hai kyun kii hamare dono table
+mee c1 and c2 same haii
+>inner join hota kiya haii inner join basically it returns all the rows
+of matching both the tables
+>agar ven diagram kee through show karunn too doo table haii or dono mee
+joo common data hoga woo show hogaa
+>ham dekh saktee haii hamare eek table hai table A or dusrii table haii
+table B OR or dono table kee andar joo common field haii hamee dekhi dega
+>or inner join koo ham simply joi bhii boltee haii or simply join ham
+likhtee haii in the place of innerjoin hamme data miljai gaa.
+>too hamme inner join pata chal gaya 
+>aab ham left join and righ join dekhengee 
+left join and right join
+========================
+>left join kiya karegaa ismee left data pura ka pura aajaiga 
+>or second table kaa data jitna match hoga utna aaiga or jo bbhii un match
+hoga woo null hoga
+>defenation kiya bolta haii return all rows from left table and match row 
+from right table
+>yahann pee yeh hamare doubt aajata haii kii left table kounsa haiii
+or right table hamare kounsa hai
+>too hamare kese pata chaleega sea hamare quey mee jo join se pehel joo
+table ham likhe hogee uss table hamre left table hoga
+>or join kee bad joo table hoga wo right table hoga
+>so emp hamare left table hoga iska data sare kii saree aaiga or department
+right table hoga uska data wohi aaiga joo matching hoga let mee execute this
+>too left table mee dekea kitna row thii hamare 5 thii 
+orr hamre ouput mee hamare 5 row haiii to output table mee dekhea hamare
+empno see leke depno first table hoogaya
+>depno see leke hamre location tak second tabl hoo gaya
+>too right table mee kiya aaiga joo data left table kaa match kar raha haii
+or right table mee joo match nain kar raha haii woo null aaiga
+>too left join yeh haii to right join kiya hoga hamare right join uska 
+ulta hoo jaigaa 
+too kiya hoga hamre department table kaa sarre data aajaiga or right table 
+emp kaa only wohi data aaiga joo match aaiga baki sab null aajiaga
+>dekhea hamre second table kaa sara aagay orr left mee only hamme matching
+value aaya haiii 
+>to hamre query kese hogaa chaleea dekhtee haii 
+>select * from emp left join department on emp.depno=department.depno;
+>select * from emp right join department on emp.depno=department.depno;
+>too yeh hamre left and right joiinn all hogayaa 
+>full join 
+===============
+ismee hamare both or both table all data aajaigaa dono table kaa data 
+aajaigaa data
+>too hamm right join kee jaga pee ham likhaa kii outer full join 
+>pura ka pura join karnaa haii full join too hamm mistakee karlea thaa
+full join kee jaga pee hamee full outer join likhnaa haii 
+>too exectee karletee haii kiya atta haii hamm dekhtee haii 
+>too hamare left kaa pura data aagaya orr right mee hamare joo mathcing
+thii aayaa or right kaa full outer join hogaa 
+>aap dekh satkee haii hamare left or right kaa pura data aagayaa 
+haiii 
+>aab hamm thodii praticall karkee dekhletee haii kii join kese kam kartaa
+haii 
+>select * from emp full outer join department on emp.depno=department.depno;
+>too output mee deikhea pehele left kaa pura aagaya orr uskaa matching kaa
+pura right mee aagaya orr second walii row mee right kaa puraa aagaya orr
+uskee matching walii joo left data haaii sab aagaayya 
+>orr right mee bhii data aagaya orr joo data present thii donomee 
+woo aagaya nahin to woo empty hoogaya
+>
+
+aab ham thodii praticall karkee dekhtee haii kii join kese kam kartaa hai
+========================================================================
+>dont think aap yahan pee hamare khalii equal operator asaktaa haii
+hamm koi bhii condition likhsaktee haiii 
+>aap ka jese marzii joo bhii condition likhsakatee hoo uskee bhiii example
+karkee hamm dekhletee haiii 
+>suppose hamme data chaihaii sare mathching walla hammee miljaigaa mathcing
+wala milegaa but hamme c1 ka data nain chaihaii 
+>to and condition likhlooo too mene dono table koo join kartaa haoon 
+magar hamme c1 kaa data nain chaihaii 
+>too ham kese likhengee hamm 
+jis employee kaa department no c1 haiii uskee alawa saree data chaihaii 
+>too hamare query kaisa hogaa 
+>select * from  emp join department on emp.depno=department.depno and 
+emp.depno<>c1;
+>too kiya hogaa joo c1 nain haii baki sarii joo match joo rehe haii
+
+8.23 

@@ -1,0 +1,166 @@
+>kal kii video mee ham dekhethe kii ham java script mee kam kar rehe 
+thee too hamare index.js ham use karteee haii too java script kaa hii
+file haii uskee andar hamm jabb html use kartee haii tooo wo jsx boltee haii
+>uss html kee andar hamm agar java script use karnaa hoo too ham pair
+off curly brasses use kartee haiiii {}joo bhii ham samajh lea thaa
+
+>hamm iss jagah mee samajll eengee kii yehh template litrals kiya hota haii
+oorr iskoo kiis tarkeekee seee hamm use kartee ahii 
+>dekhea guyss hamm kiya kartee haii
+>hamm es6 use kartee haiii
+>dekhea guyss hamm kiya kartee haii ham first name likha orr last name
+likha donokoo hamm nee eek mee vinod likha dusree mee ham thapa likha
+>dekhea guys hamme kiya likhnaa haii iss video mee meene eek first name
+likha
+>or last name eek orr likha
+>orr mee kiya karungaa kii mee idhar outpu mee kich likhluu kee mere ouput mee
+mujehee ana chaihaii kiii my name is vinod thaapa
+>too hamare code kaisa haii abhiii
+index.js
+==========
+import React form "react";
+import ReactDOM from "react-dom";
+
+const fname="vinod thapa"
+const lname="thapa"
+
+ReactDOM.render(<>
+<h1>my name is {flname} </h1>
+<p>my luncky number is{5+5}</p>
+</>
+,document.getElementById("root"));
+>dekhea guys hamme kiya dekhnaa haii is video mee mene eek first name likha
+or last name likha variable create karlea donokoo mee constant data type
+dea hua haiii theeek haii 
+> too mee simply mee kuch likhluu kii mujhee mree ouput mee mera anna
+chaihaii kii my name is vinod thapa
+>mujhe sirf fname and lname likhkee mujhee idhar ouput dikhana haii 
+>yehh sab karnee kee bohot saree tareek hai aaj ham dekhengee kii template
+litralss
+>template litrals use karnee see pehele bohot saree tareke me batana chata
+hoon joo aap use karsaktee hoo react mee 
+>sabse pehele mene bola tha kii aap iskoo hataooo orr mene jab jab bola
+tha kiii aap koo html kee andar hamme js likhtee haii to hamm simply 
+curly brasses usee kartee ahiii >
+>aap pair of curly brasses use karsaktee haii kii jiis tareeke see aap 
+idhar {firstname} likha uss tareeke seee aap udahr {lastname} likhsaktee
+hooo 
+>ctrl+s save kartaa hoon yaha paee alright
+>aap ouput mee dekhea kii aap koo myname is vinod thapa dekhhaidega
+index.js
+==========
+import React form "react";
+import ReactDOM from "react-dom";
+
+const fname="vinod"
+const lname="thapa"
+
+ReactDOM.render(<>
+<h1>my name is {flname} </h1>
+<p>my luncky number is{5+5}</p>
+</>
+>
+>aisa hii angara mee thapa kee jaga mee kuch ss jada likh luu too dekh saktee
+haiii kii woo kam kar rhaa haiii 
+>too aap sabsee pehele aap sikhlea kii aap kee paas multiple const hoo
+>aap do line mee likhnaa chatee hoo tooo aap simplyy aap do pair of curly 
+brasses leke aap likhsakteee hoo i hope kii aap lokonee bhii socha tha
+> mee aap koo bata ta hoon aap yeh do do bar curly brassses likhnee se
+hoga agar na likh kee agar aap concatination opertor use karlenege
+>too hamare aap idhar aisa kar saktee haiiii 
+>agar mee ctrl+s save kartaa hoon too mujhee vinodthapa dekhaidega orr
+ismee kiya hoga kii dono chipak jaingeee  kii vinod and thapakee beech
+mee koi sapce nainn dekhai dega 
+>agar aap simply plus add kartee haii kyun kii aap concatination use
+kartee haii 
+>agar hamme dono kee beech mee space chaihaii too mene kiya kartaa hoon kii
+eek space deke mene curly bracesses add karletaa haoon 
+>too ouput mee aap dekhsaktee haii kii hamare my name is vinod thapa sab
+alag alag hokee aya haiii 
+>
+index.js
+==========
+import React form "react";
+import ReactDOM from "react-dom";
+
+const fname="vinod"
+const lname="thapa"
+
+ReactDOM.render(<>
+<h1>my name is {flname+" "+thapa} </h1>
+<p>my luncky number is{5+5}</p>
+</>
+>>too guyss hamm teno tareeka dekh chukee haii simple curly brasses ke 
+andar sab likhloo nahin too concatinatee karlooo agar ham aap dekh payengee
+>too aab kiya hamare template litrals kis tareeeke see use hota haiii 
+>too guyss template litrals use kese kartee haii template litrals use karne
+kee lea  aap koo simplee backtick use karna hogaa 
+>ham javii bhii koi kam kartee haii java script kee andar hamm yaa too
+douple codelikhtee thee nahinn to singlee code likhtee thee  agar aapkoo
+bata ahii ham jabb console.log likhtee htee iss tarekee see too hamme
+>too mee kiya karta thaa aither single code kee andar vinod likhtaa tha
+nain too double code kee andar likhta thaa 
+>console.log("vinod");
+>console.log("thapa");
+>aap koo template litral use karnaa hoo too instead of single code aap 
+koo likhnaa haii kii backtick
+>ap dekh saktee hoo kii hamme idhar backtick dekhai dee raha haii 
+>too aap koo  template litrals use karnaa hoo too aap koo 
+console.log mee aap koo my name is ${fname} likhsaktee hoo
+>yuehh hoo chukaaahiii kii aap koo java script mee litral $ use karkee aap
+koi vii expression kuchii bhii add karsaktee hoo 
+>yahii tareeka haii kii aap koo java script mee template litrall use karne
+kaa aap javascript mee aap string koi vii cheez aap aisa likh pa rehe hoo 
+>aap dekho kii +""+ itna sab karnee kaakoi jarurat nainn 
+>yeh hota haiii aap kaa template litralss
+>too mee upar wala cheez mene aab template litrals use karkee karta hoon
+>too mee kiya kartaa haoon brasses hata kee mee kiya likhta haoon
+>aap koo ${fname} likhnaa haii or aap koo space denee + wagaree likhnee ka
+koi jarurat nainn haii aap koo simplyy space dena haii 
+>again aap koo ${lname} likhnaa haii 
+>ctrl+s save karta hoon or mee jata hoon browser mee aap koo dekhaidega 
+guysss hamare name my name is vinod thapa ouput mee  too hamare code kaisa hoga
+index.js
+==========
+import React form "react";
+import ReactDOM from "react-dom";
+
+const fname="vinod"
+const lname="thapa"
+
+ReactDOM.render(<>
+<h1>my name is {`${fname} ${lname}`} </h1>
+<p>my luncky number is{5+5}</p>
+</>
+
+>iskaa best part kiya haii guyss aap jantee haii aapp template litrals ke
+andar aap string bhii likhsaktee hoon
+>
+index.js
+==========
+import React form "react";
+import ReactDOM from "react-dom";
+
+const fname="vinod"
+const lname="thapa"
+
+ReactDOM.render(<>
+<h1>{`my name is  ${fname} ${lname}`} </h1>
+<p>my luncky number is{5+5}</p>
+</>
+>bahar kuch likhnee kee jarurat nain directly hamare sabkuch eek hii expre
+ssion kee andar hii aaraha haiii 
+>agar aap first time template litrals use kar rehe ho too aapko thoda sa
+difficult lagrah hoga kii ham backtick use kar rhehaii use kar rehe haii
+uske andar phir ham $ use kar rehe haii
+>too guyss ap eek doo bar agar practice karletee haii too aapkoo samajh
+mee aajiagaa kii hamm react mee ki tareekee see kam kar reh ahiii 
+>too aap koo kuch bhii aapkoo js mee add karnaa hoo too ham jsx use karte
+thee orr uskee andar aap koo koi bhii template litrals use karnaa hoo
+too aap koo backtickk use karnaa haii 
+>uskee andar aap koo jsx use karnaa hota haii too hamm koo @ curly brasses
+usee karnaa hii padegaaa 
+>ones again guyss hamare idhar template litralss usekarkee dekhletee haii 
+>wahii template litrall usekartkee brwoser mee jata honn too aapkoo
+samee cheez dekhai dega
+>
