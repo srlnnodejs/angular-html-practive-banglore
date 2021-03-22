@@ -1,0 +1,92 @@
+react challange 2
+==================
+>iss challange mee hamme kiya karnaa haii kii hamme react appp  create karna
+haii scratch see 
+>uskee baad aap koo h1 element create karna hai or usmee aap koo my name is
+jo vii haii usmee likhnaa haiii 
+>uskee neechee aap koo p element add karnaa haii in it aap koo current date
+rakhnaa haii
+>uskee nichee aap koo current time add karna haii eek paragraph mee 
+>i hope guys aap ckoo challange pata chalgaya hogaa orr mee aap koo dikhaungaa
+kii acturlal mee yehh aap kaa dekh kaisa raha haiii 
+>aap dekhsaktee hoo guyss aab mee kartaa hoon iss page koo refreshh automatically
+time change hoo raha haiii 
+>too iska matlabb yeh nain haii kii guyss meene paragraph mee aaj kaa date
+chipka dea 
+>actual java script kaa method haii mee ismee implement kar raha hoon 
+>too hello , my name is vinod meene likhlea butt aap kiss tareeeke see aaj
+kaa current date fetch karongee or kis tarekee see aap aaj kaa current time
+fet ch karogee ddynamically aap koo dekhnaa haii 
+>too guys aap iss video koo pause kejeea orr aap koo jitna hota haii utna 
+keejea
+>dekhea guyss mene vscode editor mee aachukaa hoon isse pehele hamm joo 
+eka thaa woo idhar dikhraha haiii 
+>too mene hata deta hoon orr hamare pehela kam kiya haii kiii hamme likhnaa 
+haiii mara code from scratch seee 
+> too scratfchh see karnaa too bohot simplee haii hamme import karnaa haii 
+react koo from react module see
+>too hamme pehele React module koo import karnaa haii uskee baad hamme 
+import karnaa haii ReactDOM  kahannsee hamme react-dom kee module see 
+import karnaa haiii 
+>aab ham joo reactdom import kea haii usmee hamare eek render method haii ham
+use karengee 
+>this is it guys hamnee hamare react aap koo scratchhsee create karlea haii 
+>aab hamme kiya karnaa haii add one h1 ele ment example your name
+>too hamare multiple cheez kuch add nain ho raha haii hamm likhtee haii
+h1 or h1 add kar rehe haii 
+>too hame ReactDOM.render kee andar hamme likhnaa haii hello my name is vinod
+>too hamm andar brasses kee andar ham name likhlengee or bahar hamm 
+name mee vinod koo likhletee haii
+>aab itna guyss likhkee ctrl+s save karta hoon too hamme ouput mee kuhc dekhai
+nain degaa
+>kyun kii guyss hamm abhii tak hamnee dom element kaa use nain kea haii 
+>hammnee kiya dikhana haii hamnee likhlea orr kahan dikhana haii hammnee abhi
+takk nain dekhayaa haiii 
+>kahan dikhana haii woo part bohot easy hamme simply likhnaa haii kii
+document.getElementById("root");
+>i hope guyss hamme pata chal gayaa agar mee file mee chaltaa haoon we have
+one index.html hamare one hii div element haii jiskoo id de rakha haii root
+>tio mee wapiss mere index.html mee chalta haoon or iskoo mee hata deta hoon
+>too hamrare ouput mee aaraha haii kii Hello,My name is vinod
+>hamnee padhatha kii expression koo kaisa add kartee haii orr constant name
+bhiii kaisa add kartee haii 
+>aab hamme kiya karnaa haii ki add one paragraph element on p 
+>aab mee is tarekeekee see eek paragraph likhtaa hoon to hammee eek error 
+anne wala haiii 
+>agar mee parargraph likhtaa hoon or save kartaa hoonn too hamare output mee
+hamme error anne wala haii 
+>agar mee kuch likhkee dekha browser mee too hamee error aaya haii wo eerror
+hamare kiya haii kii woo kiya haii kii aap koo eek see jada jsx element koo
+use karnaa haii too aap koo must bhii use karnaa haii jsx fragment or <></>
+> eek hii element chaihai mare render method koo too hammnee padhatah guryss 
+react fragment aap koo malum haii naa syntatic sugar form kaisa likhtee haii
+>too mene use karlea orr ctrl+s save kartaa honn orr boom ouput hamme milgaya
+>too jan bujhh kee mene equal too choda aabhii aap dekhreeh haoo too guyss 
+aap iiss video ko eek baar dekhooo too thoda ssa jor dejea kii kiss tareeekese
+mene current date koo idhar dikhasakta hooon 
+>too hamme kiya karna ;haii kii const currDate=new Date()
+too is date object kee ;joo bhii properties haii ham store kardea current date
+mee 
+>hamee save karkee dekhtaa hoon hame simply uskoo access karneee kee lea hame
+likhnaa padegaa current date 
+<p>current date is ={currentDate}
+>too error nain milraha haii hamme directly value naindena chaiihaii 
+>agar mee likhluu kee const currDate=new Date().getDate();
+to hamme aaj kaa date miljaigaaa 10
+>to aap koo proper format mee chaii too aap koo likhnaa haii ki 
+toLocalDateString() aisa likhnaa ahii hamme>
+> too outuput mee dkehea hamare aagaya haii date curtent date is s=5/10/2020
+>aab simply hamme current time dikhanii haii woo kaisa hogaa dekhea
+>hamm upar wala line koo copy karleta hoon or paste kartahoon orr likhtaa hoon
+current date kee jaga see current time
+>aab mee karletaa hoon currDate kee badle mee currTime karleta hoonn
+>aap koo kiya karna padegaa kii current date kii jaga see hamme current time 
+likhleengee 
+>too hamme kya likhnaa haii hamm likhna ahaiii current time kee lea hamme
+const currTime=new Date.toLocaeTimeString();
+>buss itna aap koo likhneea haii yehh aap ka system kaa aap kaa machine kaalocla
+timee aap koo bantayyegaa 
+>hamare dekhea date time sab aaraha hai hamare kam khatam ho chukaa haii 
+mere kehenee kaa matlab yahiihaii kiii 
+>actual time kiya haii ki 1:26 min aap agar proxy use kar rehe haioohn
+>aap dekhrehe hooagar ok done thakyou so much
