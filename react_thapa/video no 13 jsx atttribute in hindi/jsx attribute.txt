@@ -1,0 +1,109 @@
+ jsx attribute in react
+=========================
+aap kii mind mee anne wala haiii kii yehh jsx attributee kiya hota haii 
+>abhii mee index.html kee andar aachukaa hoon agar mee index.html kee andar
+aata hoon suppose hamm anchorr tag lee 
+>aap koo malumm honee wala haii kii mee simpleyy  a b likhluu too mujhee 
+auto fille honkee anee wala haii 
+>yehh joo anchor tag kee andar hamare joo property aarah haii uskoo html 
+kee case mee boltee haii attributee
+>too guyss hamme kiya karnaa haii kii hame target dena hoo orr dusra tab mee 
+hamare openn hoo too hamm target dete haiii 
+>hamm joo anchor tag kee property set kartee haii usee boltee haii attributtee
+>soo html kee andar har tag kee andar eek eek tag hota haii uskoo property 
+kehletaa haiii 
+>ussi tareeke see guyss 
+>joo ki ham index.js mee kam kartee haii usmee milta haiii
+>too hamare iss jagahh mee hame jabb html element kee andar hamme kuhc attirbute
+likhnaa pada ussee boltee haii kii jsx attributee
+> kyunn kii woo hamare html attribute nain haii woo hamaree jsx haiii 
+>andar hamare anchor tag kee andar hamm joo attribute use kar rehe haii 
+hamm usse bolengee jsx attribute
+>same hamm html kee andar hamm joo attribute boltee haii uss tareekee se hamare
+jsx attribute boltee haii
+>too mene guyss iskoo completly delete karletaa hoon too peheleii baar aap koo
+pata chalee guyss hamm kaisa likhrehe haiii 
+>sabsee pehele hamme react koo import karnaa haii or react dom koo import karna
+haiii 
+>to hammee ReactDOM.render karni haii orr sturncture dekheea right side mee ready
+haiii
+>iskee andar guyss hamme jsx attributee hamme dekhinii haiii kuchh ruless haiii
+ham jsx attributee mee likhtee haii na wwoo saree ruless haiii
+kiya rules haii dekhooo 
+>too rules raha nain too hamare html attribute orr jsx attribute mee koi farak
+rahii nainn jaigaa 
+>suppose mee eek h1 add kartaa hoon orr uskee andar meene name leta hoon 
+>too mene kiya kartaa hoon name='vinod' likhleta hoonn theek haiii 
+>too hamee kiya karnaa haii hamme document mee dikhanna padegaaa 
+>  too document.getElementById("root");
+>too hamare code abhii kaisa hogaa dekheea
+
+index.js
+==========
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const name="vinod";
+
+ReactDOM.render(<h1>my name is {name}</h1>,
+document.getElementById("root"););
+
+
+too output mee myname is vinod hamme perfectly dekhii de raha haii
+>toojoo mene chahhthaa hamme idharr mil chuka haiii 
+>too kiya hotii haii kii html attribute 
+>too kiya hota haiii html global attributee 
+>too aap dekhsaktee hooo guyss we have this much attribute 
+>too guyss aap sabsee pehele aap dekhsaktee hoo kii we havvee acces key we 
+have class
+>and we have content editable 
+>that is content eek word haii orr editable dusra word haii 
+>donon koo milakee unnhonee simplyy eek hii word mee likhleaa theek ahii 
+>too mujhee agar iss attributee koo jsx kee andar likhnaa haii too hamme kiya
+karnaa haii hamme attributee kee lea hamme class or koi style kuch bhii 
+too hamme kiya karnaa haiii kii hamme uss word koo ditto copy karkee hamme
+paste kardenaa haiii 
+>too hamme kiya karnaa haii kiii hamme uss koo copy karkee hame paste 
+kadenaa haiii
+too hamare code kesa hogaa
+>too hame kiya karnaa haii ki hamee camelcase use karnaa haii ki jahann pee hmare
+pehela word jooo hamare as it is rehegaa theek haiii 
+>orr second word hogaa hamare hame camelcase likhnaa haiii 
+>uskaa pehela wordd hamare capital likhana haii hamare contentEditable likhnaa hai
+>aap koo contentEditable="true" likhnaa haiii 
+>i hope bohot log ismee kam kea hoo aab dekho ismee kiya hota haiii aap simply
+ismee edit karsaktee hoo dekhoo 
+>yehh hota hayiii guyss hamare jsx attributee orr aap koo simplee itnaa yad
+rakhanna haii guyssaap kkoo pehelaa wardd aapkaa small see start karna haii
+orr second word hogaa woo capitall hogaa aap kaa 
+>is takreeke see likhnee koo hamm boltee haii kii camelCase 
+>too hamm kiya karengee hamm koma keeupar hamm react fragment usee kartee hai
+>kyunn kii mee multiplee element koo eek saath use karsakuujnnn 
+>too iss tareekee see guyss meene react fragment kaa syntatic sugar likhleaa 
+theek haiii 
+>ttoo abhii taa guyss aaap logonee notice kea hogaa ki hamnee hamare seriess
+mee imagee kaa bilkuul usee nain kia haiii
+>too hamme images koo kaisa likhnaa haii kii guyss hamm images tag koo kavii
+hamm close nainn karteee haiii 
+>too aap nee kavii dekha nain hogaa kii hamnee kaisa iss tareeke see ham 
+close kartee haiii 
+>aap nee dekha haii kii h1 koo hamm close kartee haii paragraph koo close kartee
+haii image tag koo close nain kartee haiii 
+>or images tag mee ham kuch likhtee bhii nain haiii theek haiii 
+>too aap koo aaj itna cheez yaad rakhnii haii kii aap ko jabb image kuch tag 
+likhh rahii haoo jismee aap kaa closing tag nain haii too aap koo kiya karna
+padegaa kii aap koo opening tag mee hiii close karlenaa theek haiii
+>yehh kehelaigaa aap kaa self closing tag kyunn kii iskaa koi children tag nain
+haiii 
+>jovi haii hamare idhar jsx element kee andar hamme likhnaa haiiiiii 
+>we have a source attribute theek haii 
+>suppose hamaree idhar kufch image paste karniii haii too kiya karnii haii
+kiii jaisa hamare dummy text hota haii wese hamare dummy image dalna haiii 
+>joo kiii bohot owsome haiii too aap iss tareeke see copy karleejea orr
+uskoo pastee karlejeea 
+>dekhea hamare image aagaya haiii 
+>boom guyss aap dekhsaktee hooo hamme hamare imagee dekhi dea haii joo ki bohot
+owsome haiii peheli bar hamm hamare images leke aai
+>yeh attributee haii aab aap iskoo jsx attribute kehesaktee hoooo 
+> agar mee iskoo inspect kartaa hon theek haiii 9.30
+>
