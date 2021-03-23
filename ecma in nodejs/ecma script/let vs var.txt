@@ -1,0 +1,109 @@
+let key word
+================
+hi every one my name is anil hamm iss video kee andar hamm batt karnee
+walle haii let key word kiii 
+>let thoda similar hota haii var see aap keh saktee hoo kii var kee andar
+hamm data store kar saktee haii 
+>let hota kiya haii 
+==================
+let mee app koo bataun let eek key word haii data storagee kee leaa
+>ham pehele var use kartee thee 
+>var a=10;
+>abb hamar paas var kee jaga let aagaya haiii jab ham log let use kartee haiii
+>too uskaa scope hota haii block levell
+>block level ka matlab kiya haii agar mee use kartahoon if condition 
+>agar mee likh letaa hoon true agar condition kee anddar mee ture likhleta
+hoon
+>too yehh apne aap mee eek block bangayaaa 
+>joo let kaa scope hota haii yehh iskee andar hii hota ahiii 
+>agar mee doo condition lee luunn too agar mee doo let lelu
+likee
+if(true)
+{
+let a}
+if(true)
+{let a}
+>but jooo hamare variablee hota haii uska scope hota haii global
+>samjoo kii mee eek var leta hoon uskaa value
+var a leta hoon uska value 10 leta hooon
+>agar mee likhtaa hoon if condition leta hoon or if condition kee adar mee
+agar var a declare karkee mee agar 20 kardeta hhoonn too orr mee console 
+kardeta hoon to kiya hota hai dekheeatoo aap kaa output 20 dikh gaya great
+>agar mee if conditon kee bahar atta hoon or mee console likhtahoon orr
+console mee output mee likhtaa hoon 
+>console.warn(a);
+>too aap guess karsaktee hoo kii aab a ka value 10 aaigii yaa 20 aaigii
+>mee refresh kartaa hoon iskee value 20 hii aaigeee 
+>too hamare aab output hamare 20 aagaiii ismee aab problem haiii
+>agar mee bohot badi if state ment likhluu orr console karunn too ouput 
+change hoo jaigaaa
+>iss case kee andar agar mee use kartaaa haoon let too kiya hotaa haiii
+>agar mee bahar bhiii let use kartaa hoon or andar bhiii let use kartaa hooon
+>agar mee define kartaa hoon too kiya hota haii kii
+>jo bahar wallla valuee hamare 10 hii aaya haii orr andar wala a ka vlaue 
+20 aaya haii
+>that means iskaa block level scope haiii
+>agar hamm upar define kea too alag baat haii nain too iskaa eek hii block hii
+rehegaaa 
+>agar mee andar wala hatadunnn too alag baat hoo jaiigii kiii hamare eeek hii
+define kea hua haiiii
+>too hamm andar define kea too uskaa scopee hoo jaigaa blockk levell kaa
+>too let kiya hota haii aap koo pata chal gayaay or va kiya hota haii iska
+bhiii pata chalgaayya too ismee eek ka scope hota hii global level eek ka
+scope hota haii local level
+>let a=20 too hamme ouput kiya anne wala haii kii yeh degaa hamee error
+>agar isss jaga mee hamar var hota too yehh hamme error nahinn detaa
+>too yahann pee hamm bolsaktee haii kii dono declare karlea too error aagaya
+>but if kee andar bhiii menee a hii declare kea thaa
+>kyun kii woo alag block kee andar thaa
+>abhii hamare if kee andar meene kea too kuch error nain huaa
+>butt if kee bahar jab tak thaa woo error de raha thaaa
+>too kiya haii kiii hamare idhar let kee dono eek hii jagamee hogii 
+>orr eek hiii eek hii scope mee hogii hamee error degaaa
+>bat kareee haii hoiting kiii
+==============================
+>hoisting kee lea mee kiya kartaaa hunn aabhii kee lea sabkuchh yahannn 
+see hata deta hooon
+> agar mee a koo print karneekee lea kosis kartaa hunn too kiya bolegaa kii
+a is not defined
+>obvious haii agar mai idhar kartaaa hunn var a
+>a undefinde degaaa> 
+>agar mee a koo upar defined kartaahunn too bolegaaa undefinded
+>dekhoo a to declare hoo gaya butt kuuch value nainn aaya isleaa bola un
+upar bhiii nichee bhii issleaa undefined boola
+>iskoo keheteee haii hamm hoisitngg
+>hoisting kaa matlab kiya hota haii kii variablee koo call karleaa hamnne
+uskoo declare karnee uparbhiii nichee bhii koi farak nain padtaaaa
+>var ke saath hoisting theek kam karteeii haii buutt let kee saath hoisting 
+theek see kam nainn karegeeaaa
+>agar mee a koo call karungaa too aap a koo call nain karsakteeeee
+>but aap before console aap iskoo call karsakteeee hoo  
+>yahannn pee yehh question haii aap let kee saath hoisting use karssaktee haii
+>jiii nainn aap let kee saath hoisting use nainn karsakteeeee >
+>var keee saath aap hoisting use karssakteeee haiiiii
+>abhii mee eek loop bana raha hoon or letaa hoon var i i ka value meene 
+neechee zero rakh letaaa hoon orr i kaa vlaue hamaree 0 see lekee woo 
+20 kuchh leluu
+>or mee kiya kartaaa hunnn meene console.warn kartaa hauunn or print karta
+hunn i kooo
+>too aap dekh sakteee haii aap kee output aaigaiii aap kee output 
+0 se leke 9  tak aai giii
+>agar mee for loop kee andar jakee meene kartahoon setTimeout yahann pee
+aap arrow function use karloo koi bhii function use karloo koo farak nain
+padtaaa aap normal function use karsakteeee hoooo
+>yahhann  pee mee thoda saa gap deta hoon 1 second kaaa 
+>aab mee iskoo refresh kartaaa hoonnn
+>ismee 10 bar print hua or 10 se 10 bar ten print hua
+>aisa kyun hua kii var joo hota haii global hota haiiii
+>10 rehnee see kiya huaa har bar yahann pee woo 10 10 show karaa
+>is problem koo hamm kese resolvee karsakteee haiiii
+>iskoo resolvee karneee kaa bohot simple tareeeka yahiii haii kii aap var kee
+jagahhh mee let use kardoooo 
+>aap let koo leke aap refresh karoo aab dekhoo aap kaa 0 see leke 9 takk aagaii
+>kiya hua kaisa aagaiiii jaisa mene bataya thaa kii let kaa scope hota haii 
+block level
+>scoep kee andar alag alag har bar i bana yahannn pee 10 bar i bana
+>or 10 bar i baniii iss lea wooo 0 see lekee 9 print hoo gaiiii
+>yehh eek bohot hii jabardast interview question haii yehh bohhot bar
+]puch lea hoogaa 
+>
