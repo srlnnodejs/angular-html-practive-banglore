@@ -31,7 +31,9 @@ haiii
 ham jsx attributee mee likhtee haii na wwoo saree ruless haiii
 kiya rules haii dekhooo 
 >too rules raha nain too hamare html attribute orr jsx attribute mee koi farak
-rahii nainn jaigaa 
+rahii nainn jaigaa
+>too guyss mene kiya kartahoon right click karkee image mee inspect kartt 
+hoon kiya miltaa haii dekheea
 >suppose mee eek h1 add kartaa hoon orr uskee andar meene name leta hoon 
 >too mene kiya kartaa hoon name='vinod' likhleta hoonn theek haiii 
 >too hamee kiya karnaa haii hamme document mee dikhanna padegaaa 
@@ -106,4 +108,57 @@ uskoo pastee karlejeea
 owsome haiii peheli bar hamm hamare images leke aai
 >yeh attributee haii aab aap iskoo jsx attribute kehesaktee hoooo 
 > agar mee iskoo inspect kartaa hon theek haiii 9.30
+>agar mee inspect karta hoon orr console mee chaltaa hoon kiya atta haii
+dekhtaa hoon 
+>tooo yehh kiya aa raha haii kii a component is content editable and contains
+chinldren managed by react it is no your responsbility ot guranteee that more 
+of those needs are unexpectedly modified or duplicated . this si probably not 
+intentational
+>yehh react bol raha haii kii yeh tumare upar haii tum abhii uskee ssaath 
+kuchh bhii karsaktee  hooo
+>abhii dekho e error nain haii eek warning haii dekho line 9.5  img element must
+have an alt prop either with can meaning full text or an empty stirngt for decorative 
+images jsx-ally/alt-test>
+>joo html pehel hamm use kartee thee usmee ham as itis likhoo to koi problem 
+nainn thaa 
+>react kiya bol rahaa haii kii aap aab iss tareeke mat likhoo paroper tareeke
+see likhoo bol raha haiiii 
+>'kall hamare photoo kii badlee photos likhluu too kiyaa hogaa too guyss mee
+iskoo refreshh karluu too mujhee imagee nain mil raha haiii guysss uss time
+mee hamme alternativee usee karnaa haii 
+>alt attributee hamme use karnaa haiii joo yehh kehleaigaa kii actuall image
+kiiskee upar haiii 
+>too alt="randomimages" 
+>too ismee atleast samnee walle koo pata chalegaa kii actuallly yehh randomm images
+>jismee url mee kuhc problem hoo gaya haiii 
+>too yehh bol raha haii kii aap alt tag usee karoo jabb image tag use kartee hoo
+>aab mee guyss mee inspect mee chaltaa haoon or console mee chalta hoon too
+guyss aap dekh saktee hoo woo warning nain dekhaii de rha haiii
+>yahan pee aap dekhsaktee hoo kii phir bhiii failed to load resource bool raha hii
+>atleast woo alt wala warning hame nain dekhaii deraha haii 
+>aab simplyy karlejeeea photoo okkk 
+>main save kartaa hoon guyss hamme hamara image mil gaya okk
+>yahnaa pee kiya hoo raha haii kii  hamm react mee kitnaa bhii sort likhee 
+utnaa achaa haii hamare images kaa linkk bohot hii zada lambaa hoo raha haiii
+>lets say mujhee kuchh or images add karuntt oo orr zada lambaa hoo jaigaa 
+>ab mee img1 mee compy karletaa hoon orr mee likhn raahonn 
+>toomee abhii img src me woo constant varibalee koo pass karta hoon 
+booom guyss hame milgayya 
+>uss tareekee se me images koo multiplee time copy karleeta haoon 
+guyss somee sizes bhii change karleta hoonn or imgsrc mee mene img2 and img3 
+aisa likh leata haoonn
+?> muujhee guyss hamme eek saath teen image dekhi dege mee zoom karleta hoon
+>tooo guyss aap soch saktee hoo kii mee react mee eeek image galry create 
+\kar saktaa hoon 
+>agar mee last wala iamge mee khudd click karunn too apnee hii website 
+mee chalejauun
+>to kiya kartahoon mee href likh lea or uskoo mee click kartaa hoon too mee 
+image mee chale jata hoon 
+>aagar mee eek const create karletaa hoon orr link likhletaa hoon 
+>agar mee href kee andar jakee pastee karleta hoon too target hamme dege
+_blank kyujnn kiii wo blank page mee chalejaii orr automatically dusree 
+pagee mee chalejaiii
+>iss tareeke see meene kam karsakteeaa hoon ismee eek css add karkee mee
+khhdd kata galaryy add karsaktaa haon
+>is takreeke see aap likhsaktee hoo or dekhea kese likhnegee 
 >
