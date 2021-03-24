@@ -1,0 +1,80 @@
+default parameter in ecma script
+================================
+default paramter in ecma script kiya haii hamm padheengee
+>sabsee pehel hamare question hamae default paramter kyunn use hota haiiii 
+basically
+>jab function mee koi paramter pass nain kartee haii too uskoo handlee karnee
+kee elea hamm default paramter usee kartee haii exampleeee 
+>yee kon sii version kee andar aaya thaa yee aaya thaa ecma 6 version kee andar
+>ecma 2015 kaa verison haii uskke andar hamee milee theee start karteee haii 
+sabsee pehele hamm idhar html kaa kam karleaaa 
+>but ecma script kaa koi kam nain kara woo karengee bhiiii 
+>abhiii browser mee jakkee hamm open karleeteee haii theekkhaiii too yehh hamaraa
+hoo gayaaa
+>console open karanegeee kyunn kii jitnaa vii resultt mileegaa hamare console 
+mee hii dekhh paingeeee
+>sabsee pehele mee script tag leta hoon or function banata hoon or function kaa name
+kuch bii likhleetaa haoonnn 
+> too funciton kaa name mene add rakheleaaa orr iskee andar meene return kartahoonn
+kiya return kartahoon 10+20
+>koi problem nain haii bilkull chotaa sa function haiii 
+>mee yahann peee kiya kartahunn console.warn(add()) likhletaa hoonn
+>jab mera function execute hogaa too yahann pe meraaa output anne wala haii yaha
+pee 30
+>aab dekhoo mene yahann pee dynamic banana chataa hoon too meene yahannpee kase
+paas karnaa chattaa hoonn 
+>let mee yahann see value pass kartaa hoon let pass kartaa hoon 10,20
+>or function defination mee letaa hoon a,b
+>orr nichee hammkiya karsaktee haii hamm return a+b karsakteee haiii 
+>too hamm jittnee haii hamm value changee kartee haii a or b kaa hamre
+saree kee saree resultt hamme mil raha haiii 
+>but lets sayy aap kee saathaa aissa hoogaya aap eek value koo pass nain karnaa chatee
+>aap kee paas eek hii value haii aap kee paas eek hii value function kee andar haii
+orr dusra nain pata haiii 
+>too aap kiya karengeeee 
+>orr mee upar wall console koo comment karleetaa haoon orr dusrii mee meene eek hii
+value koo  pass kartaa hoon 
+>too mene result dekhtaahoon too mujhee kiya mele gaa namme nan millegaa
+>nan kaa matlab kiya hota haiiii 
+>nan kaa matlab yahii hota haii kii not aa number
+>ham a+b kar rehe hai or b function paramter mee aanain rahaa haii too aisa ho
+raha haiaii 
+>iskke leea hamm parameter mee default value desakteee haii default value kaisss
+>iskee lea hamm eek paramter default value desaktee haii default value kaissee
+suppose default value ham 10 pass kateee haiii 
+>too mene 10 pass karungaa too 10+10 too result hoo jaigaaa hamare 20
+>too kiya aap eek hii functiion kee value default desaktee hoo kii nain aap jitni
+marzii dedoo jaisaa haii kii  c
+>suppose c ka value deduunn 30  orr mee pass kardunn c too dekheea aap kaa total
+mill jaigii aap koo 50;
+>too output mee hamare 10
++10+30
+>yeeh eek cheez huaa second cheez kiyaa haii kii kiya mee idhar vlaue kiii jaga 
+mee kiya function bhii pass karsaktaa hoon kiyaaa 
+>bilkull kiya aap default paramter mee function pass karsaktee hoo kiiyaaa 
+>yahnnn pee eek fucntion pass karsaktaaa hon orr lets sayy mee pass kartaa hoon
+someValues
+>too kuch bii rakhooloo kuch effect naiinn padtaa haiii 
+>yahhnn pee mene directlyy return karleaa 100 orr yahann pee aap koo kiya karnaa
+haiii someVal() hamme execute karnaa haiii 
+>too ismee kiya aaigaa hamare 120 resultt hamaree aajaigaaa 
+>kiya aap log numebr hii pass karsaktee hoonn jii nain aap log kuchh bii pass 
+karsakteee hooo 
+>aab aap iskee andar aap normall value pass karnaa chatee hoo to kiyaa paass
+karoo gee aap a+b+c
+>aab aap kiya karogee a mee aap paass karogee first orr b mee middle or someVal 
+mee aap return kartee ho last
+>too aap iskoo executee kartee hooo too aap koo milljaigaa first middle or last
+>aap koo space wagaree denaa haii too aap yahann pee ap managee akrsaktee hoo
+space wagaree dekee 
+>aap koo space deke bhii dekh sakteee hooo
+>iss tareekee see aap chaoo too string pass karloo or nain too normall numebr 
+pass karlooo 
+>aap numebr pass karsakteee hoon or function bhii pass karsaktee hoo thats great
+>or iskkoo simplee kartaa hoonn orr hamm function leta hoon 
+or function kaa name haii main
+>orr iskee andar hamare doo paramter rehegii baiscally a,b
+>orr b kee andar hamm main() function pass kartahoon or mee return karlujnnnn
+>return kartahunnn a+b
+>main koo call karunn or paramter mee main hii pass karleaa 
+>
