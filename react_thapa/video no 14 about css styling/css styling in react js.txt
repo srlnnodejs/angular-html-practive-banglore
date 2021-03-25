@@ -1,0 +1,165 @@
+hello whatshaap guysss 
+>iss video mee ham dekhengee class vs className in react js in hindi
+>aab ham dekhengee kii css kee code koo ham kese include karee 
+>phehele mee my name is vinod ko style kar naa chatta hoon too kiya karunga
+kii mene pehele h1 tag koo style dena chaungaaa
+>too mee style kese dungaa kii agar mee index.html mee agar mee anchor 
+tag mee kuchh likhluuuu
+>agar mujhee anchor tag koo style karna hota too external stylee yaa too
+mee class karta ya too mee id likhtaaa iss tarahaa mee kartaaa 
+>mujhee yehh my name is vinod koo style karnaa haiii too kaisa karnaa haii
+chaloo dekhea
+>h1 mee hamme kiya karnaa haiii chalooo mee zoom karletaa hooon orr 
+contentEditablee koo hata deta hoon 
+>agar guyss agar mee h1 mee class=heading likh leaa too kiya hogaa 
+>too hamme koi error nain dekhai dega hame koi warning dekhai nain degaa
+>lakin hamme error dekhai de raha haiii guysss 
+>lakiinn usss error koo dekhi dene see pehele mee kuch style karkee dekhana
+chattaa huunn kii aap logo koo bohot maza  aajaiigaaa 
+>aap dekh saktee hoo kii src folder mee hamare paas index.css kaa eek file
+haiii 
+>uskkoo mee karletaa hunn copy orr hamme index.css koo jana haiii orr 
+hamesaa kee tarahhh hamme index.css mee jana haiii orr hamme likhnaa haii
+*{margin:0;padding:0};
+>orr eek cheez hamesa matt bhoolnaaa kii box-sizing:border-box
+>*{margin:0;padding:0;box-sizing:border-box};
+>joo css kartee thee hamm website karnee see pehele hamme samee yahann pee
+yahiii karnaa haiii bsss 
+>too guyss hamm joo heading copy kea thaa uss tarahh kee sseee guyss mee
+nee heading likhaa 
+>or color mee hexa code mee dedungaaa 
+.heading{
+color:#fa9191;}
+>aab perfect aap dekhsaktee hoo kii mujhee color dekhaii dee raha haii
+perfecttt 
+>.heading{
+color:#fa9191;
+text-align:center;
+text-transform:capitalize;
+font-weight:bold;
+}
+> too guyss hamee npm start karnee kaa jaruratt nain yehh automatiic start hoo
+jaiiigaa lakin guysss hamme yahnan pee koi difference dekhaii nain 
+deee rahahaiii 
+>dekhaii bhii kese degaa guyss kii hamm dusree pageee mee hamm kamm kar
+reeh haiii
+>abhii tak index.js pagee koo idea nain haiii kii koi index.css name kaa
+koii file haii 
+>too hamme index.js page koo hamee yaaad dilanaa haii kii guysss kii
+hamare index.css name kaa koi file exist kartaa haiii 
+>tooo aap ko kiyaa karnaa haii kii aap koo likhnaa haiiiitoo aap koo 
+kiya karnaa hiiii kii aap koo simplyyy aap koo index.css mee import 
+karleenaa haiii
+import'./index.css'
+>simplee ctrl+s save kartaa hoon orr refresh kartaa hoon orr guyss aap 
+dekhoo gee kii hamare output nain aarahahiii 
+koi nain guysss kyunn ouput nain aaraha haii dekheea 
+>dekheeteee haii kahann kiya hoo chukaa haiii 
+>agar mee console mee chaltaaa hooon orr yeahann mee dikhanna chattaa hoon
+>aab guyss aap dekhsaktee hoo guysss kuch samayy leaa  usneee kya ha
+lkiii mene jabb sublime text use karta thaa woo super fast haii but
+mene jabb see visual studio code use kartaa haoon woo slow haii 
+>mee open bhii kataaa hoon too guyss  sabhii whitee orr eek eek color font
+chagee hoo jarehee haii 
+>i thinkk kii vs code kaa speed itna acha nain haii too aggee mee eek video
+banaunngaa kii sublimee vs vs code
+>agar aap koo video dekhna hoo too aap koo nichee comment karkee jarur 
+btatanaa 
+>too hammmnee joo css add kea thaaa perfectly hamme dekhaii de raha haiii 
+> too hame eek cheez hamme dekhnaaa haii kii yah class hammne likhaa or
+css apply bhii hoo gaayatooo too hamare eek error dekhaii degaa kii
+wo error kiya haii joo hammee clearlyy dekhaii derahaa haiii 
+>yuehh bata raha haii kiii yehhh joo haiii woo invalid dom property haiii
+>kiya haii that is your class 
+>too react kiya haii kii woo subkuchh boltaaa haii kiyaa bol taa haiii
+kii kiya tumm className chatee hoo kii class name kaa hamml kuchh likh hii
+nainin sakteeee 
+>aab wooo class kyunn nain mann raha haiii 
+>too agge guysss hmme class component dekh reeh haiii too hamm aabhii
+functionall component dekh ree haii haii aab hamm class component dekh
+reeha haiii
+>too class hamare eek reserve keyword haii react kee paas hamare class
+key word haii jo reseervee key word haii react kee paas hamm uskkaa use
+nain karsakteee 
+>yahii hamm batanaa chatee thee idhar pehele mee jab html usee kartaa tha
+hamm simplyy key word class koo usee kartaaa thaaa 
+>aab wohii aap koo samajhnaa haii kii aap koo class nain likhnaa haii
+aap koo simplyy  className likhnaa haiii 
+>too react kee paas hamare class joo word haii woo reserve haii react kee
+pass orr bakii sab hamme theek haii hamme khali class koo changee karkee 
+hamme className likhanaa haiii
+>ham pehele html mee hamm class key word use kartee thee hamm css style add
+karnee kee lea buttt ham idhar className likhngeee 
+>again guyss yehh hamare attributee hota haii jsxka ismee againn joo
+pehela wordd haii hmare <h1 className="heading">
+>joo name hai woo uska first name joo haii woo small mee haii or uska
+joo second wordhaii uska name capital haiii
+>camelCase convension aap koo usekarnaa haiii
+>uskoo mee save kartaa hoon yaheaa pee dekoo guyss hamare idhar perfectly
+hamare load hoochukkaa haiiii
+>and woo joo error hamme dekhaii de raha hai woo hamme dkehaii nain deraha
+haiii 
+>kyunn kii ham perfectlyy hamm class name hammnee usekea haiii
+>iskoo meene orr perfectlyy mee likhsaktaa hoon orr hamare joo image hai
+uskoo mee div kee  andar mee likkhh saktaa haoon 
+>aisa nain kii hamm eek div kee andar dusraa div lesaktee haii kii nain
+>suree lesaktee haii hamm 
+>uskkoo biii hamm class name dedeta hoon uskoo mee name dedeta hoon
+image_div
+>ctrls save kartaa hooon orr hamme iskoo guyss hamme stylee karnaa haiii
+> index.css mee chaltaa haooon
+orr mee likhletaa haooon 
+>yahhann mee heading mee kiya kartaa haoon mee text-shadow mee use kartaa hoon
+or kiya kartaaa hoon mee horizonal ospect mee zero detaa haoon
+>orr mee 2px 4px blur dikhanaa chaunngaa orr hamare color hoogaa 
+>#ffe9c5 hamare corlor aana chaii haiii
+>orr hamare iamgess koo actually ham width dedeta hooon sabkoo by default
+hamme 200 px dedetaa haoon 
+>height dedeta hoon mee 150px
+?>kasia dikhtaaa haii yee orr marginn dedeta hoon uskoo mee auto dedeta hoon
+>.img_dev img{
+width:200px;
+height:150px;
+}
+>lets mee images kaa width koo 200 px banayaa hoon orr height koo 150px 
+banayaa hoon orr margin koo agar mee   auto kardetaa haoonn too takii
+hamae yeehhh  center mee dekhaii de right
+>ctrl+s save kartaa hoon lets sea guyss hamare kese dekhaii de raha haii
+>aap dekh saktee ho  guyss hamare ouput aaraha haii butt hamare pehela image
+koo koi farak hii nain pad raha haiiii
+>too pehela image ko farak nain pad raaha haii iskaa matlab by default
+mene image koo mene h1 kee niche likhleaaa hoon 
+>orr pehela imagee haii uskoo biii cut kartaaa hoon orr mee nichee pastee
+karletaa hoon 
+>ctrl+s save kartaa hoon perfect yeeh dekhoo guysss kii kitnaa perfectlyy
+hamme dekhaii dera haii butt guyss yehh hamee center mee dekhaii nain
+dee raha haiiii 
+>too aab mee kiya kartoaaa hoon hamm nee jo image div lea thaa uskoo mee
+karletaa haoon copy
+>orr upar chaltaaa hoon orr displayy kartaa haoon flex too lets sea guys
+hamare kese dikh raa haii perfectlyy dekhiii de raha haii 
+>orr jsutyfy content cneter likhataa hoon too guyss to phir bhii cneter 
+mee nain aayseee
+.img_div
+{
+display:flex;
+justify-content:flex;
+}
+>i think yeeh margin auto koo remove kartaa haoon or ctrl+s save kartaa hoon
+>aap dekh saktee hoo kitnaii bealutyfullyhamme dekhii dera ahiii 
+>agar meerea joo heading thaa uskoo mee agar easilyy me margin deta hoon
+uapr orr nichee see mee margin detaa hoon 50px 0px;
+to aap dekh saktee hoo kii marea margin bii aagaayaa
+>aab kitana beautifull hamme dekhaii deraha haii guysss 
+>letss sayy agar mee images koo width orr height mee set kardeta haoon
+>agr aap koo or space chii haii yahahnn pee kiya karengee aap aap margin
+mee orr thodaa increase karkee aap karsakeee hoo 70px
+>aap dekh saktee hoo aap koo inkee beech mee aap koo space mill chukaa haii
+>aab now guyss aap koo aab guyss aap koo bohot hii intrest aaraha hai
+kii hamm html css koo includd karchuudkkee hii react mee  
+>aab dekh saktee hoo kitnaa beautii full dekhaii dera haii ha
+>aab hamm next video mee ahmm dkehekngeekii kaissa hamm google font 
+ismee hamm add karnegeee 
+>apnii text ko orr bhii stylee karsakteee haiii
+>
+>
