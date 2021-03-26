@@ -1,0 +1,66 @@
+css project
+=================
+>too haam eek project banatee haii too kiyaa haii dekheeaa hamam jabb google kaa
+pagee open kartaa hoon to upar hamare eek icon dekhaii detaa haiii 
+>eek icon joo atta haii uss icon koo kese hamm iess projectt mee lagayengee
+ham iss project mee hamm dekhengeee 
+>too icon kese hamm show kartee haii kisi bhi websitee kee  title kee saath 
+hii hamare iconn show hota ahiii 
+>eeek baat bolunn hamm kisi bhii websitee see tesxt copyy karsaktee gaii
+lakinn 
+>hamm css koo usee karkee hamm restriction lagasaktee haii kii koi bhii user
+kissi websitee kaa text coppy nain karsaktaa haiii
+>woo bhii hamm iss project mee hamm sikheengee orr iss project mee hamm new
+dropdownnn menuu banayngee jooo ki pehelii dropdwon meenuu see kafii achaa hoga
+orr ussee bhii advanee bhii hogaa a
+>orr hamm kisi bhii websitee mee scroll baarr hamm dekh saktee haii kii scroll
+barr hamm kisi bhiii webistee mee hamm kese customizee karsaktee hiiii
+>hamm apnee pasandd kee scroll barr hamm karengee orr uskaa color bhii change
+karngee orr uskkaa bhii stylee bhii karengeee 
+>orr ismee hamm bohot sarii tranjistion kee property koo hamm dekhengeee 
+>orr hamm rotate kaa propertyy koo dekhengee hamm mouse over karkee hamm
+kese kisibhii imagee koo rotate karsaktee haii hamm dekhengeee 
+>iss projectt koo hamm bohott kuchh sikhengee subsee pehele mee open kartaa hoon
+text ediotrr sublimee text
+>subsee phele mee eek folder mee imagee copy karkee rakhaaa hoon 
+>dekhee hmee wo img folder open kartaa hoon too hamme imageess showw hoo raha
+haiii 
+>too yahaan pee mee eek folder banataa hoon neww file banataa haoon orr issi
+projectt mee hamm dekh ssaktee haii
+>mee new filee mee jakee mee open kartaa hoon index.html
+>  too phehlee hamm html kaa head head and body letee haii kiya hota hai
+dekhtee haiii
+>agar mee exampplee letaa hoon eek zen codingg mee hamm kamm karengee 
+too kiya karengee hamm too sublimee text kee andar behetar wayy kiya haii
+kii hamm tab kaa button hammm press karengeee 
+>iskee baad yahann pee meee examplee leta hoon orr mee eek div tag leta hoon
+>div tag leata hoon orr uskaa id rakhtaa hoon main 
+>orr uskii andar mee ul tag banataa hoon orr ul tagg kee andar mee list iteem
+banataa hoon 4 orr yehh joo list item 4 haii uskee andar mee a tag lekee
+uss a tagg kee andar mee image tag leta hoon 
+too mee zen codingg mee kese likhungaaa
+<body>
+div.main>ul>li*4>a>img
+</body>
+>ismee kiya hogaa kii mere eek mainn div hogaa orr uskee joo class hogii mainn 
+hogiiii
+>orr un order list banaungaa orr uss unorder list kee andar 4 list banaungaa
+>orr harr list item kee andar hamare eek anchor tag hogaa 
+>uskee andar mee eek imagee tagg rakunngaaa 
+> kyunn kii mee imagee koo as anchoor usee karungaaa 
+>dekheea tab kaa button presskea too kiya aagaya haii dekhe dekheaa
+>too dekkheea hammare kesa aaya hamm imit kee throughh hammsaree codiing
+kar rehe ahiiii
+>agar aap wese likhtee too aapkoo jsese bhii time lagtaaa 
+>aap koo yahii recomondded karungaa kii aap sabsee pehle aap yahii dekhlee kii
+hamm sabsee phele hamm kaisaa iskaa usee karteee haiiii
+>too aap koo emmit koo keses usee karnaa haii aap koo dekhna hogaa 
+>kiss tarahnn hamm emmit kaa syntaxx koo use karkee hamm coding ka speed 
+increasee karsakteee haiiii
+>hamm host banakeee youtubee kee channel kee andar hamm host karlea haii 
+hamm aap koo dekhaa saktee haii kii kaisa hamme milsaktaa haii
+> aap koo w3webschool.net kee andar hamme kese emitt koo usee karetee haii hamme
+mil jaingaa 
+>too yahann pee app koo sabb mil jaigaa 
+>yahann aap koo zen coding koo kese usee karteehaii sabb miljaingaa
+>

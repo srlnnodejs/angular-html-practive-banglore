@@ -1,0 +1,213 @@
+>good morning guyss hamm pichlee video mee hamnee dekha thaa kii kese ham
+project start karengee kese hamm kam start karengee hamare project kese dekhege
+too hamm isdhar coding likhlea haiii
+>joo mera titile hogaa woo hogaa w3webschool.net
+>mee yahann pee title dadeaa or browser mee open kartaaa hoon
+>too kisi bii pagee kee andar hamare icon hota haii orr mene aap koo batayaa
+thaa kii hamare joo icon hota haiii kise reheegaaa 
+>ham dekhengee ki hamm iss icon koo kese changee karssaktee haiiii
+>hamm previous class mee dekhethee hamare google kaa icon idhar show ho
+raha thaaa 
+>hamare head mee eek tag hota haii link or link joo haii koii bhii externall
+style sheet hotaa haii hamm idhr import karteee haiii
+><link rel="stylesheet" href="">
+>yehh joo haii hamaree kisivii externall style sheet hotaa haii css file
+hotaa haiii yahnnn pee joo likn karwajataa haii too yahannn pee hamm likhtee haii
+stylesheet 
+>jabb aap baat kartee hai icon kii too hamm bat kartee haiii icon
+><link rel="icon" href="img/small.png">
+>savee karkee mee browser koo refrehss karletaa haooonn 
+>yahhnnn pee dekhee ahmare icon changee hoo chukaa haii aa p koo nazar aaraha
+haii to boleea kiyaa aaya haiii
+>to aap nee dekhaa kiss tarahh kisi vii web pageee kee andar hamm iconn ko
+changee karsakteee haiiii 
+>mee project kee andar mee orr eek file detaa haoon orr uskaa name style.css deta 
+hoon 
+>jitna bhii style kam hamm udhar karnegeee 
+>orr mee usko mee head section meee linkk karwaadungaaa 
+><link rel="stylesheet" href="style.css">
+>dekheaa mee upar wala code mee kese usko meene link karwaa deaaa
+>dekheaa joo hamare doo link haii head section mee eek haii hamare icon koo
+changee karwaa nee kee leaa dusraa haii joo hamare style sheet koo andar lanee
+kee leaaa
+>extrernall css kee file koo yahann pee linkk karwaa ree he haiii
+>iss project mee hamm jitnaa kammm kareengee hamm external sheet mee hii
+hamm kamm karngeee 
+>inter nall orr inline css koo hamm use nain karngee eee
+>sabsee pehel mee body kee andar bana detaa haoon header yehh iss project mee
+>hamm html 5 kee standar koo use karngee naa kii html 4 koo koo usee karngeee 
+>orr header kee andar mee orr eek banataa haoon div tag
+>div kee joo id rakhtaa hoon orr meelikhtaa hoon div#top-header
+>too zen coding mee hamm likhree haiii div#top-header
+>yehhh mee sara emmit ko usee karraha haoon zoo shortcot waay mee mee 
+kamm krraha hoonjabb code likhkee mee tab button press kartoaa hoon too
+merea code aajtaa ahiiii
+>agar apa emmit nain use karrehehaii tooaap simlyy aap aisa type kardeee 
+>aab meeyahann pee letaa haoon img tag or img likhkee agar mee tab press
+kartaa haoon too maree image tag aajataa haiii
+><img src="" alt="">
+>orr imagee kaa batt karreehhaii orr hamare imagee kee folder kee andar
+eek file padi haii log ham usse leta ahaoonn 
+>usss logo koo uthaa taa haoon orr usskaa extension joo hota haii png
+><img src="img/logo.png" alt="">
+>rorr hamm alternatee dedetee haii jabb fileusko naa milee tooo alternative
+meekiyaa anne wala ahiii
+>toohamme yahann pee show hoo w3 web schoool.net show hooo
+<img src="img/logo.png" alt="w3webschool.net">
+>orr mee kuch kartaa haoonn joo mere imagee haii div tag kee bahar ele atta 
+hoon
+>orr iamge joo haii div kee bahar rakhataa haoon
+>jese bhii meene pehel pataya thaa pehele see bhii hamare html kee andar 
+orr css kee andar hamare by default kuchh marginaal padding hota ahiii
+>uss cheez see bachnee kee kee hamm kiya kartee haii hamm 
+starikk letee haiii*
+>starik kee andar hamm marginn joo zero set karletee haiii
+>padding bhii hamm zero karletee haiii
+*{
+margin:0;
+padding:0}
+>dekheea hammhare joo html ka tag hota hai usmee hamare koi html ka tagg 
+useenain keeaa haiii
+>orr hamm internall css kaa batt kartee haii too hamm imee tag leetee haii
+stylee
+>orr hamm stylee mee hamm css kaa code likhtee hiiaa
+>sabsee pehele  hamaree joo body haii uskaa mee background color change karletaa
+haoon color hamm rakhleetee haii or color code rakhleataa hoonn kuch darksaa
+color leletaa haoon @aaaaab or font family mee changee karletaa haoon 
+jitneee bhii hamare font aaigaa hamare body kee andar hamare changee hogii
+mee body kee andar jitnaa bhii leta haoonn joo h1 leta hooon or p letaa haoon
+sabkaa change nain karungaa orr sabkaa mee changee kartaa haoon 
+>jitnnaa bhiii bodyykee andar element aaigaee hamare uskee andar auto matic
+changee htaii jaiga9iiii
+>mee body kee andar ;likh raha haoon iss leaa 
+>font leleta hooon areal,helvetica,sans-serif
+>uskeee baad hamme iskoo saveekarrkee refersh kartaa haoon 
+>usse pehel hamare body wala code in css kese dikhraha haii
+body{
+background:#aaaaab;
+font-family:areal,helvetica,sans-serif;
+}
+>uskee baad mee savee karkee mee refreshh kartaa haoon brwoser mee dekheaa hamr
+browser mee kiya aaraha haiii
+> hamare background color bhiii changee hoo chukaa haiii imagee bhii set hoo
+chukaa haiii
+>orr uskee saath mara hoo imagee haiii uskee sathh schrooll barr bhii show 
+hoo rhaahiii
+>yhee joo imagee haii uskkiii height and width jada haiii 
+>or hamare joo style haii woo mill jaraha haii too mee kiya kartaaa hoon kii
+mee css kee anda rcomment pass kartaa haoon too hamme pata chalee kiya hoo
+rhaa haiii
+>hamm header banayngee  orr header mee mee id dungaa top
+>/*------------------header-----------*/
+>hamm jantee haii kii hamare joo header hai hammumseme id leathaa top-header
+>usss id koo mee set karletaaa haoon kuchh color joo color haii kiya
+lungaaa or semi columnn kaa use karletee haiii
+>orr joo width set karletaa hoon woo 100% mee rakhtaa hoon or height mee set kar
+leta  hoon 60px meee orr joo border botomm mee rakkhelleetaa hoon wwo leta hoon
+4px meesolid reed rakhtaa hoon naa red nain rakhtaa hoon mee or eek color
+rakhtaa hoon #d46224 yeh bhi rediss kaa eek coloor haiii 
+> 
+>#top-header{
+background:#202326;
+width:100%;
+height:60px;
+border-bottom:4px solid #d46224;
+}
+>aab mee browser mee refreshhh karleta haoon dekha keiya araha haiii
+>dekheaa yheaann pee yehh hamare header show hoo rhaa haii orr nichee hamare
+eekkborder bhiii show hoo rhaa haiii
+>yehh mare top header banayaa haii aab hamm atee haiii
+dekhea ab tak kaa css code hamm likh leteee 
+style.css
+===========
+*{
+margin:0;
+padding:0;
+}
+body{
+background:#aaaaab;
+font-family:areal,helvetica,sans-serif;
+}
+/*-------------------------header---------*/
+#top-header{
+background:#202326;
+widht:100%;
+height:100%;
+border-bottom:4px solid #d46224;
+}
+#header img{
+height:70px;
+widht:300px;
+margin:15px 20px;
+}
+>aab me imagee kee taraff aaraha hoon too marere joo image haii meeuskoo tyle
+kartaa haoon
+use pehele index.html bii likh letaa hooon
+index.html
+===========
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="UTF-8">
+	<title>w3 webschool </title>
+	<link rel="icon" hre="img/small.png">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+	<div id=top-header"></div>
+	<img src="img/logo.png" alt="w3 webschool.net">
+	</header>
+</body>
+</html>
+>aab hamme headr mee denin haii id yahann pee mee id deta honn header agar aap
+id nain deta ahii
+>orr abhi mee css mee jatahoon
+>hamm likhengee kii joo merea header haii uskee andar joo iamge haii 
+sabsee phele hamm uskii height hamm uskee set karletee haiiii
+>height hamm rakhtee haii 70px
+>uskaa height kmee 70px rakhleetaa haoon kyunn kee height or widthh hamare jada
+showo hoo rahiithiii 
+>widhtt mee set karletaa hoon 300px rakhelata hoon
+>uskee baad mee uskaa margin set karletaa hoon margin likhtaa hoon
+15px 20px
+>margin hamm kese lete haii kii agar hamare 4 valuess hota haii too kiya hota
+haii 3 value hota haii too kiya hota haiii yehh details mee discussion hoo
+chukaa haii hamare 
+>aab mee save karkee mee refresh kartaa haonn dekhea hamare kiyaa aaraha haii
+> #header img{
+height:70px;
+widht:300px;
+margin:15px 20px;
+}
+>aab mee save karkee mee refresh kartaa hoon 
+>too yhee dekheaa hamare imagee kese achee tareeke see show hoo rahaii 
+>yaanann tak  hammnee yahh kea haii kii hammnee eek headerr banayaa
+>phir hamm header kee andar hamm div tag banayaa 
+>uskee mee kuchh color set keaa uskaa border set kea  meene 
+>yahann pee ham simple saa work kre rehe haii 
+toohmare css kese hona wala haii abhii dekhea
+
+
+style.css
+===========
+*{
+margin:0;
+padding:0;
+}
+body{
+background:#aaaaab;
+font-family:areal,helvetica,sans-serif;
+}
+/*-------------------------header---------*/
+#top-header{
+background:#202326;
+widht:100%;
+height:100%;
+border-bottom:4px solid #d46224;
+}
+#header img{
+height:70px;
+widht:300px;
+margin:15px 20px;
+}
