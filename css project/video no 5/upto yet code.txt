@@ -1,0 +1,1092 @@
+>good morning guyss hamm pichlee video mee hamnee dekha thaa kii kese ham
+project start karengee kese hamm kam start karengee hamare project kese dekhege
+too hamm isdhar coding likhlea haiii
+>joo mera titile hogaa woo hogaa w3webschool.net
+>mee yahann pee title dadeaa or browser mee open kartaaa hoon
+>too kisi bii pagee kee andar hamare icon hota haii orr mene aap koo batayaa
+thaa kii hamare joo icon hota haiii kise reheegaaa 
+>ham dekhengee ki hamm iss icon koo kese changee karssaktee haiiii
+>hamm previous class mee dekhethee hamare google kaa icon idhar show ho
+raha thaaa 
+>hamare head mee eek tag hota haii link or link joo haii koii bhii externall
+style sheet hotaa haii hamm idhr import karteee haiii
+><link rel="stylesheet" href="">
+>yehh joo haii hamaree kisivii externall style sheet hotaa haii css file
+hotaa haiii yahnnn pee joo likn karwajataa haii too yahannn pee hamm likhtee haii
+stylesheet 
+>jabb aap baat kartee hai icon kii too hamm bat kartee haiii icon
+><link rel="icon" href="img/small.png">
+>savee karkee mee browser koo refrehss karletaa haooonn 
+>yahhnnn pee dekhee ahmare icon changee hoo chukaa haii aa p koo nazar aaraha
+haii to boleea kiyaa aaya haiii
+>to aap nee dekhaa kiss tarahh kisi vii web pageee kee andar hamm iconn ko
+changee karsakteee haiiii 
+>mee project kee andar mee orr eek file detaa haoon orr uskaa name style.css deta 
+hoon 
+>jitna bhii style kam hamm udhar karnegeee 
+>orr mee usko mee head section meee linkk karwaadungaaa 
+><link rel="stylesheet" href="style.css">
+>dekheaa mee upar wala code mee kese usko meene link karwaa deaaa
+>dekheaa joo hamare doo link haii head section mee eek haii hamare icon koo
+changee karwaa nee kee leaa dusraa haii joo hamare style sheet koo andar lanee
+kee leaaa
+>extrernall css kee file koo yahann pee linkk karwaa ree he haiii
+>iss project mee hamm jitnaa kammm kareengee hamm external sheet mee hii
+hamm kamm karngeee 
+>inter nall orr inline css koo hamm use nain karngee eee
+>sabsee pehel mee body kee andar bana detaa haoon header yehh iss project mee
+>hamm html 5 kee standar koo use karngee naa kii html 4 koo koo usee karngeee 
+>orr header kee andar mee orr eek banataa haoon div tag
+>div kee joo id rakhtaa hoon orr meelikhtaa hoon div#top-header
+>too zen coding mee hamm likhree haiii div#top-header
+>yehhh mee sara emmit ko usee karraha haoon zoo shortcot waay mee mee 
+kamm krraha hoonjabb code likhkee mee tab button press kartoaa hoon too
+merea code aajtaa ahiiii
+>agar apa emmit nain use karrehehaii tooaap simlyy aap aisa type kardeee 
+>aab meeyahann pee letaa haoon img tag or img likhkee agar mee tab press
+kartaa haoon too maree image tag aajataa haiii
+><img src="" alt="">
+>orr imagee kaa batt karreehhaii orr hamare imagee kee folder kee andar
+eek file padi haii log ham usse leta ahaoonn 
+>usss logo koo uthaa taa haoon orr usskaa extension joo hota haii png
+><img src="img/logo.png" alt="">
+>rorr hamm alternatee dedetee haii jabb fileusko naa milee tooo alternative
+meekiyaa anne wala ahiii
+>toohamme yahann pee show hoo w3 web schoool.net show hooo
+<img src="img/logo.png" alt="w3webschool.net">
+>orr mee kuch kartaa haoonn joo mere imagee haii div tag kee bahar ele atta 
+hoon
+>orr iamge joo haii div kee bahar rakhataa haoon
+>jese bhii meene pehel pataya thaa pehele see bhii hamare html kee andar 
+orr css kee andar hamare by default kuchh marginaal padding hota ahiii
+>uss cheez see bachnee kee kee hamm kiya kartee haii hamm 
+starikk letee haiii*
+>starik kee andar hamm marginn joo zero set karletee haiii
+>padding bhii hamm zero karletee haiii
+*{
+margin:0;
+padding:0}
+>dekheea hammhare joo html ka tag hota hai usmee hamare koi html ka tagg 
+useenain keeaa haiii
+>orr hamm internall css kaa batt kartee haii too hamm imee tag leetee haii
+stylee
+>orr hamm stylee mee hamm css kaa code likhtee hiiaa
+>sabsee pehele  hamaree joo body haii uskaa mee background color change karletaa
+haoon color hamm rakhleetee haii or color code rakhleataa hoonn kuch darksaa
+color leletaa haoon @aaaaab or font family mee changee karletaa haoon 
+jitneee bhii hamare font aaigaa hamare body kee andar hamare changee hogii
+mee body kee andar jitnaa bhii leta haoonn joo h1 leta hooon or p letaa haoon
+sabkaa change nain karungaa orr sabkaa mee changee kartaa haoon 
+>jitnnaa bhiii bodyykee andar element aaigaee hamare uskee andar auto matic
+changee htaii jaiga9iiii
+>mee body kee andar ;likh raha haoon iss leaa 
+>font leleta hooon areal,helvetica,sans-serif
+>uskeee baad hamme iskoo saveekarrkee refersh kartaa haoon 
+>usse pehel hamare body wala code in css kese dikhraha haii
+body{
+background:#aaaaab;
+font-family:areal,helvetica,sans-serif;
+}
+>uskee baad mee savee karkee mee refreshh kartaa haoon brwoser mee dekheaa hamr
+browser mee kiya aaraha haiii
+> hamare background color bhiii changee hoo chukaa haiii imagee bhii set hoo
+chukaa haiii
+>orr uskee saath mara hoo imagee haiii uskee sathh schrooll barr bhii show 
+hoo rhaahiii
+>yhee joo imagee haii uskkiii height and width jada haiii 
+>or hamare joo style haii woo mill jaraha haii too mee kiya kartaaa hoon kii
+mee css kee anda rcomment pass kartaa haoon too hamme pata chalee kiya hoo
+rhaa haiii
+>hamm header banayngee  orr header mee mee id dungaa top
+>/*------------------header-----------*/
+>hamm jantee haii kii hamare joo header hai hammumseme id leathaa top-header
+>usss id koo mee set karletaaa haoon kuchh color joo color haii kiya
+lungaaa or semi columnn kaa use karletee haiii
+>orr joo width set karletaa hoon woo 100% mee rakhtaa hoon or height mee set kar
+leta  hoon 60px meee orr joo border botomm mee rakkhelleetaa hoon wwo leta hoon
+4px meesolid reed rakhtaa hoon naa red nain rakhtaa hoon mee or eek color
+rakhtaa hoon #d46224 yeh bhi rediss kaa eek coloor haiii 
+> 
+>#top-header{
+background:#202326;
+width:100%;
+height:60px;
+border-bottom:4px solid #d46224;
+}
+>aab mee browser mee refreshhh karleta haoon dekha keiya araha haiii
+>dekheaa yheaann pee yehh hamare header show hoo rhaa haii orr nichee hamare
+eekkborder bhiii show hoo rhaa haiii
+>yehh mare top header banayaa haii aab hamm atee haiii
+dekhea ab tak kaa css code hamm likh leteee 
+style.css
+===========
+*{
+margin:0;
+padding:0;
+}
+body{
+background:#aaaaab;
+font-family:areal,helvetica,sans-serif;
+}
+/*-------------------------header---------*/
+#top-header{
+background:#202326;
+widht:100%;
+height:100%;
+border-bottom:4px solid #d46224;
+}
+#header img{
+height:70px;
+widht:300px;
+margin:15px 20px;
+}
+>aab me imagee kee taraff aaraha hoon too marere joo image haii meeuskoo tyle
+kartaa haoon
+use pehele index.html bii likh letaa hooon
+index.html
+===========
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="UTF-8">
+	<title>w3 webschool </title>
+	<link rel="icon" hre="img/small.png">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+	<div id=top-header"></div>
+	<img src="img/logo.png" alt="w3 webschool.net">
+	</header>
+</body>
+</html>
+>aab hamme headr mee denin haii id yahann pee mee id deta honn header agar aap
+id nain deta ahii
+>orr abhi mee css mee jatahoon
+>hamm likhengee kii joo merea header haii uskee andar joo iamge haii 
+sabsee phele hamm uskii height hamm uskee set karletee haiiii
+>height hamm rakhtee haii 70px
+>uskaa height kmee 70px rakhleetaa haoon kyunn kee height or widthh hamare jada
+showo hoo rahiithiii 
+>widhtt mee set karletaa hoon 300px rakhelata hoon
+>uskee baad mee uskaa margin set karletaa hoon margin likhtaa hoon
+15px 20px
+>margin hamm kese lete haii kii agar hamare 4 valuess hota haii too kiya hota
+haii 3 value hota haii too kiya hota haiii yehh details mee discussion hoo
+chukaa haii hamare 
+>aab mee save karkee mee refresh kartaa haonn dekhea hamare kiyaa aaraha haii
+> #header img{
+height:70px;
+widht:300px;
+margin:15px 20px;
+}
+>aab mee save karkee mee refresh kartaa hoon 
+>too yhee dekheaa hamare imagee kese achee tareeke see show hoo rahaii 
+>yaanann tak  hammnee yahh kea haii kii hammnee eek headerr banayaa
+>phir hamm header kee andar hamm div tag banayaa 
+>uskee mee kuchh color set keaa uskaa border set kea  meene 
+>yahann pee ham simple saa work kre rehe haii 
+toohmare css kese hona wala haii abhii dekhea
+
+
+style.css
+===========
+*{
+margin:0;
+padding:0;
+}
+body{
+background:#aaaaab;
+font-family:areal,helvetica,sans-serif;
+}
+/*-------------------------header---------*/
+#top-header{
+background:#202326;
+widht:100%;
+height:100%;
+border-bottom:4px solid #d46224;
+}
+#header img{
+height:70px;
+widht:300px;
+margin:15px 20px;
+}
+video no 3 about navigations
+============================
+hamare joo previous class tha usmee hamm basic kaa joo template banayaa tha
+ismee kiya kea thaa hammenn eek logo lea thaaa  eek header kee andar
+>useek baad hamm aayengee navigation mee aajayengeee 
+>html 5 kee standard koo lee raha hoon ismee mee letaa hoon navigation
+>mee zen coding mee letaa hoon nav#nav usss navigation kee andar mee orr 
+eek div tag leat hoon 
+>uss div kee andar joo id hogii uskoo letaa haoon nav orr mee tab press kartahoon
+too dekehaa
+to ham lea zen coding mee 
+nav#nav>div>#nav-menu orr aab mee uskee upar mee tab press kartaa hoon too 
+hamare kiya attta haii dekheaa
+><nav id="nav">
+<div id="nav-menu"></div>
+
+</nav>
+
+>yahnaapee menee eek navigation leaa uss navigatgion kee id mene nav rakhiii
+>uskee andar mene eek div tag lea uskaa id mene nav-menu rakhi haiii
+>uss nav kee andar mee kiya kartaa hoon  
+eek ul list leta hoon uskee andar mee 6 list tag letaa haoon uss list item kee
+andar mee anchor tag leekee tab press kartaa hoon kiya aarah ahiii dekhe dosttoo
+>ul>li*6 
+>dekha kiya aaya ouput mee dkjheea
+<nav id="nav">
+<div id="nav-menu"></div>
+ 	<ul>
+		<li><a href="#"></a></li>
+		
+		<li><a href=""></a></li>
+		
+		<li><a href=""></a></li>
+		
+		<li><a href=""></a></li>
+		
+		<li><a href=""></a></li>
+		
+		<li><a href=""></a></li>
+		
+		<li><a href=""></a></li>
+		
+	</ul>
+</nav>
+>too hamare un order list haii basicc coding starndar hamare hochukaa haiii
+>filal mere href kaa joo value haii uskoo mee demo dedeta hooon
+>uskee baad mee joo list wagaree haii usmee likhtaa haoon home,courses,tips 
+and tricks,projects,About,Contact
+>uskoo save kartaa hoon orr browser mee run kartaa hoon too dekeha kiya araha 
+haiii 
+<nav id="nav">
+<div id="nav-menu"></div>
+ 	<ul>
+		<li><a href="#">home</a></li>
+		<li><a href="#">courses</a></li>
+		<li><a href="#">tips and tricks</a></li>
+		<li><a href="#">projects</a></li>
+		<li><a href="#">about</a></li>
+		<li><a href="#">contact</a></li>
+	</ul>
+</nav>
+>kuch browser mee iss tarahh yahann pee show hoo rahii haiiii
+>aab hamare joo courses haii uss courses kee andar mee sub menuu 
+rekhengee kiya rakhengee dekheeaa 
+> sub menuu kee lea hamm nee previouss video thaa usmee hamm sub menu banayaa
+thaaa 
+>yehh joo courses haii usmee hamm banatee haii sub menuu yahann pee hamm 
+sub menu kee lea mee pehle mee letaa haoon ul tag orr ul tag kee andar mee
+sub ,menu leta hoon abhii kee lee li tag
+>li tag kee andar mee leletaa hoon #key uskee baad mee kiya kartaa hoon 
+>eek lik kee andar mee leta hoon web designing, web development,uskee baad mee
+letaa hoon otherss
+>hamm iss leaa hamm likhrahaa haoon hamm dropdown menuu banayngee orr usmee 
+thodii bhiii mistakee hogii yehh kam nain karegaaa 
+>ham list kee andar hamm un order list banayaa haii uskee andar hammare teen
+list banayaa haii 
+too kese dikh raha haii chaloo dekhea
+<nav id="nav">
+<div id="nav-menu"></div>
+ 	<ul>
+		<li><a href="#">home</a></li>
+		<li><a href="#">courses</a></li>
+			<ul>
+			<li><a href="#">web designing </a></li>
+			<li><a href="#">web development</a></li>
+			<li><a href="#">others</a></li>
+			</ul>
+		<li><a href="#">tips and tricks</a></li>
+		<li><a href="#">projects</a></li>
+		<li><a href="#">about</a></li>
+		<li><a href="#">contact</a></li>
+	</ul>
+</nav>
+>too li hamare yahann pee start hoo harah ahii orr end ho rha haii 
+>aab meree web designing haii uskee andar mee kuchh orr course leletaa haooon
+>agar mee web designing kee andar mee orr eek un order list leletaa haoon
+orr uskee andar mee order list leletaa haoon
+>href mee mene # leletaa hoon uskee baad mee likhleataa hooon html,css,jquery,
+bootstrap,foundation
+>yehh joo mene likhaa haii web designing kee andar mee same karletaa hoon
+web development kee andar 
+too hamare code kaisa haaii aabhii dekheaa 
+>
+<nav id="nav">
+<div id="nav-menu"></div>
+ 	<ul>
+		<li><a href="#">home</a></li>
+		<li><a href="#">courses</a></li>
+			<ul>
+			<li><a href="#">web designing </a></li>
+				<ul>
+					<li a href="#">html</li>
+					<li a href="#">css</li>
+					<li a href="#">javascript</li>
+					<li a href="#">jquery</li>
+					<li a href="#">bootstrap</li>
+				</ul>
+			<li><a href="#">web development</a></li>
+			<li><a href="#">others</a></li>
+			</ul>
+		<li><a href="#">tips and tricks</a></li>
+		<li><a href="#">projects</a></li>
+		<li><a href="#">about</a></li>
+		<li><a href="#">contact</a></li>
+	</ul>
+</nav>
+>eek web development kee andar mee ul tag banataa hoon usss ul tag kee andar
+mee eek list item banataa hoon 
+>web devleopment kee andar mee oor eek unorder list leta hoon uskee andar
+mee list leletaa hoon orr list item mee iskee andar mee 6 leletaa haoon 
+>ukkee andar mee anchorr tag leletaa haoon 
+>ul>li*6>a
+>too meee unorder list leletaa hoon uskee andar mee 6 list leletaa hoon 
+uskee andar mee anchor tag leletaa hoon orr 6 list leleta hoon
+>presss kartaa hooon tooo hamare aajataa haii  dekha agaya haii hamare 
+orr 6 unorder list aap dekh saktee hooo
+>orr ham hreff kee andar hamm demo link # leletaa hoon 
+>uskee baad mee likh letaa hoon
+>href kee andr mee likh leta hoon 
+java script
+>java script,jquery,php,wordpress,joomla,asp.net
+>too hamare code kaisa aaiga dekhea
+>
+<nav id="nav">
+<div id="nav-menu"></div>
+ 	<ul>
+		<li><a href="#">home</a></li>
+		<li><a href="#">courses</a></li>
+			<ul>
+			<li><a href="#">web designing </a></li>
+				<ul>
+					<li a href="#">html</li>
+					<li a href="#">css</li>
+					<li a href="#">javascript</li>
+					<li a href="#">jquery</li>
+					<li a href="#">bootstrap</li>
+				</ul>
+			<li><a href="#">web development</a>
+				<ul>
+					<li a href="#">java script</li>
+					<li a href="#">jquery</li>
+					<li a href="#">php</li>
+					<li a href="#">wordpress</li>
+					<li a href="#">asp.net</li>
+				</ul>
+			</li>
+			<li><a href="#">others</a></li>
+			</ul>
+		<li><a href="#">tips and tricks</a></li>
+		<li><a href="#">projects</a></li>
+		<li><a href="#">about</a></li>
+		<li><a href="#">contact</a></li>
+	</ul>
+</nav>
+>agar mee browser mee refresh kartaa hooon to dekhtaa hoon too mere joo file haii
+kaisa dekhaii deraha haiiii
+>or other mee hamm kiya karengee hamm
+ul>li*5>a 
+>leke hamm leletee haii tookiyaa aaigaa 
+>woo joo anchorr tag link leta hoon woo # tag leletaa hoon 
+>orr uskee andar mee leletaa hon graphicss uskee baad mee leletaa hoon 
+ms office ,text editor, sql server ,oracle
+>uskkoo mee save kartaa hooon  yaeehh sara kii meene otherss kee andr kuchh
+orr item lea haiii 
+>too hmare code kese dikh raha haii dekeheea
+>
+<nav id="nav">
+<div id="nav-menu"></div>
+ 	<ul>
+		<li><a href="#">home</a></li>
+		<li><a href="#">courses</a></li>
+			<ul>
+			<li><a href="#">web designing </a></li>
+				<ul>
+					<li a href="#">html</li>
+					<li a href="#">css</li>
+					<li a href="#">javascript</li>
+					<li a href="#">jquery</li>
+					<li a href="#">bootstrap</li>
+				</ul>
+			<li><a href="#">web development</a>
+				<ul>
+					<li a href="#">java script</li>
+					<li a href="#">jquery</li>
+					<li a href="#">php</li>
+					<li a href="#">wordpress</li>
+					<li a href="#">asp.net</li>
+				</ul>
+			</li>
+			<li><a href="#">others</a>
+				
+				<ul>
+					<li a href="#">graphics</li>
+					<li a href="#">ms office</li>
+					<li a href="#">text editor</li>
+					<li a href="#">sql server</li>
+					<li a href="#">oracle</li>
+				</ul>	
+				</li>
+			</ul>
+		<li><a href="#">tips and tricks</a></li>
+		<li><a href="#">projects</a></li>
+		<li><a href="#">about</a></li>
+		<li><a href="#">contact</a></li>
+	</ul>
+</nav>
+>aab mee project kee andar kuchh leletaa hoon ul
+>or ul kee andar mee eek list item banataa hoon woo 5 hii banataa hoon
+>uskee baad mee 7 anchorr tagg leleta hoon sam ussi tara  hiii
+>wahann pee likh ketaa hoon # sign
+uskee andr mee likhletaa hoon css java script  jquery uskee baad likhletaa hoon
+jquery orr php orr asp orr save karkee browser mee refressh kartaa hoon tood dekhea
+hamare kiya aa raha haii 
+too mara code kese hogaa dekhea
+<nav id="nav">
+<div id="nav-menu"></div>
+ 	<ul>
+		<li><a href="#">home</a></li>
+		<li><a href="#">courses</a></li>
+			<ul>
+			<li><a href="#">web designing </a></li>
+				<ul>
+					<li a href="#">html</li>
+					<li a href="#">css</li>
+					<li a href="#">javascript</li>
+					<li a href="#">jquery</li>
+					<li a href="#">bootstrap</li>
+				</ul>
+			<li><a href="#">web development</a>
+				<ul>
+					<li a href="#">java script</li>
+					<li a href="#">jquery</li>
+					<li a href="#">php</li>
+					<li a href="#">wordpress</li>
+					<li a href="#">asp.net</li>
+				</ul>
+			</li>
+			<li><a href="#">others</a>
+				
+				<ul>
+					<li a href="#">graphics</li>
+					<li a href="#">ms office</li>
+					<li a href="#">text editor</li>
+					<li a href="#">sql server</li>
+					<li a href="#">oracle</li>
+				</ul>	
+				</li>
+			</ul>
+		<li><a href="#">tips and tricks</a></li>
+		<li><a href="#">projects</a>
+					<ul>
+					<li a href="#">css</li>
+					<li a href="#">java script</li>
+					<li a href="#">jquery</li>
+					<li a href="#">php</li>
+					<li a href="#">asp</li>
+				</ul>	
+			</li>
+		<li><a href="#">about</a></li>
+		<li><a href="#">contact</a></li>
+	</ul>
+</nav>
+
+too aisa hamare kuchh main manu haii uskee andar hamar kuchh subb menu haii
+>too hamm iss code nav bar koo main html kee andar daldetee haiii 
+index.html
+===========
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="UTF-8">
+	<title>w3 webschool </title>
+	<link rel="icon" hre="img/small.png">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+	<div id=top-header"></div>
+	<img src="img/logo.png" alt="w3 webschool.net">
+	</header>
+	<nav id="nav">
+<div id="nav-menu"></div>
+ 	<ul>
+		<li><a href="#">home</a></li>
+		<li><a href="#">courses</a></li>
+			<ul>
+			<li><a href="#">web designing </a></li>
+				<ul>
+					<li a href="#">html</li>
+					<li a href="#">css</li>
+					<li a href="#">javascript</li>
+					<li a href="#">jquery</li>
+					<li a href="#">bootstrap</li>
+				</ul>
+			<li><a href="#">web development</a>
+				<ul>
+					<li a href="#">java script</li>
+					<li a href="#">jquery</li>
+					<li a href="#">php</li>
+					<li a href="#">wordpress</li>
+					<li a href="#">asp.net</li>
+				</ul>
+			</li>
+			<li><a href="#">others</a>
+				
+				<ul>
+					<li a href="#">graphics</li>
+					<li a href="#">ms office</li>
+					<li a href="#">text editor</li>
+					<li a href="#">sql server</li>
+					<li a href="#">oracle</li>
+				</ul>	
+				</li>
+			</ul>
+		<li><a href="#">tips and tricks</a></li>
+		<li><a href="#">projects</a>
+					<ul>
+					<li a href="#">css</li>
+					<li a href="#">java script</li>
+					<li a href="#">jquery</li>
+					<li a href="#">php</li>
+					<li a href="#">asp</li>
+				</ul>	
+			</li>
+		<li><a href="#">about</a></li>
+		<li><a href="#">contact</a></li>
+	</ul>
+</nav>
+
+</body>
+</html>
+>iskaa joo sytling karngee ham css kee andar rehekee hamm styleeing karngee
+>html kaa basic structure joo bana lea haii 
+==============================================================================
+video no 4
+=============================================================================
+  previous class mee hamnee joo designing bana deathaa html kee andar
+hamm aab uskaa designing banayengeee 
+>hamare joo header haii uskee baad mee eek comments leta hon css file
+mee hamm style.css file open kartee haiii
+>
+
+style.css
+===========
+*{
+margin:0;
+padding:0;
+}
+body{
+background:#aaaaab;
+font-family:areal,helvetica,sans-serif;
+}
+/*-------------------------header---------*/
+#top-header{
+background:#202326;
+widht:100%;
+height:100%;
+border-bottom:4px solid #d46224;
+}
+#header img{
+height:70px;
+widht:300px;
+margin:15px 20px;
+}
+hamare code aab itnaa likhaa haiii
+>uskee baad hamm letee haii navigatgion joo dropdown meenu bananee jaree haii
+woo navigation kee andar hamm banayngee 
+>hamm navigation koo header kee andar hii le saktee haii or alag bhii lesaktee
+haiii
+>/*============navigation================*/
+>sabsee pehele hamm hamare id koo call kartee ahiiii
+>aap dekh saktee haii hamm navbar banayathaa usmee hamm id dea thaa nav namm 
+kaa
+>id nav menu namm kaa dea thaa hammnnee
+>uskaa background color hotaa haii hamm uskaa blue color rakhleetee haiii
+>uskaa code meee likhletaa hoon #4a66a0
+>background:#4a66a0
+>uskee baad uskee hamm width joo rakhtee haii woo 100%rakhtee haiii
+>uskee baad mee hight joo rakhtaa hoon 44px;
+>too hamare code kese dekhega
+#nav{
+background:#4a66a0;
+width:100%;
+height:44px;
+}
+>yeh mene main div kee andar orr eek div banayaa thaa 
+> uskaa joo background color hamm wahii rakhtaa hoon
+> uskaa hamm hight bhii set karletee haiii 41 px; too mere nav kaa value 44 px
+>aab menu menu mee hamm height ham thoda kamm kaltee haiii
+>hamm display blockk bhii karletee hai orr border set karltee haii 1 px solid
+#080808 orr border rakhttaa hoon  
+>width rakhtaa hoon auto
+>save karkee mee browser mee refresh kataa hoon 
+>dekheaa ;kese show hoo rha haiii
+>mene navigation banayaa thaa uskaa background color set kea haiii 
+>aab hamm list item koo hamm stylee kartee haii wo un order list haii 
+>uskoo hamm styling kar rehe haiiii
+>too hamaree nav-menu kese aaraha haiii dekheaa
+#nav-menu{
+background:#4a66a0l;
+height:41px;
+display:block;
+border:1px solid #080808;
+width:auto;
+}
+>uskee baad meene eek selectorr letaa hoon mene 
+>uskee baad mene #nav-menu.align-center>ul {} leta hoon css3 kaa standard koo
+letaa hoon meene
+>aap greater then signn usee kar rehe haii too theek haii nain bhii kar rehe 
+too theek haii
+>uskee andar joo ul tab lea joo usmee jitnee bhiiii text hogaa woo usee cneter 
+kardegaa 
+>too likhlengee hammm
+text-align:center;
+>too hamare code kaisa hogaa
+
+
+#nav-menu.align-center>ul{
+text-align:center;
+}
+
+>uskee baad mee likhtaa hoon joo mereaa nev menuu haiii jitnee bhii hamare 
+list haii woo nav menuu mee aayee
+>#nav-menu{}
+>dkheaa haii hamare joo nav kee andr hamare div thaa hmm uskee id dea thaa
+nav-menu
+>uss nav menuu kee andar hamare joo ul tag haii hamm uskoo lete haii orr 
+usmee joo li tag haii ham uskoo bhii letee  haiii
+>usmee joo linkk underlinee atthii haii uskoo mee khatamm kartaa hoon
+>list-style:none kardetee haii too underline chala jaigaaa
+>uskke bad hamm usko float:left karletee haii
+>uskee baad mee uskoo karletaa haoon diplayy inlinee karletee haiii
+too dekha 
+>uskee bad mee  uskee postion rakhtaa hoon relative
+>kyunn kee mare main ul tag haii uskee andar li haii jab mee li kaa position
+relative rakhunngaa  too kiya hogaa 
+>uskee andar hamare joo sub item hogee hamm uskee position absulute rakhengee
+>aab hamm refreshh kartee haii too dekhtee haii kii yaa aa rhah ahiii 
+>aab dekheaa hamare nazsar aarha haii kii joo hamnee udhar banayaa thaa
+>hamnee aab upar ham main menu ko hii styling kea haiii
+>ab hamm sab menu koo bhii atee haiii
+>
+#nav-menu>ul>li{
+list-style:none;
+float:left;
+display:inline-block;
+position:relative;
+}
+
+too hamare pura css code kese hoga dekhee a
+
+style.css
+===========
+*{
+margin:0;
+padding:0;
+}
+body{
+background:#aaaaab;
+font-family:areal,helvetica,sans-serif;
+}
+/*-------------------------header---------*/
+#top-header{
+background:#202326;
+widht:100%;
+height:100%;
+border-bottom:4px solid #d46224;
+}
+#header img{
+height:70px;
+widht:300px;
+margin:15px 20px;
+}
+
+#nav{
+background:#4a66a0;
+width:100%;
+height:44px;
+}
+
+#nav-menu.align-center>ul{
+text-align:center;
+}
+
+#nav-menu>ul>li{
+list-style:none;
+float:left;
+display:inline-block;
+position:relative;
+}
+sabsee pehel mere a tag haii uskoo mee set kartaa hoon kese karungaa
+#nav-menu iskee andar hamare joo line height haii uskoo 1 lelete ahii
+>uskee baad issi nav menu koo lete huee uskee joo sub item list kee 
+align center karnee kee lea kiya hua kii mere joo main ul haii uskaa text
+mene cneter karlea haoon or uskee baad joo mera joo sub ul hai uskoo mene
+center karletaa hoon
+>uskee text-align hamm leletee ahii leftt
+to code kese likhtee haii hamm
+
+#nav-menu.align-center ul ul{
+text-align:left;
+}
+>orr hamare joo #nav-menu haii uskee andar hamare ul tag haii uskee andar hamare
+li haii or li kee andar hamare a tag haii aab hamm a tag koo hamm styling
+kartee haiii
+>display block mee hooo too dislay:block
+>or position bhiii uskee relative hoo 
+>uskee joo text-align hogaa woo cneter mee shoo hoo
+>uskee joo text decoration hoo woo by default underline hota haiii hamm uskee
+text decoration none karletee haiiii
+> uskee font-weight mee set karletaa hoon 700 pee 
+>uskaa joo font sizee mee sert karletaa hoon 17 px mee 
+>uskaa hamm border right hamm dedetee haii 1px solid koi darksa color dedetee hai
+>1px solid #080808
+>uskee joo text color hogaa hamare 
+color:#fff;
+>uskee baad ham padding hamm dete haii 12px 30px;
+>padding kiya hota haii hamm previous class mee ham details discuss karchukee hai
+>aab mee refresh kkartaa honn browser koo ab dkeha mere main menuu hai hamare 
+styling hoo chukii haii
+> orr joo sub menu haii unkee styling nain huii haii unkaa hamm border set
+karleaa haii orr text align bhii set karleaa haiii
+>ismee abhii hover effect set karnaa haii orr name kaa joo sub menu haii
+woo iskee andar show ho raha haiii
+>hamare courses kaa angar hamare thaa main menuu 
+>courses kee andar hamare thaa main menu uskee andar thaa web designing 
+>web designning kee under hamare thaa html css jqueyr bootstrapp 
+>uskee andar hamare sub menu hai iss tarahh hamm styling ko design kartee haii
+?>
+too hamare aab takk kaa nav-menu kaa code kese rehegaa
+#nav-menu>ul>li>a{
+display:block;
+position:relative;
+text-align:center;
+text-decoration:none;
+font-weight:700;
+font-size:17px;
+border-right:1px solid #080808;
+color:#fff;
+padding:12px 30px;
+}
+aab hamm index.html koo jatea hoon orr aisa list item haii jinkee sub menu haii
+usmee hamm class dedetee haii has-sub
+>uskoo copy karletaa hoon orr paste kartaa hoon jinkiii sub menu haiiii
+>web development kaa bhii sub menu haii too mene uskoo bhiii yahhan paste karletaa
+hoon
+>ussi tarahh hamare others mee bhii sub menu haii hamm ussii tarapastee
+karletaa hoon
+>uskee baad projects  mee bhii sub menu haii hamm usmee bhii pastee karletaa hoon
+>too chalia hamare html code kasia hogaa dekhtee haii 
+>
+index.html
+===========
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="UTF-8">
+	<title>w3 webschool </title>
+	<link rel="icon" hre="img/small.png">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+	<div id=top-header"></div>
+	<img src="img/logo.png" alt="w3 webschool.net">
+	</header>
+	<nav id="nav">
+<div id="nav-menu"></div>
+ 	<ul>
+		<li><a href="#">home</a></li>
+		<li><a href="#">courses</a></li>
+			<ul>
+			<li class="has-sub"><a href="#">web designing </a></li>
+				<ul>
+					<li a href="#">html</li>
+					<li a href="#">css</li>
+					<li a href="#">javascript</li>
+					<li a href="#">jquery</li>
+					<li a href="#">bootstrap</li>
+				</ul>
+			<li class="has-sub"><a href="#">web development</a>
+				<ul>
+					<li a href="#">java script</li>
+					<li a href="#">jquery</li>
+					<li a href="#">php</li>
+					<li a href="#">wordpress</li>
+					<li a href="#">asp.net</li>
+				</ul>
+			</li>
+			<li class="has-sub"><a href="#">others</a>
+				
+				<ul>
+					<li a href="#">graphics</li>
+					<li a href="#">ms office</li>
+					<li a href="#">text editor</li>
+					<li a href="#">sql server</li>
+					<li a href="#">oracle</li>
+				</ul>	
+				</li>
+			</ul>
+		<li><a href="#">tips and tricks</a></li>
+		<li class="has-sub"><a href="#">projects</a>
+					<ul>
+					<li a href="#">css</li>
+					<li a href="#">java script</li>
+					<li a href="#">jquery</li>
+					<li a href="#">php</li>
+					<li a href="#">asp</li>
+				</ul>	
+			</li>
+		<li><a href="#">about</a></li>
+		<li><a href="#">contact</a></li>
+	</ul>
+</nav>
+
+</body>
+</html>
+
+>uskee baad mee style sheet ko jata hoon mera joo navigation menuu haii
+usko mee copy karkee mee yehh nav menu kee andar meree joo un order list
+or list item orr list kee andar mere joo class haii has-sub
+>usekee andar hamre joo a tag haii uskoo hamm select kartee haii before
+>phir yahann pee hamare semi column nain anna haiiii
+>orr hamare arrow sa show ho ismee pata chaljayye kke sab menu haiii
+>yahann pee mene content deta hoon orr content mee property deke
+yuhii chod deta hoon
+>ismee mee poition dungaa position mene deta hoon absulutee
+>top mee mene iskoo 18 px kartaa hoon or right mee 16 px karletaa hoon
+>or border karletaa honn border hamm 5 px solid white karleta hoon 
+border:5 px slid #fff karletaa hooon  
+>uskee baad mee border hamm deea haii border top kee property aaply karta hoon
+>border top 5 px solid white deta haiii
+> aab mee refreshh kartaa hoon too hamme eek arrow show hoo raha haiii
+>agar mee menu koo click akrtaa hoon too hamare dcmviemnt hoo too kiya karunn
+mee
+use pehele mee woo sab css likh leta haoon
+#nav-menu>ul>li.has-sub>a:before{
+content:"";
+position:absolute;
+top:18px;
+right:6px;
+border:5px solid transprent;
+border-top:5px solid #fff;
+}
+>usmkee baad mee likhtaa hoon kee hamare has-sub mee hamare joo curser ayee
+too mee likhtaa haoonkiii  jab hover hogaa too mee top see kuch
+20 px  karletaa hoon
+ too kiya hogaa aap dekha pehele hamare 18px tha aab 20 px hoo raha haii
+>iskaa matlab yeh haii kiii yehh curser kaa joo hover effect haii
+woo yahann pee apply hoo raha haiiii iskoo agar aap jada rakhnaa chatee haii
+tooiskoo mee rakhletaa hoon 22px;
+
+#nav-menu>ul>li.has-sub:hover>a:before{
+top:20px;
+}
+
+>too hyaan jada movement hogtii haii
+>next class mee hamm un order list koo style karengee joo list kee andar haii
+style.css
+===========
+*{
+margin:0;
+padding:0;
+}
+body{
+background:#aaaaab;
+font-family:areal,helvetica,sans-serif;
+}
+/*-------------------------header---------*/
+#top-header{
+background:#202326;
+widht:100%;
+height:100%;
+border-bottom:4px solid #d46224;
+}
+#header img{
+height:70px;
+widht:300px;
+margin:15px 20px;
+}
+
+#nav{
+background:#4a66a0;
+width:100%;
+height:44px;
+}
+
+#nav-menu.align-center>ul{
+text-align:center;
+}
+
+#nav-menu>ul>li{
+list-style:none;
+float:left;
+display:inline-block;
+position:relative;
+}
+
+#nav-menu>ul>li.has-sub>a:before{
+content:"";
+position:absolute;
+top:18px;
+right:6px;
+border:5px solid transprent;
+border-top:5px solid #fff;
+}
+
+#nav-menu>ul>li.has-sub:hover>a:before{
+top:20px;
+}
+>
+-===============================================================================
+video no 5
+================================================================================
+>joo previous class thii usmee mene main menu banayee thee usko style kea thaa
+>joo hamare joo sub menuu haii uskoo hammstyle nain kea haii aab takk
+>uskii joo list haii woo jesi kii waiisii haii uskee joo under linee haii
+uskee bhii stylee nain kea haiii abhii taakkk
+>iss line mee mee iskoo hii style kartaa hoon hamare joo haii 
+ul li hover hamm uskoo coppy kartee haiii 
+>nichkee peaste kartaa hoon orr before kaa property mee remove karletaa hoon
+>joo mere main div tag haii hamm usmee menuu bana rehe haii usmee main hamare
+ul tag haii uskee andar hamare list item haiii 
+>uskee undar joo hamare sub menu haii uskoo class dee thii has-sub uskee baad
+uskee joo anchor tag haiii  usmee kuchh property apply kartaa hooon
+>usmee padding bottom 14 px deta hoonn
+>uskee baadd mee z-index kaa vlaue leletaa hoon 999
+>ismee hamare z index kiya haii opasity kiya haii hamjare previous class mee
+hamare discuss hoo chukaa haiii 
+>uskee baad hamm dekhtee haii kii hamare joo inner tag ahii usmee ul tagg haii
+li tag haii hover effect leta hoon mainn
+>uskee baad me leta hoon navgation menuu usmee ul li leta hoon uskee baad mee
+likhtaa hoon kii usmee joo meara curser aayee curser kee baad mera joo ul hai
+>woo displayy blockk mee hoo jayyee 
+too nmhamare codee aab takk kese rahee gaa
+
+#nav-menu>ul>li.has-sub:hover>a{
+padding-bottom:14px;
+z-index:999;
+}
+
+#nav-menu ul li:hover:ul{
+display:block
+}
+aab mee idhar nav-menu kee paas greater then kaa > sign usee karletaa hoon
+css3 kaa standardd usee karletee haiiii
+>uskee baad hamare joo a tag haii woo a tag mee hamare jo curser aayee matlab
+likhleta hooon hover uskee baad mee uskaa joo background set karletaa hoon
+uskee background rakh letaa hooon #3f3f3f
+>mee save karkee browser koo refreshh kartaa hooon 
+>aabhii takk styling nain huaa haii too mere joo un order list haii usmee
+kuch changing nain huaaa haiiii
+>uskee leaa hamare joo main navigation hai uskee andar jooo ul tag haii 
+>ul tag kee andar joo li tag haii joo uss li tag kee andar joo ul tag haii
+>aab aap dekhea html html mee aab yehh hamare ul tag
+>uskee andar joo li tag
+>uskk li tagg kee baad joo ultag haii 
+>ussii li koo woo woo pick karegaaa 
+>naa kii har koi li  koo pick karegaaa 
+>joo li tag kee andar joo ul tag haii uskoo woo point karegaaa
+>usakaa joo tag close hoo raha haii woo yahann pee aakee close hoo raha haii
+>aab mee likhletaa hoon kii uskee joo display joo haii uskskoo none kardee
+>aab dekhee kese aaraha haiii dekheaa hamare displayy chala gayaa 
+>aab saree displaayy none hoogayaaa 
+>joo display ahii woo disapear hoo gayaa jab mee curser leke jata haoon too
+hamare displayy showw karraha haiiii
+>aab mee displayy none haii sukoo nain letaa hoon bad meelungaa
+>uskee joo styling haii uskoo mee karsakununn yahann pee 
+>uskee width auto karletaa hoon uskee position mee absoultee karletaa haoon
+>uskee top margin dedeta hoon 38px;
+>uskaa joo background color haii woo set karletee haii kii rgba() mee set karleta
+hooon red green blue kee saath ham opasity bhii dengeee opasity hamm dedengee
+opasity 0.9
+>uskee baad hamm border radious set karletee haii 0 0 5px 5px
+>uskee baad hamm joo z-index kaa value haii dedetaa hoonn 999
+>padding bhii hamm 10px dedeta hiii 
+> mee refreshh kartaa hoon too dekeha kiyaa aaraha haii yehh dekhea iss tarah
+kuchh styling karnee kii kosis kee haiii iskaa joo background color haii
+woo bhii hame show hoo rahii haiii  uskee width hamm dedetee haii kii
+170px kii
+>uskee width haii woo increasee hoo chukii haiii
+#nav-menu ul li>ul{
+width:autol
+position:auto;
+top:38px;
+background:rgba(183,0,255,0.9);
+border-radious:0 0 5px 5px;
+z-index:999;
+padding:10px 0  ;
+width:170px  
+}7.50
+
+aab hamare code kese rahegaaa 
+style.css
+===========
+*{
+margin:0;
+padding:0;
+}
+body{
+background:#aaaaab;
+font-family:areal,helvetica,sans-serif;
+}
+/*-------------------------header---------*/
+#top-header{
+background:#202326;
+widht:100%;
+height:100%;
+border-bottom:4px solid #d46224;
+}
+#header img{
+height:70px;
+widht:300px;
+margin:15px 20px;
+}
+
+#nav{
+background:#4a66a0;
+width:100%;
+height:44px;
+}
+
+#nav-menu.align-center>ul{
+text-align:center;
+}
+
+#nav-menu>ul>li{
+list-style:none;
+float:left;
+display:inline-block;
+position:relative;
+}
+
+#nav-menu>ul>li.has-sub>a:before{
+content:"";
+position:absolute;
+top:18px;
+right:6px;
+border:5px solid transprent;
+border-top:5px solid #fff;
+}
+#nav-menu>ul>li.has-sub:hover>a{
+padding-bottom:14px;
+z-index:999;
+}
+
+#nav-menu ul li:hover:ul{
+display:block
+}
+#nav-menu ul li>ul{
+width:autol
+position:auto;
+top:38px;
+background:rgba(183,0,255,0.9);
+border-radious:0 0 5px 5px;
+z-index:999;
+padding:10px 0  ;
+width:170px  
+}
