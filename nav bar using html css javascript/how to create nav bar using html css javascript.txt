@@ -1,0 +1,351 @@
+>aap computer schreen mee dekh saktee hoo hamare eek web pagee haii usmee
+saree navigation menuu horizornall mee haiii
+>jese mee navigation menuu koo short karungaa saree navigation list mee show
+hoo rehe haii drop down menu kee tarahh
+>iss type se navigation meenuu hamare responssive haiii
+>hamm full shreen mee dekhengee too bada hoo jaigaa too isse batanna bohot easy
+haii html css java script use karkee aap koo mee question karnaa chataa hoon
+kii aap isse nav bar boltee haoo or navigaiton bar boltee hooo
+>sabsee pehele mere eek folder haii usmee hamare three file haii
+index.html
+logo.png
+and style.css haii
+>aab mee apna text editor open kartaa hoon
+>aab mee html kaa ;joo basic structure mee cereate karkee rakhaa hoon
+>ismee head start or close hogaa 
+>usmee eek code dala haii meta name viewport 
+>head start and close haii uskee andar meene eek code dala haii neta name
+view prot 
+> content="width=device-width initial-scale=1.0
+>yannaa pee meene title dala
+>usmkee baad hamare eek link haii joo html file koo css mee connect kartaa haii
+>actually mene aapna css file bhii dekha deta hoon
+>2.03 
+>main idhar eek div create karlea orr ismee mee class dedea nav
+>ab iskee andar hamme kiya karna haiii uskee lea mee use karunaga ul
+>or iske andar aaygaa li
+> sabse pehela menuu meee likhtaa haoon home or simpyy mee uskoo duplicate kar
+letaa hooon orr usse mee change karletaa hoon second one hoo jaigaa servicess
+> or tisra menu change karleta hoon yehh hoga hamara blogs next mee add karta
+hoon about
+>or eek or menu add karletaa hoon contact
+>yeh sab menu add karnee kee baad me aapne web pagekoo preview kartaa hoon
+mee apnee folder mee aajaugngaa or yehh html file koo google chrome kee thruw 
+open kartaa haooon
+>aabhii aap dekhsaktee hoo kii saaree menu display hoo rahii haiii
+>aab hamme isse orr designn karnii haii too hamme bapis html5 mee atte haiii
+>aab tak kka code hamm likhletee haii kiyaa hammnee likhaa haiii
+<html>
+<head>
+<meta name="viewport" content="width="device-width", initial-scale=1.0">
+<title>Navigation Bar-Easy Tutorials</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="nav">
+<ul>
+<li>Home</li>
+<li>Services</li>
+<li>Blogs</li>
+<li>About</li>
+<li>Contact</li>
+</ul>
+</div>
+</body>
+</html>
+>aab mee ul kee upar orr eek div  daltaa hoon uskoo mee uss div kee nichee 
+daldungaaa uskaa class name mee dedetaa hoon menu-right
+>orr joo sare menuu hamm create kea ahiiuskee andar hamm daldete haiiii
+>abhi hamme in saree menu koo right sidee move karnaa haiiii
+>oo uskee lea hamm kiya karengee pehhele hamm menu-right section koo copy 
+karletee haii or css file mee aateee haiii
+>style.css
+==============
+*{
+margin:0;
+padding:0;
+}
+yehh hamare css file mee pehelsee heii define hua haiii
+>mee add karungaa .menu-right
+>abhii hamme sarre content koo right side mee move karnaa haii too kiya add 
+karna haii hamme text-align:right
+>isse add karnee kee baad hamm hamare web pagee koo refresh kartee haiii
+>aap dekh saktee hoo kii yehh joo saree menu haii woo right side mee shift
+hoo gaayee haiii
+>iskee baad hamare joo sarre menu haii uskoo horizontall line mee display 
+karwaa naaa haiii
+>aab hamm wapis attte haii css mee hamm yehh sarre menu kahann likhee thee
+woo haii 
+ul uskee baad li 
+>ul kee andar li koo hamm property apply karngee diplay inline
+>too hamare css kese dikh raha haii abhii
+style.css
+==============
+*{
+margin:0;
+padding:0;
+}
+.menu-right{
+text-align:right;
+}
+ul li{
+display:inline-block;
+}
+>display inline block add karnee kee baad dekhea hamare css kese dikhraha
+haiii usse add karnee kee baad aap dekh saktee hoo ki hamare sareejoo men
+haiie woo horizontal linee mee display hoo rhaa haiii
+>aabhii hamme yahann pee kuchh speace add karnii haii too 
+>yahiin pee mene add kartaa haoon marginn:20px
+>or list style hamm dedetee haii none
+>orr add karnee kee kee baad aap dekh saktee hoo kii saree menu bar kee beech
+mee kuch kuch space dikh raaha haiii 20px kaa
+>style.css
+==============
+*{
+margin:0;
+padding:0;
+}
+.menu-right{
+text-align:right;
+}
+ul li{
+display:inline-block;
+margin:20px;
+list-style:none;
+}
+
+>abhii hamare joo html haii usmee mee kuchh background color add karungaa uskee
+leaa hamm attee haii html 5 mee 
+>aab hamm are html file kese dikhraha haii
+
+index.html
+==========
+<html>
+<head>
+<meta name="viewport" content="width="device-width", initial-scale=1.0">
+<title>Navigation Bar-Easy Tutorials</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="nav-bar">
+<div class="menu-right">
+<ul>
+<li>Home</li>
+<li>Services</li>
+<li>Blogs</li>
+<li>About</li>
+<li>Contact</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
+ >too mee iss nav bar ko copy karletaa hoon class name koo 
+>wapis atee haii html file meee eek . kee saath hamm class name koo add kea
+>aabhii hamme ismee eek backtround color add karnaa haii too too simplyy hamm 
+add kartaa hoon bacground color cod hamm daldeta hoon
+>
+>style.css
+==============
+*{
+margin:0;
+padding:0;
+}
+.nav-bar{
+background-color:#1d052;
+}
+.menu-right{
+text-align:right;
+}
+ul li{
+display:inline-block;
+margin:20px;
+list-style:none;
+}
+>iss nav bar kee andar joo content hai uskee color white mee dekhai denekee lea 
+mee color white daldataa haoon orr hamme usmee or thodi space dalna haii
+navigation baar mee hamme kiya karnaa haii hame thoda saa padding 20px kaa 
+daldete haiii
+>joo kii charo taraf see kuchh space add kardetaaa
+>or font family mee set karletaa hoon sans-serif
+>mee wapis page kooo refresh kartaa haoontoo mere page kese dikh raha haii
+dekhea too aap dekh saktee haoo kii aap koo eek horizontall bar aap ko 
+dekhaii dea haiii orr usmee sare horizontall menu hamme dekhaiid rahha haii
+>next hamme kiya karnaa haii kii hame menu icon bhii laga naa haii
+usse pehele hamare css file kese haii thoda dekh letee haii
+style.css
+==============
+*{
+margin:0;
+padding:0;
+}
+.nav-bar{
+background-color:#1d052;
+color:#fff;
+padding:20px;
+font-family:sans-serifg;
+}
+.menu-right{
+text-align:right;
+}
+ul li{
+display:inline-block;
+margin:20px;
+list-style:none;
+}
+>uskee baad hamm page koo refreshh karletee haiii
+>aab hamme eek menu icon laganaa haii joo ki khali mobile device mee display hoga
+>pehelee mee usse full schreen mee displayy karwa detaa hoon
+>hamme html mee aatee haii orr hammme eek menu icon add karna ahii div kee 
+andar hii hamm eek span create kar taa hoon orr iss span kee andar mee eek
+code add kar raha haooon 
+><span>$#9667;</span>
+>yehn coode aap log use karsaktee haiii
+>iss tarahh different different code hai aap iskee lea aap web mee search karsaktee
+hooo
+>html icon code aapkoo yehh mil jaigaa usmee add karnee kee baad hamm page koo
+wapis refresh kartaa haoon tto dekeha hamare kiyaa aa raha haiii
+> apa dekh saktee hoo kii icon hamme dkehai dekraha haiii
+>yeh code mukjhee chagee karnaa haii kii &#9776
+>too aap dekh saktee hoo kii aap kaa chotasaa menu icon dekhai derahahaaii
+>chaliea ahmm orr designn kartee hai yahanpee
+>
+index.html
+==========
+<html>
+<head>
+<meta name="viewport" content="width="device-width", initial-scale=1.0">
+<title>Navigation Bar-Easy Tutorials</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="nav-bar">
+<div class="menu-right">
+<span>&#9667;</span>
+<ul>
+<li>Home</li>
+<li>Services</li>
+<li>Blogs</li>
+<li>About</li>
+<li>Contact</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
+>chalea hamm or design kartee haii or iskee lea hamm span koo copy karlee
+orr hamm atee hai css file mee
+>hamme span ko add karnee kee baad hamme yahann pee kuch sapce add karnaa haii
+>orr mee margin add kartaa hoon 
+0 or 20;
+>0 px hoga hamare bottom se orr 20 px hoga hamare left or right see
+>uskee baad hamm iskee font size increase karnaa chataa hoon kyun kee
+yehh bohott chotaa dikh raha thaa
+>too font-size daldea hamnee 28px;
+>orr curser mee daldeta hoon pointer
+>usse save karnee kee baad wapis mee refresh kanrtee haii too dekhea kiyaa aarah
+haiiiaap koo yahannpee kuch bada saa icon dekhi de rha haiii woo haii menu
+icon
+>aab hamme kiya karnaa haiii kii iss menu icon koo hamme larger schreen mee
+hamme hide karwaa naa haii or smaller schreen mee display karwannaa haii
+>iskeelea hamm aatee haii css file mee orr yahann pee hamm add kartee haii
+displayy none add karwadetee haiii
+>jaisee mee span mee hamm add karleaa kii display:none;
+too hamare span ka css kaaisa haii dkeha
+span{
+margin:0 20px;
+font-size:28px;
+cursor:pointer;
+dsplay:none;
+}
+>aap dekh saktee hoo kii menu icon idhar see gayab hhoo chukii haiii
+>ab hamme isko display karwana hoga smaller schreen mee
+>wapis aajatee haii hamm hamare css file mee 
+>add karnegee ham media query
+>hamme kiya karnaa haii kii 
+@media only schreen and (max-width:700px)
+>usskee baad ham jo vi code likhengee kii hamme uss device ke lea apply hoga 
+jiskaa schreen size 700px see kam hogaa
+>aab hamme iss span kooo joo hide kea thaa usse hamme displayy karwa naa
+haiii
+>display karwanne kee lea hamm iskoo copy karletaa haoon or iskoo likhtee 
+haiii
+>dispaly block
+>too normally hamare icon hidden thaa jaisa hamare schreen size 700px see chota
+hogaa hamare schreen mee yehh hamre displayy hoojaigaa
+>chaleaa hamm chekc karteehaii 
+usse pehele ham medea quyery kaa code likh lete haii
+@media only schreen and (max-width:700px){
+span{
+display:block;
+}
+}
+>jabhii hamare schreen size  700 px see small hogaaa yehh icon hame displayy
+hoo jaigaa
+> issee check kartee haii or iss page ko refresh kartee haiii
+>jab bada thaa dsplay nain hoo rhaa htaa aab jabb chotaa hua hamme display hone
+lagaa
+>next hamme kiya karnaa haii kii aab hamare joo home services saab horizontall 
+mee show kar rehe haiii 
+>hamme kiya karnaa haii kii hamme vertically allign karwanna haii orr list style
+mee hammme iskoo displayy karwa naa haiii
+>chalia pehele hamare css kaa code hamm thlksee likhletee hgaii
+style.css
+==============
+*{
+margin:0;
+padding:0;
+}
+span{
+margin:0 20px;
+font-size:28px;
+cursor:pointer;
+dsplay:none;
+}
+@media only schreen and (max-width:700px){
+span{
+display:block;
+}
+}
+.nav-bar{
+background-color:#1d052;
+color:#fff;
+padding:20px;
+font-family:sans-serifg;
+}
+.menu-right{
+text-align:right;
+}
+ul li{
+display:inline-block;
+margin:20px;
+list-style:none;
+}
+>hamnee kiya dalathaa kii dispaly:inline-block
+hamm inline-block kee jagamee hamm dalengee onlyy block
+>orr hamm add kardunga kii displayy block
+>hame meedea queyr kee andar ham daldia kii displayy block
+>hamm uss page koo refresh kartee haii wapis
+>dekhea hamar kiya aaraha haiii
+>aap dekh saktee hoo kii hamre jo saree menu hiii woo list style mee 
+display hoo rha haiii
+>
+@media only schreen and (max-width:700px){
+span{
+display:block;
+}
+ul li {
+display:block;
+}
+}
+>aab aap dekh saktee hoo kii hamare joo menu item hai woo hamare aab kese list
+format mee show hoo rhaa haii kyun kii hamm ul li ko hamm medea query
+kee andar ham displayy bllock kea haiii
+>next hamme kiya karna haii kiiihamme eek toggle opetion laganaa haii too 
+kiya hogaa jab hamm menu kee upar click karnegee too hamare joo menu item hamare
+sarre gayabb hoojaigaa  or uskee baad display hoo jaigaa chalea hamme kiya
+karengee dekheaa
+>too chalea hamme html file mee atte haii orr is postion mee hamme image 
+add karnaa haii chalea dekhtee haii kiya karengee too hamm add kartee haii
+too kiiya hogaa hamre
+13.59
