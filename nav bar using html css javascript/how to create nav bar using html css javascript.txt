@@ -349,3 +349,90 @@ karengee dekheaa
 add karnaa haii chalea dekhtee haii kiya karengee too hamm add kartee haii
 too kiiya hogaa hamre
 13.59
+> next hamme kiya karna haii hamme toggle option lagana haii ismee ham jab
+menu option mee click karnee mee hamare list of menu khuljai or phir gayab
+hoo jayye
+>yehh toggle hamme lagana  haii orr hamme logo laganaa haiii 
+>sabsee pehele mee logo lagadeta hoon joo kafi easy haiii
+>hame html gfile mee logo laganaa haii jaha n lagana haii hamm usmee eek image
+add karnaa haii
+>mee nav bar mee image lagata hoon ismee hamm source mee file name daLTAA HOON
+>logo.png hammnee add kardeaa hamneee
+>isse add karne kee baad mee wapis page koo refresh kartaa hoon 
+>kuch iss type kaa dikh raha haii kyunn kii hamare logo bohot bada haii
+>aab hamme isse chota karna haii orr hamm ajattee haii wapis seee 
+>orr hamm css mee add kardeta haii hamare nav barr 
+>or nav-bar mee bad mee daldungaa img
+>too iss image kee lea ham hedight define karletee haii 45px
+>  or float karletee haii left
+>orr kuch margin add karletaa hoon 20px
+>inn sari cheez koo add karnee kee bad wapi page koo refresh karletee haii
+>hamm small logo dekhsaktee haii webpagee mee
+>yehh webpagee koo full schreen mee dekh tee haii too yehh kuch iss tarah se
+dikhtee haiii
+>jahan pee hamare left side mee menu dekh raha haii or right side mee hamare
+eek horizonatal line dekh raha haiii
+>orr smaalll schreen mee dekhenee see hamme logo dekh raha haiii
+>menu dekh raha hai list order mee
+>aab hamme toggle add karna haii iss hamare menu option mee too iss lea hamm
+kiya karnegee hamm html file mee wapis aajatee haiii.
+>yehh toggle hamme aappy karnaa haiii isss span mee joo menu item haii 
+ismee hamme eek event add karnaa haii onclick
+> too mee type kardeta hoon onClick onclick mee mee function name dalta hoon
+my function iss type ssee aabhii hamm ;joo ismee function uuse kea haii
+too hamme isss function koo create karna padegaa pehele
+>iskee lee ham log java script code likhengee too issske lea hamm log
+aajatee haii closing body kee paas
+>closing body kee upar hamm start karengee script
+>script mee hamm likhengee function or function name lekehngee 
+>next hamme height or show kisse karna haii hamme iss ul koo karna haiii
+>ul kee andar mee eek id add kardungaa
+>usmee kiya karnaa haii kii 
+var x=document.getElementById("menu");
+>isse add kardea too hamm asanii see hamm iss x koo use karsaktee haiii
+>next hamme kiya karna  haiii ismee if
+> if use karsaktee haii orr if kee andar hamm add karngee hamm x.style.display
+>x.style.display==block 
+>too yehh compare karegaa agar hamare joo style display block haiii too yeh 
+kiya karegaa displayy none kardegaaa
+>agar block hoga too woo isse style display none kardegaa
+>abhii mee ismee else condition likh luuu agar yehh block nain haii too isse 
+yehh change kardegaa wapis see block
+>phir mee else kee andar rakh kee mee change karletaa hoon wapis see block
+><script>
+function myFunction(){
+
+var x=document.getElementById("menu");
+if(x.style.display="block")
+{
+x.style.display="none";
+}else
+{
+
+x.style.display="block";
+}
+}
+</script>
+>isse add karnee kee baad hammare yahann pee tggle option create ho jata ahii
+>uskee alawa hamme eek or kam karna haii hamare css file mee
+>mee css file mee aajata haoon orr hamm medea query kee andar hamm likhlete
+>toggle schreen kee lea mee likhleta hoon 
+ul{
+display:none;
+}
+>jesekee hamm full schreen see small schreen mee ayee hamare menu joo hide hooo
+jaii
+>chaleea hamm abhii iss page koo refresh karkee dekhetee haiiii
+>sabsee pehel mee iss pagee keo full schreen koo leta hooon too yeh kuch iss
+tarahh dikh raha hiiii 
+>jasias hiii mee iskaa schreen sizee chotaa kartaaa hoon tooo yahann pe sara
+meenuu haii joo  height hoo jai
+> aab next mee iss menu item mee click kartaa hooon saree menu hamare eek
+list order mee displayy hoo reaha haiii 
+>  jabb mee wapis mee usmee hit kartaa hoon too saree menu hamaree height 
+joo jaii
+>too iss type see aap asanii see aap toggle menu banasaktee haiii
+>eek nevigation barr banassaktee hiiii html ,css orr less javascript ka
+usee karkee
+>
+
