@@ -1,0 +1,205 @@
+media query in css
+===================
+>aap log jantee hoo kii bohot baar aap sune hogee kee media query 
+media query kiya hota haii kii yeh media query
+>hamm apple  kaa wesite koo inspect karkee hamm dekhengeee 
+>too guys hamm jab iss website koo mobile mee dekhengee too hamme
+>kuch hamme iss tarahaa dekhia degaa but media query kiya hota haii
+too dekhoo guyss hamm iskoo side mee letee haiii
+>too hamm iskoo dekhatee haii  too hamare idhar media schreen hamare
+max width haii or min width bhii haiii
+>media query mat lab yahii haiii kiss tareeke see aap nee joo bhii
+websitee banayaa haii theeek ahiii desktop mee bohot hii beautufully 
+dekhegaa orr lakin hamm iskoo hamm mobilee mee leke jayengee too
+>yehh utnaa achaa nain dekhegaaa too desktop mee bhii acha dekhee too
+sath hii sathh mobilee mee bhhii acha dekhee iss lea hammm uskee saath
+sab see zada important haii kiii woo responssivee hoooo
+>uskoo pannekee leaa hamme use karnaa haii kii medea query agar hamm
+chai haii kii apple ttoo aaplee khalii nnain har webside mee 
+>koi bhii webside mee media query usee karna padta haii suree
+>yeeh haii hamare eek heading orr paragraph or image hai dono side by
+side haii theek haiii
+>jab ham mobile mee dekhengee side by side dekhnain saktee haii side by
+side
+>soo kese soo responsidve kese hota haii dekho guyss
+>aap top mee aap dekh saktee hoo kii 1128 haii iskaa resolution
+>dekhea mene kamm kar raha hooon jese kii meen 1024 mee meene 
+break kar raha haooon too hamare idharr 
+>1024 kee nechee atte hii heading kaa color black see red hoo gaya
+>paragraph kaa color from black too green hoo gaya haiii
+>abhi bhii yeh dono side by side haii but jese hii yehh 768 kee nichee aaiga
+> 768 koo officially mobile devices kee lea mana jata haii
+>  too hamare jabb woo red color thaa abh hamare woo alag color ho
+gayaa
+>again iskaa color joo paragraph kaa color change hoo gayaa
+>image oir paragraph thaa jo dono side by side thaa woo eek kee nichee
+eek aagayaa
+>mobilee mee yahii hota haiii apple kee webside mee yahii hotta haii
+>abhii 768 kee andar anne taktoo hamre image or praratrhp hamare side
+by side thee woo eek kee nichie eek aagayee
+> dekhee aab kiya hota haii kii joo uss samay woo color thaa aab change
+hoo gaya
+>joo uss time mee hamare red heading thaa abbhii green color hoo gaya
+>joo paragraph color thaa woo changee hoo gaya
+>abhii hamare image joo parathap thaa wwoo dono side by side thaa
+woo eek kee nichee eek aagaya haaiii
+>mobiel mee yahii hota haiii apple kee case mee yahii hoo raha haii
+>woo sab idhar eek kii nichee eek haiii
+>eek orr cheez eek oor break point mene dea haiii orr nichee jayengee
+joo ki 468 mee end hogaa hamare aap dekh saktee hoo ki joo imagese
+hamare pehelsee hamare attach thee aabhii uskee charoside kuchh space
+aagaya haiii
+>woo sab kiya hota haii hamm yehh sabb ham iss break point mee ham
+samjhee ngeee 
+>iskoo hii boltee haii kii media query kee madatee se webside koo 
+responsive banana haiii
+> ithink aap koo sabkuchh aap koo idea aachukaa haii already hamm itna
+banachkee haii
+>joo haii kii guyss hamm itna create karkee rakhee haii kiii 
+>yahann pee simplee mee eek div lea eek perent div uskee andar mee
+orr doo div lea eek haii son div orr eek haii daughter div
+>dono koo side by side karnee kee lea mene idhar css use kea haiii
+>yehen pee mene flex box use kea haii bohot simplee haii aap iskoo
+use karsaktee hooo
+>aap ko yeehh kese milegaa iskaa linkk mee nichee iskee comment section
+mee mee karwa dungaa
+>media query dekho guyss sabsee aap dekhogee naa guyss koi bhii webside
+aap utha kee dekhogeee 
+>too aap dekho hamm kese kartee haiii too sabsee zada important teen
+haii eek desktop mee ham dekhengee kiya hoo rha haiii
+>dusraa tabletes and ipads mee kese dekhaii de raha haiiii
+>or tisraa haiii mobilee mee hamare mobilee mee hamare kese dekhai de
+raha haiiii
+>too sabsee pehele hamm suru karengee hamm mobile phonee mee suru karngee
+>mee kiya kartaa huun guyss mee iskoo iss tareeke ssee click karta hoon
+>mee yhaha mee increase kartaa hon decrease kataa hoon too dekho
+guyss hamare aisa dekhii de raha hiii
+>yehh kiya haii sabsee pehele mee 768 mee mee jata hoon
+>dekhoo dono side by side haii magar ajeeb dekh raha haii
+dekhooo
+>acha nain lag raha haii too isko mene kese reponsive karree 
+>too dono side by side dekh raha haii orr responsidve karna hai
+dekhea hamare asia karna haiii abhii dekhea
+>dekhea guys uskee lea kiya guyss hamare idhar hamme mobile phone
+kee andar jana padegaa
+>matlab mobile jahan hamm mobilee kee ham comment dea haiii usssmee
+ja teehaii or likhnegee hamm 
+@media likhengee or @media hamm likhngee or media query likhnee kaa
+bohot rareeke haiii
+>joo sabse zada hamare 99% use hoo rha haii teno ki tenoo mee usmee
+bataungaa
+>one is maximum width zada see zada hamare 768 use hoo raha haiii
+>iska matlab yahii haii kii zero pixal see leke 768 tak hiii 
+>aap koo aap kaa webside kaa code kaisa dekha naa haii uska aapko
+>likhnaa padegaaa
+>basically media query ka matlab same peace of code koo bar bar likhoo
+>jab tak jaisa dekhana haii wasia dikhnain jataa haiii
+>too guyss hamm sabsee pehel mee kiya kartaa hoon mee ne 768 mee mene 
+jata haoon iskjaa joo color haii uskoo chage karkee dikhataa hooon
+>yeh joo dekhai dee raha haii joo guyss hamm iskoo yahhan see mee hata
+dunnn inspect karun now it  looking perfect
+>deihea hamm 768 takk chotaa karta hoon  sabsee pehele mee yehh joo
+heading haii uskaa color changee karletaa haoon
+>too yehh kese hooga too mee kiya krtaa hoon mee yahann pee jataa hoon
+likhtaa hoon h1 or h1 kyun likha kee already meene h1 dea ahiii
+>simply hamme h1 kee andar jana haii or color dena haii 
+color kiya dena haii kii
+@media(max-width:768px){
+h1{
+color:#3498db
+}}
+itna likhaa sor ctrl+s save kea or mene dekhaa kii mera color reponsive
+aagaya
+>kasia laga aap koo aap dekhaa 
+>dekhea hamm jaisa hii ham 768 se upar ja ta hoon too mera heading color
+black hoo rhaa haii
+>jaisa haiii mene 768 kee nichee aata hoon too mere color black see
+color chagne hokee upar wala color aaraha haii yehh hota haii ki media
+query responsive 
+>too mobilee mee aisa hotaa hii nain to mobilee mee eek kii niche eek
+aaraha haii too yehh chez koo kese karunn too dekhooo
+>mene side by side kea haii by sing desplay flex
+>parent walle koo uskoo pura ko pura karoo copy orr media query kee 
+nichee hii pastee kardungaa 
+>and then thoda sa allignment hamme isse millee takii hammm 
+>hamme idhar kuch nain chiahaiii khalii hamare idhar display dekhai de
+rhaa uskoo rakhkee bakii sab hata deta hoon orr kiya kartaa hoon mee
+>idhar diplay mee dihar flex ko hata kee mee idhar block kardeta hoon .
+>abhii side by side nain abhii hamare eek kee nichee eek aagaya haii
+>yehh mobilee kee lea hamm bana rehe haii mobiel mee hamm itna hasils
+karchukee haii lakiinn bass idhar dekhea hamare paragraph kee side mee
+bohot saree space haii too yehh hamare theek ahii 
+>yahhn pee bohot saree space haii too iskaa reason yahii haiii kiii
+>too mene kiya kea meren width joo kea tha auskaa width mene side
+by side karnee kee leaa mene flex too kea thaa uskee baad meene
+width bhii 50% ki thii 
+>doughter koo nichee parent kaa leta hoon orr chodtaa hoon 
+>too aap koo diplay block wagaeree likhnee kaa jaururat nain kyun
+kii woo in herit hoo raha haii aap koo joo extra add karna haii
+>joo aap koo extra add karna haii uskoo add kardejeea ham 50 seee 
+100% kardea dekhea hamare width kiya aaraha haii 
+>too dekh saktee haii kii guyss hamare images perfectly center mee
+aachukaa haii kyun kii mene width mene 100 % dedea haiii
+>mene code likha haii ki 
+>iss tarahh mee doughter koo 100% kea same mee karungaa son koo
+karungaa 
+>mee son koo width dedeta hoon 100%
+>and dekhee guyss hamare idhar hammare paragarph bhii achee see pura
+dikhraha haii 
+>mobilee mee dikhrahiii kii nain eekdumm aswomee
+>aab dekeeaa mee jab resolution hamm kam kea too kiya aaraha haii
+>to dekhea hamare image chippak raha haii dekhea jabb image chipak
+raha haiitoo hamme acha nain lag raha haiii
+>yuahann pee hamare curser dekhi der ahai haii usmee hamare extra spacee 
+aaraha haii uskee lea mene kiya karunaa peheel mere joo image haii
+uskoo mee pehele kardunn reponsivee
+>too image koo keese responsive karnaa haii too uskoo interview mee
+poochajata ahiii
+>yahnn pee mee jata haoon orr mere joo doughter naam kaa class hai
+uskee andar image haii 
+>simply width dedoo 100% jitnaa width haii utna rehenee dooo
+>height kardoo auto
+>matlab height automatic khud browser lelegaa magar width koo 100% rekhega
+>itnaa likhnee see guyss hamare dekhoo yehh responsivee hoo jaigaa
+>aab kabhii bii woo alag nain honee wala aab eekdamm redponsive haii
+orr paragrap bhii sukee saath atach hoo chukka haii
+>aab mujhee kiya chaiihaii kii 768 kee lea perfect dekhai deraha haii
+>agar mre low resultion kee device mee chipkee too acha nain lag raha
+haii too mene kiya karun idharr
+>iskee charoo side mee hamare spacee aajayee too guyss aapko>
+>bohot kuch use karsaktee hoo bohot kuch matlab padding and margin
+>so margin matlab bahar or padding matlab andar iamges agar aap padding
+logee too jada better rehegaa
+>too mee kiya kartaa hoon mere sizee 468 pixel kee nichee rakhtaa hoon
+>too mee or eek media query likhungaa 
+>kiya likhunagaa maximum width 0 se leke 468 tak mujhee mera joo image
+haii uskaa joo douther ka joo class haii uskaa joo iamge haiii
+>padding hamme karna haii ki 10% from top bottom from lift from right
+>aisa kardungaa to dekhoo guyss kuhc nain hogaa dekhoo guyss 
+agar mee orr kam krun too kiya hoo raha haiii 
+>agar mee 468 kee niche kardunn too dekho boom guyss  mujhee charoo
+taree see spacee aagaya haiii
+>acctually kiya haii ki guyss aap jab padding dete ho tab aap kaa
+padding kee sathh hoo widht hamaree add hojata ahiiii
+>matlab hamare joo parent width haii utana haii chaihaii uskoo tackle
+karnee kee lea hamare paas kiya haii box-sizing:border-box; lete haii
+>agar aap width dea haii 100 px or padding ap 20 px dengee too kya
+hogaa 
+>ap kaa joo total space hogaa woo 120 px khaa raha hogaa
+>
+>too agar hamare padding 10% hoo woo 100 kii andar hoo nakkiii 100 see
+zada naa hooo
+>this is guyss too dekhea kiya hoo rha haii dekhea  aabhii aap dekeha
+dhyaan see kii joo space haii paragrap kaa kam hoo jaigaa
+>dekhoo guyss hamare padding kamm hoo gayaa haiiii
+>joo hamare joo webside haii mobilee mee bohot beautifully dikhraha
+haiii 
+> 468 low resoluiton mobile mee and hight resoluion mobele mee 
+>aab hamare tablet or i pads mee kese dikhanna haii
+>too bohot saree log tabs use kartee haii guyss
+>aap nee bohot saree dekha hogaa @medea schreen only @medea  bohot 
+but we are in a mordern world
+> agar aap @media max-width likhoo gee too yeeh hamre browser samajhee
+ga hii samajheegaa joo browser aap kaa morden haii woo bhii samajegeeaa
+>i think guyss mee tablet or ipads koo batanee see pehel mee aap
+koo des
