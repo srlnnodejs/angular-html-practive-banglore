@@ -203,3 +203,103 @@ but we are in a mordern world
 ga hii samajheegaa joo browser aap kaa morden haii woo bhii samajegeeaa
 >i think guyss mee tablet or ipads koo batanee see pehel mee aap
 koo des
+13.52
+>joo browser mee woo run kar rehe haii woo automatic run hoo jaigaa
+>i think guyss tablets orr i pods koo batanee see pehele mee aapkoo
+desktop aap koo batana chaungaa
+>abhhii tak hamm nee dekha max width 
+>aap koo interview mee kiya puucheengee aap koo pata ahii what is 
+the difference between max width and min width
+>max-width matlab zada see zada 768 px 0 se leke 768 pex tak joo bhi
+hogaa yehh dekhai degaa lakinn 
+>desktop mee guyss hamare 1200 px likhtee haiii
+>nainn too aap guyss aap 1024 bhii likhsaktee hoooo theek haii
+>1024 matlab kaisa yuehh 908 px haiii 
+>mainn aisa jaungaa orr 1024 px tak too minimumm 1024 px too 1024 aab
+hamare par hoo chukaa haii too iss casee mee hamme kiya kiya chage 
+hamme dikhanna haiii
+>minimum matlab jabtak 1024 see upar nain gaya haiii woo dekhaii nain
+degaa joo bhii app dekhnaa chatee haii
+>too guyss hamme aabhii 1024 kee upar hamme kiya kiya dikhann ahaiii 
+chaloo hamm dekhtee haii
+>ismee mmeee eek cheez change karkee dikhaungaa that iss your color
+>joo paragraph haii uskaa color changee karkee dikhaungaa
+>too mee kiya kartaa hoon mee likhleta hoon
+@media(min-width:1024px){
+.parent p{
+color:red;
+
+
+
+}}
+
+
+>ctrl+s save kartaa hoon orr refresh kartaa hoon dekheaa kiya atahiii
+>dekhoo coloor change hoogya theek haiii
+>1024 kee upar jatee hii color change hoo gaya haiii
+>kyunn kii minimumm haii naa kam see kam itnaa hona hii chihaiii
+>bohot chipak rehe haii too mee kiya karun word spacingg mee deta hon
+20 px too aab aap kii upar haii aap kitnaa dete haiii 
+>aabhhii kitnaa beauthii full hamare dekhii deraa haiii dekheea
+>lakinn 1024 kee nichee jatee hii woo nor mall hoo jaigaaa
+>  yehh kuch aisa dekhi derraha haii too yehh joo heading haii
+aap chaee heading ko bhii changee karsaktee hoooo
+>yahnn pee mee heading kaa colr green karletaa haoon all right dekhoo
+hamare heading bhii change hoo gaya haiii
+>too guyss aap nee samjha ki maxwidth kiya hotaa haii or  min width kiya
+hottaa haiii
+>kabhii aap in dono koo bohot baar coding dekha hogaa theek haii
+>uskoo hamm kartee haii tablatss and ipad see 
+>@medaia likhtaa hoon too 769 orr 1023 kaa kaha gayaa 
+>too mene yahhn pee likhtaa haoon mnimumm
+>minimumm width hamare 769 px 769 jee jab kam hogaa joo hamm nee
+yahapp likh lea haii
+>769 kee baad hamme jo dikhanna haiii hamme yahann dikhana ahiii
+>kabtak dikhana haii 1023 takk dikhanaa haiii
+>max width kab tak dekhanna haii 1023 tak dikhanna haiii
+>too mene rangee dea 769 se 1023 takk hamme kiya dekhana haii mene
+dedea haii dekhea guysss
+>h1 meejata hoon orr uskaa joo text-transform haii uskoo mee uppercase
+kardeta hooon
+>aabhii woo capitalize mee dekhea guyss ham jaisa resoulution hammne
+957 keea hamare size changee kea haii too hamare heading capital ho
+gaya haiii
+>abhii thoda bada kartaa hoon too dekhoo guys kiya hoo rha haiii 
+>soo guyss ap iss tareekee see media query kaa use karsaktee hooo
+>chayee too paragrap hh eekkhii haii too mee sirff eek mee hii likh
+leeta hoon soppose mee color likhletaa haoon blue 
+>aab dekhoo paragrap kaa color blue hoo gaya haiii
+> uss tareeke see guyss aap padding bhii use karsaktee hoooo
+>padding nain guyss aap word-spacing aap koo 10 px karnaa paadegaa
+>dekhea guyss aap kaa kuch isst areeke see aap ka dikhegaa 
+>iss tareeke see aap kaa tablat ipad mee aisa hii dekhi dege yehh
+aap kii mobilee mee low resolution high resolition mee aisa hii dekhi
+degee
+>aap kaa websitee mee wo aisa hi dekhaii degaaa 
+>iasa haii guyss responsivee aisa check karnaa or bhii haiiguyss aap ka
+iphone meekitnaa beautifuylly hamme dekhii deraha haiii
+>yehh pixel mee aisaa hii dekhidegaa
+>nexus 7 mee kuch aisa dekhi degaa
+>yahnn pee iphonex mee kuchh aisa hii dekhaii degaaa
+>eek cheez aap dekho jab aap is tareekee mee dekhoogee 
+>aap ka style.css mee sab css kam khatam honee kee baad hii aapkoo 
+media query likhnaa haii
+>kyun kii rule haii kii aap joo nichee likhtee hoo uskoo woo file
+render karkee dekhatee haii
+>mene 768 mee blue color karkee dea hoon
+>agar mee galtii see nichee aisa likhtaa hoontoo kiya hogaa orr color
+meekardeta hoon yellow hamme kiya lagega kii yeh theek haii 
+mene jaisa bhii dea theekhaiii
+>dekheaa sabsee nichee h1 orr uskoo me refresh kartaa hoon too 
+>>sirf itnaa hii nain guyss app kavii bhii dekhoo uskaa color yellow
+hii rehegaa
+>aab tabllet mee kiese dikhegaa yehh joo h1 nee ap kaa ssab kaa sab 
+mehenat koo pani phir deaa over write kardea too aap ko dhyann rakhna
+haii iss sab cheez koo
+>media query koo sabsee nichee hii likhnaa haiii
+>aisa mee likha jarurinain kii aap koo yehh break point lene haii
+>mostly log 768 letee haii uskee nichee mobilee mantee haii
+uskee upar desktoop mantee hiii
+>too aap logoo 700,800,900 1000 har eek kaa lesaktee hooo
+>
+>
