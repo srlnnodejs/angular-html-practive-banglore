@@ -1,0 +1,160 @@
+pehele mee website kaa demo dekha deta hoon aap log dekhea kiya hoo rha
+haiii mee sabmee hover karsaktaa haoon or contact us koo click
+karkee nichee asaktaa hoon
+>abhii dekhoo kitnii sahii bani hui haii websitee  kaisa kahan see kab
+latee haii yuehh sabb mee aap koo batanungaa
+>dekhoo iskaa navigation bar hai woo bhii sticky haii 
+>abhii mee iskoo right click karkee mee inspect mee dekh raha haoon too
+dekhoo i pad mee kisee dekh rahii haii 
+>agar mee phone kee jaisa laiyy aun too kaisa dekh ra haa haiii
+>dekhoo kaisa dikhrahaa haiiii 
+>aga mee iphone 6 mee leke jaun to dekho aisa dekhigeee
+> navigation kaa button daba kee aap log menu kaa nichee gira saktee hai
+>upar schrooll karkee yehh dekho aap image kaa order bhii changee karlea
+>aisa responsive website kese banaya jata haii kitna asana haii mee iss 
+video mee aap logo koo is veideo mee bataungaa
+>soo guyss aap nee dekhlea kee websitee kitna responsovee haii design mee
+kitna kadak haiii
+>ham log dekhengee iskoo starting see from scratch koi bhiii external cheeez
+use nain karungaa ismee
+>html css java script use karungaa joo joo use karungaa sab aap koo batatee
+chlungaa
+>end tak aap log koi bhii websitee aram see banalogeee
+>sabsee pehele hamm kiya karengee ham html use karengee orr usmee css add
+karengee 
+o>orr uskee baad hamm usmee ham baki cheez kaisa add kareengee sab dekhenge
+>aap koo sabhii cheez asanii see bataungaa asaniisee bataungaa too
+aap logokoo step by step pata chalegeaa orr eek bhii cheez hamm 
+skip nin kea haii yad rakheeaa
+>direcly boldea kii yah too ataa haii haii orr jump kardea kisii step mee
+yehh too bilkul nin hogaaa
+>step by step hamm bataungaa 
+>dekhea guyss hammkuch image bhii lea haiiaap dekh sakteehoo ki mene
+eek image lea haii bg.jpg random image haii internet see download kara
+use karo
+>img.jpg haii eek image milgayii meene uthalii haii
+>aab yahan paar ap llog kuch bhii use karsaktee hoo aap iss bat koo
+samajhh rakhtee hoo aap
+>rigtht click karkee meene open with code karungaa
+>kuch nain kiar rehe hoo too vscode usekaroo time kee saath uskee 
+shortcut wagaree aap koo samajhh mee aajayegaa
+>aap logo koo aram see eek acha environment milegaa code karnee kaa
+theek haii
+>yahan par kiya karungaa mee niauyu file banaugaa theek haiii
+>index.html nam pee eek nayee file banarahahunnn theek haii
+>yehh folder haii mene vscode mee kholdea mene orr teen file haii yhe
+aagaya haii dekhoo
+>aab dekho jab ! mark martee hoo too kuch boiler plate html generate
+hota haiii
+?>boilerplate kiya hota haii yehh kasi angreezi haii dekhea 
+>boiler plate matlab hai kii woo code jab start karnee kee lea aap koo
+chaihaiii
+>aap koo lagtaa hii lagtaa haii koi bhii websitee aap banalooo
+>yahna pear mee kiya karungaa kii iss websitee kaa joo title hai mee
+uskoo daldungaa
+>iskaa title mee likhleta hoon manlo kii kooi education siteke lea mene
+sidebanaa raha haoon too manloo kii i deducate 
+>koi bhii website hai compny banarahii haii kii unkee paas padhneeke lea
+bachee aaynn
+>yahan pee mene i educate name pee mene iskaa title dal deta hoon
+>title mee rakhtaa hoon iEducate-Transforming Education online 
+>yana par mee orr eek cheez bata dekta hoon extension jiskaa namee haii
+>live server theek haii yahan pee liver server mene install karkee 
+rakhaa haii
+>yehh vscode kaa extension haii iskoo karloo installl
+>iskoo extension karkee kiya hota haii kii aap logo koo live reload milta
+haii theek haii
+>yanan pee install karkee aap log kiya karsaktee hoo ki golive mee click
+karsaktee hoooo
+>dekhoo mene live server mee click kea or code 5500 mee khool gaya iska
+matlab kiya haii bolog
+>aga mee save kartee jaungaa mere body kee andar update hote jaynegee 
+too mene likhlea body kee andar this is my body or save kea iskoo
+>yahan par yehh reflect hoo jaigaa dekhoo yeh faida haii live server kaa
+ismee
+>mujhee bar bar yehh reload button click karnee kaa jarurat nain haii
+> save karunn orr mujhee yahann pe update hookee mile website meriii
+>sabsee pehele cheez kiya hotii haii websitee mee kiya hota hi navigation
+bar hota haii
+>eek navigation bar hona jaruri haii website mee theek haii
+>too yehh dekhoo yahan pee navigation bar banaya hua haiii idhar
+>meinn kiya kartahoon main likhtaa hoon nav orr eek class dedeta hoon
+>
+>=======================================================================
+phase 2
+=======================================================================
+main yahan par kiya karta hoon eek navigation bar banata hoon
+>or yahann par likhungaa nav.navbar or enter mar deta hoon theek haii
+>aap blea yeehh kese keaa yehh emit haii theek haii
+>emit kiya kartii haii woo shortcut kartii haii theek haiii
+>nav.navbar matlab nav with class of nav bar yehh emit haii
+>emit kiya kartii haii shortcut kartii haiii emit kiya kartii haii kii
+woo shortcut kartii haii jese kii 
+>div.div  likhtaa hoon too yehh aajataa haiii <div class="div"></div>
+aagaya
+>agar aap nee likhlea .visible too 
+><div class="visible"></div>
+><nav class="navbar">
+</nav>
+>navigation bar  banaungaa enter marungaa o save karungaa uskke
+andar mee bolungaa kiii mujhee eek ul dedoo jisa name hoga 
+nav-list 
+>jaisa hotee haii naa home about service woo sab ismee daldungaa
+>yahann pee nav-list likhkee mee or eek class add karna chaunga
+too woo another class haii
+>too mene aap koo bata rakha haii ki kisi bhii element mee id 
+dalitii hoo too eek hotii haiibus
+>aab yahan par mee nav-list likhkee mene classes add krungaa agar
+mee karna chaun too karsakta hoon agar mee another name kaa class 
+add karun too iss tarahh see add kardungaa
+>kisi bhii element mee id daltii hoo too eek hotii haii buus id = name
+baass
+>mee kiya kartaa hoon li*4 karletaa hoon too char li aajaai gaa theek
+haii
+>orr likee andar mee anchor tag dalraha hoon theek haii  
+>mene kiya kea a href="#home"daldea too mene idhar kiya kea aab mee
+bata ta hoon 
+>mene idhaar eek li banalea too mee iskoo replicate kartaa hoon 
+>theek haii kabhii kabihii to kiya hota haii kii agar aap kaa cpu busy
+haii too emit nain chaltii haii
+>yahan pee mene home likha haii orr eek about us likha haii 
+>orr eek services likhletaa hoon
+>design wise mee aap koo solid webside dungaa okk
+>production mee dekhekegee websitee acha website banegaa
+>to yahan pee mene quality kee compormisee nain kartaa haooon 
+>basically jab hamm aisa kartee haiiii agar ham aisa kartee haiikii
+<a href="#about">About</a> iskaa matlab yah haii kii hamme anchor tag par
+click kea jaiii theek haii
+>anchor tag kiya hota haii html mee link hota haiii 
+>wahan pee click kardoo kii kiya hogaa kii jahan par id about hai wahan
+par woo scroll karkee aajaigaa
+>similalyy yeh home pee aaiga about mee aaiga orr services mee aaiga
+orr contact mee aaiga
+>abhii aap koo websitee dekhata haoon too bohot ghatia dekh rahii hai
+too log aisa nain chatee haii
+>too ismee css add karengee orr iskoo khubsurat banaygee
+>orr eek search bar bhii rakhtenge too bohot acha rahegaa
+>by the way eek logo bhii laganaa chataa hoon mene abhiii
+>yahann pee eek logo daldeta hoon too kiya karungaa 
+<div class="logo"><img src="img.jpg" alt="logo"></div>
+>too hamme idhar yehh miljaigaa  too logo koo yehh naa dekhee or
+logo kaa internet connecction low haii too pata chale idhar kiya
+hgaii
+iss lea ham alt mee logo liha haii kii agar image load nain hogaa
+to logo koo pata chalegaa kii yeh logo hai too text hai woo ajagata haii
+woo diplay hoo rahi haii ki jab load nain hoo rahi haii
+>save kardea meene dekhtahoon kii kese lag raha haii mera image
+>ghatia lag raha hii neahitii aab hamm isskaa css bohot acha karenge 
+teneion nain lenekaa
+>to aab mujhee right navigation chaihii kii righ mee mujhee search bar
+search kuchh aajayee
+>to navigation bar kee andar hii eek div banaleta hoon joo haii
+rightNav
+>orr mee kiya karungaa kii mee bolungaa ki eek input lagadooo  type="text"
+name ="search" lagadoo theek haiii 
+>or id="search" lagadoo theek haiii
+> id or name generally same dedeta hoon theek haiii koi problem nain 
+aap desektee hoon
+>too mee eek button banaunga orr button chota banaunga too kiya karunga
+kii css classlungaa kii btn-sm
+>14.00
