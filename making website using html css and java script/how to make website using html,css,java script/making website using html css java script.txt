@@ -158,3 +158,128 @@ aap desektee hoon
 >too mee eek button banaunga orr button chota banaunga too kiya karunga
 kii css classlungaa kii btn-sm
 >14.00
+------------------------------------------------------------------------
+phase 3
+------------------------------------------------------------------------
+>mee button kee lea alag see class banadii btn-sm classes bana banakee
+chipka raha haoon 
+>agar mee button koo target karluu sirf button kee name pee 
+>lakin hoga aisa kii aap nee koi dusra button laga dea uskoo kuch orr
+dekhana chatee hoo matlab red button dikhana chatee hooo 
+>too aap logo kaa button wese hii dekhegaa jese aap logone button koo
+target kea 
+>too mene bolta hoon class bana bana kee chapkaooo
+>btn-sm matlab chota button 
+>jaha button chota chaihaii uss jaga mee btn-sm  lagadoo too 
+chota button aajaigaa 
+>chalo theek haii mene save kea file koo orr dekhoo mere idhar
+button aagaya haiii content daldeta hoon search kee name pee
+>content dalneee kee baad dekhoo kese dikhraha haii utna bhii bura nain
+dekh raha haii acceptable nain haii website
+>abhii ismee mee css add karungaa theek haii
+>eek css folder banatee haii uskee andar daltee haii style.css
+>yahan pee folder bana banakee mee kyunn structure bana raha haoon 
+>kyunn kii yehh good practicee haiii theek haiii
+>achii practice kee saath hii chalooo yahan par main folder mee hii
+>meain nain chataa haooon kii aap log main folder meee hii raita peh
+aaiie
+>or iamge koo me img kee folder mee rakhungaa too img.jpg jaha n
+likha haii wiahaan img/img.jpg likhungaa 
+>too mere paas folder haii kii mere html bahar rahigiii orr css folder
+kee andar mere style.css rahegeiii
+>image folder kee andar mere images rahagiiitoo mujhee pata haiilii
+kiya cheez kahan par haiii
+>eek baar style sheet koo dekhoo orr aablikhtee haii hamm coding 
+>sabsee pehele mee margin 0 kardeta hoon or padding 0 kardeta haoon
+>imsee hamare joo faltukii marginn wagaree aarahii haii wooo chalijaigaa
+>jahan margin chaighaii mee add karlungaa mujhee by default kuch nain 
+chaihiaiii
+>mene apne browser mee kehdea kee mujhee by default kuch nain chaihaii
+>mee dekhlungaa apne aap thank you very much
+>agar mee apni ul dikhaungaa too yeh mere nav list haii theek haii 
+>sabsee pehele hamm navlist koo target karlete haii theek haiii
+>eek class leleta hoon mere .nav-list eek too mee nav-list classkoo
+target karungaa orr usekee baad nav-list kee andar mere joo a hai
+uskoo target krungaa
+>uskee baad .nav-list kee andar joo li haii uskoo target karlunnn
+>yahan par nav-list kee andar li haii uskoo target karlunnn
+>too pehle mee nav-list class koo target karlunn or uskeee baad
+mee nav-list kee andar joo li haii uskoo target karlunn uskee baad
+mere nav-list kee andar joo li haii uskee nadar joo a hai usko target
+karlunnn
+>.nav-list li {} yeh style wahan par lagega jahan nav-list haii jahan
+li haii
+>ismee dekhea hamm <ul class="nav-list"> hai too mee isme kiya style
+lagana chataa haoon dekheaa
+>mee too usmee display:flex lagaungaa display flex mee aap agar align
+karna chatee hoo vertical horizontal kese bhhii too aap display flex
+mee kese bhii karsaktee hooo
+>too aap iskoo bhii flex box banasaktee hoo orr in sabkoo khada 
+karsaktee hoo
+>at the same time aap navbar koo bhii flex box banasaktee hooo
+>joo cheez sahi lagee aap woo cheez karsaktee hooo theek haiii
+>aisa nain haii kii aap kisikoo bhii flex box banasaktee hoo ki rule haii
+>nav-bar see chalu kartee haii theek haii mee navbar see flex box banana
+suru kardeta haoon
+>abhii mee navbar dekhaun too aisa dikhraha haii theek haii agar mee
+navbar mee display flex karduunn too kiya hogaa dekhea or diplay flex
+karnee kee baad save kardunn tookiya aaigaa dekhea
+>mere joo ul hai or div haii woo side by side aagaya haiii theek haii
+>flex direction joo row hota haii wo row mee aagya haii dekhea 
+>agar mee right click karkee mee inspect karkee dekhta  hoon too kiya
+aaiga dekhoo
+>yeh joo mere ul haii iskooo meee agar highlight karun too kiya aiga
+>usko highlight karun too mere highlight karkee upardekhegaa aapkooo
+>mee kiay kartaa hoo kee mere joo class nav-list haii uskee width
+haii uskoo 50% kardeta hoon to me navbar koo 50% rakhta hoon orr 
+right nav koo 50% deta hoon 
+>50 50 karlete haii theek haii 
+>eek kam karoo jahan par nav-list likha haii to wahan par width karlo
+50% theek haii css file mee jakee
+>iskaa matlab yehh haii kii jitnii width haii uskee 50% lele yeh
+>too dekhoo hamare kese rahegaa idhar nav bar 50% rahehaa or bakii 
+50% rahehgaa theek haii
+>orr mee kehta hoon background dallea karo pehele
+> mee asia karta hoon background daldeta honn or bolta hoon mere joo
+nav-list haii uskaa background color yellow karleta hoon theek haii
+>yellow acha lage ga kii nain lagega koi baat nain lakin pata to chalega
+kiikitnin jaga lele haii mree
+>to mee right-nav mee bhii daldun to right-nav mee target haii mere
+>rightNav mee kiya daldun too me rightNav mee mee background color blueviolet
+daldunnn
+>acha to nai dekhegaa or pata chaljaigaa ki kitna jaga leeraha haii
+>kiya haii kii yeh joo right nav haii yeh itni jaga lee raha haii theek
+haiii
+>right-nav kee andar meene kiya kea hai mee eek input tag dalahua hai
+theek haiii
+>mee chata hoon adhi adhi jaga lele theek haii 
+> mee kiya kartoaa hoon right-nav ka width 50% karleta hoon theek haii
+>too meene dono koo bant lea too menee bola right nav idhar left nav
+idhar theek haii 
+>nav-list kee jaga mee left nav karleta lakin chalgaa theek haii
+>agar mee right-nav mee width koo 50% karleta hoon theek haii 
+>agar mee chataa hon kii mrecontent chalajay right mee too mee kiya karun
+>tooo mee text-align right kardeta hoon to right mee chalajaigaa theek
+haiii
+>text-align:right daldunga thee haii too theek hai yehh idhar right mee
+kone meee aake bath gaya haii theek haii
+>uskee baad kiya kartee haii joo iamge hai uska class logo hai uskoo
+target krletee hai theek haii
+>too iamge kaa width 20% karletaa haoon or uuskee baad display flex 
+kardta haoon orr uskee baad justyfy-content:center karlta hoon theek
+haii mee iss cheez iss lea karleta haoon theek haii
+>allign-item:center karleta hoon too theek haii too dekhoo mee reload
+karunga to idhar kuch hua nain too kiya karengee 
+>dekhea mere class="logo" kahann haii marii yehh raha mere class="logo"
+to width mene 20% kardii theek haii
+>too meene image koo kuch nain kea haii tookiaya karunn 
+.log img koo karta hoon iskee img kee width koo 33% kardeta hooon theek
+haii
+>orr yahan display:flex karnee kee jarurat nain haii theek haii
+>bas itna karkee dekhetee haii kiya aaraha haii theek haii
+>abhii too sahi lag raha haii theek haii too border add karkee dikhta
+hoon theek haii 
+>meresee jitnaa log bat kartee haiiki boltee hai border ache lagtee hai
+too me idhar border add karna a chata haoon theek haii
+>mee bordr 5px solid white dedeta hoon theek haii
+22.30
