@@ -283,3 +283,87 @@ hoon theek haii
 too me idhar border add karna a chata haoon theek haii
 >mee bordr 5px solid white dedeta hoon theek haii
 22.30
+>too ismee mee kuch border add karna chata hooon 
+>border mujhee bohot acheee lagtee haii meressee jitnee logokee feedback
+haii sabkoo border achee lagettee haiiii
+>mee inspect mee check kartaa hoon border 3px solid whit  dekhoo hamare
+eelement kee upar border agaya dekheeaa 
+>border radious bhii achee lagtee haii too mee kiya karunn border 
+radious 50px dalun to yehh gool aajaigaa
+>too mee un donokoo copy karkee me .logo img mee daldeta hoon theek hai
+>kyun kii iskoo mee imagee mee lagana chattaa haoon theek haii
+>abhii dekhoo kii hamare li element koo sidha karnaa haii theek haii
+>dekhoo mere joo logo itna jaga le raha haii uskee baad yehh li puri
+ki puri width lee raha haiii
+>li koo theek kartee haii kiya karengee li kee list style hai uskoo none
+kartee hai theek haii
+>list style koo none kardetee haii too kiya hogaa kii joo bindi bindii
+atti haii chali jaigiii 
+>uskee baad joo a hota hai uskee text-decoration none kardunn too kiya 
+hogaaa 
+>too text-decoration none karnee see joo underlinee hontaa haii woo chali
+jaigiii
+>color koo white kardoo nain too koi orr chatee hoo too wohii kardoo 
+theek haiii
+>joo background ahii uskoo yellow haii uskoo dark black kardunn theek hai
+>agar nav-list hai usmee display flex kardunn too kiya hoga yahii karta
+hoon theek haii 
+>or padding kardunn  too justyfyL content center
+>allign item bhii center to vertically center or horizonatally bhii
+center kardunnn theek haii
+>orr subkuchh copy kartaa h0ooon theek haii nav-list mee replace kardeta
+hoon theek ahiii
+>orr joo comment out haii uskoo hata deta haoon theek haii
+>aab yahan par mere joo li haii mee chata hoon inmee mere joo 
+padding wagaree aajayyee theek ahii
+>too li mee padding dalta hooon padding 23 px
+>too dekheaa hamare padding aagaya haiii aisaa 
+>too mee padding koo copy karkee li mee daldeta hooon theek haiii
+>aab mujhee chaihaii ki jab mee li kee upar curser leke jaunn too 
+mere li kaa color thoda changee hoo jaiii too kiya karuun
+>.nav-list li a hai ismee mee usmee mee kiya kartaa haooon mee sudo selector
+laga deta hoon hover 
+>orr usmee color koo gray kardeta hoon theek haii
+>too mayy kiya kartaa hoon ismee mee padding koo copy karkee li me laga
+deta hoon theek haii
+>me kehtaa haoon kii mere jo li haii uskoo mee copy kartaa hoon 
+>too mee chataa haoon kii jeese kee koi teer leke jaii uss li kee uapr
+too uskaa color change hoo jayyee theek haii
+>too mee kiya kartaa haoon .nav-list li a:hover matlab hamare navlist mee
+joo li haii uskee andar joo a haii usmee mee sudo selector hover laga
+deta hooon theek haii
+>too mene save kea theek haii  orr uskee baad mee kiya kartaa haoon color
+joo haii uskoo mee gray karletaa haoon theek haii
+>kuch bhii karsaktee hoo aap aisa nain kii koi hard and first rule hai
+dekho aisa ban gayaa haiii
+>too dekhoo hamm asia kartee haii kii joo search haii woo upar tang gaya
+uskoo hamm nichee latee haii theek haii
+>too mee kiya kartaa haoon theek haii too hamare joo rightnav haii woo
+upar tangchuka haii too hamme uskaa ilaz karnaa haii theek haii
+>too iska ilaz kaisa karssaktee hoo kii aap iskoo flex box banadoo right
+nav koo theek haii
+>orr iskee andar joo element haii woo nichee aajaigii theek haii
+>too aab kiya karogee kii isko padding wagaree dedoo theek haii
+>kafi tareeek ee haii isko theek karneekkii theek haii
+>too mee aab kiya karungaa kii id="serarch" haii uskooo uthaungaa theek
+haii
+>usmee thodi css add karletaa haoon theeek haiii
+>usmee thodi sii padding dungaa theek haii 
+>padding mee 4 px dedeta hoon theek haii
+>joo padding haii uskoo mee padding 5 px dedeta hoon theek haii
+>uskaa font sizee mee thoda bada karletaa haooon theek haiii font
+size mee bada karletaa hoon theek haii 17 px karletaa hoon theeek haii
+>border dedeta hoon theek haii 2px solid gray dedeta hooon theek haii
+>border radious mee 9 px dedeta hooon theek haii
+>too mee kiya karta hoon theek haii hamare yehh joo button hai uskoo
+thoda bada karna haii theek ahii uskoo dekhletee haii theek haii
+>uskoo nichee le aaunga theek haii joo hamare right nav haii uskoo 
+verticlaly center karletee ahii theekk haiii
+>yahan pe kiya kartaa hoon joo loclor haii hata deta hoon theek haii
+>too mee color comment out karletaa haooon theek haii
+>aabhii hame color change karnaa haii theek haii
+>abhii joo idhar joo jpg haii iskoo hamm background mee rakhletaa haoon
+too nav bar mee dekhnee koo easy hoo jaigaa theeek haiii
+>tooo eek kam kartee haii yahan par eek background bolkee class banatee
+haii theek haiii
+>
